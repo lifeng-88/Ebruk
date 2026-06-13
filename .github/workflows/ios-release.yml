@@ -161,6 +161,7 @@ jobs:
             -archivePath "$ARCHIVE_PATH"
             DEVELOPMENT_TEAM="$APPLE_TEAM_ID"
             CODE_SIGN_STYLE=Automatic
+            "CODE_SIGN_IDENTITY[sdk=iphoneos*]=Apple Distribution"
             -allowProvisioningUpdates
             -authenticationKeyPath "$APP_STORE_CONNECT_KEY_PATH"
             -authenticationKeyID "$APP_STORE_CONNECT_KEY_ID"
