@@ -14,6 +14,7 @@ from typing import Optional
 CI_DEVICE_UDID = "00008110-001A001E3C9A00C1"
 CI_DEVICE_NAME = "GitHub Actions CI"
 API_BASE = "https://api.appstoreconnect.apple.com/v1"
+VENV_READY_ENV = "ASC_API_VENV_READY"
 
 
 def require_env(name: str) -> str:
@@ -24,15 +25,39 @@ def require_env(name: str) -> str:
     return value
 
 
-def make_token(key_id: str, issuer_id: str, key_path: Path) -> str:
+def venv_python() -> Path:
+    base = Path(os.environ.get("RUNNER_TEMP", "/tmp"))
+    return base / "asc-api-venv" / "bin" / "python"
+
+
+def ensure_runtime() -> None:
+    """在 PEP 668 环境下用临时 venv 安装 PyJWT，避免 system pip 报错。"""
+    if os.environ.get(VENV_READY_ENV) == "1":
+        return
+
     try:
-        import jwt  # type: ignore
+        import jwt  # type: ignore  # noqa: F401
+        os.environ[VENV_READY_ENV] = "1"
+        return
     except ImportError:
+        pass
+
+    venv_py = venv_python()
+    if not venv_py.exists():
+        venv_dir = venv_py.parent.parent
+        print(f"创建临时 venv：{venv_dir}")
+        subprocess.check_call([sys.executable, "-m", "venv", str(venv_dir)])
         subprocess.check_call(
-            [sys.executable, "-m", "pip", "install", "PyJWT", "cryptography"],
-            stdout=subprocess.DEVNULL,
+            [str(venv_py), "-m", "pip", "install", "PyJWT", "cryptography"],
         )
-        import jwt  # type: ignore
+
+    env = os.environ.copy()
+    env[VENV_READY_ENV] = "1"
+    os.execve(str(venv_py), [str(venv_py), *sys.argv], env)
+
+
+def make_token(key_id: str, issuer_id: str, key_path: Path) -> str:
+    import jwt  # type: ignore
 
     private_key = key_path.read_text(encoding="utf-8")
     now = int(time.time())
@@ -119,4 +144,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    ensure_runtime()
     main()
