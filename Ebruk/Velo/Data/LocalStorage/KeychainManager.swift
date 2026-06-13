@@ -15,7 +15,7 @@ actor KeychainManager {
     private let service: String
     
     private init() {
-        self.service = Bundle.main.bundleIdentifier ?? "com.ebruk.app"
+        self.service = Bundle.main.bundleIdentifier ?? "com.ebruk.DIYFormula"
     }
 
     private func baseQuery(for key: String) -> [String: Any] {
