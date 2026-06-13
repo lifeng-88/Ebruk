@@ -1,0 +1,179 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "DIYFormulaProducts",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "D1F001",
+      "localizations" : [
+        {
+          "description" : "20 coins — unlock about 2 recipes",
+          "displayName" : "20 Coins",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "20 金币 — 可解锁约 2 条配方",
+          "displayName" : "20 金币",
+          "locale" : "zh_Hans"
+        }
+      ],
+      "productID" : "com.ebruk.app.coins_20",
+      "referenceName" : "4.99",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "D1F002",
+      "localizations" : [
+        {
+          "description" : "50 coins (40+10 bonus) — unlock about 5 recipes",
+          "displayName" : "50 Coins",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "50 金币（40+10 赠送）— 可解锁约 5 条配方",
+          "displayName" : "50 金币",
+          "locale" : "zh_Hans"
+        }
+      ],
+      "productID" : "com.ebruk.app.coins_40",
+      "referenceName" : "9.99",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "19.99",
+      "familyShareable" : false,
+      "internalID" : "D1F003",
+      "localizations" : [
+        {
+          "description" : "120 coins (80+40 bonus) — unlock about 12 recipes",
+          "displayName" : "120 Coins",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "120 金币（80+40 赠送）— 可解锁约 12 条配方",
+          "displayName" : "120 金币",
+          "locale" : "zh_Hans"
+        }
+      ],
+      "productID" : "com.ebruk.app.coins_80",
+      "referenceName" : "19.99",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "49.99",
+      "familyShareable" : false,
+      "internalID" : "D1F004",
+      "localizations" : [
+        {
+          "description" : "340 coins (200+140 bonus) — unlock about 34 recipes",
+          "displayName" : "340 Coins",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "340 金币（200+140 赠送）— 可解锁约 34 条配方",
+          "displayName" : "340 金币",
+          "locale" : "zh_Hans"
+        }
+      ],
+      "productID" : "com.ebruk.app.coins_200",
+      "referenceName" : "49.99",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "99.99",
+      "familyShareable" : false,
+      "internalID" : "D1F005",
+      "localizations" : [
+        {
+          "description" : "800 coins (400+400 bonus) — unlock about 80 recipes",
+          "displayName" : "800 Coins",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "800 金币（400+400 赠送）— 可解锁约 80 条配方",
+          "displayName" : "800 金币",
+          "locale" : "zh_Hans"
+        }
+      ],
+      "productID" : "com.ebruk.app.coins_400",
+      "referenceName" : "99.99",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "199.99",
+      "familyShareable" : false,
+      "internalID" : "D1F006",
+      "localizations" : [
+        {
+          "description" : "2000 coins (800+1200 bonus) — unlock about 200 recipes",
+          "displayName" : "2000 Coins",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "2000 金币（800+1200 赠送）— 可解锁约 200 条配方",
+          "displayName" : "2000 金币",
+          "locale" : "zh_Hans"
+        }
+      ],
+      "productID" : "com.ebruk.app.coins_800",
+      "referenceName" : "199.99",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "299.99",
+      "familyShareable" : false,
+      "internalID" : "D1F007",
+      "localizations" : [
+        {
+          "description" : "3600 coins (1200+2400 bonus) — unlock about 360 recipes",
+          "displayName" : "3600 Coins",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "3600 金币（1200+2400 赠送）— 可解锁约 360 条配方",
+          "displayName" : "3600 金币",
+          "locale" : "zh_Hans"
+        }
+      ],
+      "productID" : "com.ebruk.app.coins_1200",
+      "referenceName" : "299.99",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false,
+    "_billingGracePeriodEnabled" : false,
+    "_billingIssuesEnabled" : false,
+    "_disableDialogs" : false,
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_renewalBillingIssuesEnabled" : false,
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ],
+    "_timeRate" : 0
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 5,
+    "minor" : 0
+  }
+}

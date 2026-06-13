@@ -1,0 +1,2874 @@
+{
+  "1": {
+    "name": "All purpose cleaner",
+    "materials": [
+      "white vinegar",
+      "baking soda",
+      "soap liquid"
+    ],
+    "ratio": "50 ml white vinegar, 30 g baking soda, 50 ml soap",
+    "steps": "Pour the white vinegar into the pot, add the baking soda, stir until dissolved, then add the soap, stir evenly, and it is ready to use.",
+    "safetyNote": null
+  },
+  "2": {
+    "name": "glass cleaner",
+    "materials": [
+      "Alcohol",
+      "white vinegar",
+      "water"
+    ],
+    "ratio": "200 ml alcohol, 100 ml white vinegar, 100 ml water",
+    "steps": "Pour alcohol, white vinegar, and water into a container, stir evenly, and put it into a sprayer to use.",
+    "safetyNote": "Alcohol is flammable, please operate in a well-ventilated area and away from fire sources."
+  },
+  "11": {
+    "name": "kitchen grease cleaner",
+    "materials": [
+      "baking soda",
+      "dish soap",
+      "Warm water"
+    ],
+    "ratio": "30g baking soda, 20ml dish soap, 500ml warm water",
+    "steps": "Dissolve baking soda in warm water, add dish soap and mix well. Spray on the oily surface, let it sit for 5 minutes and then wipe with a rag.",
+    "safetyNote": null
+  },
+  "12": {
+    "name": "Bathroom descaler",
+    "materials": [
+      "citric acid",
+      "baking soda",
+      "water"
+    ],
+    "ratio": "20g citric acid, 15g baking soda, 300ml water",
+    "steps": "Dissolve citric acid and baking soda in water, stir until completely dissolved, and pour into a spray bottle. Spray on the scale and let it sit for 10 minutes, then scrub, and finally rinse with water.",
+    "safetyNote": "It is recommended to wear gloves when operating and avoid prolonged contact with skin."
+  },
+  "13": {
+    "name": "furniture maintenance wax",
+    "materials": [
+      "beeswax",
+      "olive oil",
+      "turpentine"
+    ],
+    "ratio": "30 g beeswax, 100 ml olive oil, 20 ml turpentine",
+    "steps": "Heat beeswax over water until completely melted, add olive oil and turpentine, stir evenly. After it cools down slightly, apply a small amount and wipe the surface of the furniture, then polish with a dry cloth.",
+    "safetyNote": "Turpentine is flammable and has a pungent smell. Please operate in a well-ventilated area and away from fire sources."
+  },
+  "14": {
+    "name": "carpet stain remover",
+    "materials": [
+      "white vinegar",
+      "dish soap",
+      "Warm water"
+    ],
+    "ratio": "100 ml white vinegar, 10 ml dish soap, 400 ml warm water",
+    "steps": "Mix white vinegar, dish soap and warm water and stir until foamy. Use a soft-bristled brush dipped in foam to gently brush the stained area, then use a clean damp cloth to absorb excess water.",
+    "safetyNote": null
+  },
+  "32": {
+    "name": "silverware polish",
+    "materials": [
+      "baking soda",
+      "Salt",
+      "aluminum foil",
+      "hot water"
+    ],
+    "ratio": "30g baking soda, 15g salt, 1 piece of aluminum foil, 500ml hot water",
+    "steps": "Place crumpled aluminum foil on the bottom of the container, add baking soda and salt, pour in hot water and stir to dissolve. Soak the silverware for 5 to 10 minutes, then rinse and dry it to restore its luster.",
+    "safetyNote": "Be careful to prevent scalding when operating in hot water. Silverware should not be soaked for too long to avoid damaging the carvings."
+  },
+  "33": {
+    "name": "Air conditioning filter cleaner",
+    "materials": [
+      "dish soap",
+      "white vinegar",
+      "Warm water"
+    ],
+    "ratio": "15 ml dish soap, 50 ml white vinegar, 1000 ml warm water",
+    "steps": "Add dish soap and white vinegar to warm water and mix well. Remove the filter and soak it for 15 minutes. Brush lightly with a soft brush, rinse with water, dry in the shade and reinstall it.",
+    "safetyNote": "Be sure to disconnect the power supply of the air conditioner before cleaning, and do not put it back in before the filter is completely dry."
+  },
+  "34": {
+    "name": "Tile gap cleaner",
+    "materials": [
+      "hydrogen peroxide",
+      "baking soda"
+    ],
+    "ratio": "100 ml hydrogen peroxide, 30 g baking soda",
+    "steps": "Make a paste of baking soda and hydrogen peroxide and use an old toothbrush to scrub the gaps between the tiles. Let it sit for 10 minutes, wipe it with a damp cloth, and finally wipe the surface with clean water.",
+    "safetyNote": "Hydrogen peroxide has bleaching properties. Please try applying in an inconspicuous area first to avoid contact with the surface of colored tiles."
+  },
+  "50": {
+    "name": "stainless steel cleaner",
+    "materials": [
+      "flour",
+      "white vinegar",
+      "Warm water"
+    ],
+    "ratio": "30g flour, 50ml white vinegar, 200ml warm water",
+    "steps": "Add warm water to flour to make a paste, add white vinegar and stir evenly. Use a soft cloth to wipe the stainless steel surface, polish along the grain direction, and finally wipe it dry with clean water.",
+    "safetyNote": null
+  },
+  "51": {
+    "name": "microwave deodorizer",
+    "materials": [
+      "lemon",
+      "water"
+    ],
+    "ratio": "1 lemon, 200 ml water",
+    "steps": "Place lemon slices in a heatproof bowl and add water. Place it in the microwave and heat it on high for 3 minutes, let it sit for 5 minutes, then take it out and wipe the inner cavity with a damp cloth to remove the smell.",
+    "safetyNote": "The bowl will be very hot after heating, please use heat-resistant gloves when taking it out."
+  },
+  "52": {
+    "name": "hot water kettle descaler",
+    "materials": [
+      "citric acid",
+      "water"
+    ],
+    "ratio": "30 g citric acid, 500 ml water",
+    "steps": "Dissolve citric acid in water, pour it into a kettle, heat to a slight boil, then turn off the power and soak for 30 minutes. Pour away the solution and rinse twice to remove scale.",
+    "safetyNote": "Do not close the lid tightly when descaling to avoid excessive steam pressure. Not for use with aluminum kettles."
+  },
+  "68": {
+    "name": "bathroom mold remover",
+    "materials": [
+      "Bleach",
+      "water"
+    ],
+    "ratio": "50 ml bleach, 450 ml water",
+    "steps": "Dilute bleach with water and put it into a spray bottle and spray it on moldy walls or cracks. Let it sit for 15 minutes, then brush, rinse with water and keep ventilated and dry.",
+    "safetyNote": "Bleach is corrosive and irritating. Please wear gloves and keep it ventilated. Do not mix it with acidic cleaners."
+  },
+  "69": {
+    "name": "oven cleaner",
+    "materials": [
+      "baking soda",
+      "dish soap",
+      "Warm water"
+    ],
+    "ratio": "50g baking soda, 15ml dish soap, 100ml warm water",
+    "steps": "Mix baking soda with a small amount of warm water to make a thick paste, and apply it to the oily areas on the inner wall of the oven. After leaving it overnight, wipe it off with a damp cloth, wash it with dish soap, and finally dry it.",
+    "safetyNote": "Be sure to turn off the power and cool down before cleaning to avoid the cleaning agent coming into contact with the heating tube."
+  },
+  "70": {
+    "name": "faucet luminous agent",
+    "materials": [
+      "toothpaste",
+      "baking soda"
+    ],
+    "ratio": "15 grams of toothpaste, 10 grams of baking soda",
+    "steps": "Mix toothpaste and baking soda to form a paste, dip it in a soft cloth and wipe the surface of the faucet. Polish along the arc direction, rinse with clean water and polish with a dry cloth.",
+    "safetyNote": null
+  },
+  "71": {
+    "name": "leather sofa cleaner",
+    "materials": [
+      "olive oil",
+      "white vinegar",
+      "water"
+    ],
+    "ratio": "30 ml olive oil, 20 ml white vinegar, 100 ml water",
+    "steps": "Mix the three ingredients evenly, then dip a soft cloth into it and gently wipe the leather surface. After wiping, use a clean damp cloth to wipe off the residue. After drying naturally, the leather will regain its luster.",
+    "safetyNote": "Before use, test it on an inconspicuous area to avoid discoloration."
+  },
+  "72": {
+    "name": "shoe deodorizing spray",
+    "materials": [
+      "Alcohol",
+      "tea tree essential oil",
+      "water"
+    ],
+    "ratio": "80 ml alcohol, 3 ml tea tree essential oil, 20 ml water",
+    "steps": "Mix the alcohol and essential oils with water, shake well, and put into a spray bottle. Spray the inside 2 to 3 times after each wear, and dry in the shade to deodorize and sterilize.",
+    "safetyNote": "Alcohol is flammable, keep away from fire sources. Please try spraying new shoes or valuable materials first."
+  },
+  "73": {
+    "name": "screen cleaner",
+    "materials": [
+      "dish soap",
+      "white vinegar",
+      "Warm water"
+    ],
+    "ratio": "10 ml dish soap, 30 ml white vinegar, 500 ml warm water",
+    "steps": "Dissolve dish soap and white vinegar in warm water and use a soft-bristled brush to scrub both sides of the screen. Rinse with clean water after brushing, dry and reinstall.",
+    "safetyNote": null
+  },
+  "74": {
+    "name": "brassware polish",
+    "materials": [
+      "lemon juice",
+      "Salt",
+      "flour"
+    ],
+    "ratio": "30 ml lemon juice, 10 g salt, 20 g flour",
+    "steps": "Mix salt with flour and add lemon juice to make a paste. Apply to the brass surface and let it sit for 10 minutes. Wipe it with a soft cloth, rinse with water and dry.",
+    "safetyNote": null
+  },
+  "3": {
+    "name": "Machine lubricants",
+    "materials": [
+      "gasoline",
+      "liquid soap"
+    ],
+    "ratio": "200 ml gasoline, 100 ml liquid soap",
+    "steps": "Pour the gasoline into the container, add the soap solution, stir evenly and use.",
+    "safetyNote": "Gasoline is highly flammable, please operate in a well-ventilated area, away from open flames and children."
+  },
+  "4": {
+    "name": "Bicycle chain lubricant",
+    "materials": [
+      "liquid paraffin",
+      "gasoline"
+    ],
+    "ratio": "Liquid paraffin 50 g, gasoline 50 ml",
+    "steps": "Mix liquid paraffin and gasoline, stir well and use.",
+    "safetyNote": "Gasoline is highly flammable, please operate in a well-ventilated area, away from open flames and children."
+  },
+  "15": {
+    "name": "Door and window hinge lubricant",
+    "materials": [
+      "Vaseline",
+      "engine oil"
+    ],
+    "ratio": "20 grams of petroleum jelly, 30 ml of engine oil",
+    "steps": "Place Vaseline and engine oil in a temperature-resistant container and heat over water until completely combined. After cooling, dip a cotton swab in it and apply it to the hinge shaft.",
+    "safetyNote": "Used engine oil may contain impurities and is recommended for lubrication of non-precision parts only."
+  },
+  "16": {
+    "name": "leather care oil",
+    "materials": [
+      "Vaseline",
+      "lanolin",
+      "essence"
+    ],
+    "ratio": "50g petroleum jelly, 20g lanolin, 2ml essence",
+    "steps": "Heat the vaseline and lanolin over water to melt, then remove from the heat and add the essence and stir evenly. After cooling, apply a small amount to the leather surface and rub evenly with a soft cloth.",
+    "safetyNote": null
+  },
+  "17": {
+    "name": "sewing machine lubricant",
+    "materials": [
+      "white oil",
+      "Alcohol"
+    ],
+    "ratio": "80 ml white oil, 20 ml alcohol",
+    "steps": "Pour the white oil into a clean container, add alcohol and stir evenly. Use a dropper to take a small amount and drop it into the moving parts of the sewing machine, and run it for several turns to distribute the oil evenly.",
+    "safetyNote": "Alcohol is flammable, please operate in a well-ventilated area and away from fire sources."
+  },
+  "35": {
+    "name": "clock lubricant",
+    "materials": [
+      "white oil",
+      "spermaceti"
+    ],
+    "ratio": "White oil 90 ml, spermaceti 5 g",
+    "steps": "Chop the spermaceti into pieces and add to the white oil. Stir over low heat over water until completely dissolved. After cooling, use a very fine needle to take a small amount and apply it on the bearings of the watch. Do not overdo it.",
+    "safetyNote": "It is recommended that precision watches be maintained by professionals. Self-lubrication may cause abnormal timing."
+  },
+  "36": {
+    "name": "Wire rope grease",
+    "materials": [
+      "grease",
+      "kerosene"
+    ],
+    "ratio": "Grease 50 g, kerosene 30 ml",
+    "steps": "Place the grease in a container and gradually add kerosene and stir to dilute to a paintable consistency. Apply evenly on the surface of the wire rope and run it several times to allow the grease to penetrate into the strands.",
+    "safetyNote": "Kerosene is flammable, please operate in a well-ventilated area and away from fire sources. Please recycle waste oil properly."
+  },
+  "37": {
+    "name": "Wooden drawer slide oil",
+    "materials": [
+      "beeswax",
+      "linseed oil"
+    ],
+    "ratio": "15 g beeswax, 50 ml flax oil",
+    "steps": "Melt the beeswax over water, add linseed oil and stir evenly. After cooling, apply a small amount to the wooden drawer slides and track grooves, and push and pull several times.",
+    "safetyNote": null
+  },
+  "53": {
+    "name": "Fan bearing lubricant",
+    "materials": [
+      "lubricating oil",
+      "kerosene"
+    ],
+    "ratio": "Lubricating oil 40 ml, kerosene 10 ml",
+    "steps": "Mix the lubricating oil and kerosene evenly, use a dropper to take 1 to 2 drops and inject them into the fan bearing. Manually turn the fan blades several times to distribute the oil, wipe off excess oil stains, and then turn on the power for a test run.",
+    "safetyNote": "Be sure to disconnect the power supply before operation. Kerosene is flammable and should be kept away from fire sources."
+  },
+  "54": {
+    "name": "Iron anti-rust oil",
+    "materials": [
+      "engine oil",
+      "wax oil"
+    ],
+    "ratio": "80 ml engine oil, 20 ml wax oil",
+    "steps": "Mix the engine oil and wax oil and stir evenly. Use a brush to apply it thinly to a clean, dry iron surface, and let it dry to form a protective film, which can slow down rust.",
+    "safetyNote": "Waste engine oil may contain harmful substances. Please wear gloves when handling and avoid contact with skin."
+  },
+  "55": {
+    "name": "Mold release oil",
+    "materials": [
+      "edible oil",
+      "beeswax"
+    ],
+    "ratio": "100 ml cooking oil, 10 g beeswax",
+    "steps": "Heat the beeswax over water and melt, add cooking oil and stir evenly. After cooling, apply it to the inner wall of the mold with a brush to facilitate the demoulding of concrete or gypsum products.",
+    "safetyNote": null
+  },
+  "75": {
+    "name": "zipper lubrication wax",
+    "materials": [
+      "Candle",
+      "Vaseline"
+    ],
+    "ratio": "10 grams of candles, 15 grams of Vaseline",
+    "steps": "Melt the chopped candles and Vaseline over water and mix well. After cooling, use a cotton swab to dip it in, apply it between the zipper teeth, and pull it several times until it becomes smooth.",
+    "safetyNote": null
+  },
+  "76": {
+    "name": "Instrument peg lubricant",
+    "materials": [
+      "graphite powder",
+      "vegetable oil"
+    ],
+    "ratio": "Graphite powder 2 g, vegetable oil 20 ml",
+    "steps": "Add graphite powder to vegetable oil and stir evenly. Dip a toothpick into a small amount and apply it to the thread of the peg, twist it in and out several times to evenly distribute the oil film.",
+    "safetyNote": "The dosage should be very small to prevent oil from penetrating into the soundboard and affecting the tone."
+  },
+  "77": {
+    "name": "Skateboard wheel bearing oil",
+    "materials": [
+      "lubricating oil",
+      "detergent"
+    ],
+    "ratio": "Lubricant 15 ml, detergent 5 ml",
+    "steps": "After removing the bearing and cleaning it from dust, add 1 to 2 drops of lubricating oil. Manually rotate the bearing to allow oil to seep in, wipe off excess grease on the surface and then reinstall it.",
+    "safetyNote": "The cleaning agent is flammable, keep away from fire sources when operating."
+  },
+  "78": {
+    "name": "Anti-rust oil for garden tools",
+    "materials": [
+      "Waste oil",
+      "diesel fuel"
+    ],
+    "ratio": "Waste oil 100 ml, diesel 30 ml",
+    "steps": "Mix waste engine oil and diesel evenly, and use a brush to apply it to the metal cutting edges and joints of tools such as shovels and shears. Storing after drying can slow down rust.",
+    "safetyNote": "Waste engine oil contains harmful substances, please wear gloves and store it properly to avoid children's contact."
+  },
+  "79": {
+    "name": "Printer rail lubricant",
+    "materials": [
+      "Silicone oil"
+    ],
+    "ratio": "Silicone oil 20 ml",
+    "steps": "After the power is turned off, clean the dust on the guide rails. Use a cotton swab to dip a small amount of silicone oil and apply it evenly on the surface of the slide rails. Manually push the print head back and forth several times, wipe off excess silicone oil, and then power on to test the machine.",
+    "safetyNote": "Do not use too much to avoid silicone oil contaminating printing components."
+  },
+  "80": {
+    "name": "fishing reel grease",
+    "materials": [
+      "grease",
+      "Vaseline"
+    ],
+    "ratio": "20 grams of grease, 10 grams of petroleum jelly",
+    "steps": "Mix grease and Vaseline and knead evenly, then fill a small amount into the gear mesh of the fishing reel. Turn the wheel several times to distribute the grease and wipe off any excess.",
+    "safetyNote": null
+  },
+  "81": {
+    "name": "Lock cylinder lubricant",
+    "materials": [
+      "graphite powder",
+      "engine oil"
+    ],
+    "ratio": "Graphite powder 3 grams, engine oil 10 ml",
+    "steps": "Mix graphite powder and engine oil into a thin paste, and drop it into the lock cylinder hole with a straw. Repeatedly insert and remove the key to rotate the lock cylinder so that the lubricant evenly covers the pin mechanism.",
+    "safetyNote": "It is not advisable to use excessive liquid oil to avoid adsorbing dust and causing blockage of the lock core."
+  },
+  "5": {
+    "name": "watercolor paint",
+    "materials": [
+      "gelatin",
+      "pigment",
+      "water"
+    ],
+    "ratio": "50g gelatin, 10g pigment, 400ml water",
+    "steps": "Add gelatin powder to water, heat until gelatin dissolves, add pigment, stir evenly and use.",
+    "safetyNote": "Please be careful of burns when heating. It is recommended to operate under adult supervision."
+  },
+  "6": {
+    "name": "oil paint",
+    "materials": [
+      "linseed oil",
+      "pigment",
+      "rosin",
+      "dry seasoning agent"
+    ],
+    "ratio": "100 ml linseed oil, 20 g pigment, 5 g rosin, 5 ml dry tempering agent",
+    "steps": "Pour the linseed oil into the container, add the pigment and rosin, stir evenly, then add the dry seasoning agent, stir evenly and use.",
+    "safetyNote": null
+  },
+  "18": {
+    "name": "pastel paint",
+    "materials": [
+      "Gypsum powder",
+      "Gum Arabic",
+      "pigment"
+    ],
+    "ratio": "30 grams of gypsum powder, 5 grams of gum arabic, appropriate amount of pigment",
+    "steps": "Dissolve gum arabic in a small amount of warm water, add gypsum powder and pigment, grind it repeatedly with a grinding board until it becomes a fine paste, put it into a palette and let it dry.",
+    "safetyNote": "To avoid inhaling dust when grinding, it is recommended to wear a mask."
+  },
+  "19": {
+    "name": "Lime mural paint",
+    "materials": [
+      "lime mortar",
+      "pigment",
+      "Ma Dao"
+    ],
+    "ratio": "200 grams of lime mortar, 10 grams of pigment, 5 grams of hemp knife",
+    "steps": "Add the pigment to the lime slurry and mix thoroughly until the color is uniform, then add the hemp fiber and mix well. You can use a brush to apply it on the wall or mural manuscript.",
+    "safetyNote": "Lime is alkaline, so wear gloves and goggles when handling it."
+  },
+  "20": {
+    "name": "acrylic paint",
+    "materials": [
+      "acrylic emulsion",
+      "pigment",
+      "water"
+    ],
+    "ratio": "Acrylic emulsion 100 ml, paint 15 g, water 30 ml",
+    "steps": "Gradually add the paint to the acrylic emulsion and stir evenly with a palette knife. Depending on the consistency, add an appropriate amount of water to adjust until it is suitable for brushing.",
+    "safetyNote": null
+  },
+  "38": {
+    "name": "tempera paint",
+    "materials": [
+      "yolk",
+      "pigment",
+      "water"
+    ],
+    "ratio": "1 egg yolk, 5 grams of pigment, 10 ml of water",
+    "steps": "Remove the egg white from the egg yolk and add a small amount of water to form an emulsion. Gradually add the pigment and grind until fine and even, then it can be used for tempera painting on wood panels or murals.",
+    "safetyNote": "Mineral pigments should be used as pigments. They should be mixed and used immediately and should not be stored for a long time."
+  },
+  "39": {
+    "name": "homemade ink",
+    "materials": [
+      "carbon black",
+      "Gum Arabic",
+      "glycerin",
+      "water"
+    ],
+    "ratio": "10 grams of carbon black, 5 grams of gum arabic, 5 ml of glycerin, 100 ml of water",
+    "steps": "Dissolve gum arabic in warm water, add carbon black and grind repeatedly until fine and particle-free, then add glycerin and stir evenly. After filtering, put it into an ink bottle and let it stand for 1 day before use.",
+    "safetyNote": "To avoid inhaling dust when grinding carbon black, it is recommended to wear a mask."
+  },
+  "40": {
+    "name": "colored chalk",
+    "materials": [
+      "Gypsum powder",
+      "pigment",
+      "water"
+    ],
+    "ratio": "100 grams of gypsum powder, 5 grams of pigment, 40 ml of water",
+    "steps": "Dry mix the gypsum powder and pigment evenly, gradually add water and knead into a ball, fill it into a chalk mold and compact it. Take it out and dry it in the shade for 2 to 3 days. It can be used after it is completely hardened.",
+    "safetyNote": "Avoid inhaling dust when drying the gypsum powder, and tap lightly when demoulding the mold to avoid cracking."
+  },
+  "56": {
+    "name": "wall latex paint",
+    "materials": [
+      "lime",
+      "pigment",
+      "white latex",
+      "water"
+    ],
+    "ratio": "200 grams of lime, 10 grams of pigment, 50 ml of white latex, 300 ml of water",
+    "steps": "Add lime to water to make a paste, add pigment and stir evenly, then mix in white latex to adjust adhesion. After adjusting to a paintable consistency, use a roller or brush to paint the wall.",
+    "safetyNote": "Lime is alkaline, so please wear gloves and a mask when handling it."
+  },
+  "57": {
+    "name": "Metal anti-rust paint",
+    "materials": [
+      "alkyd resin",
+      "pigment",
+      "turpentine"
+    ],
+    "ratio": "100 ml alkyd resin, 15 g pigment, 30 ml turpentine",
+    "steps": "Add the pigment to the alkyd resin, grind and stir until uniform, then add turpentine to adjust the consistency. Apply to the rust-removed metal surface and allow to dry naturally for 24 hours before applying twice.",
+    "safetyNote": "Turpentine is flammable and irritating. Please operate in a well-ventilated area and away from fire sources."
+  },
+  "58": {
+    "name": "fabric dye solution",
+    "materials": [
+      "dye",
+      "Salt",
+      "white vinegar",
+      "water"
+    ],
+    "ratio": "10 grams of dye, 30 grams of salt, 20 ml of white vinegar, 1000 ml of water",
+    "steps": "Add salt and dye to water, heat to 60°C, stir to dissolve, and add white vinegar. After the fabric is soaked, put it into the dyeing solution and stir for 30 minutes for dyeing. Rinse with water until it is clear and dry.",
+    "safetyNote": "Be careful to avoid scalding when heating the dye solution. The dye may stain the skin, so it is recommended to wear gloves."
+  },
+  "82": {
+    "name": "mural base paint",
+    "materials": [
+      "Lithopone",
+      "glue",
+      "water"
+    ],
+    "ratio": "100 g lithopone, 30 ml glue, 200 ml water",
+    "steps": "Dissolve the glue in water, gradually add lithopone and stir until a uniform paste forms. Use a scraper to apply a thin layer of paint on the wall as a mural primer, then paint it after it dries.",
+    "safetyNote": "To avoid inhaling dust when mixing, it is recommended to wear a mask."
+  },
+  "83": {
+    "name": "Asphalt paint",
+    "materials": [
+      "asphalt",
+      "turpentine",
+      "pigment"
+    ],
+    "ratio": "50 grams of asphalt, 30 ml of turpentine, 10 grams of pigment",
+    "steps": "Heat the asphalt over water until it becomes fluid, add turpentine and pigment and stir evenly. Adjust to a consistency suitable for scraping and can be used on wood or canvas.",
+    "safetyNote": "Asphalt and turpentine are irritating and flammable. Please operate in a ventilated area and away from fire sources."
+  },
+  "84": {
+    "name": "spray paint thinner",
+    "materials": [
+      "acrylic paint",
+      "Thinner",
+      "water"
+    ],
+    "ratio": "100 ml acrylic paint, 20 ml thinner, 10 ml water",
+    "steps": "Add thinner to acrylic paint and stir evenly. Add appropriate amount of water to adjust according to spray consistency. After filtering, load it into a spray gun or spray can and spray thinly several times to obtain an even coating.",
+    "safetyNote": "Thinner is flammable and toxic, so work must be done in a well-ventilated area and wear a protective mask."
+  },
+  "85": {
+    "name": "blackboard paint",
+    "materials": [
+      "cement paint",
+      "pigment",
+      "water"
+    ],
+    "ratio": "200 grams of cement paint, 5 grams of pigment, 50 ml of water",
+    "steps": "Add water to cement paint to a paintable consistency, add black pigment and stir evenly. Apply twice on a flat surface and write with chalk after it dries.",
+    "safetyNote": null
+  },
+  "86": {
+    "name": "wood stain",
+    "materials": [
+      "Walnut skin",
+      "vinegar",
+      "water"
+    ],
+    "ratio": "50g walnut peel, 100ml vinegar, 300ml water",
+    "steps": "Boil walnut skins in water for 30 minutes, filter and add vinegar. Apply to the polished wood surface while it's hot or cool to create a natural tan.",
+    "safetyNote": "Be careful of burns when cooking. The coloring depth can be adjusted by the number of times you apply it."
+  },
+  "87": {
+    "name": "Enamel pigments",
+    "materials": [
+      "Borax",
+      "quartz powder",
+      "pigment"
+    ],
+    "ratio": "20g borax, 30g quartz powder, 8g pigment",
+    "steps": "Dry mix borax and quartz powder evenly, add pigment and grind until fine. Add a small amount of water to prepare the glaze, apply it to the metal body and then fire it at high temperature to develop the color.",
+    "safetyNote": "Firing needs to be done in a professional kiln, and protective equipment must be worn during operation."
+  },
+  "88": {
+    "name": "stage makeup paint",
+    "materials": [
+      "corn starch",
+      "food coloring",
+      "glycerin"
+    ],
+    "ratio": "30 grams of corn starch, appropriate amount of food coloring, 10 ml of glycerin",
+    "steps": "Mix cornstarch and glycerin into a paste, and gradually add food coloring to adjust to the desired color. Can be applied directly to skin and removed with warm water.",
+    "safetyNote": "For external use only, please do a skin test first if you have sensitive skin."
+  },
+  "7": {
+    "name": "household glue",
+    "materials": [
+      "gelatin",
+      "glycerin",
+      "acetic acid"
+    ],
+    "ratio": "20 g gelatin, 10 g glycerin, 2 ml acetic acid",
+    "steps": "Add gelatin to hot water, heat until gelatin is completely dissolved, add glycerin and acetic acid, stir evenly and use.",
+    "safetyNote": "Acetic acid is irritating, please maintain ventilation during operation and avoid contact with eyes."
+  },
+  "8": {
+    "name": "woodworking glue",
+    "materials": [
+      "gelatin",
+      "protein powder",
+      "hot water"
+    ],
+    "ratio": "20g gelatin, 10g protein powder, 50ml hot water",
+    "steps": "Add gelatin powder to hot water, heat until gelatin dissolves, add protein powder, stir evenly and use.",
+    "safetyNote": "Please be careful of burns when heating. It is recommended to operate under adult supervision."
+  },
+  "21": {
+    "name": "flour paste",
+    "materials": [
+      "flour",
+      "water"
+    ],
+    "ratio": "50 g flour, 200 ml water",
+    "steps": "Add flour to water to make a uniform paste, heat over low heat and stir continuously, cook until transparent and sticky. After cooling from the fire, put it into an airtight container. Paper and lightweight materials can be pasted on it.",
+    "safetyNote": "When heating, be careful not to burn the bottom and avoid burns."
+  },
+  "22": {
+    "name": "rubber glue",
+    "materials": [
+      "raw rubber",
+      "gasoline",
+      "rosin"
+    ],
+    "ratio": "10 grams of raw rubber, 50 ml of gasoline, 5 grams of rosin",
+    "steps": "Cut the raw rubber into small pieces, soak it in gasoline until it expands and softens, add rosin over water and heat and stir until completely dissolved. After cooling, it can be used to repair rubber products.",
+    "safetyNote": "Gasoline is highly flammable, please operate in a well-ventilated area, away from open flames and children."
+  },
+  "23": {
+    "name": "white latex",
+    "materials": [
+      "Polyvinyl acetate emulsion",
+      "filler",
+      "thickener"
+    ],
+    "ratio": "Polyvinyl acetate emulsion 200 ml, talc 10 g, carboxymethylcellulose 2 g",
+    "steps": "Dissolve carboxymethyl cellulose in a small amount of warm water to make a glue solution, add talc powder and stir evenly, then mix it with polyvinyl acetate emulsion and adjust it to an appropriate consistency before use.",
+    "safetyNote": null
+  },
+  "41": {
+    "name": "bone glue",
+    "materials": [
+      "Bone glue particles",
+      "water"
+    ],
+    "ratio": "30 g bone glue particles, 150 ml water",
+    "steps": "Soak the bone gel particles in cold water for 2 hours until they swell, heat and stir over water until completely dissolved and become transparent. Used to join wood while hot, forming a strong bond once cooled.",
+    "safetyNote": "Please be careful to avoid burns when heating. The glue should be dissolved and used immediately. It will solidify again after cooling."
+  },
+  "42": {
+    "name": "Foam glue",
+    "materials": [
+      "Polyvinyl acetate emulsion",
+      "Foam scraps"
+    ],
+    "ratio": "Polyvinyl acetate emulsion 150 ml, foam chips 20 g",
+    "steps": "Cut the foam into fine particles, add it to the polyvinyl acetate emulsion and stir thoroughly until it becomes a uniform paste. Apply to the adhesive surface of foam or fabric and fix with pressure until dry.",
+    "safetyNote": "Maintain ventilation when bonding, and do not move the adherend before it is completely dry."
+  },
+  "43": {
+    "name": "Strong adhesive tape base",
+    "materials": [
+      "rosin",
+      "raw rubber",
+      "gasoline"
+    ],
+    "ratio": "15 grams of rosin, 8 grams of raw rubber, 60 ml of gasoline",
+    "steps": "Cut raw rubber into pieces and soak in gasoline, add rosin and heat over water and stir until completely dissolved. Apply it thinly to the tape base material while it is hot. It will have strong adhesion after cooling.",
+    "safetyNote": "Gasoline is highly flammable, please operate in a well-ventilated area, away from open flames and children."
+  },
+  "59": {
+    "name": "Epoxy resin glue",
+    "materials": [
+      "Epoxy resin",
+      "curing agent"
+    ],
+    "ratio": "100 grams of epoxy resin, 30 grams of curing agent",
+    "steps": "Mix the epoxy resin and curing agent according to the weight ratio, and stir thoroughly for 2 to 3 minutes until the color is uniform. Apply bonding within working time and allow 24 hours to cure completely.",
+    "safetyNote": "The reaction is exothermic after mixing, so avoid mixing in large quantities. Wear gloves and maintain ventilation when operating."
+  },
+  "60": {
+    "name": "stamp glue",
+    "materials": [
+      "Gum Arabic",
+      "glycerin",
+      "water"
+    ],
+    "ratio": "15 grams of gum arabic, 5 ml of glycerin, 100 ml of water",
+    "steps": "Dissolve gum arabic in warm water, add glycerin, stir evenly, filter and put into a vial. Apply it to the envelope seal or the back of the stamp. After drying, it will stick firmly and be easy to remove when wet.",
+    "safetyNote": null
+  },
+  "61": {
+    "name": "starch adhesive",
+    "materials": [
+      "potato starch",
+      "water",
+      "Boric acid"
+    ],
+    "ratio": "50g potato starch, 400ml water, 2g boric acid",
+    "steps": "Add water to starch to make a suspension, heat over low heat and stir continuously until transparent and viscous. Add boric acid to prevent corrosion. After cooling, it can be used for bonding paper and cartons.",
+    "safetyNote": "Boric acid is not edible, please label it and store it out of the reach of children."
+  },
+  "89": {
+    "name": "book binding glue",
+    "materials": [
+      "animal glue",
+      "glycerin",
+      "water"
+    ],
+    "ratio": "25 grams of animal glue, 8 grams of glycerin, 120 ml of water",
+    "steps": "After soaking the animal glue, heat it over water to dissolve, add glycerin and stir evenly. Apply to the spine cloth and paper folds while hot, bind under pressure, and bond firmly after cooling.",
+    "safetyNote": "Be careful of burns when heating. The glue should be used freshly."
+  },
+  "90": {
+    "name": "Tile adhesive",
+    "materials": [
+      "cement",
+      "sand",
+      "emulsion"
+    ],
+    "ratio": "200 grams of cement, 400 grams of sand, 50 ml of latex",
+    "steps": "Dry mix cement and sand evenly, add latex and appropriate amount of water and mix until thick. After applying to the wall, lay the tiles and tap them firmly with a rubber hammer.",
+    "safetyNote": "Cement is alkaline, so please wear gloves and a mask when handling it."
+  },
+  "91": {
+    "name": "Natural paint glue",
+    "materials": [
+      "raw lacquer",
+      "rosin"
+    ],
+    "ratio": "50 ml raw lacquer, 10 g rosin",
+    "steps": "Heat and melt the rosin over water. When the temperature drops to about 60°C, add raw lacquer and stir thoroughly until uniform. Can be used for wood splicing and paint sealing.",
+    "safetyNote": "Raw paint may cause skin irritation, so be sure to wear gloves and operate in a ventilated area."
+  },
+  "92": {
+    "name": "hot melt glue stick",
+    "materials": [
+      "Ethylene vinyl acetate",
+      "paraffin"
+    ],
+    "ratio": "Ethylene vinyl acetate 80 g, paraffin 20 g",
+    "steps": "Heat the two raw materials over water until completely melted, stir evenly and pour into a rod-shaped mold. After cooling and hardening, it can be loaded into a hot melt glue gun and heated for use.",
+    "safetyNote": "The heating temperature is high, so be careful to prevent scalding and keep away from children."
+  },
+  "93": {
+    "name": "waterproof sealant",
+    "materials": [
+      "asphalt",
+      "kerosene",
+      "talcum powder"
+    ],
+    "ratio": "100 grams of asphalt, 30 ml of kerosene, 20 grams of talcum powder",
+    "steps": "Heat and melt the asphalt, add kerosene to dilute it, and mix in talcum powder to adjust to a suitable consistency. Fill in gaps or apply to joints while it's hot, and it will become waterproof and sealed after cooling.",
+    "safetyNote": "Asphalt and kerosene are flammable, please operate in a ventilated area and away from fire sources."
+  },
+  "94": {
+    "name": "wallpaper glue",
+    "materials": [
+      "potato starch",
+      "water",
+      "alum"
+    ],
+    "ratio": "40g potato starch, 500ml water, 3g alum",
+    "steps": "Mix the starch with water and heat over low heat until it becomes a transparent paste. Add the alum solution and stir evenly. After cooling, use a roller to apply to the back and wall of the wallpaper.",
+    "safetyNote": "Keep stirring while heating to prevent the mixture from burning."
+  },
+  "95": {
+    "name": "ceramic repair glue",
+    "materials": [
+      "Porcelain powder",
+      "Epoxy resin",
+      "curing agent"
+    ],
+    "ratio": "20 grams of porcelain powder, 30 grams of epoxy resin, 9 grams of curing agent",
+    "steps": "Mix the epoxy resin with the curing agent, add the porcelain powder and stir until it has a toothpaste-like consistency. After filling the chip in the porcelain, set it for 24 hours and then sand it smooth when dry.",
+    "safetyNote": "After mixing, please use it within the operating time and wear gloves when operating."
+  },
+  "9": {
+    "name": "perfume",
+    "materials": [
+      "Alcohol",
+      "essential oils",
+      "water"
+    ],
+    "ratio": "100 ml alcohol, 5 g essential oil, 50 ml water",
+    "steps": "Pour the alcohol and water into the container, add the essential oil, stir evenly, and leave it for a period of time to create the perfume.",
+    "safetyNote": "Alcohol is flammable, please operate in a well-ventilated area and away from fire sources."
+  },
+  "24": {
+    "name": "solid balm",
+    "materials": [
+      "beeswax",
+      "coconut oil",
+      "essential oils"
+    ],
+    "ratio": "20g beeswax, 50g coconut oil, 3ml essential oil",
+    "steps": "Heat the beeswax and coconut oil over water until they are completely melted. Remove from the heat and wait until the temperature drops slightly. Add the essential oil and stir evenly. Pour it into a small box to cool and set before use.",
+    "safetyNote": null
+  },
+  "25": {
+    "name": "toilet water",
+    "materials": [
+      "Alcohol",
+      "Menthol",
+      "essence",
+      "water"
+    ],
+    "ratio": "Alcohol 150 ml, menthol 3 g, essence 2 ml, water 50 ml",
+    "steps": "Dissolve menthol in alcohol, add flavor and water, shake well and let it sit overnight, then put it into a spray bottle for use.",
+    "safetyNote": "Alcohol is flammable, please operate in a well-ventilated area and away from fire sources. Avoid contact with eyes and wounds."
+  },
+  "26": {
+    "name": "wardrobe sachet",
+    "materials": [
+      "dried lavender",
+      "Dried bay leaves",
+      "essential oils"
+    ],
+    "ratio": "30 grams of dried lavender, 20 grams of dried bay leaves, 2 ml of essential oil",
+    "steps": "Mix the dried lavender and dried bay leaves evenly, add drops of essential oil and mix well, put it into a breathable cloth bag, tie the bag tightly, and hang it or place it in the wardrobe.",
+    "safetyNote": null
+  },
+  "27": {
+    "name": "room aromatherapy spray",
+    "materials": [
+      "water",
+      "Alcohol",
+      "essential oils"
+    ],
+    "ratio": "80 ml water, 20 ml alcohol, 5 ml essential oil",
+    "steps": "Mix the alcohol and essential oils and shake well, then add water, mix well, and pour into a spray bottle. Shake well before use and spray into the air.",
+    "safetyNote": "Alcohol is flammable, please operate in a well-ventilated area and away from fire sources."
+  },
+  "44": {
+    "name": "car aromatherapy tablets",
+    "materials": [
+      "diatomite",
+      "essential oils",
+      "water"
+    ],
+    "ratio": "50 g diatomaceous earth, 5 ml essential oil, 10 ml water",
+    "steps": "Diatomaceous earth is mixed with water and essential oils, kneaded well, and pressed into molds to form sheets or blocks. Dry in the shade for 1 to 2 days and then place it in a car aromatherapy holder to slowly release the aroma with the temperature.",
+    "safetyNote": "Do not place aromatherapy tablets in direct sunlight to avoid high temperatures causing essential oils to evaporate too quickly."
+  },
+  "45": {
+    "name": "bath salts",
+    "materials": [
+      "sea ​​salt",
+      "baking soda",
+      "essential oils"
+    ],
+    "ratio": "200g sea salt, 50g baking soda, 5ml essential oil",
+    "steps": "Mix sea salt and baking soda evenly, drop in essential oil, mix thoroughly, and put into an airtight jar. Dissolve 30 grams in hot water in the bathtub for each bath.",
+    "safetyNote": "If you have skin wounds or allergies, please try a small amount first to avoid direct contact of essential oils with mucous membranes."
+  },
+  "46": {
+    "name": "sandalwood incense",
+    "materials": [
+      "sandalwood powder",
+      "Nanmu powder",
+      "water"
+    ],
+    "ratio": "80 grams of sandalwood powder, 20 grams of nanmu powder, 30 ml of water",
+    "steps": "Mix sandalwood powder and nanmu powder evenly, gradually add water and knead into a ball, and squeeze it into shape with an incense stick mold. Dry in the shade for 3 to 5 days until it is completely dry, then it can be ignited and used.",
+    "safetyNote": "When burning, please place it in a fire-proof incense stick, keep the room ventilated, and keep people away from the fire source."
+  },
+  "62": {
+    "name": "Wormwood sachet",
+    "materials": [
+      "Dried mugwort leaves",
+      "clove",
+      "cotton bag"
+    ],
+    "ratio": "40 grams of dried mugwort leaves, 10 grams of cloves, 1 cotton bag",
+    "steps": "Mix dried mugwort leaves and cloves evenly, put them into a cotton bag and tie the bag tightly. Hang it indoors or place it next to a pillow to emit herbal fragrance.",
+    "safetyNote": null
+  },
+  "63": {
+    "name": "Osmanthus sachet",
+    "materials": [
+      "Dried osmanthus",
+      "brown rice",
+      "essential oils"
+    ],
+    "ratio": "25g dried osmanthus, 50g brown rice, 2ml essential oil",
+    "steps": "Mix brown rice and dried osmanthus, drop in essential oil, mix well, put into gauze bags and tie tightly. Place it in a closet or drawer and it will continue to emit the scent of osmanthus.",
+    "safetyNote": null
+  },
+  "64": {
+    "name": "Incense stick",
+    "materials": [
+      "Agarwood powder",
+      "sandalwood powder",
+      "coconut oil",
+      "beeswax"
+    ],
+    "ratio": "10g agarwood powder, 20g sandalwood powder, 40g coconut oil, 15g beeswax",
+    "steps": "Heat beeswax and coconut oil over water to melt. Remove from heat, add agarwood powder and sandalwood powder and stir evenly. Pour into a container to cool and set, then take a small amount and heat it in an incense burner to release the aroma.",
+    "safetyNote": "Maintain ventilation when heating incense and avoid prolonged use in a confined space."
+  },
+  "96": {
+    "name": "Dried flower scent bag",
+    "materials": [
+      "dried rose",
+      "dried lavender",
+      "essential oils"
+    ],
+    "ratio": "20g dried rose, 20g dried lavender, 2ml essential oil",
+    "steps": "Mix the dried flowers evenly, drop in the essential oil and mix well, then put it into a gauze bag and tie it tightly. Place it on your bedside or in your closet to continuously distribute floral fragrance.",
+    "safetyNote": null
+  },
+  "97": {
+    "name": "Mugwort mosquito repellent incense",
+    "materials": [
+      "Wormwood powder",
+      "mint powder",
+      "sticky powder"
+    ],
+    "ratio": "60g mugwort powder, 20g mint powder, 20g sticky powder",
+    "steps": "Mix the three powders evenly, add appropriate amount of water and knead into a ball, then squeeze into a cone or string shape. Dry in the shade for 3 days and then ignite to release a mosquito-repellent aroma.",
+    "safetyNote": "When burning, place it in a fireproof container, keep it ventilated, and keep people away from the fire source."
+  },
+  "98": {
+    "name": "jasmine fragrance",
+    "materials": [
+      "Jasmine",
+      "Alcohol",
+      "glycerin"
+    ],
+    "ratio": "50g fresh jasmine, 100ml alcohol, 10ml glycerin",
+    "steps": "Jasmine flowers are soaked in alcohol and sealed for 7 days. After filtering, glycerin is added and shaken well. Put it in a spray bottle and use it as facial or clothing fragrance.",
+    "safetyNote": "Alcohol is flammable, keep away from fire sources. If you have sensitive skin, please do a skin test first."
+  },
+  "99": {
+    "name": "Natural mosquito repellent essential oil",
+    "materials": [
+      "Citronella essential oil",
+      "Eucalyptus essential oil",
+      "base oil"
+    ],
+    "ratio": "Lemongrass essential oil 5 ml, Eucalyptus essential oil 3 ml, carrier oil 50 ml",
+    "steps": "Mix the three oils, shake well, and put into a roll-on or spray bottle. Apply to exposed areas such as wrists and ankles to help repel mosquitoes.",
+    "safetyNote": "Avoid contact with eyes and mucous membranes, use with caution on pregnant women and infants."
+  },
+  "100": {
+    "name": "sandalwood incense powder",
+    "materials": [
+      "sandalwood powder",
+      "Agarwood powder",
+      "Nanmu sticky powder"
+    ],
+    "ratio": "50 grams of sandalwood powder, 15 grams of agarwood powder, 35 grams of nanmu sticky powder",
+    "steps": "Mix the three powders evenly, add appropriate amounts of water and knead into a dough, then knead into tower incense or powder. After drying in the shade, you can place it in an incense burner and light it for use.",
+    "safetyNote": "Please maintain ventilation when burning and use fire-proof incense."
+  },
+  "101": {
+    "name": "antiperspirant deodorant spray",
+    "materials": [
+      "Alcohol",
+      "aloe vera juice",
+      "essential oils"
+    ],
+    "ratio": "Alcohol 80 ml, aloe vera juice 20 ml, essential oil 3 ml",
+    "steps": "Mix alcohol with aloe vera juice, add essential oils, shake, and let sit for 24 hours. Pour into a spray bottle and spray on armpits or areas of the body prone to sweating.",
+    "safetyNote": "Alcohol is flammable. Do not use if there is a wound on the skin."
+  },
+  "10": {
+    "name": "laundry detergent",
+    "materials": [
+      "baking soda",
+      "liquid soap",
+      "spices"
+    ],
+    "ratio": "50 grams of baking soda, 50 ml of liquid soap, appropriate amount of spices",
+    "steps": "Mix baking soda and liquid soap, add spices, stir evenly to make laundry detergent.",
+    "safetyNote": null
+  },
+  "28": {
+    "name": "Multipurpose laundry detergent",
+    "materials": [
+      "baking soda",
+      "Borax",
+      "soap powder"
+    ],
+    "ratio": "100g baking soda, 50g borax, 50g soap powder",
+    "steps": "Pour the baking soda, borax and soap powder into a dry container and stir well. Use 20 to 30 grams for each wash. Washing with warm water will give better results.",
+    "safetyNote": "Borax is not edible and should be kept out of the reach of children."
+  },
+  "29": {
+    "name": "Hand detergent",
+    "materials": [
+      "coconut oil soap",
+      "glycerin",
+      "Warm water"
+    ],
+    "ratio": "Coconut oil soap 50g, glycerin 10ml, warm water 300ml",
+    "steps": "Chop coconut oil soap and dissolve in warm water, stir until completely dissolved, add glycerin and continue stirring. After cooling to room temperature, put it into a squeeze bottle and use it.",
+    "safetyNote": null
+  },
+  "30": {
+    "name": "fabric softener",
+    "materials": [
+      "white vinegar",
+      "water",
+      "essential oils"
+    ],
+    "ratio": "100 ml white vinegar, 400 ml water, 2 ml essential oil",
+    "steps": "Mix white vinegar and water, drop in essential oil, mix well, and put into a bottle. Add 50 ml during the last rinse, soak for 5 minutes, then dehydrate and dry.",
+    "safetyNote": null
+  },
+  "31": {
+    "name": "pipe unblocker",
+    "materials": [
+      "baking soda",
+      "white vinegar",
+      "hot water"
+    ],
+    "ratio": "100g baking soda, 100ml white vinegar, 500ml hot water",
+    "steps": "First pour baking soda into the clogged pipe, then white vinegar, let it sit for 15 minutes after the reaction produces bubbles, and finally pour hot water to flush the pipe.",
+    "safetyNote": "A large number of bubbles will be produced during the reaction, so please do not observe it at close range. Do not mix with commercial pipe unblockers."
+  },
+  "47": {
+    "name": "Mildew stain removal detergent",
+    "materials": [
+      "hydrogen peroxide",
+      "baking soda",
+      "Warm water"
+    ],
+    "ratio": "100 ml hydrogen peroxide, 20 g baking soda, 200 ml warm water",
+    "steps": "Dissolve baking soda in warm water, add hydrogen peroxide and mix well. Use a soft brush to scrub the mildew spots, let it sit for 15 minutes, rinse with water, and let it dry.",
+    "safetyNote": "Hydrogen peroxide has bleaching properties. Please test wash colored fabrics in an inconspicuous area first."
+  },
+  "48": {
+    "name": "Fruit and vegetable cleaning liquid",
+    "materials": [
+      "baking soda",
+      "Salt",
+      "Warm water"
+    ],
+    "ratio": "15g baking soda, 10g salt, 1000ml warm water",
+    "steps": "Dissolve baking soda and salt in warm water and mix well. Soak the fruits and vegetables for 10 minutes, wash them gently, and then rinse them twice with water before eating.",
+    "safetyNote": null
+  },
+  "49": {
+    "name": "Shoe upper stain remover",
+    "materials": [
+      "toothpaste",
+      "baking soda",
+      "Warm water"
+    ],
+    "ratio": "20 grams of toothpaste, 10 grams of baking soda, 50 ml of warm water",
+    "steps": "Mix toothpaste with baking soda and add warm water to make a paste. Use a soft-bristled brush to gently brush the stains on the shoe surface, then wipe off the residue with a damp cloth and dry in the shade.",
+    "safetyNote": "For leather and suede materials, please try brushing on an inconspicuous area first to avoid fading or damage."
+  },
+  "65": {
+    "name": "Motor oil hand washing powder",
+    "materials": [
+      "sawdust",
+      "washing powder",
+      "soap powder"
+    ],
+    "ratio": "100g sawdust, 30g washing powder, 20g soap powder",
+    "steps": "After the sawdust is dried, mix it thoroughly with washing powder and soap powder and put it into a container. When washing your hands, take an appropriate amount and rub it to remove machine oil and oil stains on your hands, then rinse with water.",
+    "safetyNote": "The sawdust needs to be dry and mold-free. People with skin allergies should use it with caution."
+  },
+  "66": {
+    "name": "cardigan detergent",
+    "materials": [
+      "baby shampoo",
+      "white vinegar",
+      "cold water"
+    ],
+    "ratio": "20 ml baby shampoo, 10 ml white vinegar, 2000 ml cold water",
+    "steps": "Add baby shampoo and white vinegar to cold water and mix well. Turn the sweater inside out and soak it for 15 minutes. Press gently to wash without rubbing. Rinse with clean water and lay it flat to dry in the shade.",
+    "safetyNote": "Do not wash with hot water to avoid shrinkage and deformation of the wool."
+  },
+  "67": {
+    "name": "cutting board disinfectant",
+    "materials": [
+      "Salt",
+      "lemon",
+      "hot water"
+    ],
+    "ratio": "30g salt, 1 lemon, 500ml hot water",
+    "steps": "The salt is dissolved in hot water and lemon juice is mixed into the solution. Scrub the surface of the cutting board with the solution, let it sit for 10 minutes, then rinse with water and wipe dry to remove odors and minor stains.",
+    "safetyNote": "Be careful to prevent scalding when operating in hot water. Wooden chopping boards should not be soaked for a long time."
+  },
+  "102": {
+    "name": "baby clothes detergent",
+    "materials": [
+      "castile soap",
+      "baking soda",
+      "lavender essential oil"
+    ],
+    "ratio": "40g castile soap, 20g baking soda, 1ml lavender essential oil",
+    "steps": "Dissolve the castile soap shavings in warm water, add baking soda and essential oils and mix well. Bottle cool and use 30 ml at a time for hand washing baby clothes.",
+    "safetyNote": "The amount of essential oil should be small, and be sure to rinse thoroughly after washing."
+  },
+  "103": {
+    "name": "carpet dry cleaning powder",
+    "materials": [
+      "corn starch",
+      "baking soda",
+      "essential oils"
+    ],
+    "ratio": "150g cornstarch, 50g baking soda, 3ml essential oil",
+    "steps": "Mix cornstarch and baking soda, drop in essential oil and mix well. Spread evenly on the carpet surface, let it sit for 30 minutes and then remove it thoroughly with a vacuum cleaner.",
+    "safetyNote": "Clean the carpet with a vacuum cleaner before use. For dark carpets, please try spreading on an inconspicuous area first."
+  },
+  "104": {
+    "name": "coffee machine descaling fluid",
+    "materials": [
+      "citric acid",
+      "water"
+    ],
+    "ratio": "25g citric acid, 500ml water",
+    "steps": "Dissolve citric acid in water and pour it into the water tank. Run the brewing program to let the solution pass through the pipes. Let it sit for 15 minutes and then rinse with clean water 2 to 3 times.",
+    "safetyNote": "When descaling, follow the equipment instructions to avoid the solution coming into contact with electrical components."
+  },
+  "105": {
+    "name": "leather goods cleaning milk",
+    "materials": [
+      "saddle soap",
+      "lanolin",
+      "beeswax"
+    ],
+    "ratio": "20g saddle soap, 10g lanolin, 5g beeswax",
+    "steps": "Add saddle soap to water and make a foam, add lanolin and melted beeswax and mix well. Use a soft cloth to gently wipe the leather goods, then polish with a dry cloth.",
+    "safetyNote": "Before use, test the leather in a hidden area to avoid discoloration."
+  },
+  "106": {
+    "name": "Denim color fixing lotion",
+    "materials": [
+      "Salt",
+      "white vinegar",
+      "cold water"
+    ],
+    "ratio": "50 grams of salt, 30 ml of white vinegar, 3000 ml of cold water",
+    "steps": "Dissolve salt and white vinegar in cold water, turn the jeans inside out and soak them for 30 minutes. Gently rub and rinse with water. Use for the first wash can slow down fading.",
+    "safetyNote": "Do not use hot water and avoid washing with other clothes to prevent staining."
+  },
+  "107": {
+    "name": "washing machine tank cleaner",
+    "materials": [
+      "baking soda",
+      "citric acid",
+      "Warm water"
+    ],
+    "ratio": "100g baking soda, 50g citric acid, 500ml warm water",
+    "steps": "Dissolve baking soda and citric acid in warm water and pour it into the washing machine tub. Run the drum self-cleaning or idle washing program, and rinse it with clean water after completion.",
+    "safetyNote": "Do not put clothes in when cleaning, as the reaction may produce bubbles."
+  },
+  "108": {
+    "name": "tableware bleaching and disinfecting liquid",
+    "materials": [
+      "bleaching powder",
+      "water"
+    ],
+    "ratio": "10g bleaching powder, 1000ml water",
+    "steps": "Dissolve bleaching powder in water and soak the tableware to be disinfected for 10 minutes. After taking it out, rinse it repeatedly with clean water until there is no odor, dry it before use.",
+    "safetyNote": "Bleach powder is corrosive, please wear gloves and cannot be used on aluminum or colored tableware."
+  },
+  "109": {
+    "name": "natural lip balm",
+    "materials": [
+      "beeswax",
+      "coconut oil",
+      "Vitamin E"
+    ],
+    "ratio": "Beeswax 10g, coconut oil 20g, vitamin E 2ml",
+    "steps": "Heat beeswax and coconut oil over water to melt. Remove from heat and add vitamin E and stir evenly. Pour into an empty lipstick tube and let cool to set before use.",
+    "safetyNote": null
+  },
+  "110": {
+    "name": "hand cream",
+    "materials": [
+      "shea butter",
+      "olive oil",
+      "beeswax",
+      "essential oils"
+    ],
+    "ratio": "30g shea butter, 20g olive oil, 8g beeswax, 2ml essential oil",
+    "steps": "Heat beeswax over water and melt, add shea butter and olive oil and stir. After cooling, add essential oil, beat until creamy, put into jar and refrigerate.",
+    "safetyNote": "If you have sensitive skin, please do a skin test first."
+  },
+  "111": {
+    "name": "Oatmeal Honey Mask",
+    "materials": [
+      "oat flour",
+      "Honey",
+      "milk"
+    ],
+    "ratio": "30g oat flour, 15g honey, 30ml milk",
+    "steps": "Make a paste of oatmeal powder and milk, add honey and mix well. Apply to face for 15 minutes, rinse with warm water, use 1 to 2 times a week.",
+    "safetyNote": "Do not use if you are allergic to dairy products or honey."
+  },
+  "112": {
+    "name": "Brown Sugar Body Scrub",
+    "materials": [
+      "brown sugar",
+      "olive oil",
+      "lemon juice"
+    ],
+    "ratio": "50g brown sugar, 30ml olive oil, 10ml lemon juice",
+    "steps": "Mix brown sugar and olive oil, add lemon juice and mix well. Take an appropriate amount and massage the skin when bathing. Rinse with water and the skin will become smooth and moisturized.",
+    "safetyNote": "Do not use when there is a wound on the skin and avoid contact with eyes."
+  },
+  "113": {
+    "name": "Aloe Vera Moisturizing Gel",
+    "materials": [
+      "aloe vera gel",
+      "glycerin",
+      "essential oils"
+    ],
+    "ratio": "80 g aloe vera gel, 10 ml glycerin, 1 ml essential oil",
+    "steps": "Mix aloe vera gel and glycerin until smooth, add essential oil and mix well. Store in an airtight jar and refrigerate, and can be used to moisturize the face or body.",
+    "safetyNote": null
+  },
+  "114": {
+    "name": "Food waste enzyme fertilizer",
+    "materials": [
+      "Peel and vegetable leaves",
+      "brown sugar",
+      "water"
+    ],
+    "ratio": "300 grams of peel leaves, 100 grams of brown sugar, 1000 ml of water",
+    "steps": "Chop the peel, put it into a sealed bottle with brown sugar and water, leaving one third of the space. Open the lid every day to deflate, and dilute 500 times after fermentation for 3 months to water the flowers.",
+    "safetyNote": "Gas will be produced during fermentation. Do not tighten the bottle cap too tightly and avoid direct sunlight."
+  },
+  "115": {
+    "name": "Bean cake liquid fertilizer",
+    "materials": [
+      "cake",
+      "water"
+    ],
+    "ratio": "100 g bean cake, 1000 ml water",
+    "steps": "The bean cake is crushed and then soaked in water, sealed and fermented for 15 to 20 days, stirring several times during this period. Take the supernatant and dilute it 10 times to water the plants.",
+    "safetyNote": "The fermentation liquid has a peculiar smell, so please operate it in a ventilated place and avoid storing it indoors."
+  },
+  "116": {
+    "name": "Plant ash potash fertilizer",
+    "materials": [
+      "plant ash",
+      "water"
+    ],
+    "ratio": "50 grams of plant ash, 1000 ml of water",
+    "steps": "Soak the plant ash in water for 24 hours, filter and take the leachate. Dilute it 5 times to water potassium-loving plants to promote flowering and fruiting.",
+    "safetyNote": "Plant ash is alkaline and cannot be mixed with acidic fertilizers, and the dosage should not be excessive."
+  },
+  "117": {
+    "name": "Egg shell calcium fertilizer",
+    "materials": [
+      "egg shell",
+      "white vinegar",
+      "water"
+    ],
+    "ratio": "50 grams of egg shells, 50 ml of white vinegar, 500 ml of water",
+    "steps": "Wash the egg shells, dry them, crush them, and add white vinegar to react to create bubbles. After the reaction is completed, add water to dilute it and water the flowers to replenish calcium.",
+    "safetyNote": "Carbon dioxide bubbles will be produced during the reaction, so please operate in a ventilated area."
+  },
+  "118": {
+    "name": "rice water fertilizer",
+    "materials": [
+      "rice water",
+      "orange peel"
+    ],
+    "ratio": "1000 ml rice water, 50 g orange peel",
+    "steps": "Pour rice water into a bottle and add orange peel pieces. Sealed fermentation for 7 to 10 days, diluted 3 times and then watered to provide nitrogen and phosphorus nutrients.",
+    "safetyNote": "The fermentation time should not be too long to avoid the production of odor and bacteria."
+  },
+  "119": {
+    "name": "soy wax scented candle",
+    "materials": [
+      "soy wax",
+      "essential oils",
+      "candle wick"
+    ],
+    "ratio": "200 g soy wax, 5 ml essential oil, 1 candle wick",
+    "steps": "Heat the soy wax over water to melt, then remove from the heat and add essential oil and stir. The candle wick is fixed in the center of the container, and the wax liquid is poured in to cool and solidify.",
+    "safetyNote": "Be careful of burns when melting wax liquid, and stay away from flammable materials when igniting."
+  },
+  "120": {
+    "name": "beeswax candle",
+    "materials": [
+      "beeswax",
+      "coconut oil",
+      "candle wick"
+    ],
+    "ratio": "150g beeswax, 30g coconut oil, 1 candle wick",
+    "steps": "Heat beeswax and coconut oil over water until completely melted, stir evenly. After fixing the candle wick, pour it into the mold, cool it and demould it to become a candle.",
+    "safetyNote": "When burning, please place it on a fireproof candlestick and keep people away from the fire source."
+  },
+  "121": {
+    "name": "smokeless paraffin candle",
+    "materials": [
+      "paraffin",
+      "stearic acid",
+      "candle wick"
+    ],
+    "ratio": "180g paraffin, 20g stearic acid, 1 candle wick",
+    "steps": "The paraffin and stearic acid are mixed and heated over water to melt, and then poured into the mold with the candle wick fixed. Once completely cooled, it can be lit and used.",
+    "safetyNote": "When paraffin is heated, the temperature is relatively high, so be careful to prevent scalding and maintain ventilation."
+  },
+  "122": {
+    "name": "jelly wax candle",
+    "materials": [
+      "jelly wax",
+      "dye",
+      "essential oils"
+    ],
+    "ratio": "150 grams of jelly wax, appropriate amount of dye, 3 ml of essential oil",
+    "steps": "Heat the jelly wax over water to 80°C to melt, add dye and essential oil and stir. Pour into a glass container, embed decorations and let cool to set.",
+    "safetyNote": "Do not insert ordinary candle wicks into the jelly wax and light it. It is only for viewing or used with LED lights."
+  },
+  "123": {
+    "name": "emergency oil lamp",
+    "materials": [
+      "edible oil",
+      "cotton thread",
+      "Metal cover"
+    ],
+    "ratio": "50 ml cooking oil, 1 cotton string, 1 metal cap",
+    "steps": "The metal cover is perforated and a cotton thread is inserted into it to serve as a wick, and cooking oil is poured in to submerge the lower end of the wick. Light the wick and it can be used as emergency lighting.",
+    "safetyNote": "For emergency use only. Someone must supervise when burning and keep away from flammable materials."
+  },
+  "124": {
+    "name": "Olive oil handmade soap",
+    "materials": [
+      "olive oil",
+      "sodium hydroxide",
+      "water"
+    ],
+    "ratio": "500 g olive oil, 64 g sodium hydroxide, 160 ml water",
+    "steps": "Dissolve sodium hydroxide in water and cool down, slowly pour into olive oil and stir until thick. Pour into the mold and keep warm for 24 hours. After unmoulding, let the soap mature for 4 weeks.",
+    "safetyNote": "Sodium hydroxide is highly corrosive, so you must wear gloves and goggles and operate in a ventilated area."
+  },
+  "125": {
+    "name": "honey milk soap",
+    "materials": [
+      "coconut oil",
+      "olive oil",
+      "sodium hydroxide",
+      "Honey",
+      "milk"
+    ],
+    "ratio": "200g coconut oil, 300g olive oil, 71g sodium hydroxide, 20g honey, 50ml milk",
+    "steps": "After the lye solution has cooled, pour it into the fat and stir, add honey and milk and continue stirring until thick. Put it into the mold to keep it warm, and let it dry for 4 weeks before use after demolding.",
+    "safetyNote": "Sodium hydroxide is highly corrosive and must be handled with protective equipment."
+  },
+  "126": {
+    "name": "coffee scrub soap",
+    "materials": [
+      "coconut oil",
+      "sodium hydroxide",
+      "coffee grounds",
+      "water"
+    ],
+    "ratio": "400g coconut oil, 56g sodium hydroxide, 30g coffee grounds, 140ml water",
+    "steps": "Stir the lye and fat until thick, add the coffee grounds and mix well. Pour into the mold, unmold and let the soap dry for 4 weeks. It has both cleaning and scrubbing effects when used.",
+    "safetyNote": "Sodium hydroxide is highly corrosive, so please wear gloves and goggles when handling it."
+  },
+  "127": {
+    "name": "Mugwort anti-itch soap",
+    "materials": [
+      "coconut oil",
+      "sodium hydroxide",
+      "Wormwood juice",
+      "water"
+    ],
+    "ratio": "350g coconut oil, 50g sodium hydroxide, 100ml mugwort juice, 50ml water",
+    "steps": "Dissolve sodium hydroxide in mugwort juice and water to cool down, pour in coconut oil and stir until thick. After being placed in the mold and kept warm, the soap is allowed to mature for 4 weeks before being removed from the mold.",
+    "safetyNote": "Sodium hydroxide is highly corrosive and must be handled in a ventilated area wearing protective equipment."
+  },
+  "128": {
+    "name": "Activated Charcoal Stain Remover Soap",
+    "materials": [
+      "coconut oil",
+      "sodium hydroxide",
+      "activated carbon powder",
+      "water"
+    ],
+    "ratio": "400g coconut oil, 56g sodium hydroxide, 15g activated charcoal powder, 140ml water",
+    "steps": "After the lye solution has cooled, pour in the oil and stir, add activated charcoal powder and stir until thick. Pour into molds and let the soap dry for 4 weeks to clean oily hands.",
+    "safetyNote": "Sodium hydroxide is highly corrosive. Avoid inhaling activated carbon powder. Please wear a mask."
+  },
+  "129": {
+    "name": "Peppermint repellent spray",
+    "materials": [
+      "Menthol",
+      "Alcohol",
+      "water"
+    ],
+    "ratio": "Menthol 5g, alcohol 100ml, water 50ml",
+    "steps": "Dissolve menthol in alcohol, add water, shake well and put into a spray bottle. Spray on the gaps and corners of doors and windows to repel mosquitoes, flies and cockroaches.",
+    "safetyNote": "Alcohol is flammable, keep away from fire sources. Avoid contact with eyes and children."
+  },
+  "130": {
+    "name": "Citronella Mosquito Repellent",
+    "materials": [
+      "Citronella essential oil",
+      "base oil",
+      "Alcohol"
+    ],
+    "ratio": "Lemongrass essential oil 10 ml, carrier oil 30 ml, alcohol 60 ml",
+    "steps": "Mix lemongrass essential oil with carrier oil, add alcohol and shake well. Apply to exposed skin or spray onto clothing to help repel mosquitoes.",
+    "safetyNote": "Pregnant women, infants and those with sensitive skin should use with caution and avoid contact with mucous membranes."
+  },
+  "131": {
+    "name": "Zanthoxylum bungeanum insect repellent pack",
+    "materials": [
+      "Sichuan peppercorn",
+      "dried chili pepper",
+      "Camphor"
+    ],
+    "ratio": "30 grams of Sichuan peppercorns, 20 grams of dried chilies, 10 grams of camphor",
+    "steps": "Mix the three raw materials evenly, put them into gauze bags and tie them tightly. Placed in the corners of cabinets and wardrobes, it can repel rice bugs and borers.",
+    "safetyNote": "Camphor is toxic, please keep it out of the reach of children and is not edible."
+  },
+  "132": {
+    "name": "natural mosquito repellent",
+    "materials": [
+      "pyrethrum powder",
+      "sawdust",
+      "sticky powder"
+    ],
+    "ratio": "30g pyrethrum powder, 50g sawdust, 20g sticky powder",
+    "steps": "Mix the raw materials evenly, add an appropriate amount of water and knead into a ball, then press it into a mosquito-repellent incense shape with a mold. Dry in the shade for 5 days and then light before use. Keep the room well ventilated.",
+    "safetyNote": "People should leave the room when burning, pay attention to fire prevention, and cannot be used in confined spaces."
+  },
+  "133": {
+    "name": "Boric acid cockroach bait",
+    "materials": [
+      "Boric acid",
+      "powdered sugar",
+      "flour"
+    ],
+    "ratio": "20g boric acid, 30g powdered sugar, 20g flour",
+    "steps": "Mix boric acid, powdered sugar and flour evenly, add a little water and form into small balls. Placed in cockroach-infested corners, it can trap and kill cockroaches.",
+    "safetyNote": "Boric acid is not edible and must be kept out of the reach of children and pets."
+  },
+  "134": {
+    "name": "wood preservative oil",
+    "materials": [
+      "Creosote",
+      "kerosene"
+    ],
+    "ratio": "Creosote 100 ml, kerosene 50 ml",
+    "steps": "Mix creosote and kerosene evenly and apply to the dry wood surface with a brush. Exterior wood components slow down decay and insect infestation.",
+    "safetyNote": "Creosote is toxic and flammable, please wear gloves, operate in a well-ventilated area, and keep away from sources of fire."
+  },
+  "135": {
+    "name": "Kimchi antiseptic brine",
+    "materials": [
+      "salt",
+      "water",
+      "Sichuan peppercorn"
+    ],
+    "ratio": "100 grams of salt, 1000 ml of water, 5 grams of Sichuan peppercorns",
+    "steps": "Dissolve salt in water, add Sichuan peppercorns, boil and cool. Wash the vegetables, soak them in salt water and seal them for pickling to extend their storage time.",
+    "safetyNote": "The pickling container must be clean and sealed. Do not eat if there is an odor or mildew."
+  },
+  "136": {
+    "name": "Leather antifungal agent",
+    "materials": [
+      "Alcohol",
+      "tea tree essential oil",
+      "glycerin"
+    ],
+    "ratio": "Alcohol 80 ml, tea tree essential oil 3 ml, glycerin 10 ml",
+    "steps": "Mix alcohol and glycerin, add tea tree essential oil and shake well. Use a soft cloth to gently wipe the leather surface to prevent mildew and bacterial growth.",
+    "safetyNote": "Alcohol is flammable, so test it in a hidden place before use to avoid fading."
+  },
+  "137": {
+    "name": "book insect repellent",
+    "materials": [
+      "mothballs",
+      "Geranium leaves",
+      "cotton"
+    ],
+    "ratio": "20 grams of mothballs, 10 grams of bay leaves, appropriate amount of cotton",
+    "steps": "Mash the mothballs and mix them with fragrant leaves, wrap them in cotton and pack them separately. Place it in bookcases and wardrobes to prevent moths from chewing on books and clothing.",
+    "safetyNote": "Mothballs are poisonous, please keep them away from children and food, and do not eat them accidentally."
+  },
+  "138": {
+    "name": "Metal anti-rust wax",
+    "materials": [
+      "paraffin",
+      "Vaseline",
+      "engine oil"
+    ],
+    "ratio": "30 grams of paraffin, 40 grams of petroleum jelly, 30 ml of engine oil",
+    "steps": "Heat the paraffin over water to melt, add Vaseline and engine oil and stir evenly. After cooling, it is applied to the metal surface to isolate air and prevent rust.",
+    "safetyNote": "Used engine oil may contain harmful substances, so please wear gloves when handling it."
+  },
+  "139": {
+    "name": "Simple fireproof mud",
+    "materials": [
+      "clay",
+      "Salt",
+      "water"
+    ],
+    "ratio": "200 grams of clay, 50 grams of salt, 80 ml of water",
+    "steps": "Mix the clay and salt evenly, then gradually add water and knead until it becomes plastic. It can seal pipe holes or temporarily insulate, and its hardness increases after drying.",
+    "safetyNote": "It is only for temporary protection purposes and cannot replace professional fireproof materials."
+  },
+  "140": {
+    "name": "homemade sparkling water",
+    "materials": [
+      "baking soda",
+      "citric acid",
+      "sugar",
+      "water"
+    ],
+    "ratio": "2g baking soda, 2g citric acid, 10g sugar, 300ml water",
+    "steps": "Dissolve sugar in water, add baking soda and citric acid respectively. Mix before drinking to create bubbles, creating a refreshing sparkling drink.",
+    "safetyNote": "Ready to mix and drink now. Do not keep it for a long time. Adult supervision is required for children to drink."
+  },
+  "141": {
+    "name": "Handmade clay",
+    "materials": [
+      "flour",
+      "Salt",
+      "edible oil",
+      "food coloring"
+    ],
+    "ratio": "200g flour, 100g salt, 20ml cooking oil, appropriate amount of food coloring",
+    "steps": "Mix flour and salt, add oil and coloring, gradually add water and knead until it forms a dough that is not sticky. Sealed and stored, it can be hand-shaped by children.",
+    "safetyNote": "Although it is a food-grade raw material, it is still not edible and needs to be used under adult supervision."
+  },
+  "142": {
+    "name": "wardrobe desiccant",
+    "materials": [
+      "quicklime",
+      "calcium chloride"
+    ],
+    "ratio": "50 grams of quicklime, 30 grams of calcium chloride",
+    "steps": "Mix quicklime and calcium chloride evenly, put it into a breathable bag and tie it tightly. Hang in humid wardrobes to absorb excess moisture and protect against moisture.",
+    "safetyNote": "Quicklime releases heat when exposed to water. Keep out of reach of children and avoid getting wet."
+  },
+  "143": {
+    "name": "Winter antifreeze glass water",
+    "materials": [
+      "Alcohol",
+      "dish soap",
+      "water"
+    ],
+    "ratio": "300 ml alcohol, 10 ml dish soap, 200 ml water",
+    "steps": "Mix alcohol, dish soap and water evenly and put into a spray bottle. Used for car windshield cleaning, it is not easy to freeze at low temperatures.",
+    "safetyNote": "Alcohol is flammable, keep away from fire sources, and only be used on the exterior glass of the car."
+  },
+  "144": {
+    "name": "Rose Moisturizing Hydrosol",
+    "materials": [
+      "rose petals",
+      "distilled water",
+      "glycerin"
+    ],
+    "ratio": "50 g rose petals, 500 ml distilled water, 10 ml glycerin",
+    "steps": "Distill the rose petals and distilled water over low heat or soak them for a long time and then filter. Add the filtrate to glycerin and shake well. Put it in a spray bottle and use it as a facial moisturizer or makeup setting spray.",
+    "safetyNote": "Freshly prepared products have a short shelf life and are recommended to be refrigerated and used within seven days."
+  },
+  "145": {
+    "name": "Tea tree acne spotting solution",
+    "materials": [
+      "tea tree essential oil",
+      "aloe vera gel",
+      "distilled water"
+    ],
+    "ratio": "Tea tree essential oil 3 ml, aloe vera gel 30 g, distilled water 10 ml",
+    "steps": "After mixing aloe vera gel with distilled water, drop in tea tree essential oil and mix thoroughly. Pour into a roll-on bottle and apply onto acne areas after cleansing, avoiding large areas.",
+    "safetyNote": "The concentration of essential oil is high, so if you have sensitive skin, please do a skin test first, avoiding the eye area."
+  },
+  "146": {
+    "name": "Coconut Oil Makeup Remover Balm",
+    "materials": [
+      "coconut oil",
+      "beeswax",
+      "Vitamin E"
+    ],
+    "ratio": "Coconut oil 40g, beeswax 8g, vitamin E 2ml",
+    "steps": "Melt the beeswax over water, add coconut oil and vitamin E and mix well. After cooling slightly, put it into a jar to solidify. Apply a small amount and massage on the face to dissolve the makeup, then emulsify and wash off with warm water.",
+    "safetyNote": "For oily and acne-prone skin, please control the dosage and cleanse twice after removal."
+  },
+  "147": {
+    "name": "Chamomile Soothing Spray",
+    "materials": [
+      "Chamomile",
+      "distilled water",
+      "glycerin"
+    ],
+    "ratio": "20 g dried chamomile, 200 ml distilled water, 5 ml glycerin",
+    "steps": "Soak chamomile in hot water for 30 minutes and then filter. Cool the filtrate and add glycerin and mix. Put it in a spray bottle and spray it on your face to soothe it after sun exposure or when you are sensitive.",
+    "safetyNote": "Do not use if you are allergic to Asteraceae plants."
+  },
+  "148": {
+    "name": "Sea Salt Styling Spray",
+    "materials": [
+      "sea ​​salt",
+      "water",
+      "essential oils"
+    ],
+    "ratio": "5g sea salt, 200ml warm water, 2ml essential oil",
+    "steps": "Dissolve sea salt in warm water. Once completely dissolved, add essential oil and shake well. Pour into a spray bottle and spray onto semi-dry hair to create natural texture.",
+    "safetyNote": "Do not use if there is a wound or inflammation on the scalp."
+  },
+  "149": {
+    "name": "Bamboo Charcoal Cleansing Mask",
+    "materials": [
+      "bamboo charcoal powder",
+      "kaolin",
+      "water"
+    ],
+    "ratio": "10 grams of bamboo charcoal powder, 20 grams of kaolin clay, 30 ml of water",
+    "steps": "Bamboo charcoal powder is mixed with kaolin clay and gradually added with water to form a spreadable mud. Apply evenly on face, wait until semi-dry, then rinse with warm water, once or twice a week.",
+    "safetyNote": "Avoid inhaling the bamboo charcoal powder, and avoid the eyes and lips when applying it on the face."
+  },
+  "150": {
+    "name": "Vitamin E nail polish",
+    "materials": [
+      "olive oil",
+      "Vitamin E",
+      "lemon essential oil"
+    ],
+    "ratio": "20 ml olive oil, 5 ml vitamin E, 1 ml lemon essential oil",
+    "steps": "Mix olive oil and vitamin E, add lemon essential oil and shake well. Use a small brush or cotton swab to apply to nails and nail edges to moisturize and prevent hangnails.",
+    "safetyNote": "Lemon essential oil is photosensitive, so avoid exposure to strong light after applying it."
+  },
+  "151": {
+    "name": "Mint cooling foot lotion",
+    "materials": [
+      "aloe vera gel",
+      "Menthol",
+      "glycerin"
+    ],
+    "ratio": "50g aloe vera gel, 2g menthol, 5ml glycerin",
+    "steps": "Dissolve menthol with a small amount of glycerin, then mix thoroughly with aloe vera gel. Put it in a tube and apply it to your feet after bathing to cool down and relieve fatigue.",
+    "safetyNote": "Do not use on damaged skin and avoid contact with eyes."
+  },
+  "152": {
+    "name": "coffee eye mask",
+    "materials": [
+      "coffee powder",
+      "yogurt",
+      "Honey"
+    ],
+    "ratio": "5g coffee powder, 15g yogurt, 5g honey",
+    "steps": "Mix coffee powder with yogurt and honey into a paste, apply it under the eyes for 10 minutes and then rinse with warm water. Temporarily reduces puffiness and refreshes the eye area.",
+    "safetyNote": "For external use only, avoid entering eyes. People who are sensitive to caffeine should use with caution."
+  },
+  "153": {
+    "name": "Banana peel potassium fertilizer",
+    "materials": [
+      "banana peel",
+      "water"
+    ],
+    "ratio": "200 g banana peel, 800 ml water",
+    "steps": "Cut the banana peels into pieces and soak them in water, seal them and ferment them for 5 to 7 days. During this period, open the lid every day to let the air out. Dilute the leachate 5 times to water potassium-loving plants.",
+    "safetyNote": "The fermentation liquid has a sour smell. Please operate it in a ventilated place and avoid long-term storage indoors."
+  },
+  "154": {
+    "name": "Tea residue nitrogen fertilizer",
+    "materials": [
+      "tea leaves",
+      "water"
+    ],
+    "ratio": "100 grams of tea leaves, 500 ml of water",
+    "steps": "Add the tea leaves to water and soak for 24 hours, then filter and take the tea liquid. Dilute it 3 times to water foliage plants to supplement nitrogen and make the leaves dark green.",
+    "safetyNote": "Unfermented tea residues should not be directly buried thickly on the surface of potting soil to avoid the growth of mold."
+  },
+  "155": {
+    "name": "Watermelon rind liquid fertilizer",
+    "materials": [
+      "watermelon rind",
+      "brown sugar",
+      "water"
+    ],
+    "ratio": "300g watermelon rind, 50g brown sugar, 800ml water",
+    "steps": "Chop the watermelon rind into a bottle with brown sugar and water, leaving one third of the space for sealing and fermentation. After two weeks, take the supernatant and dilute it 10 times to water the flowers.",
+    "safetyNote": "Gas will be produced during fermentation, so the lid needs to be opened regularly to deflate and avoid direct sunlight."
+  },
+  "156": {
+    "name": "Fish scale calcium phosphate fertilizer",
+    "materials": [
+      "fish scales",
+      "white vinegar",
+      "water"
+    ],
+    "ratio": "80 g fish scales, 100 ml white vinegar, 400 ml water",
+    "steps": "Wash and dry the fish scales, add white vinegar to react until the bubbles subside, then add water to dilute. After filtering, take the clear liquid to water the flowers to supplement calcium and phosphorus.",
+    "safetyNote": "Gas will be produced during the reaction. Please operate in a ventilated place. Do not pour the waste liquid into the sewer and discharge it in large quantities."
+  },
+  "157": {
+    "name": "Tobacco insect repellent fertilizer",
+    "materials": [
+      "cut tobacco",
+      "water"
+    ],
+    "ratio": "20 grams of shredded tobacco, 1000 ml of water",
+    "steps": "The cut tobacco is soaked in water for 24 hours, filtered and the leachate taken. Dilute it 5 times and spray or irrigate the roots to help control some underground pests.",
+    "safetyNote": "The leachate is toxic. Please wear gloves when operating and avoid contact with children and pets."
+  },
+  "158": {
+    "name": "Crab shell phosphate fertilizer",
+    "materials": [
+      "crab shell",
+      "water"
+    ],
+    "ratio": "100 g crab shell, 800 ml water",
+    "steps": "Wash the crab shells, dry them, grind them, add water to soak them and ferment them for about 20 days, stirring several times during this period. Dilute the supernatant 8 times to water the flowering plants.",
+    "safetyNote": "The fermentation process has a peculiar smell, so it is recommended to conduct it outdoors or in a ventilated place."
+  },
+  "159": {
+    "name": "Peanut dry cake fertilizer",
+    "materials": [
+      "Peanut withered",
+      "water",
+      "brown sugar"
+    ],
+    "ratio": "80 grams of peanuts, 1000 ml of water, 30 grams of brown sugar",
+    "steps": "The peanuts are crushed, mixed with brown sugar and water, and fermented in a sealed container for 15 days. Dilute the fermentation liquid 15 times and water it to provide nitrogen, phosphorus and potassium nutrients.",
+    "safetyNote": "Concentrated fertilizers cannot be irrigated directly to avoid burning the roots and must be fully diluted."
+  },
+  "160": {
+    "name": "fallen leaf compost liquid",
+    "materials": [
+      "fallen leaves",
+      "food waste",
+      "water"
+    ],
+    "ratio": "500 grams of fallen leaves, 200 grams of food waste, 1500 ml of water",
+    "steps": "Put the fallen leaves and food waste into the compost bucket in layers, and add water until it is moist but not waterlogged. Turn over once a month, and dilute the decomposition liquid 20 times after 3 months for use.",
+    "safetyNote": "Unripe compost cannot be used directly to avoid carrying germs and insect eggs."
+  },
+  "161": {
+    "name": "Lemongrass Mosquito Repellent Candle",
+    "materials": [
+      "soy wax",
+      "Citronella essential oil",
+      "lemon essential oil",
+      "candle wick"
+    ],
+    "ratio": "180 g soy wax, 4 ml lemongrass essential oil, 2 ml lemon essential oil, 1 candle wick",
+    "steps": "Heat the soy wax over water to melt, then remove from the heat and add essential oil and stir evenly. After fixing the candle wick, pour it into the container, cool and solidify, and then use it outdoors for a short period of time.",
+    "safetyNote": "Keep away from flammable materials and children when igniting, and do not burn in a closed space for a long time."
+  },
+  "162": {
+    "name": "layered colorful candles",
+    "materials": [
+      "paraffin",
+      "candle dye",
+      "candle wick"
+    ],
+    "ratio": "240 grams of paraffin wax, 3 colors of candle dye, 1 candle wick",
+    "steps": "The paraffin is melted in three parts and different dyes are added. After the first layer has solidified slightly, pour in the second layer, repeat the operation to create a layered effect, and finally insert the candle wick.",
+    "safetyNote": "The temperature is high when melting wax, so be careful to prevent scalding and maintain ventilation."
+  },
+  "163": {
+    "name": "palm tealight",
+    "materials": [
+      "soy wax",
+      "candle wick",
+      "Metal tealight cup"
+    ],
+    "ratio": "30 grams of soy wax, 1 candle wick, 1 metal tealight cup",
+    "steps": "Heat and melt the soy wax, fix the candle wick in the center of the tealight cup, and pour the wax liquid until it is eighty-full. After cooling, it becomes a small tealight that can be replaced repeatedly.",
+    "safetyNote": "When burning, it must be placed in a fireproof candlestick and people should be kept away from the fire source."
+  },
+  "164": {
+    "name": "Dried flower embedded candle",
+    "materials": [
+      "jelly wax",
+      "dried flower",
+      "essential oils"
+    ],
+    "ratio": "120 grams of jelly wax, appropriate amount of dried flowers, 2 ml of essential oil",
+    "steps": "Heat the jelly wax to 80°C to melt and add essential oils. First pour a small amount of liquid wax to fix the position of the dried flowers, then fill the container, and then make a decorative candle after cooling.",
+    "safetyNote": "Dried flower embedded candles may produce black smoke when burning. It is recommended to use them mainly for viewing or to use them with LED lights."
+  },
+  "165": {
+    "name": "coffee scented candle",
+    "materials": [
+      "soy wax",
+      "coffee powder",
+      "candle wick"
+    ],
+    "ratio": "200g soy wax, 10g coffee powder, 1 candle wick",
+    "steps": "Once the soy wax is melted, remove from heat, add coffee powder and stir gently. After fixing the candle wick, pour it into the mold, cool it and release it to release the coffee aroma.",
+    "safetyNote": "Coffee powder particles may affect combustion stability. Please supervise the first ignition."
+  },
+  "166": {
+    "name": "Fragrance melt wax block",
+    "materials": [
+      "soy wax",
+      "beeswax",
+      "essential oils"
+    ],
+    "ratio": "100g soy wax, 20g beeswax, 5ml essential oil",
+    "steps": "Mix soy wax and beeswax and heat to melt, add essential oil and pour into the silicone grid to cool. When using, place a piece on a melted wax lamp to heat and release the aroma, no candle wick is required.",
+    "safetyNote": "Do not add water when using the melted wax lamp, and keep away from flammable materials to prevent burns."
+  },
+  "167": {
+    "name": "birthday number candles",
+    "materials": [
+      "paraffin",
+      "candle dye",
+      "cotton wick"
+    ],
+    "ratio": "60 grams of paraffin wax, appropriate amount of candle dye, 1 cotton wick",
+    "steps": "After the paraffin is melted, the dye is added, poured into the digital mold, and a cotton wick is inserted. Unmold after complete cooling and can be placed on the cake for a short time to light.",
+    "safetyNote": "Please remove the cake from the cake before lighting it to avoid wax dripping onto the food."
+  },
+  "168": {
+    "name": "Goat Milk Mild Soap",
+    "materials": [
+      "olive oil",
+      "coconut oil",
+      "sodium hydroxide",
+      "goat milk"
+    ],
+    "ratio": "350 g olive oil, 150 g coconut oil, 71 g sodium hydroxide, 160 ml goat milk",
+    "steps": "Slowly dissolve the sodium hydroxide in the chilled goat's milk to cool down, pour into the mixed fat and stir until thick. Place in the mold and keep warm for 24 hours, then dry for 4 weeks after unmoulding.",
+    "safetyNote": "Sodium hydroxide is highly corrosive, so you must wear gloves and goggles and operate in a ventilated area."
+  },
+  "169": {
+    "name": "Sea Salt Cleansing Soap",
+    "materials": [
+      "coconut oil",
+      "sodium hydroxide",
+      "sea ​​salt",
+      "water"
+    ],
+    "ratio": "400g coconut oil, 56g sodium hydroxide, 25g sea salt, 140ml water",
+    "steps": "After the lye solution has cooled, pour in the fat and stir until trace. Add sea salt and stir lightly to retain the graininess. Pour into molds and allow soap to dry for 4 weeks before body cleansing.",
+    "safetyNote": "Sodium hydroxide is highly corrosive. Avoid sea salt particles entering your eyes. Please wear protective equipment when operating."
+  },
+  "170": {
+    "name": "Tea tree oil control soap",
+    "materials": [
+      "coconut oil",
+      "olive oil",
+      "sodium hydroxide",
+      "tea tree essential oil",
+      "water"
+    ],
+    "ratio": "250g coconut oil, 250g olive oil, 71g sodium hydroxide, 10ml tea tree essential oil, 160ml water",
+    "steps": "Stir the lye and oil until thick, add tea tree essential oil and mix well. After being put into the mold and kept warm, it is removed from the mold and allowed to mature for 4 weeks before the soap can be used for oily skin cleansing.",
+    "safetyNote": "Sodium hydroxide is highly corrosive, and essential oils must be added at the end to avoid prolonged inhalation in a confined space."
+  },
+  "171": {
+    "name": "red clay mineral soap",
+    "materials": [
+      "olive oil",
+      "sodium hydroxide",
+      "red clay powder",
+      "water"
+    ],
+    "ratio": "500 g olive oil, 64 g sodium hydroxide, 20 g red clay powder, 160 ml water",
+    "steps": "After the lye solution has cooled, pour in the olive oil and stir, add the red clay powder and stir until thick. Pour into molds and allow soap to dry for 4 weeks to deeply cleanse skin.",
+    "safetyNote": "Sodium hydroxide is highly corrosive. Avoid inhaling mineral powder. Please wear a mask."
+  },
+  "172": {
+    "name": "Lithospermum Restorative Soap",
+    "materials": [
+      "olive oil",
+      "coconut oil",
+      "sodium hydroxide",
+      "Lithospermum infused oil",
+      "water"
+    ],
+    "ratio": "300g olive oil, 200g coconut oil, 71g sodium hydroxide, 50g comfrey infused oil, 160ml water",
+    "steps": "Stir the lye, fat and comfrey-soaked oil until trace, place into molds and keep warm. Allow the soap to dry for 4 weeks after removal, suitable for dry or slightly damaged skin.",
+    "safetyNote": "Sodium hydroxide is highly corrosive and must be handled in a ventilated area wearing protective equipment."
+  },
+  "173": {
+    "name": "Rosemary Shampoo Soap",
+    "materials": [
+      "coconut oil",
+      "castor oil",
+      "sodium hydroxide",
+      "rosemary essential oil",
+      "water"
+    ],
+    "ratio": "300g coconut oil, 100g castor oil, 56g sodium hydroxide, 8ml rosemary essential oil, 140ml water",
+    "steps": "Stir the lye and fat until thick, add rosemary essential oil and stir lightly. Allow the soap to dry for 4 weeks after being put into the mold. It can be used to clean short hair. It needs to be rinsed with apple cider vinegar after washing.",
+    "safetyNote": "Sodium hydroxide is highly corrosive. Avoid shampoo soap foam entering your eyes. Please wear gloves when operating."
+  },
+  "174": {
+    "name": "beer foaming soap",
+    "materials": [
+      "olive oil",
+      "coconut oil",
+      "sodium hydroxide",
+      "beer",
+      "water"
+    ],
+    "ratio": "350g olive oil, 150g coconut oil, 71g sodium hydroxide, 160ml beer",
+    "steps": "Open the lid of the beer one night in advance to degas it, then cool it down by dissolving the alkali in it. Pour the lye solution into the fat and stir until trace, put it into the mold and keep it warm and let the soap dry for 4 weeks.",
+    "safetyNote": "The reaction between sodium hydroxide and beer will produce a lot of heat and bubbles, so it must be done slowly in a ventilated area and wearing protective equipment."
+  },
+  "175": {
+    "name": "Turmeric Warming Soap",
+    "materials": [
+      "coconut oil",
+      "sodium hydroxide",
+      "turmeric powder",
+      "water"
+    ],
+    "ratio": "400 g coconut oil, 56 g sodium hydroxide, 8 g turmeric powder, 140 ml water",
+    "steps": "After the lye solution has cooled, pour in the oil and stir, add turmeric powder and mix well. Pour into molds and allow the soap to dry for 4 weeks before use in winter baths.",
+    "safetyNote": "Sodium hydroxide is highly corrosive and turmeric is easy to stain. Please wear gloves and protect your clothing when operating."
+  },
+  "176": {
+    "name": "Zanthoxylum bungeanum ant repellent powder",
+    "materials": [
+      "Sichuan peppercorn",
+      "baking soda",
+      "corn starch"
+    ],
+    "ratio": "30g Sichuan peppercorns, 20g baking soda, 50g cornstarch",
+    "steps": "Dry and crush the Sichuan peppercorns and mix evenly with baking soda and cornstarch. Sprinkle it in the cracks and corners where ants often hang out to interfere with their movement routes.",
+    "safetyNote": "Avoid inhalation of powder and keep away from food and reach of children."
+  },
+  "177": {
+    "name": "Citronella Mosquito Repellent",
+    "materials": [
+      "Citronella essential oil",
+      "Alcohol",
+      "water"
+    ],
+    "ratio": "Lemongrass essential oil 8 ml, alcohol 80 ml, water 20 ml",
+    "steps": "Dissolve the essential oil in alcohol, add water, shake well, and put into a spray bottle. Spray on exposed skin or clothing before outdoor activities to repel mosquitoes for a short time.",
+    "safetyNote": "Alcohol is flammable, keep away from fire sources. Infants and children with sensitive skin please do a skin test first."
+  },
+  "178": {
+    "name": "Garlic insect repellent soak",
+    "materials": [
+      "garlic",
+      "water",
+      "liquid soap"
+    ],
+    "ratio": "50 grams of garlic, 1000 ml of water, 10 ml of soap solution",
+    "steps": "Mash garlic and soak in water for 24 hours, filter and add soap solution and shake well. Spraying on plant leaves can help control soft-bodied pests such as aphids.",
+    "safetyNote": "Before spraying, test spray on a small number of leaves to avoid burning the plants if the concentration is too high."
+  },
+  "179": {
+    "name": "Tobacco water insecticide liquid",
+    "materials": [
+      "tobacco",
+      "water",
+      "liquid soap"
+    ],
+    "ratio": "30 grams of tobacco, 1000 ml of water, 5 ml of soap solution",
+    "steps": "The tobacco is soaked in water for 48 hours, filtered, and mixed with soap. Spray on damaged plants after dilution to control some chewing pests.",
+    "safetyNote": "Tobacco leachate is toxic, please wear gloves to avoid contaminating edible parts, and keep out of reach of children."
+  },
+  "180": {
+    "name": "Grapefruit peel insect repellent bag",
+    "materials": [
+      "Grapefruit peel",
+      "clove",
+      "cotton bag"
+    ],
+    "ratio": "100 grams of grapefruit peel, 15 grams of cloves, 1 cotton bag",
+    "steps": "Cut the grapefruit peel into strips and dry them, mix them with cloves and put them into a cotton bag and tie them tightly. Place it in a rice jar, wardrobe or kitchen corner to help repel insects and prevent moths.",
+    "safetyNote": "It needs to be replaced regularly to avoid moisture and mold."
+  },
+  "181": {
+    "name": "Styrax wardrobe insect repellent tablets",
+    "materials": [
+      "Styrax",
+      "camphor wood chips",
+      "non woven bag"
+    ],
+    "ratio": "10 grams of styrax, 40 grams of camphor wood chips, 1 non-woven bag",
+    "steps": "Styrax and camphor wood chips are mixed evenly, put into non-woven bags and tied tightly. Hanging in the wardrobe, it repels insects and emits a woody fragrance.",
+    "safetyNote": "Keep spices out of the reach of infants and young children to avoid accidental ingestion."
+  },
+  "182": {
+    "name": "Catnip Cockroach Repellent Powder",
+    "materials": [
+      "catnip",
+      "Boric acid",
+      "flour"
+    ],
+    "ratio": "20g catnip, 10g boric acid, 30g flour",
+    "steps": "Crush catnip, mix it with boric acid and flour, and sprinkle it on cabinet gaps and cockroach-infested areas. It can assist in repelling and interfering with its activities.",
+    "safetyNote": "Boric acid is toxic and should be kept away from children and pets. Do not spread it near food."
+  },
+  "183": {
+    "name": "Eucalyptus oil anti-mildew spray",
+    "materials": [
+      "Eucalyptus oil",
+      "Alcohol",
+      "water"
+    ],
+    "ratio": "5 ml of eucalyptus oil, 50 ml of alcohol, 50 ml of water",
+    "steps": "Dissolve eucalyptus oil in alcohol, add water, shake well, and put into a spray bottle. Spray on wet corners and inside wardrobes to help prevent mildew and insects.",
+    "safetyNote": "Alcohol is flammable and eucalyptus oil has a strong smell. Keep it ventilated when using it and avoid contact with eyes."
+  },
+  "184": {
+    "name": "Beeswax Wood Care Oil",
+    "materials": [
+      "beeswax",
+      "linseed oil",
+      "turpentine"
+    ],
+    "ratio": "40 g beeswax, 100 ml linseed oil, 20 ml turpentine",
+    "steps": "Heat beeswax over water and melt, add linseed oil and turpentine and mix well. After cooling, apply it to the wood surface to prevent moisture and cracking and brighten it.",
+    "safetyNote": "Turpentine is flammable and irritating. Please operate in a well-ventilated area and away from fire sources."
+  },
+  "185": {
+    "name": "Tung oil anti-mildew coating fluid",
+    "materials": [
+      "Raw tung oil",
+      "turpentine"
+    ],
+    "ratio": "200 ml raw tung oil, 50 ml turpentine",
+    "steps": "Mix raw tung oil and turpentine evenly and apply it thinly on the surface of wood or bamboo products with a brush. After drying, a protective film is formed to prevent mildew and moisture.",
+    "safetyNote": "Tung oil and turpentine are both flammable. Keep away from fire sources and maintain ventilation when operating. Used brushes should be disposed of properly."
+  },
+  "186": {
+    "name": "Silicone grain moisture-proof bag",
+    "materials": [
+      "Silica gel dry granules",
+      "Breathable cloth bag"
+    ],
+    "ratio": "100 grams of dry silica gel, 2 breathable bags",
+    "steps": "Put the dry silica gel granules into breathable cloth bags and tie them tightly. Place it in a camera box, bookcase or shoe box to absorb moisture and prevent moisture. It can be regenerated in the sun after being saturated.",
+    "safetyNote": "Silica gel particles are not edible, please keep away from infants and young children."
+  },
+  "187": {
+    "name": "Incense moth-proofing block",
+    "materials": [
+      "sandalwood powder",
+      "Nanmu powder",
+      "water"
+    ],
+    "ratio": "60 grams of sandalwood powder, 40 grams of nanmu powder, 25 ml of water",
+    "steps": "Mix sandalwood powder and nanmu powder, add water and knead into a ball, then dry in the shade until completely hard. Place in a bookcase or wardrobe to protect against moths and provide fragrance.",
+    "safetyNote": "For moth-proofing purposes only, not for use as food or toys for children."
+  },
+  "188": {
+    "name": "Lime drying and moisture-proof agent",
+    "materials": [
+      "quicklime",
+      "calcium chloride",
+      "breathable tank"
+    ],
+    "ratio": "80 grams of quicklime, 40 grams of calcium chloride, 1 breathable jar",
+    "steps": "Quicklime and calcium chloride are mixed and put into a breathable tank, and the lid is sealed to leave a gap. Placed in a basement or humid storage room, it can absorb ambient moisture.",
+    "safetyNote": "Quicklime releases heat when it comes in contact with water. Keep out of reach of children and avoid water getting into the container."
+  },
+  "189": {
+    "name": "Beeswax food sealing wax",
+    "materials": [
+      "beeswax",
+      "coconut oil",
+      "Resin"
+    ],
+    "ratio": "100g beeswax, 30g coconut oil, 20g resin",
+    "steps": "Melt the beeswax, coconut oil and resin over water and mix well. Brush it on the surface of cheese or semi-hard food while it's hot, and it will form a removable layer of preservation wax after it cools.",
+    "safetyNote": "Only suitable for direct consumption of food surfaces, make sure all ingredients are food grade before use."
+  },
+  "190": {
+    "name": "Pine wood insect-proof strips",
+    "materials": [
+      "pine wood blocks",
+      "camphor oil"
+    ],
+    "ratio": "200 grams of pine wood, 10 ml of camphor oil",
+    "steps": "The pine wood blocks are sawn into strips and sanded, dripped or soaked in camphor oil and dried in the shade. Place in a closet, drawer or storage box to repel insects and absorb odors.",
+    "safetyNote": "Camphor oil is toxic, please keep it away from children and food, and keep the container sealed."
+  },
+  "191": {
+    "name": "homemade paste",
+    "materials": [
+      "flour",
+      "alum",
+      "water"
+    ],
+    "ratio": "50g flour, 2g alum, 300ml water",
+    "steps": "Mix the flour with a small amount of cold water to make a paste. Dissolve alum in the remaining water and heat it to a slight boil. Slowly pour in the batter and stir until it becomes transparent and sticky. After cooling the paper and labels can be attached.",
+    "safetyNote": "Be careful to prevent scalding when heating. The paste is ready for use. Do not store it for a long time to avoid deterioration."
+  },
+  "192": {
+    "name": "Purple cabbage acid-base indicator",
+    "materials": [
+      "purple cabbage",
+      "distilled water"
+    ],
+    "ratio": "100 g purple cabbage, 300 ml distilled water",
+    "steps": "Chop purple cabbage and soak or lightly boil it in distilled water, then filter to get the purple filtrate. It turns red when exposed to acid and green when exposed to alkaline, and can be used for simple chemical experiments.",
+    "safetyNote": "For experimental observation only, not for drinking. It is difficult to clean clothes after dyeing."
+  },
+  "193": {
+    "name": "natural stain remover powder",
+    "materials": [
+      "baking soda",
+      "Salt",
+      "Lemon peel powder"
+    ],
+    "ratio": "100g baking soda, 50g salt, 20g lemon peel powder",
+    "steps": "Mix the baking soda, salt and lemon zest powder thoroughly and place in a dusting bottle. After getting wet, sprinkle it on the sink and stove, and scrub with a damp cloth to remove light grease.",
+    "safetyNote": "It cannot be used on surfaces easily corroded by alkali such as marble and aluminum products."
+  },
+  "194": {
+    "name": "Simple concrete repair mud",
+    "materials": [
+      "cement",
+      "river sand",
+      "water"
+    ],
+    "ratio": "100 grams of cement, 200 grams of river sand, 60 ml of water",
+    "steps": "Dry mix the cement and river sand evenly, then gradually add water and stir until it becomes plastic. Fill small holes in the wall or cracks in the floor, smooth them out and then cure them for 24 hours.",
+    "safetyNote": "Cement is alkaline, so please wear gloves and a mask when operating to avoid inhaling dust."
+  },
+  "195": {
+    "name": "emergency insulation mud",
+    "materials": [
+      "clay",
+      "straw",
+      "water"
+    ],
+    "ratio": "300 grams of clay, 50 grams of straw, 100 ml of water",
+    "steps": "Mix the clay with chopped straw, add water and knead until it becomes plastic. Wrapping it on the surface of outdoor water pipes or temporary facilities can slow down freezing for a short time.",
+    "safetyNote": "For temporary emergencies only, it is fragile after drying and needs to be inspected and replaced regularly."
+  },
+  "196": {
+    "name": "natural plasticine",
+    "materials": [
+      "flour",
+      "cream of tartar",
+      "edible oil",
+      "food coloring"
+    ],
+    "ratio": "200g flour, 10g cream of tartar, 20ml cooking oil, appropriate amount of food coloring",
+    "steps": "Mix flour and cream of tartar, add oil and coloring, gradually heat water and knead until no longer sticky. After cooling, it can be shaped by children, sealed and refrigerated.",
+    "safetyNote": "Although it is a food-grade raw material, it is still not edible and needs to be used under adult supervision."
+  },
+  "197": {
+    "name": "Simple knife sharpening paste",
+    "materials": [
+      "Green chromium oxide powder",
+      "glycerin",
+      "water"
+    ],
+    "ratio": "20 grams of green chromium oxide powder, 30 ml of glycerin, 10 ml of water",
+    "steps": "Chromium oxide powder is mixed with glycerin and water into a paste and applied to leather or wooden slats. The blade is pushed and pulled on the paste surface at a suitable angle to finely polish the blade.",
+    "safetyNote": "Avoid inhaling the grinding powder. Please wear a mask when operating and be careful of scratches by the blade."
+  },
+  "198": {
+    "name": "Pipe unblocking auxiliary powder",
+    "materials": [
+      "baking soda",
+      "citric acid",
+      "Salt"
+    ],
+    "ratio": "100g baking soda, 50g citric acid, 30g salt",
+    "steps": "Mix the three powders evenly and put them into sealed jars. When unblocking, pour 50 grams into the blocked pipe, add 500 ml of water, let it sit for 30 minutes and then flush.",
+    "safetyNote": "A large number of bubbles will be produced during the reaction. Do not mix it with chemicals such as bleach to avoid splashing into the eyes."
+  },
+  "199": {
+    "name": "Osmanthus infused sesame oil",
+    "materials": [
+      "Fresh osmanthus",
+      "olive oil",
+      "Alcohol"
+    ],
+    "ratio": "50g fresh osmanthus, 200ml olive oil, 20ml alcohol",
+    "steps": "The osmanthus and olive oil are sealed and soaked for 7 days, and shaken daily. After filtering, add a small amount of alcohol to preserve it and can be used to add fragrance to your wrists or hair.",
+    "safetyNote": "Freshly made infused oils are prone to oxidation, so it is recommended to be refrigerated and used within two weeks. For sensitive skin, please do a skin test first."
+  },
+  "200": {
+    "name": "agarwood incense stick",
+    "materials": [
+      "Agarwood powder",
+      "Nanmu powder",
+      "water"
+    ],
+    "ratio": "40 grams of agarwood powder, 60 grams of nanmu powder, 35 ml of water",
+    "steps": "Mix agarwood powder and nanmu powder, gradually add water and knead until it becomes plastic, and then extrude it with an incense mold. After drying in the shade for 5 days, you can light the incense in a ventilated place.",
+    "safetyNote": "When burning, please use fire-proof incense sticks, keep the room ventilated, and keep people away from the fire source."
+  },
+  "201": {
+    "name": "Jasmine fragrance wax tablets",
+    "materials": [
+      "beeswax",
+      "Jasmine essential oil",
+      "non-woven fabric"
+    ],
+    "ratio": "30g beeswax, 3ml jasmine essential oil, 2 pieces of non-woven fabric",
+    "steps": "When the beeswax melts, remove from the heat and add jasmine essential oil. Dip the non-woven fabric into the wax liquid, take it out and cool it, then make fragrant wax pieces and hang them in the wardrobe to slowly release the fragrance.",
+    "safetyNote": "The wax chips cannot be ignited and are only for hanging to release fragrance and avoid high temperature environments."
+  },
+  "202": {
+    "name": "Citrus peel air freshener",
+    "materials": [
+      "orange peel",
+      "Cinnamon",
+      "clove",
+      "water"
+    ],
+    "ratio": "100 g orange peel, 5 g cinnamon, 5 g cloves, 500 ml water",
+    "steps": "Add orange peel and spices to water and simmer over low heat for 30 minutes. After the filtrate cools, put it into a spray bottle. Spray indoors for a refreshing citrus scent.",
+    "safetyNote": "Freshly prepared liquids are prone to spoilage, so it is recommended to be refrigerated and used within three days."
+  },
+  "203": {
+    "name": "Sleep Lavender Pillow Bag",
+    "materials": [
+      "dried lavender",
+      "dried chamomile",
+      "cotton bag"
+    ],
+    "ratio": "40g dried lavender, 20g dried chamomile, 1 cotton bag",
+    "steps": "Mix lavender and chamomile evenly, put into cotton bag and tie tightly. Place it next to your pillow to release the herbal aroma that helps you sleep at night.",
+    "safetyNote": "Do not use if you are allergic to pollen or Asteraceae plants."
+  },
+  "204": {
+    "name": "electric kettle descaling tablets",
+    "materials": [
+      "citric acid",
+      "baking soda"
+    ],
+    "ratio": "40g citric acid, 20g baking soda",
+    "steps": "Mix citric acid with baking soda and press into tablets or keep in powder form. Add 15 grams at a time to the kettle, add water to boil, soak for 30 minutes, rinse to remove scale.",
+    "safetyNote": "Bubbles will be generated during the reaction, so the lid must not be completely sealed and cannot be used in aluminum containers."
+  },
+  "205": {
+    "name": "leather care cleaner",
+    "materials": [
+      "olive oil",
+      "white vinegar",
+      "essential oils"
+    ],
+    "ratio": "50 ml olive oil, 20 ml white vinegar, 2 ml essential oil",
+    "steps": "Mix olive oil, white vinegar and essential oil, shake well, and apply a small amount to a soft cloth. Gently wipe the leather surface to remove dirt and maintain it, then polish with a dry cloth.",
+    "safetyNote": "Before use, test it in a hidden area to avoid fading or leaving oil stains."
+  },
+  "206": {
+    "name": "keyboard cleaning gel",
+    "materials": [
+      "glue",
+      "Borax",
+      "water"
+    ],
+    "ratio": "100 ml glue, 5 g borax, 50 ml water",
+    "steps": "Borax is dissolved in water, mixed with glue and stirred until a stretchable gel forms. Press it into the gaps between the keyboard to absorb dust and can be discarded after use.",
+    "safetyNote": "Borax is toxic, so please wear gloves when handling it and do not let children eat or play with it."
+  },
+  "207": {
+    "name": "Detergent for wool",
+    "materials": [
+      "olive oil soap",
+      "water",
+      "essential oils"
+    ],
+    "ratio": "50 g olive oil soap, 500 ml warm water, 2 ml essential oil",
+    "steps": "Dissolve the soap cubes in warm water, add essential oils and stir until completely dissolved. For hand washing wool products, press gently, rinse with water, and lay flat to dry.",
+    "safetyNote": "Do not rub or machine wash to avoid hot water causing the wool to shrink."
+  },
+  "208": {
+    "name": "Gentle laundry detergent for baby clothes",
+    "materials": [
+      "coconut oil soap",
+      "baking soda",
+      "water"
+    ],
+    "ratio": "40g coconut oil soap, 20g baking soda, 800ml water",
+    "steps": "Dissolve grated soap bar and baking soda in hot water and stir until clear liquid. After cooling, it can be used for hand washing of baby clothes and needs to be fully rinsed.",
+    "safetyNote": "Before first use, test wash in a hidden area of ​​clothing to ensure there is no residual irritation."
+  },
+  "209": {
+    "name": "Sportswear anti-sweat detergent",
+    "materials": [
+      "baking soda",
+      "white vinegar",
+      "water"
+    ],
+    "ratio": "30g baking soda, 50ml white vinegar, 1000ml water",
+    "steps": "Dissolve baking soda in water, add white vinegar and shake well. Soak your sports clothing for 30 minutes before washing regularly to reduce sweat odors and mild odors.",
+    "safetyNote": "Do not use it with bleach to prevent colored clothes from fading during soaking."
+  },
+  "210": {
+    "name": "Cinnamon Apple Scented Candle",
+    "materials": [
+      "soy wax",
+      "cinnamon essential oil",
+      "apple flavor",
+      "candle wick"
+    ],
+    "ratio": "200g soy wax, 3ml cinnamon essential oil, 2ml apple essence, 1 candle wick",
+    "steps": "Heat the soy wax over water to melt, remove from the heat, add cinnamon essential oil and apple essence and stir. After fixing the candle wick, pour it into the container and let it cool and solidify.",
+    "safetyNote": "When igniting, stay away from flammable materials, keep the room ventilated, and keep people away from the fire source."
+  },
+  "211": {
+    "name": "Ice crackle decorative candle",
+    "materials": [
+      "paraffin",
+      "ice wax",
+      "candle wick"
+    ],
+    "ratio": "150g paraffin wax, 50g ice wax, 1 candle wick",
+    "steps": "The outer layer of paraffin is melted and poured into the mold to form the shell, and the inner layer of ice wax is melted and poured into the candle wick. After cooling, the ice wax shrinks to form a cracked decorative effect.",
+    "safetyNote": "Be careful to prevent scalding when melting wax, and please keep an eye on it when lighting it for the first time."
+  },
+  "212": {
+    "name": "Container reuse candles",
+    "materials": [
+      "remaining wax block",
+      "candle wick",
+      "essential oils"
+    ],
+    "ratio": "150g remaining wax block, 1 candle wick, 2ml essential oil",
+    "steps": "Collect the remaining wax blocks from burned candles and heat them over water to melt them. Filter the impurities and add essential oils. Pour into an old glass or ceramic mug and insert a new wick to cool.",
+    "safetyNote": "The recycling container needs to be heat-resistant and ensure that the container is stable and does not tip over when ignited."
+  },
+  "213": {
+    "name": "Outdoor windproof candle",
+    "materials": [
+      "paraffin",
+      "stearic acid",
+      "candle wick"
+    ],
+    "ratio": "170g paraffin, 30g stearic acid, 1 candle wick",
+    "steps": "Mix paraffin and stearic acid and heat until completely melted, pour into a wide-mouthed metal or thick glass container, and insert a thicker candle wick. Stearic acid can increase the melting point and is suitable for short-term outdoor use.",
+    "safetyNote": "When used outdoors, it still needs to be placed on a fireproof base and kept away from flammable materials such as dry grass."
+  },
+  "214": {
+    "name": "Snowflake texture candle",
+    "materials": [
+      "soy wax",
+      "white oil",
+      "candle wick"
+    ],
+    "ratio": "180g soy wax, 20g white oil, 1 candle wick",
+    "steps": "Mix soy wax and white oil and heat to melt. Pour into the mold and use a fork to mark the texture when the surface is semi-solidified. A snowflake-like finish develops when completely cooled.",
+    "safetyNote": "The texture is for decoration only, please use it in a fireproof candle holder when burning."
+  },
+  "215": {
+    "name": "Double wick tall candle",
+    "materials": [
+      "soy wax",
+      "beeswax",
+      "candle wick"
+    ],
+    "ratio": "300g soy wax, 50g beeswax, 2 candle wicks",
+    "steps": "Mix soy wax and beeswax, heat and melt, fix two candle wicks symmetrically in a large-diameter container, and pour the wax liquid. Can extend burning time and reduce tunneling effect.",
+    "safetyNote": "The double-core burning flame is larger, so please place it on a stable candlestick and keep it away from flammable objects such as curtains."
+  },
+  "216": {
+    "name": "Linseed oil wood sealer",
+    "materials": [
+      "linseed oil",
+      "turpentine",
+      "beeswax"
+    ],
+    "ratio": "150 ml flax oil, 30 ml turpentine, 20 g beeswax",
+    "steps": "Heat beeswax over water and melt, add linseed oil and turpentine and stir evenly. Apply thinly to unpainted wood surfaces to seal wood pores and protect against moisture and stains.",
+    "safetyNote": "Turpentine is flammable, keep away from fire sources and keep ventilated when handling."
+  },
+  "217": {
+    "name": "Parchment paper food wrap",
+    "materials": [
+      "parchment",
+      "beeswax",
+      "coconut oil"
+    ],
+    "ratio": "2 sheets of parchment paper, 30 g beeswax, 10 g coconut oil",
+    "steps": "Melt the beeswax and coconut oil and spread evenly on one side of the parchment paper with a brush. After cooling, it can be used to wrap cheese, bread and other foods to keep them fresh for a short period of time.",
+    "safetyNote": "Only suitable for cold or room temperature food, not for high temperature heating in the oven."
+  },
+  "218": {
+    "name": "Bamboo anti-mold oil",
+    "materials": [
+      "Raw tung oil",
+      "beeswax",
+      "essential oils"
+    ],
+    "ratio": "100 ml raw tung oil, 15 g beeswax, 2 ml essential oil",
+    "steps": "Beeswax is heated and melted and then mixed with tung oil and essential oils. Dip a soft cloth into a thin coating of bamboo cutting boards, bamboo baskets and other surfaces. After drying, it can prevent mildew and cracking.",
+    "safetyNote": "Tung oil is flammable before it is completely dry, so it needs to be dried in a ventilated place away from fire sources."
+  },
+  "219": {
+    "name": "Acid proof paper bag for books",
+    "materials": [
+      "Acid-free paper",
+      "Desiccant",
+      "cotton rope"
+    ],
+    "ratio": "4 sheets of acid-free paper, 20 grams of desiccant, 1 cotton rope",
+    "steps": "Each rare book is wrapped in acid-free paper and placed in an archival box with desiccant and tied tightly. It can slow down the acidification and yellowing of paper and is suitable for long-term storage.",
+    "safetyNote": "The desiccant is not edible, and the file box should be placed in a cool, dry place away from direct sunlight."
+  },
+  "220": {
+    "name": "Anti-rust oil for metal tools",
+    "materials": [
+      "mineral oil",
+      "beeswax",
+      "Vaseline"
+    ],
+    "ratio": "80 ml mineral oil, 10 g beeswax, 20 g petroleum jelly",
+    "steps": "Melt the beeswax over water, add mineral oil and petroleum jelly and mix well. Apply thinly to the metal surfaces of tools such as pliers and wrenches to isolate moisture and prevent rust.",
+    "safetyNote": "The surface of the tool will be slippery after oiling, so be sure to hold it stably when using it."
+  },
+  "221": {
+    "name": "Camera lens moisture-proof box agent",
+    "materials": [
+      "Silica gel dry granules",
+      "quicklime",
+      "sealed box"
+    ],
+    "ratio": "150g dry silica gel, 30g quicklime, 1 sealed box",
+    "steps": "The dry silica gel granules and quicklime are packed into breathable bags and placed together at the bottom of the sealed box. The camera and lens are tightly closed after being put in to maintain a low-humidity environment.",
+    "safetyNote": "Quicklime releases heat when exposed to water. Keep out of reach of children. Check the status of the desiccant regularly."
+  },
+  "222": {
+    "name": "sewing machine lubricant",
+    "materials": [
+      "white oil",
+      "Vaseline"
+    ],
+    "ratio": "80 ml white oil, 10 g petroleum jelly",
+    "steps": "Mix petroleum jelly and white oil and heat until completely combined, then cool and put into the oil pot. Drop it on the hook and guide rail of the sewing machine to reduce friction and noise.",
+    "safetyNote": "Please disconnect the power supply before refueling, and use a small amount to avoid oil contamination of the fabric."
+  },
+  "223": {
+    "name": "Bicycle chain maintenance oil",
+    "materials": [
+      "mineral oil",
+      "graphite powder",
+      "kerosene"
+    ],
+    "ratio": "Mineral oil 60 ml, graphite powder 5 g, kerosene 20 ml",
+    "steps": "Clean the chain with kerosene and dry it. Mix graphite powder and mineral oil and apply it dropwise on each link of the chain. Let it sit for a while and wipe off excess oil to prevent rust and lubricate.",
+    "safetyNote": "Kerosene is flammable, please operate in a well-ventilated area and away from fire sources."
+  },
+  "224": {
+    "name": "Drawer track grease",
+    "materials": [
+      "Vaseline",
+      "paraffin",
+      "engine oil"
+    ],
+    "ratio": "40 grams of petroleum jelly, 10 grams of paraffin, 10 ml of engine oil",
+    "steps": "Melt the paraffin over water, add Vaseline and engine oil and stir until a smooth paste forms. Apply to wooden or metal drawer tracks to eliminate squeaking.",
+    "safetyNote": "Do not use too much to avoid dripping and contaminating the furniture surface."
+  },
+  "225": {
+    "name": "Window frame hinge lubricant",
+    "materials": [
+      "Silicone oil",
+      "kerosene"
+    ],
+    "ratio": "Silicone oil 30 ml, kerosene 20 ml",
+    "steps": "Mix silicone oil and kerosene evenly and put into a dropper bottle. Drop it on the window hinges and hinge shafts, and repeatedly open and close them to allow the oil to seep in, which can eliminate squeaks.",
+    "safetyNote": "Kerosene is flammable. Keep away from fire sources when operating to avoid dripping to the ground and causing slipping."
+  },
+  "226": {
+    "name": "Power tool gear grease",
+    "materials": [
+      "Lithium grease",
+      "graphite powder"
+    ],
+    "ratio": "50 grams of lithium grease, 3 grams of graphite powder",
+    "steps": "Mix graphite powder and lithium grease thoroughly until uniform. Open the power tool gearbox cover, apply a thin layer of it on the gear meshing surface, reinstall it and run it for a test run.",
+    "safetyNote": "Be sure to disconnect the power supply before maintenance and operate according to the instructions. Excessive lubrication may cause overheating."
+  },
+  "227": {
+    "name": "natural ocher pigment",
+    "materials": [
+      "ocher powder",
+      "gelatin",
+      "water"
+    ],
+    "ratio": "30g ocher powder, 5g gelatin, 50ml water",
+    "steps": "Dissolve gelatin in warm water, gradually add ocher powder and grind until a fine slurry forms. It can be used for mural repair or hand painting, and it will turn a stable earthy red color after drying.",
+    "safetyNote": "To avoid inhaling dust when grinding, it is recommended to wear a mask."
+  },
+  "228": {
+    "name": "tempera paint",
+    "materials": [
+      "toner",
+      "yolk",
+      "water"
+    ],
+    "ratio": "20 grams of color powder, 1 egg yolk, 10 ml of water",
+    "steps": "Beat the egg yolk and water, add toner in batches and grind until there are no particles. Ready to mix and use, apply thinly to wood or paper and form a soft color layer after drying.",
+    "safetyNote": "Freshly made pigments are easy to deteriorate and need to be used up on the same day. Pay attention to hygiene when using raw egg yolks."
+  },
+  "229": {
+    "name": "Lime mural background color",
+    "materials": [
+      "slaked lime",
+      "Marble powder",
+      "water"
+    ],
+    "ratio": "100 grams of slaked lime, 50 grams of marble powder, 80 ml of water",
+    "steps": "Mix hydrated lime and marble powder and gradually add water to a scrapable consistency. Apply thinly to the wall as the base color of the mural, then polish it smooth after drying.",
+    "safetyNote": "Lime is alkaline, so please wear gloves and a mask when handling it to avoid getting it into your eyes."
+  },
+  "230": {
+    "name": "natural indigo dye",
+    "materials": [
+      "Indigo powder",
+      "Lye",
+      "insurance powder"
+    ],
+    "ratio": "10 grams of indigo powder, 5 grams of lye, 8 grams of insurance powder, 1000 ml of water",
+    "steps": "Dissolve the lye, insurance powder and indigo powder in the water in order, and stir until the reduced state turns yellow-green. After dip-dying, the fabric oxidizes and turns blue, and needs to be dip-dyed repeatedly to deepen.",
+    "safetyNote": "Alkali solution and insurance powder are corrosive and must be handled in a ventilated area wearing gloves."
+  },
+  "231": {
+    "name": "Gypsum base material",
+    "materials": [
+      "plaster of paris",
+      "white latex",
+      "water"
+    ],
+    "ratio": "200 grams of plaster of paris, 30 ml of white latex, 100 ml of water",
+    "steps": "Make a paste of plaster of paris and water, add white latex and stir evenly. Scrape it onto canvas or wall as a base material, then polish it after drying before coloring.",
+    "safetyNote": "Avoid inhalation of gypsum powder, please operate in a ventilated place when mixing."
+  },
+  "232": {
+    "name": "Rice paste paper glue",
+    "materials": [
+      "Rice",
+      "water"
+    ],
+    "ratio": "50 grams of rice, 300 ml of water",
+    "steps": "Add water to the rice and cook until soft, stir into a fine rice paste, and filter the thick liquid. It can be used to paste paper crafts and labels, and is easier to remove after drying.",
+    "safetyNote": "Freshly made glue is prone to mold, so it is recommended to use it on the same day and refrigerate it for no more than two days."
+  },
+  "233": {
+    "name": "bone glue woodworking glue",
+    "materials": [
+      "Bone glue particles",
+      "water"
+    ],
+    "ratio": "30 g bone glue particles, 150 ml water",
+    "steps": "Soak the bone glue particles in water for 4 hours and then heat over water until completely melted. Use it for splicing wood while it is hot, and clamp it until it cools down to achieve higher bonding strength.",
+    "safetyNote": "Be careful to prevent scalding when heating. The glue is very hot and requires quick operation."
+  },
+  "234": {
+    "name": "Epoxy resin simple glue",
+    "materials": [
+      "Epoxy resin",
+      "curing agent"
+    ],
+    "ratio": "20 grams of epoxy resin, 5 grams of curing agent",
+    "steps": "Mix epoxy resin and curing agent according to the proportion indicated and stir thoroughly until uniform. Apply to the surface of the object to be bonded within the operable time, and fix under pressure until cured.",
+    "safetyNote": "Release heat after mixing, avoid skin contact, wear gloves and maintain ventilation during operation."
+  },
+  "235": {
+    "name": "gelatin photo glue",
+    "materials": [
+      "gelatin",
+      "glycerin",
+      "water"
+    ],
+    "ratio": "15 g gelatin, 5 ml glycerin, 80 ml water",
+    "steps": "Dissolve gelatin in warm water, add glycerin and mix well. Apply thinly to photo album pages or handmade cards to attach photos and make them easier to remove later.",
+    "safetyNote": "Do not move the paste before the glue is dry to avoid paper wrinkles."
+  },
+  "236": {
+    "name": "Rosin flux glue",
+    "materials": [
+      "rosin",
+      "Alcohol"
+    ],
+    "ratio": "30 g rosin, 100 ml alcohol",
+    "steps": "Dissolve the crushed rosin in the alcohol and stir until completely dissolved. Apply to metal solder joints before welding to remove the oxide layer to assist soldering and improve welding quality.",
+    "safetyNote": "Alcohol is flammable, so stay away from open flames when welding, operate in a well-ventilated area and wear protective goggles."
+  },
+  "237": {
+    "name": "Shrimp shell amino acid fertilizer",
+    "materials": [
+      "shrimp shell",
+      "brown sugar",
+      "water"
+    ],
+    "ratio": "200g shrimp shells, 50g brown sugar, 1000ml water",
+    "steps": "The shrimp shells are sun-dried and crushed, then sealed with brown sugar and water for fermentation for 30 days, during which time the lid is opened and deflated every week. Dilute the supernatant 20 times and water it to supplement amino acids.",
+    "safetyNote": "The fermentation liquid has a fishy smell, please operate outdoors or in a ventilated place."
+  },
+  "238": {
+    "name": "Vermicompost organic fertilizer",
+    "materials": [
+      "vermicompost",
+      "water"
+    ],
+    "ratio": "100 g of vermicompost, 500 ml of water",
+    "steps": "Add vermicompost to water and soak for 24 hours, stir and then filter to obtain the fertilizer solution. Dilute it 5 times to water all kinds of potted plants, it is gentle and will not damage the roots.",
+    "safetyNote": "Vermicompost should come from clean sources and avoid manure from unknown sources that may contain pathogens."
+  },
+  "239": {
+    "name": "superphosphate leaching fertilizer",
+    "materials": [
+      "superphosphate",
+      "water"
+    ],
+    "ratio": "20 g superphosphate, 1000 ml water",
+    "steps": "Dissolve superphosphate in water, stir, let stand for 24 hours and then take the supernatant. Dilute 3 times to water flowering plants to promote flower bud differentiation.",
+    "safetyNote": "Fertilizer solution is acidic, avoid contact with skin and eyes, and do not mix with alkaline substances."
+  },
+  "240": {
+    "name": "Rapeseed cake liquid fertilizer",
+    "materials": [
+      "Rapeseed cake",
+      "water",
+      "brown sugar"
+    ],
+    "ratio": "80g rapeseed cake, 1000ml water, 30g brown sugar",
+    "steps": "The rapeseed cake is crushed, mixed with brown sugar and water, and fermented in a sealed container for 15 days. Dilute the fermentation liquid 15 times and water it to provide comprehensive nutrients of nitrogen, phosphorus and potassium.",
+    "safetyNote": "Concentrated fertilizer must be fully diluted, otherwise it will easily burn the roots and deflate regularly during fermentation."
+  },
+  "241": {
+    "name": "Kelp iodine fertilizer",
+    "materials": [
+      "dried kelp",
+      "water"
+    ],
+    "ratio": "50 g dried kelp, 800 ml water",
+    "steps": "Chop dried kelp and soak in water for 48 hours, heat to a gentle boil for 10 minutes and then filter. The filtrate is diluted 10 times and irrigated to supplement the trace element iodine.",
+    "safetyNote": "Do not use too much, just use it once or twice a month."
+  },
+  "242": {
+    "name": "Calendula Soothing Cream",
+    "materials": [
+      "Calendula Infused Oil",
+      "beeswax",
+      "shea butter"
+    ],
+    "ratio": "Calendula infused oil 40g, beeswax 8g, shea butter 20g",
+    "steps": "Heat beeswax over water and melt, add shea butter and calendula infused oil and stir. Cool and then whip until creamy. Can be used on dry or sensitive skin.",
+    "safetyNote": "Please do not use if you are allergic to Asteraceae plants. Do a skin test before first use."
+  },
+  "243": {
+    "name": "rose petal bath salts",
+    "materials": [
+      "sea ​​salt",
+      "rose petals",
+      "essential oils"
+    ],
+    "ratio": "200 g sea salt, 20 g rose petals, 3 ml essential oil",
+    "steps": "Mix sea salt and dried rose petals, drop in essential oil, mix well, and put into an airtight jar. Dissolve 30 grams in the bathtub during bathing to relax your body and mind.",
+    "safetyNote": "Rinse thoroughly after bathing to avoid petals clogging the drain."
+  },
+  "244": {
+    "name": "Green tea astringent water",
+    "materials": [
+      "green tea leaves",
+      "Witch hazel",
+      "glycerin"
+    ],
+    "ratio": "15g green tea leaves, 100ml witch hazel, 5ml glycerin",
+    "steps": "Green tea leaves are soaked in hot water for 20 minutes and then filtered. The filtrate is cooled and mixed with witch hazel and glycerin. Put it in a bottle and use it as an astringent for oily skin.",
+    "safetyNote": "Freshly made products have a short shelf life and are recommended to be refrigerated and used within seven days."
+  },
+  "245": {
+    "name": "Shea Butter Foot Cream",
+    "materials": [
+      "shea butter",
+      "beeswax",
+      "Menthol"
+    ],
+    "ratio": "40g shea butter, 10g beeswax, 1g menthol",
+    "steps": "Melt beeswax and shea butter over water, remove from heat, add menthol and stir. Cool and put into jar. Apply to feet before going to bed to moisturize and prevent cracks.",
+    "safetyNote": "Do not use if there is a wound on the skin, and avoid contact of menthol with eyes."
+  },
+  "246": {
+    "name": "Oatmeal mild soap",
+    "materials": [
+      "olive oil",
+      "oat flour",
+      "sodium hydroxide",
+      "water"
+    ],
+    "ratio": "500g olive oil, 30g oat flour, 64g sodium hydroxide, 160ml water",
+    "steps": "After the lye solution has cooled, pour in the olive oil and stir until trace. Add the oat flour and stir lightly. After placing in the mold and keeping it warm, remove it from the mold and let it dry for 4 weeks. It is suitable for bathing with sensitive skin.",
+    "safetyNote": "Sodium hydroxide is highly corrosive and must be handled with gloves and goggles."
+  },
+  "247": {
+    "name": "Bamboo Charcoal Deep Cleansing Soap",
+    "materials": [
+      "coconut oil",
+      "bamboo charcoal powder",
+      "sodium hydroxide",
+      "water"
+    ],
+    "ratio": "400g coconut oil, 15g bamboo charcoal powder, 56g sodium hydroxide, 140ml water",
+    "steps": "Stir lye and coconut oil until thick, add bamboo charcoal powder and mix well. Pour into molds and allow soap to cleanse oily skin after 4 weeks.",
+    "safetyNote": "Sodium hydroxide is highly corrosive. Avoid inhaling bamboo charcoal powder. Please wear a mask."
+  },
+  "248": {
+    "name": "Shea Butter Super Fat Soap",
+    "materials": [
+      "coconut oil",
+      "shea butter",
+      "sodium hydroxide",
+      "water"
+    ],
+    "ratio": "300 g coconut oil, 200 g shea butter, 71 g sodium hydroxide, 160 ml water",
+    "steps": "Stir the lye and mixed fat until trace, place into molds and keep warm for 24 hours. Allow the soap to dry for 4 weeks after unmoulding. It will produce rich foam and moisturizing after washing.",
+    "safetyNote": "Sodium hydroxide is highly corrosive and must be handled in a ventilated area wearing protective equipment."
+  },
+  "249": {
+    "name": "rose petal decorative soap",
+    "materials": [
+      "olive oil",
+      "rose petals",
+      "sodium hydroxide",
+      "water"
+    ],
+    "ratio": "500 g olive oil, 20 g rose petals, 64 g sodium hydroxide, 160 ml water",
+    "steps": "After the lye solution has cooled, pour in the olive oil and stir. Add the dried rose petals and stir gently to retain the flower shape. Allow the soap to dry for 4 weeks after being molded, and it can be used as bathroom decorative soap.",
+    "safetyNote": "Sodium hydroxide is highly corrosive, the petals need to be completely dry, and please wear gloves when operating."
+  },
+  "250": {
+    "name": "Eucalyptus mosquito repellent spray",
+    "materials": [
+      "Eucalyptus essential oil",
+      "Alcohol",
+      "water"
+    ],
+    "ratio": "Eucalyptus essential oil 6 ml, alcohol 70 ml, water 30 ml",
+    "steps": "Dissolve eucalyptus essential oil in alcohol, add water, shake well, and put into a spray bottle. Spray on clothes or surrounding spaces before outdoor activities to repel mosquitoes for a short period of time.",
+    "safetyNote": "Alcohol is flammable. Keep away from fire sources. Use with caution on infants and young children under three years old."
+  },
+  "251": {
+    "name": "Rosemary anti-moth spray",
+    "materials": [
+      "rosemary",
+      "Alcohol",
+      "water"
+    ],
+    "ratio": "30g dried rosemary, 100ml alcohol, 50ml water",
+    "steps": "Rosemary is soaked in alcohol for 7 days and then filtered, and the filtrate is diluted with water. Spray on the inside of wardrobes and storage boxes to help prevent moths.",
+    "safetyNote": "Alcohol is flammable, so stay away from fire sources when spraying and avoid contact with open flames."
+  },
+  "252": {
+    "name": "Chili insect repellent water",
+    "materials": [
+      "dried chili pepper",
+      "garlic",
+      "water"
+    ],
+    "ratio": "20g dried chili, 30g garlic, 1000ml water",
+    "steps": "Mash the dried chilies and garlic and soak them in water for 24 hours. Filter and take the leachate. Dilute 5 times and spray on plants to repel some gnawing pests.",
+    "safetyNote": "Please wear gloves when operating, avoid contact with eyes and mouth, and do not eat crops immediately after spraying."
+  },
+  "253": {
+    "name": "Cedar Wood Insect Block",
+    "materials": [
+      "cedar chips",
+      "essential oils",
+      "non woven bag"
+    ],
+    "ratio": "80g cedar sawdust, 5ml essential oil, 2 non-woven bags",
+    "steps": "Add drops of essential oil to cedar sawdust, mix well, put into non-woven bags and tie tightly. Placed in wardrobes and drawers, it can repel insects and emit a woody fragrance.",
+    "safetyNote": "Replace regularly to avoid mold in humid environments."
+  },
+  "254": {
+    "name": "Simple fire blanket mud",
+    "materials": [
+      "clay",
+      "sandy soil",
+      "water"
+    ],
+    "ratio": "300 grams of clay, 200 grams of sand, 100 ml of water",
+    "steps": "Clay, sand and water are mixed and kneaded until they are pliable, and then covered around the temporary welding or cutting work area. It can block spark splash for a short time and can be removed after operation.",
+    "safetyNote": "It is only for temporary auxiliary protection and cannot replace professional fire prevention measures."
+  },
+  "255": {
+    "name": "natural chalk",
+    "materials": [
+      "plaster of paris",
+      "water",
+      "food coloring"
+    ],
+    "ratio": "100 grams of plaster of paris, 50 ml of water, appropriate amount of food coloring",
+    "steps": "Plaster of paris is mixed with water and pigments into a plastic shape, then filled into chalk molds or rolled into strips. Dry in the shade for 24 hours until completely hard and ready for blackboard writing.",
+    "safetyNote": "Avoid inhalation of gypsum powder and keep it out of reach of children during the drying process."
+  },
+  "256": {
+    "name": "emergency waterproof coating",
+    "materials": [
+      "paraffin",
+      "turpentine",
+      "cloth"
+    ],
+    "ratio": "50 grams of paraffin, 30 ml of turpentine, 1 piece of cloth",
+    "steps": "Heat and melt the paraffin, add turpentine, and apply the mixture thinly to the canvas or thick cloth with a brush. After cooling, a waterproof layer forms and can be used for temporary covering.",
+    "safetyNote": "Both turpentine and paraffin are flammable. Keep away from fire sources and maintain ventilation when handling."
+  },
+  "257": {
+    "name": "Simple grinding and polishing paste",
+    "materials": [
+      "baking soda",
+      "toothpaste",
+      "water"
+    ],
+    "ratio": "20g baking soda, 10g toothpaste, 5ml water",
+    "steps": "Mix baking soda, toothpaste and water into a paste and apply it to a soft cloth. It can be used to polish metal surfaces such as silver jewelry and faucets to remove light oxidation.",
+    "safetyNote": "Before use, try rubbing in an inconspicuous place to avoid damaging the coating surface."
+  },
+  "258": {
+    "name": "oven grease remover",
+    "materials": [
+      "baking soda",
+      "dish soap",
+      "water"
+    ],
+    "ratio": "100g baking soda, 30ml dish soap, 40ml water",
+    "steps": "Mix baking soda with dish soap and water to make a thick paste, and apply it evenly to the greasy areas on the inner wall of the oven. Let it sit for 2 hours, wipe it off with a damp cloth, and then wipe it clean with clean water.",
+    "safetyNote": "Be sure to turn off the power and wait for the oven to cool down completely before cleaning, and wear gloves when operating."
+  },
+  "259": {
+    "name": "Shower descaling liquid",
+    "materials": [
+      "citric acid",
+      "water"
+    ],
+    "ratio": "30 g citric acid, 300 ml water",
+    "steps": "Dissolve citric acid in warm water, remove the shower head and soak it for 1 hour, or cover the fixed shower head with the solution in a plastic bag and soak it. Scale can be removed after rinsing.",
+    "safetyNote": "Avoid contact of the solution with skin wounds during soaking, and rinse thoroughly after cleaning."
+  },
+  "260": {
+    "name": "Detergent for silk",
+    "materials": [
+      "baby shampoo",
+      "water",
+      "essential oils"
+    ],
+    "ratio": "20 ml baby shampoo, 500 ml water, 1 ml essential oil",
+    "steps": "Dilute baby shampoo in water, add essential oils and shake well. Use for hand-washing silk products in cold water. Press gently and rinse with water. Do not twist when drying in the shade.",
+    "safetyNote": "Do not machine wash or expose to sunlight. Test wash in a hidden place before first use."
+  },
+  "261": {
+    "name": "Denim clothing color fixing lotion",
+    "materials": [
+      "Salt",
+      "white vinegar",
+      "cold water"
+    ],
+    "ratio": "30 grams of salt, 30 ml of white vinegar, 3000 ml of cold water",
+    "steps": "Dissolve salt and white vinegar in cold water and soak new jeans inside out for 30 minutes. Rinse gently and dry in the shade to reduce color fading during the first wash.",
+    "safetyNote": "Only suitable for indigo dyed denim, do not mix with bleach."
+  },
+  "262": {
+    "name": "cypress incense powder",
+    "materials": [
+      "cypress wood powder",
+      "Nanmu powder",
+      "water"
+    ],
+    "ratio": "70 grams of cypress powder, 30 grams of nanmu powder, 25 ml of water",
+    "steps": "Mix cypress powder and nanmu powder, add water and knead into a ball, then shape into a cone or strip. Dry in the shade for 5 days and then ignite it in an incense burner to emit a woody fragrance.",
+    "safetyNote": "When burning, please use a fireproof incense burner, maintain ventilation, and keep people away from the fire source."
+  },
+  "263": {
+    "name": "Car air outlet chewing clip",
+    "materials": [
+      "Felt",
+      "essential oils",
+      "wooden clamp"
+    ],
+    "ratio": "2 pieces of felt, 3 ml of essential oil, 1 wooden clip",
+    "steps": "Cut the felt into small pieces and add essential oil drops until saturated. Clip it on the car air outlet clip and slowly release the aroma when the air conditioning wind blows.",
+    "safetyNote": "Essential oils should not come into direct contact with the skin and should be replaced regularly to avoid overly strong smells."
+  }
+}

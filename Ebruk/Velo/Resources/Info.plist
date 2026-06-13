@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ChannelId</key>
+	<string>IOS10056</string>
+	<key>AppsFlyerAppleAppID</key>
+	<string></string>
+	<key>AppsFlyerDevKey</key>
+	<string></string>
+	<key>APIBaseURL</key>
+	<string></string>
+	<key>ResBaseURL</key>
+	<string></string>
+	<key>isTest</key>
+	<integer>0</integer>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+</dict>
+</plist>

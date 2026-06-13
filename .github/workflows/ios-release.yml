@@ -1,0 +1,243 @@
+# Ebruk iOS：Archive → Export → 上传 App Store Connect
+#
+# 所需 Secrets（Repository → Settings → Secrets and variables → Actions）：
+#   APPLE_TEAM_ID                    Apple Developer Team ID
+#   APP_STORE_CONNECT_ISSUER_ID      App Store Connect API Issuer ID
+#   APP_STORE_CONNECT_KEY_ID         API Key ID
+#   APP_STORE_CONNECT_API_PRIVATE_KEY  API 私钥 (.p8) 全文
+#
+# 触发方式：
+#   - 推送 tag：v*（如 v1.0.0）→ 默认上传 App Store Connect
+#   - Actions 页手动 Run workflow
+
+name: iOS Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      marketing_version:
+        description: "Marketing Version（留空则用工程默认值）"
+        required: false
+        type: string
+      build_number:
+        description: "Build Number（留空则用工程默认值）"
+        required: false
+        type: string
+      upload:
+        description: "上传到 App Store Connect"
+        required: true
+        type: boolean
+        default: true
+
+env:
+  PROJECT_DIR: Ebruk
+  XCODE_PROJECT: Ebruk.xcodeproj
+  SCHEME: Ebruk
+
+jobs:
+  release:
+    name: Archive & Upload
+    runs-on: macos-15
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Verify secrets
+        env:
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+          APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+          APP_STORE_CONNECT_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+          APP_STORE_CONNECT_API_PRIVATE_KEY: ${{ secrets.APP_STORE_CONNECT_API_PRIVATE_KEY }}
+        run: |
+          missing=()
+          [ -z "$APPLE_TEAM_ID" ] && missing+=("APPLE_TEAM_ID")
+          [ -z "$APP_STORE_CONNECT_ISSUER_ID" ] && missing+=("APP_STORE_CONNECT_ISSUER_ID")
+          [ -z "$APP_STORE_CONNECT_KEY_ID" ] && missing+=("APP_STORE_CONNECT_KEY_ID")
+          [ -z "$APP_STORE_CONNECT_API_PRIVATE_KEY" ] && missing+=("APP_STORE_CONNECT_API_PRIVATE_KEY")
+          if [ "${#missing[@]}" -gt 0 ]; then
+            echo "::error::缺少 Secrets: ${missing[*]}"
+            exit 1
+          fi
+
+      - name: Prepare App Store Connect API key
+        env:
+          APP_STORE_CONNECT_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+          APP_STORE_CONNECT_API_PRIVATE_KEY: ${{ secrets.APP_STORE_CONNECT_API_PRIVATE_KEY }}
+        run: |
+          KEY_DIR="$HOME/private_keys"
+          mkdir -p "$KEY_DIR"
+          KEY_PATH="$KEY_DIR/AuthKey_${APP_STORE_CONNECT_KEY_ID}.p8"
+          echo "$APP_STORE_CONNECT_API_PRIVATE_KEY" > "$KEY_PATH"
+          echo "APP_STORE_CONNECT_KEY_PATH=$KEY_PATH" >> "$GITHUB_ENV"
+
+      - name: Resolve version overrides
+        id: version
+        env:
+          INPUT_MARKETING: ${{ github.event.inputs.marketing_version }}
+          INPUT_BUILD: ${{ github.event.inputs.build_number }}
+        run: |
+          MARKETING="$INPUT_MARKETING"
+          BUILD="$INPUT_BUILD"
+
+          if [ -z "$MARKETING" ] && [[ "${GITHUB_REF}" == refs/tags/v* ]]; then
+            MARKETING="${GITHUB_REF_NAME#v}"
+          fi
+
+          echo "marketing_version=${MARKETING}" >> "$GITHUB_OUTPUT"
+          echo "build_number=${BUILD}" >> "$GITHUB_OUTPUT"
+
+          if [ -n "$MARKETING" ]; then
+            echo "MARKETING_VERSION=$MARKETING" >> "$GITHUB_ENV"
+          fi
+          if [ -n "$BUILD" ]; then
+            echo "CURRENT_PROJECT_VERSION=$BUILD" >> "$GITHUB_ENV"
+          fi
+
+      - name: Resolve upload mode
+        id: mode
+        run: |
+          if [[ "${GITHUB_EVENT_NAME}" == "push" ]]; then
+            echo "upload=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "upload=${{ github.event.inputs.upload }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Read bundle identifier
+        id: bundle
+        working-directory: ${{ env.PROJECT_DIR }}
+        run: |
+          BUNDLE_ID=$(xcodebuild -showBuildSettings \
+            -project "$XCODE_PROJECT" \
+            -scheme "$SCHEME" \
+            -configuration Release \
+            -destination "generic/platform=iOS" \
+            2>/dev/null | awk -F' = ' '/PRODUCT_BUNDLE_IDENTIFIER/{print $2; exit}')
+          echo "bundle_id=${BUNDLE_ID}" >> "$GITHUB_OUTPUT"
+          echo "Bundle ID: ${BUNDLE_ID}"
+
+      - name: Archive
+        working-directory: ${{ env.PROJECT_DIR }}
+        env:
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+          APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+          APP_STORE_CONNECT_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+        run: |
+          set -euo pipefail
+          ARCHIVE_PATH="$RUNNER_TEMP/Ebruk.xcarchive"
+
+          XCODEBUILD_ARGS=(
+            -project "$XCODE_PROJECT"
+            -scheme "$SCHEME"
+            -configuration Release
+            -destination "generic/platform=iOS"
+            -archivePath "$ARCHIVE_PATH"
+            DEVELOPMENT_TEAM="$APPLE_TEAM_ID"
+            CODE_SIGN_STYLE=Automatic
+            -allowProvisioningUpdates
+            -authenticationKeyPath "$APP_STORE_CONNECT_KEY_PATH"
+            -authenticationKeyID "$APP_STORE_CONNECT_KEY_ID"
+            -authenticationKeyIssuerID "$APP_STORE_CONNECT_ISSUER_ID"
+          )
+
+          if [ -n "${MARKETING_VERSION:-}" ]; then
+            XCODEBUILD_ARGS+=(MARKETING_VERSION="$MARKETING_VERSION")
+          fi
+          if [ -n "${CURRENT_PROJECT_VERSION:-}" ]; then
+            XCODEBUILD_ARGS+=(CURRENT_PROJECT_VERSION="$CURRENT_PROJECT_VERSION")
+          fi
+
+          xcodebuild archive "${XCODEBUILD_ARGS[@]}"
+
+          echo "ARCHIVE_PATH=$ARCHIVE_PATH" >> "$GITHUB_ENV"
+
+      - name: Export / Upload
+        working-directory: ${{ env.PROJECT_DIR }}
+        env:
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+          APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+          APP_STORE_CONNECT_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+          UPLOAD: ${{ steps.mode.outputs.upload }}
+        run: |
+          set -euo pipefail
+          EXPORT_DIR="$RUNNER_TEMP/export"
+          EXPORT_OPTIONS="$RUNNER_TEMP/ExportOptions.plist"
+
+          if [ "$UPLOAD" = "true" ]; then
+            DESTINATION="upload"
+          else
+            DESTINATION="export"
+          fi
+
+          python3 -c "
+          import plistlib
+          plist = {
+              'method': 'app-store-connect',
+              'destination': '${DESTINATION}',
+              'signingStyle': 'automatic',
+              'teamID': '${APPLE_TEAM_ID}',
+              'uploadSymbols': True,
+              'manageAppVersionAndBuildNumber': False,
+          }
+          with open('${EXPORT_OPTIONS}', 'wb') as f:
+              plistlib.dump(plist, f)
+          "
+
+          xcodebuild -exportArchive \
+            -archivePath "$ARCHIVE_PATH" \
+            -exportPath "$EXPORT_DIR" \
+            -exportOptionsPlist "$EXPORT_OPTIONS" \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath "$APP_STORE_CONNECT_KEY_PATH" \
+            -authenticationKeyID "$APP_STORE_CONNECT_KEY_ID" \
+            -authenticationKeyIssuerID "$APP_STORE_CONNECT_ISSUER_ID"
+
+          if [ "$DESTINATION" = "export" ]; then
+            IPA_PATH="$EXPORT_DIR/${SCHEME}.ipa"
+            if [ ! -f "$IPA_PATH" ]; then
+              IPA_PATH="$(find "$EXPORT_DIR" -name '*.ipa' -print -quit)"
+            fi
+            echo "IPA_PATH=$IPA_PATH" >> "$GITHUB_ENV"
+          fi
+
+      - name: Upload IPA artifact
+        if: steps.mode.outputs.upload != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ebruk-ipa
+          path: ${{ env.IPA_PATH }}
+          retention-days: 14
+          if-no-files-found: error
+
+      - name: Summary
+        env:
+          UPLOAD: ${{ steps.mode.outputs.upload }}
+        run: |
+          {
+            echo "### iOS Release"
+            echo ""
+            echo "| 项 | 值 |"
+            echo "|---|---|"
+            echo "| Scheme | ${{ env.SCHEME }} |"
+            echo "| Bundle ID | ${{ steps.bundle.outputs.bundle_id }} |"
+            if [ -n "${MARKETING_VERSION:-}" ]; then
+              echo "| Marketing Version | ${MARKETING_VERSION} |"
+            fi
+            if [ -n "${CURRENT_PROJECT_VERSION:-}" ]; then
+              echo "| Build Number | ${CURRENT_PROJECT_VERSION} |"
+            fi
+            if [ "$UPLOAD" = "true" ]; then
+              echo "| 结果 | 已上传 App Store Connect |"
+            elif [ -n "${IPA_PATH:-}" ]; then
+              echo "| IPA | ${IPA_PATH} |"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

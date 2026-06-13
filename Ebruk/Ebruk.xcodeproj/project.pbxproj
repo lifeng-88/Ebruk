@@ -1,0 +1,1068 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04DB078580E444CFBC682948 /* Velo/Core/AppLanguageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB3E1140144BA3BB86FAD1 /* Velo/Core/AppLanguageStore.swift */; };
+		0747645B385E4398AE0F2ED2 /* Velo/Features/Push/PushMarketingSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC20F3617D4160BB868CCF /* Velo/Features/Push/PushMarketingSheets.swift */; };
+		1113BE353A1347C7BA966C34 /* Velo/Features/Home/HomeUploadTipsOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D74D9D71444E49AB2BA72 /* Velo/Features/Home/HomeUploadTipsOverlay.swift */; };
+		12C58944DF2E43809984495F /* Velo/Resources/Config/IAP.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 171EA7432E564DD8A1C2392D /* Velo/Resources/Config/IAP.storekit */; };
+		13CCBA48A7E346808DF933DE /* Velo/Data/Repositories/VlBinaryObjectUploadRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1657CA0FF44104A48DB321 /* Velo/Data/Repositories/VlBinaryObjectUploadRepository.swift */; };
+		15CF400685624FDD9E5DAC57 /* Velo/Features/Profile/LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA097C2D01604DBD8930F764 /* Velo/Features/Profile/LoginView.swift */; };
+		16430230DB4C4F3BAB300A47 /* Velo/Core/AuthReloginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AE8257DC40468E9A534525 /* Velo/Core/AuthReloginHelper.swift */; };
+		16C61655785648E59FDC1963 /* Velo/Features/Home/HomeImmersiveVideoBackdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CAF97241A74C0FA4CA184A /* Velo/Features/Home/HomeImmersiveVideoBackdrop.swift */; };
+		1B0C01FED6174AF281DCE0CC /* Velo/Data/LocalStorage/RedirectPaymentInfoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69342538AF97437BAE5DFC8F /* Velo/Data/LocalStorage/RedirectPaymentInfoStore.swift */; };
+		1F12872051B94D2B985C2156 /* Velo/Domain/Entities/FavoriteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943B50F2BC947FD81E46334 /* Velo/Domain/Entities/FavoriteModels.swift */; };
+		2074E8E20754476F82B8BC2E /* Velo/Core/DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24CF8A4468A471FA252CD1D /* Velo/Core/DeviceManager.swift */; };
+		228764508DA24316AB5096F7 /* Velo/Features/Home/HomeChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1282B0975FE24D05A5805CE0 /* Velo/Features/Home/HomeChrome.swift */; };
+		26B72684C31243EDBBBC30CC /* Velo/Domain/Services/VlStoreKitPurchaseOrchestrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE885C255A84101B20671DD /* Velo/Domain/Services/VlStoreKitPurchaseOrchestrator.swift */; };
+		28393C39B378444DA0679ABB /* Velo/Data/Network/VlBinaryObjectWireTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E671864A071C448BA9AE941F /* Velo/Data/Network/VlBinaryObjectWireTransport.swift */; };
+		289B87BEC853467E917559AB /* Velo/Domain/Services/VlCoinSkuOfferingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C35B0DBE6346DBBE51B638 /* Velo/Domain/Services/VlCoinSkuOfferingCoordinator.swift */; };
+		2AA3B33088F041338B6A0793 /* Velo/Core/UserWalletStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B87546E40F24EB4882437B3 /* Velo/Core/UserWalletStore.swift */; };
+		2B1D225CB76C46DAB0B37B59 /* Velo/Core/VersionConfigStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC7CB2196844E008096246D /* Velo/Core/VersionConfigStore.swift */; };
+		2CA4DC8AC06740CC882FE802 /* Velo/Features/Home/HomeAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73DB5DEDA4A4AA09804BF13 /* Velo/Features/Home/HomeAnalytics.swift */; };
+		2ED07D3B049C46D5AFCE717D /* Velo/Data/Network/VlAsyncRenderJobWireTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D582FDAF71F4BB2A41D36DA /* Velo/Data/Network/VlAsyncRenderJobWireTransport.swift */; };
+		3144603D5E0147909BE54AF3 /* Velo/Domain/Services/VlAsyncWorkPollCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BB181E6B844D084B2251A /* Velo/Domain/Services/VlAsyncWorkPollCoordinator.swift */; };
+		32611B7D363946DBA3774C5F /* Velo/Data/LocalStorage/UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37519EB331B0464095083935 /* Velo/Data/LocalStorage/UserDefaultsManager.swift */; };
+		350F95D32ED14CF09B4116D0 /* Velo/Data/Network/VlIdentityWireTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E35F1465D2400B810108E3 /* Velo/Data/Network/VlIdentityWireTransport.swift */; };
+		399C7D2184FF44F2837013AA /* Velo/App/VeloMainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA640C79BEE047308A079768 /* Velo/App/VeloMainTabView.swift */; };
+		3BBF671A674C48EFA3639C89 /* Velo/Domain/Services/VlClientTelemetryOutbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8BB2993FEA4FD7B85423A2 /* Velo/Domain/Services/VlClientTelemetryOutbox.swift */; };
+		3FC802F3E1144968A857E67F /* Velo/Data/Network/ResBaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87380D66040A40A584B6C213 /* Velo/Data/Network/ResBaseURL.swift */; };
+		4358E6B489B1442A825EA207 /* Velo/Domain/Repositories/VlPurchaseLedgerRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863A2C42C66443679331730D /* Velo/Domain/Repositories/VlPurchaseLedgerRepositoryProtocol.swift */; };
+		49D08BC1826B47CBAABF0B93 /* Velo/Features/Home/HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED58B316474D99B3FBD4B5 /* Velo/Features/Home/HomeModels.swift */; };
+		4A18A05ADB8B483BB4AB5E18 /* Velo/Data/Repositories/VlPurchaseLedgerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F988CAADA471BA841DB6E /* Velo/Data/Repositories/VlPurchaseLedgerRepository.swift */; };
+		5573C00619814B96A53D0272 /* Velo/Data/LocalStorage/VideoCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558129B038A2453087E6BA7C /* Velo/Data/LocalStorage/VideoCacheManager.swift */; };
+		6139626C4F6643F08B0DB734 /* Velo/Features/Home/HomeTemplateGenerationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDF00156F4D424FB5ABF0CF /* Velo/Features/Home/HomeTemplateGenerationSheet.swift */; };
+		614924FE9AA345A893A3957A /* Velo/Features/Home/HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A37FCE33C41B1AF22CB51 /* Velo/Features/Home/HomeView.swift */; };
+		614CACFBAF984EF9841A44BD /* Velo/Domain/Services/VlRealtimePushSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0721DA2E99C84E7F809D8539 /* Velo/Domain/Services/VlRealtimePushSession.swift */; };
+		623D7A9AFFC342FB824DA5A3 /* Velo/Domain/Services/VlStoredCardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3C5C53379C45FB9049B8D9 /* Velo/Domain/Services/VlStoredCardCoordinator.swift */; };
+		63852C13ED014D2D843BA053 /* Velo/Features/Home/HomeGenerationRechargeUpsellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DFBA3018624164B3B6FFEA /* Velo/Features/Home/HomeGenerationRechargeUpsellView.swift */; };
+		6966720E1E9144659F5F75A4 /* Velo/Domain/Services/VlThirdPartyAttributionBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752D0249D6F2455A95373850 /* Velo/Domain/Services/VlThirdPartyAttributionBridge.swift */; };
+		69D351D6D4B34995AF351E8F /* Velo/Data/Network/VlSupportTicketWireTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2494C193B5D48A6958C0044 /* Velo/Data/Network/VlSupportTicketWireTransport.swift */; };
+		6F280BD3FB034F2DBF2F97C6 /* Velo/Domain/Services/UserLocaleReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24DB0BBA54C4637BA1333C6 /* Velo/Domain/Services/UserLocaleReporter.swift */; };
+		6F8EAF89145E4962A291EA38 /* Velo/Core/WelcomeBonusOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9010B0C2314B0892060970 /* Velo/Core/WelcomeBonusOverlay.swift */; };
+		7196795C69BA4F05A8EBE8E8 /* Velo/Features/Recharge/RechargeUIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CFD19562E44D409DE78DF0 /* Velo/Features/Recharge/RechargeUIModels.swift */; };
+		72334BDB12CB4CE7AAA3D906 /* Velo/Core/VeloApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BD43BC420F4186B791A6F2 /* Velo/Core/VeloApplicationDelegate.swift */; };
+		72A795343B78421EBC610AF0 /* Velo/Data/LocalStorage/VlCatalogMaterialDiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AC44A6B3244CA0890DDCB5 /* Velo/Data/LocalStorage/VlCatalogMaterialDiskCache.swift */; };
+		74B6A6B0A10640739F0B2F6D /* Velo/Features/Profile/MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D64BA0A564C968BB3B21D /* Velo/Features/Profile/MyProfileView.swift */; };
+		75C324EAC68A4815B3F8EB03 /* Velo/Core/DeviceLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C5F25B8F747F4939244D8 /* Velo/Core/DeviceLoginService.swift */; };
+		769EB954008E4935B1DDEFCC /* Velo/Domain/Repositories/VlIdentitySessionRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FE21CB0F74A97B3D9C918 /* Velo/Domain/Repositories/VlIdentitySessionRepositoryProtocol.swift */; };
+		77464E2BCFFB49EDB66B146D /* Velo/Domain/Services/VlAttributionRemoteConfigBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649DC63052C94898902DE6AE /* Velo/Domain/Services/VlAttributionRemoteConfigBox.swift */; };
+		7990909A062740ABB7B7849B /* Velo/App/VeloRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A367FE2DA402CB311ACFE /* Velo/App/VeloRootView.swift */; };
+		7B77B9C9FD02458B84BF3489 /* Velo/Features/Home/HomeDebugToolsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4AB02EC4DF4C3DABABEDB6 /* Velo/Features/Home/HomeDebugToolsSection.swift */; };
+		7DE99D7DA2684CC38BA4DE17 /* Velo/Resources/Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F44CB14D42E43FEA9C5B57C /* Velo/Resources/Assets.xcassets */; };
+		81A90BF5DD3B43DA82ACD365 /* Velo/Features/Recharge/AddPaymentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365D186253D648B4B156982A /* Velo/Features/Recharge/AddPaymentCardView.swift */; };
+		86B1E5C44F274AA19EE0186B /* Velo/Domain/Services/IPLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB125274C413419FB0195B20 /* Velo/Domain/Services/IPLocationManager.swift */; };
+		88CF455EC1F74EC1A0647472 /* Velo/Domain/Entities/FeedbackModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218B4129B9D846BD8C2F237F /* Velo/Domain/Entities/FeedbackModels.swift */; };
+		8AF2CAD5E77E4383BB087DA2 /* Velo/Data/LocalStorage/KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618831752BF3400A9A0E7C33 /* Velo/Data/LocalStorage/KeychainManager.swift */; };
+		8B0CD55C30BF40C7AC5E52E1 /* Velo/Core/SwiftUICompat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E154EC2684497AA10B5C4 /* Velo/Core/SwiftUICompat.swift */; };
+		9030F9AED46C439D8F7353FD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4140F9B264414DEF97A7CE43 /* StoreKit.framework */; };
+		916752F078EE4D288FC55F54 /* Velo/Features/Home/HomeFlashSalePresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F8CF863D6144C9892787B1 /* Velo/Features/Home/HomeFlashSalePresentation.swift */; };
+		9223A04098B4466CB008487B /* Velo/Features/Recharge/RechargePaymentSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5590B57101824EB6BB3E060E /* Velo/Features/Recharge/RechargePaymentSelectionView.swift */; };
+		963FBF54966549AAAFC58E63 /* Velo/Features/Recharge/RechargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86830449049E4EAEB2C02D94 /* Velo/Features/Recharge/RechargeView.swift */; };
+		9E023B1113804731844F1382 /* Velo/Features/Recharge/RechargeResultOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA10F41A5294C72BA271BA6 /* Velo/Features/Recharge/RechargeResultOverlay.swift */; };
+		9E5F4146F78842D3AEEBD118 /* Velo/Core/NotificationPermissionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FE7DFB436D4F218224351B /* Velo/Core/NotificationPermissionStore.swift */; };
+		9F889C254F724E008C671482 /* Velo/Data/Network/VlProductTelemetryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355183653CA474A9DE81FD3 /* Velo/Data/Network/VlProductTelemetryAPI.swift */; };
+		9FCACE647EB1425AB1F18FA4 /* Velo/Features/Home/HomeTemplateDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1D3D647A049D7BC6300D9 /* Velo/Features/Home/HomeTemplateDetailView.swift */; };
+		A2FE358CB7A54F7BB96EA4B5 /* Velo/Domain/Entities/TemplateModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1857E2590748D088CA2038 /* Velo/Domain/Entities/TemplateModels.swift */; };
+		A31CE4C2F5724E4DA006ED1D /* Velo/Core/RechargeAFLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918CD0087684628B774A2C8 /* Velo/Core/RechargeAFLogger.swift */; };
+		A3A66F27657A4B608AF56294 /* Velo/Resources/Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 74495C96EB5740FE9BD3E05D /* Velo/Resources/Localizable.xcstrings */; };
+		A52DF65902C74549A1BFD876 /* Velo/Core/AppCoinIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C8AFBEB9FC42B09866C5DC /* Velo/Core/AppCoinIcon.swift */; };
+		A8547F3009844F3AAF2E6DF9 /* Velo/Core/TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9687437684034204A9276C27 /* Velo/Core/TokenManager.swift */; };
+		AC98C3C708C34A28B3D69845 /* Velo/Core/BalanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AEAD1AA3CF4F8783333307 /* Velo/Core/BalanceManager.swift */; };
+		AD614C8D8AC240CFAADF91DB /* Velo/Features/Profile/ProfileRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E4472BE7A94EA19225F609 /* Velo/Features/Profile/ProfileRoute.swift */; };
+		AD7B6EA9508B46DFBB31AA7D /* Velo/Core/AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C44D0859E43FC99E3CB2E /* Velo/Core/AppTheme.swift */; };
+		AD94D5C8DC4644799394BE08 /* Velo/Core/AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94591E97A2481EAFBA14F1 /* Velo/Core/AppError.swift */; };
+		AF42495A65DA41BD968ADA4B /* Velo/Domain/Repositories/VlCatalogWorkRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75351272F5CB4DEDBE49993D /* Velo/Domain/Repositories/VlCatalogWorkRepositoryProtocol.swift */; };
+		B10000010000000000000001 /* EbrukApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000001 /* EbrukApp.swift */; };
+		B10000010000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000002 /* ContentView.swift */; };
+		B10000010000000000000003 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000003 /* Recipe.swift */; };
+		B10000010000000000000004 /* RecipeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000004 /* RecipeStore.swift */; };
+		B10000010000000000000005 /* CategoryChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000005 /* CategoryChip.swift */; };
+		B10000010000000000000006 /* RecipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000006 /* RecipeCardView.swift */; };
+		B10000010000000000000007 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000007 /* RecipeDetailView.swift */; };
+		B10000010000000000000008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000008 /* Assets.xcassets */; };
+		B10000010000000000000009 /* RecipeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000011 /* RecipeAPIService.swift */; };
+		B10000010000000000000010 /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000012 /* RecipeListViewModel.swift */; };
+		B10000010000000000000011 /* RecipeAccessPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000013 /* RecipeAccessPolicy.swift */; };
+		B10000010000000000000012 /* CoinStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000014 /* CoinStore.swift */; };
+		B10000010000000000000013 /* UnlockRecipeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000015 /* UnlockRecipeSheet.swift */; };
+		B10000010000000000000014 /* CoinBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000016 /* CoinBalanceView.swift */; };
+		B10000010000000000000015 /* FavoriteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000017 /* FavoriteStore.swift */; };
+		B10000010000000000000016 /* CustomRecipeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000018 /* CustomRecipeStore.swift */; };
+		B10000010000000000000017 /* RecipeCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000019 /* RecipeCatalog.swift */; };
+		B10000010000000000000018 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000020 /* MainTabView.swift */; };
+		B10000010000000000000019 /* FavoriteRecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000021 /* FavoriteRecipesView.swift */; };
+		B10000010000000000000020 /* CustomRecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000022 /* CustomRecipesView.swift */; };
+		B10000010000000000000021 /* RecipeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000023 /* RecipeEditorView.swift */; };
+		B10000010000000000000022 /* AmountUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000024 /* AmountUnit.swift */; };
+		B10000010000000000000023 /* CoinPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000025 /* CoinPackage.swift */; };
+		B10000010000000000000024 /* CoinRechargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000026 /* CoinRechargeView.swift */; };
+		B10000010000000000000025 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000027 /* SettingsView.swift */; };
+		B10000010000000000000026 /* AppearanceMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000028 /* AppearanceMode.swift */; };
+		B10000010000000000000027 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000029 /* NotificationService.swift */; };
+		B10000010000000000000028 /* AppSettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000030 /* AppSettingsStore.swift */; };
+		B10000010000000000000029 /* StoreKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000031 /* StoreKitService.swift */; };
+		B10000010000000000000030 /* Products.storekit in Resources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000032 /* Products.storekit */; };
+		B10000010000000000000031 /* PurchaseRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000033 /* PurchaseRecord.swift */; };
+		B10000010000000000000032 /* PurchaseHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000034 /* PurchaseHistoryView.swift */; };
+		B10000010000000000000033 /* LegalDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000035 /* LegalDocumentView.swift */; };
+		B10000010000000000000034 /* AppBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000036 /* AppBackup.swift */; };
+		B10000010000000000000035 /* BackupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000037 /* BackupService.swift */; };
+		B10000010000000000000037 /* BackupSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000038 /* BackupSettingsView.swift */; };
+		B10000010000000000000038 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000039 /* OnboardingView.swift */; };
+		B10000010000000000000039 /* Recipe+Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000040 /* Recipe+Sharing.swift */; };
+		B10000010000000000000044 /* RecipePDFExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000052 /* RecipePDFExporter.swift */; };
+		B10000010000000000000045 /* ActivityShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000053 /* ActivityShareSheet.swift */; };
+		B10000010000000000000046 /* CenteredNavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000054 /* CenteredNavigationTitle.swift */; };
+		B10000010000000000000047 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000055 /* UserStore.swift */; };
+		B10000010000000000000048 /* UnlockedRecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000056 /* UnlockedRecipesView.swift */; };
+		B10000010000000000000050 /* AppSurfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000058 /* AppSurfaceController.swift */; };
+		B10000010000000000000051 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000059 /* AppRootView.swift */; };
+		B10000010000000000000059 /* AppSurfaceCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000067 /* AppSurfaceCopy.swift */; };
+		B10000010000000000000068 /* RecipeDifficultyEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000069 /* RecipeDifficultyEvaluator.swift */; };
+		B10000010000000000000070 /* Velo/Data/LocalStorage/VeloUserKeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000071 /* Velo/Data/LocalStorage/VeloUserKeychainStore.swift */; };
+		B10000010000000000000072 /* Formula.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000072 /* Formula.xcstrings */; };
+		B10000010000000000000073 /* FormulaL10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000073 /* FormulaL10n.swift */; };
+		B10000010000000000000074 /* FormulaLanguagePreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000074 /* FormulaLanguagePreference.swift */; };
+		B10000010000000000000075 /* RecipeLocalizedContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000075 /* RecipeLocalizedContent.swift */; };
+		B10000010000000000000076 /* Recipe+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000076 /* Recipe+Localization.swift */; };
+		B10000010000000000000077 /* RecipeLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000077 /* RecipeLocalization.swift */; };
+		B10000010000000000000078 /* RecipeSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000078 /* RecipeSearch.swift */; };
+		B10000010000000000000079 /* RecipeContentEN.json in Resources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000079 /* RecipeContentEN.json */; };
+		B146DAC4C93E4A259D04B88B /* Velo/Features/Home/HomeLayoutTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBF35F3B2C4452C940020B3 /* Velo/Features/Home/HomeLayoutTransitions.swift */; };
+		B589B0FF9AEC4394A27A7B92 /* Velo/Features/Home/HomeGridFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1929F330B301427094AB2F41 /* Velo/Features/Home/HomeGridFeedView.swift */; };
+		B68F26D0F19047B09374C6DE /* EbrukApp/Views/VeloContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE6C0F836DF4CB18DE690AF /* EbrukApp/Views/VeloContainerView.swift */; };
+		B938A133D6234A00B916362C /* Velo/Data/LocalStorage/VlPurchaseMaterialDiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C602CC3934696908DB600 /* Velo/Data/LocalStorage/VlPurchaseMaterialDiskCache.swift */; };
+		B947BF4950C0408AA62F2334 /* Velo/Data/LocalStorage/ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76F9F7C79CA45AC86192131 /* Velo/Data/LocalStorage/ImageCacheManager.swift */; };
+		BFD318F96F464843BE522BFB /* Velo/Resources/Preview Content/Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A263820A0CB4A42BD1EAB26 /* Velo/Resources/Preview Content/Preview Assets.xcassets */; };
+		C2AD75A9ADD9443AB3AFA4BD /* Velo/Domain/Entities/AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758B9C37619427E985698ED /* Velo/Domain/Entities/AuthModels.swift */; };
+		C469CD9B5E734240BC5B4069 /* Velo/Domain/Services/VlStoreKitOrderFingerprintMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A249295C4A7B40AB848D46CB /* Velo/Domain/Services/VlStoreKitOrderFingerprintMap.swift */; };
+		C53E99A10DC4422E8A7B02FD /* Velo/Core/PushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F547BFC24B914C91B2ACFDE1 /* Velo/Core/PushManager.swift */; };
+		C58AF07C737F419E8B182BD5 /* Velo/Resources/LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0734981B74A4477E9040F7CA /* Velo/Resources/LaunchScreen.storyboard */; };
+		C7FADB004CF848DAB949D1E8 /* Velo/Core/AuthSessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B26D56A876B42A1BA55E030 /* Velo/Core/AuthSessionStore.swift */; };
+		C8A4BC3A5ABD46A69877FA5D /* Velo/Features/Profile/LegalAndSupportViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAB1648CEFF4F4898FEAEDF /* Velo/Features/Profile/LegalAndSupportViews.swift */; };
+		CC067A6574F84A6E9A292C37 /* Velo/Features/Recharge/CreditCardManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0A27119C04BCCA50FA5FE /* Velo/Features/Recharge/CreditCardManagementView.swift */; };
+		CEBAFEE1F3F245E28D1DDAB3 /* Velo/Data/LocalStorage/PoorGenerationFeedbackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C088AC804A48F29757E54B /* Velo/Data/LocalStorage/PoorGenerationFeedbackStore.swift */; };
+		D13841BEC2074464B2EBEC53 /* Velo/Core/AppTabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E314590B27E4847A05965C0 /* Velo/Core/AppTabRouter.swift */; };
+		D2E3EA518A2E44ACBAB69D27 /* Velo/Data/Network/VlWalletProfileWireTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF93AF40D204D9C979DF272 /* Velo/Data/Network/VlWalletProfileWireTransport.swift */; };
+		D7EAEAF6931644F9BE607EDB /* Velo/Data/Repositories/VlCatalogWorkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98249CB612B4E39BC3FC3B4 /* Velo/Data/Repositories/VlCatalogWorkRepository.swift */; };
+		D88998B810724FC2986D8190 /* Velo/Core/VeloPushNotificationCenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A77599CA9E94E4BA904A2F6 /* Velo/Core/VeloPushNotificationCenterDelegate.swift */; };
+		D8B3E4759E5D49E99BDFC3FD /* Velo/Core/RemotePushRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67543AC92A704B08AE7933FD /* Velo/Core/RemotePushRoute.swift */; };
+		DB1836DE4BD84154A0B242B7 /* Velo/Data/Network/VlCatalogWireTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57BD30395845439870398F /* Velo/Data/Network/VlCatalogWireTransport.swift */; };
+		DBFFA574DB464FD1AD31D481 /* Velo/Core/AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A614F3DAD4975835FBB43 /* Velo/Core/AppConfig.swift */; };
+		DC2DD1EBCE0942BF80A5C5F4 /* Velo/Data/Network/VlRemoteFeatureConfigAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271871339706498597E1D18A /* Velo/Data/Network/VlRemoteFeatureConfigAPI.swift */; };
+		DD70274D9C9F4FFB89600B28 /* Velo/Features/Recharge/RechargeRecordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F6C9C09C904DC58B182635 /* Velo/Features/Recharge/RechargeRecordListView.swift */; };
+		DFD5DAE06C4C4D1E96EDA695 /* Velo/Data/Network/VlPurchaseWireTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3886C5384DC4E7EB1C8065E /* Velo/Data/Network/VlPurchaseWireTransport.swift */; };
+		E0715820E58E4A0AAB884CC9 /* Velo/Data/Network/VlBookmarkWireTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF7557A25174F65A7716D9A /* Velo/Data/Network/VlBookmarkWireTransport.swift */; };
+		E118FC5F5B4A4051B84527A2 /* Velo/Features/Home/HomeCachedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FEEC08D5B0412BAF77842F /* Velo/Features/Home/HomeCachedImage.swift */; };
+		E261F03DE61241E5BBBC8BC4 /* Velo/Domain/Services/VlCheckoutChannelRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303CF9BE9944DA899D4A635 /* Velo/Domain/Services/VlCheckoutChannelRegistry.swift */; };
+		E2A95AEDA87B4884A634B98C /* Velo/Features/Push/PushRechargeOrderAttribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB14D97EB9D4247BD64F358 /* Velo/Features/Push/PushRechargeOrderAttribution.swift */; };
+		E311486F5447420C93E745B8 /* Velo/Domain/Services/VlUserMediaGatekeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA109ED0482644509B2E0B61 /* Velo/Domain/Services/VlUserMediaGatekeeper.swift */; };
+		E51B7BBA339D4819A3AB55E9 /* Velo/Data/Repositories/VlIdentitySessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C5C639E99C45688191006A /* Velo/Data/Repositories/VlIdentitySessionRepository.swift */; };
+		E5F0ADD8257248779BFD4FA3 /* Velo/Domain/Entities/RechargeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF694EE6F0F47DD945BE14A /* Velo/Domain/Entities/RechargeModels.swift */; };
+		E6A67F2EE535489B8C7493AA /* Velo/Data/Network/VlHTTPGatewayActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0599971982D4AFAB0EA7578 /* Velo/Data/Network/VlHTTPGatewayActor.swift */; };
+		E9A2DC4C05934D6DBBE0FF8D /* Velo/Features/Profile/MyCreationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EE805D67B4EBE915A3830 /* Velo/Features/Profile/MyCreationsView.swift */; };
+		E9E67B22A146480791D47B39 /* Velo/Features/Home/HomeImmersiveFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9464F070B4E359938090D /* Velo/Features/Home/HomeImmersiveFeedView.swift */; };
+		EB8242EEB623466A81B45DB0 /* Velo/Data/Network/APIBaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49412C56A57143C5AD3B2F73 /* Velo/Data/Network/APIBaseURL.swift */; };
+		EC5262A880E14E4AB1A99768 /* Velo/Core/VeloDebugSimulatedPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A76632E99544AAA6AA254E /* Velo/Core/VeloDebugSimulatedPush.swift */; };
+		ED03EDDEA9A5473FBCFD84D1 /* Velo/Features/Home/HomeCatalogTabLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345423334D044192A38194C3 /* Velo/Features/Home/HomeCatalogTabLocalization.swift */; };
+		F376C615E9A04482B0117423 /* Velo/Features/Profile/GenerationSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963EF38F00374542B458F459 /* Velo/Features/Profile/GenerationSuccessView.swift */; };
+		F39DAF3AD3DF4792A7F0AA23 /* Velo/Features/Profile/ProfileFeatureViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AED078F1274417800AA75D /* Velo/Features/Profile/ProfileFeatureViews.swift */; };
+		F5466BB3F8FB4B2AB3A51C22 /* Velo/Core/LegacyImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9002891F04234FB7BAE5C215 /* Velo/Core/LegacyImagePicker.swift */; };
+		FFE11DA960A9466D8676430D /* Velo/Data/LocalStorage/LocalFavoriteTemplateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106C79BAC3E451AAED7507F /* Velo/Data/LocalStorage/LocalFavoriteTemplateStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01F8CF863D6144C9892787B1 /* Velo/Features/Home/HomeFlashSalePresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Home/HomeFlashSalePresentation.swift; sourceTree = "<group>"; };
+		05E35F1465D2400B810108E3 /* Velo/Data/Network/VlIdentityWireTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/Network/VlIdentityWireTransport.swift; sourceTree = "<group>"; };
+		0721DA2E99C84E7F809D8539 /* Velo/Domain/Services/VlRealtimePushSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Services/VlRealtimePushSession.swift; sourceTree = "<group>"; };
+		0734981B74A4477E9040F7CA /* Velo/Resources/LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Velo/Resources/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		098C44D0859E43FC99E3CB2E /* Velo/Core/AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/AppTheme.swift; sourceTree = "<group>"; };
+		0A57BD30395845439870398F /* Velo/Data/Network/VlCatalogWireTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/Network/VlCatalogWireTransport.swift; sourceTree = "<group>"; };
+		0BE6C0F836DF4CB18DE690AF /* EbrukApp/Views/VeloContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EbrukApp/Views/VeloContainerView.swift; sourceTree = "<group>"; };
+		0DE885C255A84101B20671DD /* Velo/Domain/Services/VlStoreKitPurchaseOrchestrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Services/VlStoreKitPurchaseOrchestrator.swift; sourceTree = "<group>"; };
+		1282B0975FE24D05A5805CE0 /* Velo/Features/Home/HomeChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Home/HomeChrome.swift; sourceTree = "<group>"; };
+		1355183653CA474A9DE81FD3 /* Velo/Data/Network/VlProductTelemetryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/Network/VlProductTelemetryAPI.swift; sourceTree = "<group>"; };
+		15CFD19562E44D409DE78DF0 /* Velo/Features/Recharge/RechargeUIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Recharge/RechargeUIModels.swift; sourceTree = "<group>"; };
+		171EA7432E564DD8A1C2392D /* Velo/Resources/Config/IAP.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Velo/Resources/Config/IAP.storekit; sourceTree = "<group>"; };
+		173C602CC3934696908DB600 /* Velo/Data/LocalStorage/VlPurchaseMaterialDiskCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/LocalStorage/VlPurchaseMaterialDiskCache.swift; sourceTree = "<group>"; };
+		1929F330B301427094AB2F41 /* Velo/Features/Home/HomeGridFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Home/HomeGridFeedView.swift; sourceTree = "<group>"; };
+		20C088AC804A48F29757E54B /* Velo/Data/LocalStorage/PoorGenerationFeedbackStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/LocalStorage/PoorGenerationFeedbackStore.swift; sourceTree = "<group>"; };
+		218B4129B9D846BD8C2F237F /* Velo/Domain/Entities/FeedbackModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Entities/FeedbackModels.swift; sourceTree = "<group>"; };
+		23F6C9C09C904DC58B182635 /* Velo/Features/Recharge/RechargeRecordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Recharge/RechargeRecordListView.swift; sourceTree = "<group>"; };
+		24AEAD1AA3CF4F8783333307 /* Velo/Core/BalanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/BalanceManager.swift; sourceTree = "<group>"; };
+		271871339706498597E1D18A /* Velo/Data/Network/VlRemoteFeatureConfigAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/Network/VlRemoteFeatureConfigAPI.swift; sourceTree = "<group>"; };
+		274A367FE2DA402CB311ACFE /* Velo/App/VeloRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/App/VeloRootView.swift; sourceTree = "<group>"; };
+		278FE21CB0F74A97B3D9C918 /* Velo/Domain/Repositories/VlIdentitySessionRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Repositories/VlIdentitySessionRepositoryProtocol.swift; sourceTree = "<group>"; };
+		2B3D64BA0A564C968BB3B21D /* Velo/Features/Profile/MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Profile/MyProfileView.swift; sourceTree = "<group>"; };
+		2BDC20F3617D4160BB868CCF /* Velo/Features/Push/PushMarketingSheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Push/PushMarketingSheets.swift; sourceTree = "<group>"; };
+		2DF694EE6F0F47DD945BE14A /* Velo/Domain/Entities/RechargeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Entities/RechargeModels.swift; sourceTree = "<group>"; };
+		345423334D044192A38194C3 /* Velo/Features/Home/HomeCatalogTabLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Home/HomeCatalogTabLocalization.swift; sourceTree = "<group>"; };
+		365D186253D648B4B156982A /* Velo/Features/Recharge/AddPaymentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Recharge/AddPaymentCardView.swift; sourceTree = "<group>"; };
+		37519EB331B0464095083935 /* Velo/Data/LocalStorage/UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/LocalStorage/UserDefaultsManager.swift; sourceTree = "<group>"; };
+		37AC44A6B3244CA0890DDCB5 /* Velo/Data/LocalStorage/VlCatalogMaterialDiskCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/LocalStorage/VlCatalogMaterialDiskCache.swift; sourceTree = "<group>"; };
+		37AE8257DC40468E9A534525 /* Velo/Core/AuthReloginHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/AuthReloginHelper.swift; sourceTree = "<group>"; };
+		38FE7DFB436D4F218224351B /* Velo/Core/NotificationPermissionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/NotificationPermissionStore.swift; sourceTree = "<group>"; };
+		3A263820A0CB4A42BD1EAB26 /* Velo/Resources/Preview Content/Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Velo/Resources/Preview Content/Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4140F9B264414DEF97A7CE43 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		47CAF97241A74C0FA4CA184A /* Velo/Features/Home/HomeImmersiveVideoBackdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Home/HomeImmersiveVideoBackdrop.swift; sourceTree = "<group>"; };
+		49412C56A57143C5AD3B2F73 /* Velo/Data/Network/APIBaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/Network/APIBaseURL.swift; sourceTree = "<group>"; };
+		4CB14D97EB9D4247BD64F358 /* Velo/Features/Push/PushRechargeOrderAttribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Push/PushRechargeOrderAttribution.swift; sourceTree = "<group>"; };
+		4F1857E2590748D088CA2038 /* Velo/Domain/Entities/TemplateModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Entities/TemplateModels.swift; sourceTree = "<group>"; };
+		558129B038A2453087E6BA7C /* Velo/Data/LocalStorage/VideoCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/LocalStorage/VideoCacheManager.swift; sourceTree = "<group>"; };
+		5590B57101824EB6BB3E060E /* Velo/Features/Recharge/RechargePaymentSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Recharge/RechargePaymentSelectionView.swift; sourceTree = "<group>"; };
+		589C5F25B8F747F4939244D8 /* Velo/Core/DeviceLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/DeviceLoginService.swift; sourceTree = "<group>"; };
+		5B26D56A876B42A1BA55E030 /* Velo/Core/AuthSessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/AuthSessionStore.swift; sourceTree = "<group>"; };
+		5E314590B27E4847A05965C0 /* Velo/Core/AppTabRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/AppTabRouter.swift; sourceTree = "<group>"; };
+		5F44CB14D42E43FEA9C5B57C /* Velo/Resources/Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Velo/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		618831752BF3400A9A0E7C33 /* Velo/Data/LocalStorage/KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/LocalStorage/KeychainManager.swift; sourceTree = "<group>"; };
+		649DC63052C94898902DE6AE /* Velo/Domain/Services/VlAttributionRemoteConfigBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Services/VlAttributionRemoteConfigBox.swift; sourceTree = "<group>"; };
+		67543AC92A704B08AE7933FD /* Velo/Core/RemotePushRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/RemotePushRoute.swift; sourceTree = "<group>"; };
+		6918CD0087684628B774A2C8 /* Velo/Core/RechargeAFLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/RechargeAFLogger.swift; sourceTree = "<group>"; };
+		69342538AF97437BAE5DFC8F /* Velo/Data/LocalStorage/RedirectPaymentInfoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/LocalStorage/RedirectPaymentInfoStore.swift; sourceTree = "<group>"; };
+		6B87546E40F24EB4882437B3 /* Velo/Core/UserWalletStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/UserWalletStore.swift; sourceTree = "<group>"; };
+		74495C96EB5740FE9BD3E05D /* Velo/Resources/Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Velo/Resources/Localizable.xcstrings; sourceTree = "<group>"; };
+		752D0249D6F2455A95373850 /* Velo/Domain/Services/VlThirdPartyAttributionBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Services/VlThirdPartyAttributionBridge.swift; sourceTree = "<group>"; };
+		75351272F5CB4DEDBE49993D /* Velo/Domain/Repositories/VlCatalogWorkRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Repositories/VlCatalogWorkRepositoryProtocol.swift; sourceTree = "<group>"; };
+		78C8AFBEB9FC42B09866C5DC /* Velo/Core/AppCoinIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/AppCoinIcon.swift; sourceTree = "<group>"; };
+		7943B50F2BC947FD81E46334 /* Velo/Domain/Entities/FavoriteModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Entities/FavoriteModels.swift; sourceTree = "<group>"; };
+		7A77599CA9E94E4BA904A2F6 /* Velo/Core/VeloPushNotificationCenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/VeloPushNotificationCenterDelegate.swift; sourceTree = "<group>"; };
+		7A9010B0C2314B0892060970 /* Velo/Core/WelcomeBonusOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/WelcomeBonusOverlay.swift; sourceTree = "<group>"; };
+		863A2C42C66443679331730D /* Velo/Domain/Repositories/VlPurchaseLedgerRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Repositories/VlPurchaseLedgerRepositoryProtocol.swift; sourceTree = "<group>"; };
+		86830449049E4EAEB2C02D94 /* Velo/Features/Recharge/RechargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Recharge/RechargeView.swift; sourceTree = "<group>"; };
+		87380D66040A40A584B6C213 /* Velo/Data/Network/ResBaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/Network/ResBaseURL.swift; sourceTree = "<group>"; };
+		8C2F988CAADA471BA841DB6E /* Velo/Data/Repositories/VlPurchaseLedgerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/Repositories/VlPurchaseLedgerRepository.swift; sourceTree = "<group>"; };
+		8D582FDAF71F4BB2A41D36DA /* Velo/Data/Network/VlAsyncRenderJobWireTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/Network/VlAsyncRenderJobWireTransport.swift; sourceTree = "<group>"; };
+		9002891F04234FB7BAE5C215 /* Velo/Core/LegacyImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/LegacyImagePicker.swift; sourceTree = "<group>"; };
+		90EB3E1140144BA3BB86FAD1 /* Velo/Core/AppLanguageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/AppLanguageStore.swift; sourceTree = "<group>"; };
+		917D74D9D71444E49AB2BA72 /* Velo/Features/Home/HomeUploadTipsOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Home/HomeUploadTipsOverlay.swift; sourceTree = "<group>"; };
+		963EF38F00374542B458F459 /* Velo/Features/Profile/GenerationSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Profile/GenerationSuccessView.swift; sourceTree = "<group>"; };
+		9687437684034204A9276C27 /* Velo/Core/TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/TokenManager.swift; sourceTree = "<group>"; };
+		9F4AB02EC4DF4C3DABABEDB6 /* Velo/Features/Home/HomeDebugToolsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Home/HomeDebugToolsSection.swift; sourceTree = "<group>"; };
+		A1C5C639E99C45688191006A /* Velo/Data/Repositories/VlIdentitySessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/Repositories/VlIdentitySessionRepository.swift; sourceTree = "<group>"; };
+		A249295C4A7B40AB848D46CB /* Velo/Domain/Services/VlStoreKitOrderFingerprintMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Services/VlStoreKitOrderFingerprintMap.swift; sourceTree = "<group>"; };
+		A24DB0BBA54C4637BA1333C6 /* Velo/Domain/Services/UserLocaleReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Services/UserLocaleReporter.swift; sourceTree = "<group>"; };
+		A3BD43BC420F4186B791A6F2 /* Velo/Core/VeloApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/VeloApplicationDelegate.swift; sourceTree = "<group>"; };
+		A90A37FCE33C41B1AF22CB51 /* Velo/Features/Home/HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Home/HomeView.swift; sourceTree = "<group>"; };
+		AAC7CB2196844E008096246D /* Velo/Core/VersionConfigStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/VersionConfigStore.swift; sourceTree = "<group>"; };
+		AB125274C413419FB0195B20 /* Velo/Domain/Services/IPLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Services/IPLocationManager.swift; sourceTree = "<group>"; };
+		ACAB1648CEFF4F4898FEAEDF /* Velo/Features/Profile/LegalAndSupportViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Profile/LegalAndSupportViews.swift; sourceTree = "<group>"; };
+		ACDF00156F4D424FB5ABF0CF /* Velo/Features/Home/HomeTemplateGenerationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Home/HomeTemplateGenerationSheet.swift; sourceTree = "<group>"; };
+		B10000020000000000000001 /* EbrukApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EbrukApp.swift; sourceTree = "<group>"; };
+		B10000020000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B10000020000000000000003 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		B10000020000000000000004 /* RecipeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStore.swift; sourceTree = "<group>"; };
+		B10000020000000000000005 /* CategoryChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryChip.swift; sourceTree = "<group>"; };
+		B10000020000000000000006 /* RecipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardView.swift; sourceTree = "<group>"; };
+		B10000020000000000000007 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		B10000020000000000000008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B10000020000000000000009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B10000020000000000000010 /* Ebruk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ebruk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10000020000000000000011 /* RecipeAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAPIService.swift; sourceTree = "<group>"; };
+		B10000020000000000000012 /* RecipeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
+		B10000020000000000000013 /* RecipeAccessPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAccessPolicy.swift; sourceTree = "<group>"; };
+		B10000020000000000000014 /* CoinStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinStore.swift; sourceTree = "<group>"; };
+		B10000020000000000000015 /* UnlockRecipeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockRecipeSheet.swift; sourceTree = "<group>"; };
+		B10000020000000000000016 /* CoinBalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinBalanceView.swift; sourceTree = "<group>"; };
+		B10000020000000000000017 /* FavoriteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStore.swift; sourceTree = "<group>"; };
+		B10000020000000000000018 /* CustomRecipeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRecipeStore.swift; sourceTree = "<group>"; };
+		B10000020000000000000019 /* RecipeCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCatalog.swift; sourceTree = "<group>"; };
+		B10000020000000000000020 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		B10000020000000000000021 /* FavoriteRecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRecipesView.swift; sourceTree = "<group>"; };
+		B10000020000000000000022 /* CustomRecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRecipesView.swift; sourceTree = "<group>"; };
+		B10000020000000000000023 /* RecipeEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeEditorView.swift; sourceTree = "<group>"; };
+		B10000020000000000000024 /* AmountUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountUnit.swift; sourceTree = "<group>"; };
+		B10000020000000000000025 /* CoinPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinPackage.swift; sourceTree = "<group>"; };
+		B10000020000000000000026 /* CoinRechargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRechargeView.swift; sourceTree = "<group>"; };
+		B10000020000000000000027 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B10000020000000000000028 /* AppearanceMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceMode.swift; sourceTree = "<group>"; };
+		B10000020000000000000029 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		B10000020000000000000030 /* AppSettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsStore.swift; sourceTree = "<group>"; };
+		B10000020000000000000031 /* StoreKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitService.swift; sourceTree = "<group>"; };
+		B10000020000000000000032 /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
+		B10000020000000000000033 /* PurchaseRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseRecord.swift; sourceTree = "<group>"; };
+		B10000020000000000000034 /* PurchaseHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseHistoryView.swift; sourceTree = "<group>"; };
+		B10000020000000000000035 /* LegalDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalDocumentView.swift; sourceTree = "<group>"; };
+		B10000020000000000000036 /* AppBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackup.swift; sourceTree = "<group>"; };
+		B10000020000000000000037 /* BackupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupService.swift; sourceTree = "<group>"; };
+		B10000020000000000000038 /* BackupSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupSettingsView.swift; sourceTree = "<group>"; };
+		B10000020000000000000039 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B10000020000000000000040 /* Recipe+Sharing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+Sharing.swift"; sourceTree = "<group>"; };
+		B10000020000000000000042 /* EbrukApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EbrukApp.entitlements; sourceTree = "<group>"; };
+		B10000020000000000000052 /* RecipePDFExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePDFExporter.swift; sourceTree = "<group>"; };
+		B10000020000000000000053 /* ActivityShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityShareSheet.swift; sourceTree = "<group>"; };
+		B10000020000000000000054 /* CenteredNavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteredNavigationTitle.swift; sourceTree = "<group>"; };
+		B10000020000000000000055 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		B10000020000000000000056 /* UnlockedRecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockedRecipesView.swift; sourceTree = "<group>"; };
+		B10000020000000000000058 /* AppSurfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSurfaceController.swift; sourceTree = "<group>"; };
+		B10000020000000000000059 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		B10000020000000000000067 /* AppSurfaceCopy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSurfaceCopy.swift; sourceTree = "<group>"; };
+		B10000020000000000000069 /* RecipeDifficultyEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDifficultyEvaluator.swift; sourceTree = "<group>"; };
+		B10000020000000000000071 /* Velo/Data/LocalStorage/VeloUserKeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/LocalStorage/VeloUserKeychainStore.swift; sourceTree = "<group>"; };
+		B10000020000000000000072 /* Formula.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Formula.xcstrings; sourceTree = "<group>"; };
+		B10000020000000000000073 /* FormulaL10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaL10n.swift; sourceTree = "<group>"; };
+		B10000020000000000000074 /* FormulaLanguagePreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaLanguagePreference.swift; sourceTree = "<group>"; };
+		B10000020000000000000075 /* RecipeLocalizedContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeLocalizedContent.swift; sourceTree = "<group>"; };
+		B10000020000000000000076 /* Recipe+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+Localization.swift"; sourceTree = "<group>"; };
+		B10000020000000000000077 /* RecipeLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeLocalization.swift; sourceTree = "<group>"; };
+		B10000020000000000000078 /* RecipeSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearch.swift; sourceTree = "<group>"; };
+		B10000020000000000000079 /* RecipeContentEN.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RecipeContentEN.json; sourceTree = "<group>"; };
+		B50BB181E6B844D084B2251A /* Velo/Domain/Services/VlAsyncWorkPollCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Services/VlAsyncWorkPollCoordinator.swift; sourceTree = "<group>"; };
+		B6AED078F1274417800AA75D /* Velo/Features/Profile/ProfileFeatureViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Profile/ProfileFeatureViews.swift; sourceTree = "<group>"; };
+		BA640C79BEE047308A079768 /* Velo/App/VeloMainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/App/VeloMainTabView.swift; sourceTree = "<group>"; };
+		BF3C5C53379C45FB9049B8D9 /* Velo/Domain/Services/VlStoredCardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Services/VlStoredCardCoordinator.swift; sourceTree = "<group>"; };
+		C0599971982D4AFAB0EA7578 /* Velo/Data/Network/VlHTTPGatewayActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/Network/VlHTTPGatewayActor.swift; sourceTree = "<group>"; };
+		C0E0A27119C04BCCA50FA5FE /* Velo/Features/Recharge/CreditCardManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Recharge/CreditCardManagementView.swift; sourceTree = "<group>"; };
+		C1C35B0DBE6346DBBE51B638 /* Velo/Domain/Services/VlCoinSkuOfferingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Services/VlCoinSkuOfferingCoordinator.swift; sourceTree = "<group>"; };
+		C3886C5384DC4E7EB1C8065E /* Velo/Data/Network/VlPurchaseWireTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/Network/VlPurchaseWireTransport.swift; sourceTree = "<group>"; };
+		C6A76632E99544AAA6AA254E /* Velo/Core/VeloDebugSimulatedPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/VeloDebugSimulatedPush.swift; sourceTree = "<group>"; };
+		C98249CB612B4E39BC3FC3B4 /* Velo/Data/Repositories/VlCatalogWorkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/Repositories/VlCatalogWorkRepository.swift; sourceTree = "<group>"; };
+		CBA9464F070B4E359938090D /* Velo/Features/Home/HomeImmersiveFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Home/HomeImmersiveFeedView.swift; sourceTree = "<group>"; };
+		CD0A614F3DAD4975835FBB43 /* Velo/Core/AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/AppConfig.swift; sourceTree = "<group>"; };
+		D106C79BAC3E451AAED7507F /* Velo/Data/LocalStorage/LocalFavoriteTemplateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/LocalStorage/LocalFavoriteTemplateStore.swift; sourceTree = "<group>"; };
+		D24CF8A4468A471FA252CD1D /* Velo/Core/DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/DeviceManager.swift; sourceTree = "<group>"; };
+		D39E154EC2684497AA10B5C4 /* Velo/Core/SwiftUICompat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/SwiftUICompat.swift; sourceTree = "<group>"; };
+		D73DB5DEDA4A4AA09804BF13 /* Velo/Features/Home/HomeAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Home/HomeAnalytics.swift; sourceTree = "<group>"; };
+		D758B9C37619427E985698ED /* Velo/Domain/Entities/AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Entities/AuthModels.swift; sourceTree = "<group>"; };
+		D76F9F7C79CA45AC86192131 /* Velo/Data/LocalStorage/ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/LocalStorage/ImageCacheManager.swift; sourceTree = "<group>"; };
+		D9ED58B316474D99B3FBD4B5 /* Velo/Features/Home/HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Home/HomeModels.swift; sourceTree = "<group>"; };
+		DA109ED0482644509B2E0B61 /* Velo/Domain/Services/VlUserMediaGatekeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Services/VlUserMediaGatekeeper.swift; sourceTree = "<group>"; };
+		DA8BB2993FEA4FD7B85423A2 /* Velo/Domain/Services/VlClientTelemetryOutbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Services/VlClientTelemetryOutbox.swift; sourceTree = "<group>"; };
+		DCA10F41A5294C72BA271BA6 /* Velo/Features/Recharge/RechargeResultOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Recharge/RechargeResultOverlay.swift; sourceTree = "<group>"; };
+		E0DFBA3018624164B3B6FFEA /* Velo/Features/Home/HomeGenerationRechargeUpsellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Home/HomeGenerationRechargeUpsellView.swift; sourceTree = "<group>"; };
+		E671864A071C448BA9AE941F /* Velo/Data/Network/VlBinaryObjectWireTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/Network/VlBinaryObjectWireTransport.swift; sourceTree = "<group>"; };
+		E98EE805D67B4EBE915A3830 /* Velo/Features/Profile/MyCreationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Profile/MyCreationsView.swift; sourceTree = "<group>"; };
+		E9E4472BE7A94EA19225F609 /* Velo/Features/Profile/ProfileRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Profile/ProfileRoute.swift; sourceTree = "<group>"; };
+		EA097C2D01604DBD8930F764 /* Velo/Features/Profile/LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Profile/LoginView.swift; sourceTree = "<group>"; };
+		EDF93AF40D204D9C979DF272 /* Velo/Data/Network/VlWalletProfileWireTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/Network/VlWalletProfileWireTransport.swift; sourceTree = "<group>"; };
+		F2494C193B5D48A6958C0044 /* Velo/Data/Network/VlSupportTicketWireTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/Network/VlSupportTicketWireTransport.swift; sourceTree = "<group>"; };
+		F303CF9BE9944DA899D4A635 /* Velo/Domain/Services/VlCheckoutChannelRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Domain/Services/VlCheckoutChannelRegistry.swift; sourceTree = "<group>"; };
+		F4C1D3D647A049D7BC6300D9 /* Velo/Features/Home/HomeTemplateDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Home/HomeTemplateDetailView.swift; sourceTree = "<group>"; };
+		F547BFC24B914C91B2ACFDE1 /* Velo/Core/PushManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/PushManager.swift; sourceTree = "<group>"; };
+		F5FEEC08D5B0412BAF77842F /* Velo/Features/Home/HomeCachedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Home/HomeCachedImage.swift; sourceTree = "<group>"; };
+		FB94591E97A2481EAFBA14F1 /* Velo/Core/AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Core/AppError.swift; sourceTree = "<group>"; };
+		FBBF35F3B2C4452C940020B3 /* Velo/Features/Home/HomeLayoutTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Features/Home/HomeLayoutTransitions.swift; sourceTree = "<group>"; };
+		FDF7557A25174F65A7716D9A /* Velo/Data/Network/VlBookmarkWireTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/Network/VlBookmarkWireTransport.swift; sourceTree = "<group>"; };
+		FF1657CA0FF44104A48DB321 /* Velo/Data/Repositories/VlBinaryObjectUploadRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velo/Data/Repositories/VlBinaryObjectUploadRepository.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B10000030000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9030F9AED46C439D8F7353FD /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52EABF212FDC0B3B00C2E4D4 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				BA640C79BEE047308A079768 /* Velo/App/VeloMainTabView.swift */,
+				274A367FE2DA402CB311ACFE /* Velo/App/VeloRootView.swift */,
+				78C8AFBEB9FC42B09866C5DC /* Velo/Core/AppCoinIcon.swift */,
+				CD0A614F3DAD4975835FBB43 /* Velo/Core/AppConfig.swift */,
+				FB94591E97A2481EAFBA14F1 /* Velo/Core/AppError.swift */,
+				90EB3E1140144BA3BB86FAD1 /* Velo/Core/AppLanguageStore.swift */,
+				5E314590B27E4847A05965C0 /* Velo/Core/AppTabRouter.swift */,
+				098C44D0859E43FC99E3CB2E /* Velo/Core/AppTheme.swift */,
+				37AE8257DC40468E9A534525 /* Velo/Core/AuthReloginHelper.swift */,
+				5B26D56A876B42A1BA55E030 /* Velo/Core/AuthSessionStore.swift */,
+				24AEAD1AA3CF4F8783333307 /* Velo/Core/BalanceManager.swift */,
+				589C5F25B8F747F4939244D8 /* Velo/Core/DeviceLoginService.swift */,
+				D24CF8A4468A471FA252CD1D /* Velo/Core/DeviceManager.swift */,
+				9002891F04234FB7BAE5C215 /* Velo/Core/LegacyImagePicker.swift */,
+				38FE7DFB436D4F218224351B /* Velo/Core/NotificationPermissionStore.swift */,
+				F547BFC24B914C91B2ACFDE1 /* Velo/Core/PushManager.swift */,
+				6918CD0087684628B774A2C8 /* Velo/Core/RechargeAFLogger.swift */,
+				67543AC92A704B08AE7933FD /* Velo/Core/RemotePushRoute.swift */,
+				D39E154EC2684497AA10B5C4 /* Velo/Core/SwiftUICompat.swift */,
+				9687437684034204A9276C27 /* Velo/Core/TokenManager.swift */,
+				6B87546E40F24EB4882437B3 /* Velo/Core/UserWalletStore.swift */,
+				A3BD43BC420F4186B791A6F2 /* Velo/Core/VeloApplicationDelegate.swift */,
+				C6A76632E99544AAA6AA254E /* Velo/Core/VeloDebugSimulatedPush.swift */,
+				7A77599CA9E94E4BA904A2F6 /* Velo/Core/VeloPushNotificationCenterDelegate.swift */,
+				AAC7CB2196844E008096246D /* Velo/Core/VersionConfigStore.swift */,
+				7A9010B0C2314B0892060970 /* Velo/Core/WelcomeBonusOverlay.swift */,
+				D76F9F7C79CA45AC86192131 /* Velo/Data/LocalStorage/ImageCacheManager.swift */,
+				618831752BF3400A9A0E7C33 /* Velo/Data/LocalStorage/KeychainManager.swift */,
+				B10000020000000000000071 /* Velo/Data/LocalStorage/VeloUserKeychainStore.swift */,
+				D106C79BAC3E451AAED7507F /* Velo/Data/LocalStorage/LocalFavoriteTemplateStore.swift */,
+				20C088AC804A48F29757E54B /* Velo/Data/LocalStorage/PoorGenerationFeedbackStore.swift */,
+				69342538AF97437BAE5DFC8F /* Velo/Data/LocalStorage/RedirectPaymentInfoStore.swift */,
+				37519EB331B0464095083935 /* Velo/Data/LocalStorage/UserDefaultsManager.swift */,
+				558129B038A2453087E6BA7C /* Velo/Data/LocalStorage/VideoCacheManager.swift */,
+				37AC44A6B3244CA0890DDCB5 /* Velo/Data/LocalStorage/VlCatalogMaterialDiskCache.swift */,
+				173C602CC3934696908DB600 /* Velo/Data/LocalStorage/VlPurchaseMaterialDiskCache.swift */,
+				49412C56A57143C5AD3B2F73 /* Velo/Data/Network/APIBaseURL.swift */,
+				87380D66040A40A584B6C213 /* Velo/Data/Network/ResBaseURL.swift */,
+				8D582FDAF71F4BB2A41D36DA /* Velo/Data/Network/VlAsyncRenderJobWireTransport.swift */,
+				E671864A071C448BA9AE941F /* Velo/Data/Network/VlBinaryObjectWireTransport.swift */,
+				FDF7557A25174F65A7716D9A /* Velo/Data/Network/VlBookmarkWireTransport.swift */,
+				0A57BD30395845439870398F /* Velo/Data/Network/VlCatalogWireTransport.swift */,
+				C0599971982D4AFAB0EA7578 /* Velo/Data/Network/VlHTTPGatewayActor.swift */,
+				05E35F1465D2400B810108E3 /* Velo/Data/Network/VlIdentityWireTransport.swift */,
+				1355183653CA474A9DE81FD3 /* Velo/Data/Network/VlProductTelemetryAPI.swift */,
+				C3886C5384DC4E7EB1C8065E /* Velo/Data/Network/VlPurchaseWireTransport.swift */,
+				271871339706498597E1D18A /* Velo/Data/Network/VlRemoteFeatureConfigAPI.swift */,
+				F2494C193B5D48A6958C0044 /* Velo/Data/Network/VlSupportTicketWireTransport.swift */,
+				EDF93AF40D204D9C979DF272 /* Velo/Data/Network/VlWalletProfileWireTransport.swift */,
+				FF1657CA0FF44104A48DB321 /* Velo/Data/Repositories/VlBinaryObjectUploadRepository.swift */,
+				C98249CB612B4E39BC3FC3B4 /* Velo/Data/Repositories/VlCatalogWorkRepository.swift */,
+				A1C5C639E99C45688191006A /* Velo/Data/Repositories/VlIdentitySessionRepository.swift */,
+				8C2F988CAADA471BA841DB6E /* Velo/Data/Repositories/VlPurchaseLedgerRepository.swift */,
+				D758B9C37619427E985698ED /* Velo/Domain/Entities/AuthModels.swift */,
+				7943B50F2BC947FD81E46334 /* Velo/Domain/Entities/FavoriteModels.swift */,
+				218B4129B9D846BD8C2F237F /* Velo/Domain/Entities/FeedbackModels.swift */,
+				2DF694EE6F0F47DD945BE14A /* Velo/Domain/Entities/RechargeModels.swift */,
+				4F1857E2590748D088CA2038 /* Velo/Domain/Entities/TemplateModels.swift */,
+				75351272F5CB4DEDBE49993D /* Velo/Domain/Repositories/VlCatalogWorkRepositoryProtocol.swift */,
+				278FE21CB0F74A97B3D9C918 /* Velo/Domain/Repositories/VlIdentitySessionRepositoryProtocol.swift */,
+				863A2C42C66443679331730D /* Velo/Domain/Repositories/VlPurchaseLedgerRepositoryProtocol.swift */,
+				AB125274C413419FB0195B20 /* Velo/Domain/Services/IPLocationManager.swift */,
+				A24DB0BBA54C4637BA1333C6 /* Velo/Domain/Services/UserLocaleReporter.swift */,
+				B50BB181E6B844D084B2251A /* Velo/Domain/Services/VlAsyncWorkPollCoordinator.swift */,
+				649DC63052C94898902DE6AE /* Velo/Domain/Services/VlAttributionRemoteConfigBox.swift */,
+				F303CF9BE9944DA899D4A635 /* Velo/Domain/Services/VlCheckoutChannelRegistry.swift */,
+				DA8BB2993FEA4FD7B85423A2 /* Velo/Domain/Services/VlClientTelemetryOutbox.swift */,
+				C1C35B0DBE6346DBBE51B638 /* Velo/Domain/Services/VlCoinSkuOfferingCoordinator.swift */,
+				0721DA2E99C84E7F809D8539 /* Velo/Domain/Services/VlRealtimePushSession.swift */,
+				A249295C4A7B40AB848D46CB /* Velo/Domain/Services/VlStoreKitOrderFingerprintMap.swift */,
+				0DE885C255A84101B20671DD /* Velo/Domain/Services/VlStoreKitPurchaseOrchestrator.swift */,
+				BF3C5C53379C45FB9049B8D9 /* Velo/Domain/Services/VlStoredCardCoordinator.swift */,
+				752D0249D6F2455A95373850 /* Velo/Domain/Services/VlThirdPartyAttributionBridge.swift */,
+				DA109ED0482644509B2E0B61 /* Velo/Domain/Services/VlUserMediaGatekeeper.swift */,
+				D73DB5DEDA4A4AA09804BF13 /* Velo/Features/Home/HomeAnalytics.swift */,
+				F5FEEC08D5B0412BAF77842F /* Velo/Features/Home/HomeCachedImage.swift */,
+				345423334D044192A38194C3 /* Velo/Features/Home/HomeCatalogTabLocalization.swift */,
+				1282B0975FE24D05A5805CE0 /* Velo/Features/Home/HomeChrome.swift */,
+				9F4AB02EC4DF4C3DABABEDB6 /* Velo/Features/Home/HomeDebugToolsSection.swift */,
+				01F8CF863D6144C9892787B1 /* Velo/Features/Home/HomeFlashSalePresentation.swift */,
+				E0DFBA3018624164B3B6FFEA /* Velo/Features/Home/HomeGenerationRechargeUpsellView.swift */,
+				1929F330B301427094AB2F41 /* Velo/Features/Home/HomeGridFeedView.swift */,
+				CBA9464F070B4E359938090D /* Velo/Features/Home/HomeImmersiveFeedView.swift */,
+				47CAF97241A74C0FA4CA184A /* Velo/Features/Home/HomeImmersiveVideoBackdrop.swift */,
+				FBBF35F3B2C4452C940020B3 /* Velo/Features/Home/HomeLayoutTransitions.swift */,
+				D9ED58B316474D99B3FBD4B5 /* Velo/Features/Home/HomeModels.swift */,
+				F4C1D3D647A049D7BC6300D9 /* Velo/Features/Home/HomeTemplateDetailView.swift */,
+				ACDF00156F4D424FB5ABF0CF /* Velo/Features/Home/HomeTemplateGenerationSheet.swift */,
+				917D74D9D71444E49AB2BA72 /* Velo/Features/Home/HomeUploadTipsOverlay.swift */,
+				A90A37FCE33C41B1AF22CB51 /* Velo/Features/Home/HomeView.swift */,
+				963EF38F00374542B458F459 /* Velo/Features/Profile/GenerationSuccessView.swift */,
+				ACAB1648CEFF4F4898FEAEDF /* Velo/Features/Profile/LegalAndSupportViews.swift */,
+				EA097C2D01604DBD8930F764 /* Velo/Features/Profile/LoginView.swift */,
+				E98EE805D67B4EBE915A3830 /* Velo/Features/Profile/MyCreationsView.swift */,
+				2B3D64BA0A564C968BB3B21D /* Velo/Features/Profile/MyProfileView.swift */,
+				B6AED078F1274417800AA75D /* Velo/Features/Profile/ProfileFeatureViews.swift */,
+				E9E4472BE7A94EA19225F609 /* Velo/Features/Profile/ProfileRoute.swift */,
+				2BDC20F3617D4160BB868CCF /* Velo/Features/Push/PushMarketingSheets.swift */,
+				4CB14D97EB9D4247BD64F358 /* Velo/Features/Push/PushRechargeOrderAttribution.swift */,
+				365D186253D648B4B156982A /* Velo/Features/Recharge/AddPaymentCardView.swift */,
+				C0E0A27119C04BCCA50FA5FE /* Velo/Features/Recharge/CreditCardManagementView.swift */,
+				5590B57101824EB6BB3E060E /* Velo/Features/Recharge/RechargePaymentSelectionView.swift */,
+				23F6C9C09C904DC58B182635 /* Velo/Features/Recharge/RechargeRecordListView.swift */,
+				DCA10F41A5294C72BA271BA6 /* Velo/Features/Recharge/RechargeResultOverlay.swift */,
+				15CFD19562E44D409DE78DF0 /* Velo/Features/Recharge/RechargeUIModels.swift */,
+				86830449049E4EAEB2C02D94 /* Velo/Features/Recharge/RechargeView.swift */,
+				0BE6C0F836DF4CB18DE690AF /* EbrukApp/Views/VeloContainerView.swift */,
+				4140F9B264414DEF97A7CE43 /* StoreKit.framework */,
+				5F44CB14D42E43FEA9C5B57C /* Velo/Resources/Assets.xcassets */,
+				74495C96EB5740FE9BD3E05D /* Velo/Resources/Localizable.xcstrings */,
+				0734981B74A4477E9040F7CA /* Velo/Resources/LaunchScreen.storyboard */,
+				171EA7432E564DD8A1C2392D /* Velo/Resources/Config/IAP.storekit */,
+				3A263820A0CB4A42BD1EAB26 /* Velo/Resources/Preview Content/Preview Assets.xcassets */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		B10000040000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				B10000040000000000000002 /* EbrukApp */,
+				D5932D5CB70B4F21A70540E2 /* Velo */,
+				B10000040000000000000003 /* Products */,
+				52EABF212FDC0B3B00C2E4D4 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		B10000040000000000000002 /* EbrukApp */ = {
+			isa = PBXGroup;
+			children = (
+				B10000020000000000000001 /* EbrukApp.swift */,
+				B10000020000000000000032 /* Products.storekit */,
+				B10000040000000000000004 /* Models */,
+				B10000040000000000000005 /* Data */,
+				B10000040000000000000007 /* Services */,
+				B10000040000000000000008 /* ViewModels */,
+				B10000040000000000000006 /* Views */,
+				B10000020000000000000008 /* Assets.xcassets */,
+				B10000020000000000000009 /* Info.plist */,
+				B10000020000000000000042 /* EbrukApp.entitlements */,
+				B10000040000000000000010 /* Resources */,
+			);
+			path = EbrukApp;
+			sourceTree = "<group>";
+		};
+		B10000040000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B10000020000000000000010 /* Ebruk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B10000040000000000000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B10000020000000000000003 /* Recipe.swift */,
+				B10000020000000000000024 /* AmountUnit.swift */,
+				B10000020000000000000025 /* CoinPackage.swift */,
+				B10000020000000000000028 /* AppearanceMode.swift */,
+				B10000020000000000000033 /* PurchaseRecord.swift */,
+				B10000020000000000000036 /* AppBackup.swift */,
+				B10000020000000000000040 /* Recipe+Sharing.swift */,
+				B10000020000000000000074 /* FormulaLanguagePreference.swift */,
+				B10000020000000000000075 /* RecipeLocalizedContent.swift */,
+				B10000020000000000000076 /* Recipe+Localization.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B10000040000000000000005 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B10000020000000000000004 /* RecipeStore.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B10000040000000000000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B10000020000000000000020 /* MainTabView.swift */,
+				B10000020000000000000059 /* AppRootView.swift */,
+				B10000020000000000000002 /* ContentView.swift */,
+				B10000020000000000000021 /* FavoriteRecipesView.swift */,
+				B10000020000000000000022 /* CustomRecipesView.swift */,
+				B10000020000000000000023 /* RecipeEditorView.swift */,
+				B10000020000000000000005 /* CategoryChip.swift */,
+				B10000020000000000000006 /* RecipeCardView.swift */,
+				B10000020000000000000007 /* RecipeDetailView.swift */,
+				B10000020000000000000015 /* UnlockRecipeSheet.swift */,
+				B10000020000000000000016 /* CoinBalanceView.swift */,
+				B10000020000000000000026 /* CoinRechargeView.swift */,
+				B10000020000000000000027 /* SettingsView.swift */,
+				B10000020000000000000034 /* PurchaseHistoryView.swift */,
+				B10000020000000000000035 /* LegalDocumentView.swift */,
+				B10000020000000000000038 /* BackupSettingsView.swift */,
+				B10000020000000000000039 /* OnboardingView.swift */,
+				B10000020000000000000053 /* ActivityShareSheet.swift */,
+				B10000020000000000000054 /* CenteredNavigationTitle.swift */,
+				B10000020000000000000056 /* UnlockedRecipesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B10000040000000000000007 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B10000020000000000000011 /* RecipeAPIService.swift */,
+				B10000020000000000000013 /* RecipeAccessPolicy.swift */,
+				B10000020000000000000069 /* RecipeDifficultyEvaluator.swift */,
+				B10000020000000000000019 /* RecipeCatalog.swift */,
+				B10000020000000000000029 /* NotificationService.swift */,
+				B10000020000000000000031 /* StoreKitService.swift */,
+				B10000020000000000000037 /* BackupService.swift */,
+				B10000020000000000000052 /* RecipePDFExporter.swift */,
+				B10000020000000000000058 /* AppSurfaceController.swift */,
+				B10000020000000000000067 /* AppSurfaceCopy.swift */,
+				B10000020000000000000073 /* FormulaL10n.swift */,
+				B10000020000000000000077 /* RecipeLocalization.swift */,
+				B10000020000000000000078 /* RecipeSearch.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B10000040000000000000008 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B10000020000000000000012 /* RecipeListViewModel.swift */,
+				B10000020000000000000014 /* CoinStore.swift */,
+				B10000020000000000000017 /* FavoriteStore.swift */,
+				B10000020000000000000018 /* CustomRecipeStore.swift */,
+				B10000020000000000000030 /* AppSettingsStore.swift */,
+				B10000020000000000000055 /* UserStore.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B10000040000000000000010 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B10000020000000000000072 /* Formula.xcstrings */,
+				B10000020000000000000079 /* RecipeContentEN.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D5932D5CB70B4F21A70540E2 /* Velo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Velo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B10000050000000000000001 /* Ebruk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B10000080000000000000003 /* Build configuration list for PBXNativeTarget "Ebruk" */;
+			buildPhases = (
+				B10000060000000000000001 /* Sources */,
+				B10000030000000000000001 /* Frameworks */,
+				B10000070000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ebruk;
+			productName = Ebruk;
+			productReference = B10000020000000000000010 /* Ebruk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B10000090000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1700;
+				LastUpgradeCheck = 1700;
+				TargetAttributes = {
+					B10000050000000000000001 = {
+						CreatedOnToolsVersion = 17.0;
+					};
+				};
+			};
+			buildConfigurationList = B10000080000000000000001 /* Build configuration list for PBXProject "Ebruk" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				Base,
+			);
+			mainGroup = B10000040000000000000001;
+			productRefGroup = B10000040000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B10000050000000000000001 /* Ebruk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B10000070000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000010000000000000008 /* Assets.xcassets in Resources */,
+				B10000010000000000000072 /* Formula.xcstrings in Resources */,
+				B10000010000000000000079 /* RecipeContentEN.json in Resources */,
+				B10000010000000000000030 /* Products.storekit in Resources */,
+				7DE99D7DA2684CC38BA4DE17 /* Velo/Resources/Assets.xcassets in Resources */,
+				A3A66F27657A4B608AF56294 /* Velo/Resources/Localizable.xcstrings in Resources */,
+				C58AF07C737F419E8B182BD5 /* Velo/Resources/LaunchScreen.storyboard in Resources */,
+				12C58944DF2E43809984495F /* Velo/Resources/Config/IAP.storekit in Resources */,
+				BFD318F96F464843BE522BFB /* Velo/Resources/Preview Content/Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B10000060000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000010000000000000001 /* EbrukApp.swift in Sources */,
+				B10000010000000000000002 /* ContentView.swift in Sources */,
+				B10000010000000000000003 /* Recipe.swift in Sources */,
+				B10000010000000000000004 /* RecipeStore.swift in Sources */,
+				B10000010000000000000005 /* CategoryChip.swift in Sources */,
+				B10000010000000000000006 /* RecipeCardView.swift in Sources */,
+				B10000010000000000000007 /* RecipeDetailView.swift in Sources */,
+				B10000010000000000000009 /* RecipeAPIService.swift in Sources */,
+				B10000010000000000000010 /* RecipeListViewModel.swift in Sources */,
+				B10000010000000000000011 /* RecipeAccessPolicy.swift in Sources */,
+				B10000010000000000000068 /* RecipeDifficultyEvaluator.swift in Sources */,
+				B10000010000000000000012 /* CoinStore.swift in Sources */,
+				B10000010000000000000013 /* UnlockRecipeSheet.swift in Sources */,
+				B10000010000000000000014 /* CoinBalanceView.swift in Sources */,
+				B10000010000000000000015 /* FavoriteStore.swift in Sources */,
+				B10000010000000000000016 /* CustomRecipeStore.swift in Sources */,
+				B10000010000000000000017 /* RecipeCatalog.swift in Sources */,
+				B10000010000000000000018 /* MainTabView.swift in Sources */,
+				B10000010000000000000019 /* FavoriteRecipesView.swift in Sources */,
+				B10000010000000000000020 /* CustomRecipesView.swift in Sources */,
+				B10000010000000000000021 /* RecipeEditorView.swift in Sources */,
+				B10000010000000000000022 /* AmountUnit.swift in Sources */,
+				B10000010000000000000023 /* CoinPackage.swift in Sources */,
+				B10000010000000000000024 /* CoinRechargeView.swift in Sources */,
+				B10000010000000000000025 /* SettingsView.swift in Sources */,
+				B10000010000000000000026 /* AppearanceMode.swift in Sources */,
+				B10000010000000000000027 /* NotificationService.swift in Sources */,
+				B10000010000000000000028 /* AppSettingsStore.swift in Sources */,
+				B10000010000000000000029 /* StoreKitService.swift in Sources */,
+				B10000010000000000000031 /* PurchaseRecord.swift in Sources */,
+				B10000010000000000000032 /* PurchaseHistoryView.swift in Sources */,
+				B10000010000000000000033 /* LegalDocumentView.swift in Sources */,
+				B10000010000000000000034 /* AppBackup.swift in Sources */,
+				B10000010000000000000035 /* BackupService.swift in Sources */,
+				B10000010000000000000037 /* BackupSettingsView.swift in Sources */,
+				B10000010000000000000038 /* OnboardingView.swift in Sources */,
+				B10000010000000000000039 /* Recipe+Sharing.swift in Sources */,
+				B10000010000000000000044 /* RecipePDFExporter.swift in Sources */,
+				B10000010000000000000045 /* ActivityShareSheet.swift in Sources */,
+				B10000010000000000000046 /* CenteredNavigationTitle.swift in Sources */,
+				B10000010000000000000047 /* UserStore.swift in Sources */,
+				B10000010000000000000048 /* UnlockedRecipesView.swift in Sources */,
+				B10000010000000000000050 /* AppSurfaceController.swift in Sources */,
+				B10000010000000000000059 /* AppSurfaceCopy.swift in Sources */,
+				B10000010000000000000073 /* FormulaL10n.swift in Sources */,
+				B10000010000000000000074 /* FormulaLanguagePreference.swift in Sources */,
+				B10000010000000000000075 /* RecipeLocalizedContent.swift in Sources */,
+				B10000010000000000000076 /* Recipe+Localization.swift in Sources */,
+				B10000010000000000000077 /* RecipeLocalization.swift in Sources */,
+				B10000010000000000000078 /* RecipeSearch.swift in Sources */,
+				B10000010000000000000051 /* AppRootView.swift in Sources */,
+				399C7D2184FF44F2837013AA /* Velo/App/VeloMainTabView.swift in Sources */,
+				7990909A062740ABB7B7849B /* Velo/App/VeloRootView.swift in Sources */,
+				A52DF65902C74549A1BFD876 /* Velo/Core/AppCoinIcon.swift in Sources */,
+				DBFFA574DB464FD1AD31D481 /* Velo/Core/AppConfig.swift in Sources */,
+				AD94D5C8DC4644799394BE08 /* Velo/Core/AppError.swift in Sources */,
+				04DB078580E444CFBC682948 /* Velo/Core/AppLanguageStore.swift in Sources */,
+				D13841BEC2074464B2EBEC53 /* Velo/Core/AppTabRouter.swift in Sources */,
+				AD7B6EA9508B46DFBB31AA7D /* Velo/Core/AppTheme.swift in Sources */,
+				16430230DB4C4F3BAB300A47 /* Velo/Core/AuthReloginHelper.swift in Sources */,
+				C7FADB004CF848DAB949D1E8 /* Velo/Core/AuthSessionStore.swift in Sources */,
+				AC98C3C708C34A28B3D69845 /* Velo/Core/BalanceManager.swift in Sources */,
+				75C324EAC68A4815B3F8EB03 /* Velo/Core/DeviceLoginService.swift in Sources */,
+				2074E8E20754476F82B8BC2E /* Velo/Core/DeviceManager.swift in Sources */,
+				F5466BB3F8FB4B2AB3A51C22 /* Velo/Core/LegacyImagePicker.swift in Sources */,
+				9E5F4146F78842D3AEEBD118 /* Velo/Core/NotificationPermissionStore.swift in Sources */,
+				C53E99A10DC4422E8A7B02FD /* Velo/Core/PushManager.swift in Sources */,
+				A31CE4C2F5724E4DA006ED1D /* Velo/Core/RechargeAFLogger.swift in Sources */,
+				D8B3E4759E5D49E99BDFC3FD /* Velo/Core/RemotePushRoute.swift in Sources */,
+				8B0CD55C30BF40C7AC5E52E1 /* Velo/Core/SwiftUICompat.swift in Sources */,
+				A8547F3009844F3AAF2E6DF9 /* Velo/Core/TokenManager.swift in Sources */,
+				2AA3B33088F041338B6A0793 /* Velo/Core/UserWalletStore.swift in Sources */,
+				72334BDB12CB4CE7AAA3D906 /* Velo/Core/VeloApplicationDelegate.swift in Sources */,
+				EC5262A880E14E4AB1A99768 /* Velo/Core/VeloDebugSimulatedPush.swift in Sources */,
+				D88998B810724FC2986D8190 /* Velo/Core/VeloPushNotificationCenterDelegate.swift in Sources */,
+				2B1D225CB76C46DAB0B37B59 /* Velo/Core/VersionConfigStore.swift in Sources */,
+				6F8EAF89145E4962A291EA38 /* Velo/Core/WelcomeBonusOverlay.swift in Sources */,
+				B947BF4950C0408AA62F2334 /* Velo/Data/LocalStorage/ImageCacheManager.swift in Sources */,
+				8AF2CAD5E77E4383BB087DA2 /* Velo/Data/LocalStorage/KeychainManager.swift in Sources */,
+				B10000010000000000000070 /* Velo/Data/LocalStorage/VeloUserKeychainStore.swift in Sources */,
+				FFE11DA960A9466D8676430D /* Velo/Data/LocalStorage/LocalFavoriteTemplateStore.swift in Sources */,
+				CEBAFEE1F3F245E28D1DDAB3 /* Velo/Data/LocalStorage/PoorGenerationFeedbackStore.swift in Sources */,
+				1B0C01FED6174AF281DCE0CC /* Velo/Data/LocalStorage/RedirectPaymentInfoStore.swift in Sources */,
+				32611B7D363946DBA3774C5F /* Velo/Data/LocalStorage/UserDefaultsManager.swift in Sources */,
+				5573C00619814B96A53D0272 /* Velo/Data/LocalStorage/VideoCacheManager.swift in Sources */,
+				72A795343B78421EBC610AF0 /* Velo/Data/LocalStorage/VlCatalogMaterialDiskCache.swift in Sources */,
+				B938A133D6234A00B916362C /* Velo/Data/LocalStorage/VlPurchaseMaterialDiskCache.swift in Sources */,
+				EB8242EEB623466A81B45DB0 /* Velo/Data/Network/APIBaseURL.swift in Sources */,
+				3FC802F3E1144968A857E67F /* Velo/Data/Network/ResBaseURL.swift in Sources */,
+				2ED07D3B049C46D5AFCE717D /* Velo/Data/Network/VlAsyncRenderJobWireTransport.swift in Sources */,
+				28393C39B378444DA0679ABB /* Velo/Data/Network/VlBinaryObjectWireTransport.swift in Sources */,
+				E0715820E58E4A0AAB884CC9 /* Velo/Data/Network/VlBookmarkWireTransport.swift in Sources */,
+				DB1836DE4BD84154A0B242B7 /* Velo/Data/Network/VlCatalogWireTransport.swift in Sources */,
+				E6A67F2EE535489B8C7493AA /* Velo/Data/Network/VlHTTPGatewayActor.swift in Sources */,
+				350F95D32ED14CF09B4116D0 /* Velo/Data/Network/VlIdentityWireTransport.swift in Sources */,
+				9F889C254F724E008C671482 /* Velo/Data/Network/VlProductTelemetryAPI.swift in Sources */,
+				DFD5DAE06C4C4D1E96EDA695 /* Velo/Data/Network/VlPurchaseWireTransport.swift in Sources */,
+				DC2DD1EBCE0942BF80A5C5F4 /* Velo/Data/Network/VlRemoteFeatureConfigAPI.swift in Sources */,
+				69D351D6D4B34995AF351E8F /* Velo/Data/Network/VlSupportTicketWireTransport.swift in Sources */,
+				D2E3EA518A2E44ACBAB69D27 /* Velo/Data/Network/VlWalletProfileWireTransport.swift in Sources */,
+				13CCBA48A7E346808DF933DE /* Velo/Data/Repositories/VlBinaryObjectUploadRepository.swift in Sources */,
+				D7EAEAF6931644F9BE607EDB /* Velo/Data/Repositories/VlCatalogWorkRepository.swift in Sources */,
+				E51B7BBA339D4819A3AB55E9 /* Velo/Data/Repositories/VlIdentitySessionRepository.swift in Sources */,
+				4A18A05ADB8B483BB4AB5E18 /* Velo/Data/Repositories/VlPurchaseLedgerRepository.swift in Sources */,
+				C2AD75A9ADD9443AB3AFA4BD /* Velo/Domain/Entities/AuthModels.swift in Sources */,
+				1F12872051B94D2B985C2156 /* Velo/Domain/Entities/FavoriteModels.swift in Sources */,
+				88CF455EC1F74EC1A0647472 /* Velo/Domain/Entities/FeedbackModels.swift in Sources */,
+				E5F0ADD8257248779BFD4FA3 /* Velo/Domain/Entities/RechargeModels.swift in Sources */,
+				A2FE358CB7A54F7BB96EA4B5 /* Velo/Domain/Entities/TemplateModels.swift in Sources */,
+				AF42495A65DA41BD968ADA4B /* Velo/Domain/Repositories/VlCatalogWorkRepositoryProtocol.swift in Sources */,
+				769EB954008E4935B1DDEFCC /* Velo/Domain/Repositories/VlIdentitySessionRepositoryProtocol.swift in Sources */,
+				4358E6B489B1442A825EA207 /* Velo/Domain/Repositories/VlPurchaseLedgerRepositoryProtocol.swift in Sources */,
+				86B1E5C44F274AA19EE0186B /* Velo/Domain/Services/IPLocationManager.swift in Sources */,
+				6F280BD3FB034F2DBF2F97C6 /* Velo/Domain/Services/UserLocaleReporter.swift in Sources */,
+				3144603D5E0147909BE54AF3 /* Velo/Domain/Services/VlAsyncWorkPollCoordinator.swift in Sources */,
+				77464E2BCFFB49EDB66B146D /* Velo/Domain/Services/VlAttributionRemoteConfigBox.swift in Sources */,
+				E261F03DE61241E5BBBC8BC4 /* Velo/Domain/Services/VlCheckoutChannelRegistry.swift in Sources */,
+				3BBF671A674C48EFA3639C89 /* Velo/Domain/Services/VlClientTelemetryOutbox.swift in Sources */,
+				289B87BEC853467E917559AB /* Velo/Domain/Services/VlCoinSkuOfferingCoordinator.swift in Sources */,
+				614CACFBAF984EF9841A44BD /* Velo/Domain/Services/VlRealtimePushSession.swift in Sources */,
+				C469CD9B5E734240BC5B4069 /* Velo/Domain/Services/VlStoreKitOrderFingerprintMap.swift in Sources */,
+				26B72684C31243EDBBBC30CC /* Velo/Domain/Services/VlStoreKitPurchaseOrchestrator.swift in Sources */,
+				623D7A9AFFC342FB824DA5A3 /* Velo/Domain/Services/VlStoredCardCoordinator.swift in Sources */,
+				6966720E1E9144659F5F75A4 /* Velo/Domain/Services/VlThirdPartyAttributionBridge.swift in Sources */,
+				E311486F5447420C93E745B8 /* Velo/Domain/Services/VlUserMediaGatekeeper.swift in Sources */,
+				2CA4DC8AC06740CC882FE802 /* Velo/Features/Home/HomeAnalytics.swift in Sources */,
+				E118FC5F5B4A4051B84527A2 /* Velo/Features/Home/HomeCachedImage.swift in Sources */,
+				ED03EDDEA9A5473FBCFD84D1 /* Velo/Features/Home/HomeCatalogTabLocalization.swift in Sources */,
+				228764508DA24316AB5096F7 /* Velo/Features/Home/HomeChrome.swift in Sources */,
+				7B77B9C9FD02458B84BF3489 /* Velo/Features/Home/HomeDebugToolsSection.swift in Sources */,
+				916752F078EE4D288FC55F54 /* Velo/Features/Home/HomeFlashSalePresentation.swift in Sources */,
+				63852C13ED014D2D843BA053 /* Velo/Features/Home/HomeGenerationRechargeUpsellView.swift in Sources */,
+				B589B0FF9AEC4394A27A7B92 /* Velo/Features/Home/HomeGridFeedView.swift in Sources */,
+				E9E67B22A146480791D47B39 /* Velo/Features/Home/HomeImmersiveFeedView.swift in Sources */,
+				16C61655785648E59FDC1963 /* Velo/Features/Home/HomeImmersiveVideoBackdrop.swift in Sources */,
+				B146DAC4C93E4A259D04B88B /* Velo/Features/Home/HomeLayoutTransitions.swift in Sources */,
+				49D08BC1826B47CBAABF0B93 /* Velo/Features/Home/HomeModels.swift in Sources */,
+				9FCACE647EB1425AB1F18FA4 /* Velo/Features/Home/HomeTemplateDetailView.swift in Sources */,
+				6139626C4F6643F08B0DB734 /* Velo/Features/Home/HomeTemplateGenerationSheet.swift in Sources */,
+				1113BE353A1347C7BA966C34 /* Velo/Features/Home/HomeUploadTipsOverlay.swift in Sources */,
+				614924FE9AA345A893A3957A /* Velo/Features/Home/HomeView.swift in Sources */,
+				F376C615E9A04482B0117423 /* Velo/Features/Profile/GenerationSuccessView.swift in Sources */,
+				C8A4BC3A5ABD46A69877FA5D /* Velo/Features/Profile/LegalAndSupportViews.swift in Sources */,
+				15CF400685624FDD9E5DAC57 /* Velo/Features/Profile/LoginView.swift in Sources */,
+				E9A2DC4C05934D6DBBE0FF8D /* Velo/Features/Profile/MyCreationsView.swift in Sources */,
+				74B6A6B0A10640739F0B2F6D /* Velo/Features/Profile/MyProfileView.swift in Sources */,
+				F39DAF3AD3DF4792A7F0AA23 /* Velo/Features/Profile/ProfileFeatureViews.swift in Sources */,
+				AD614C8D8AC240CFAADF91DB /* Velo/Features/Profile/ProfileRoute.swift in Sources */,
+				0747645B385E4398AE0F2ED2 /* Velo/Features/Push/PushMarketingSheets.swift in Sources */,
+				E2A95AEDA87B4884A634B98C /* Velo/Features/Push/PushRechargeOrderAttribution.swift in Sources */,
+				81A90BF5DD3B43DA82ACD365 /* Velo/Features/Recharge/AddPaymentCardView.swift in Sources */,
+				CC067A6574F84A6E9A292C37 /* Velo/Features/Recharge/CreditCardManagementView.swift in Sources */,
+				9223A04098B4466CB008487B /* Velo/Features/Recharge/RechargePaymentSelectionView.swift in Sources */,
+				DD70274D9C9F4FFB89600B28 /* Velo/Features/Recharge/RechargeRecordListView.swift in Sources */,
+				9E023B1113804731844F1382 /* Velo/Features/Recharge/RechargeResultOverlay.swift in Sources */,
+				7196795C69BA4F05A8EBE8E8 /* Velo/Features/Recharge/RechargeUIModels.swift in Sources */,
+				963FBF54966549AAAFC58E63 /* Velo/Features/Recharge/RechargeView.swift in Sources */,
+				B68F26D0F19047B09374C6DE /* EbrukApp/Views/VeloContainerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B100000A0000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B100000A0000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B100000A0000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EbrukApp/EbrukApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = EbrukApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xfrontend -solver-expression-time-threshold=600";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebruk.DIYFormula;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B100000A0000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EbrukApp/EbrukAppRelease.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = EbrukApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xfrontend -solver-expression-time-threshold=600";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebruk.DIYFormula;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B10000080000000000000001 /* Build configuration list for PBXProject "Ebruk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B100000A0000000000000001 /* Debug */,
+				B100000A0000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B10000080000000000000003 /* Build configuration list for PBXNativeTarget "Ebruk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B100000A0000000000000003 /* Debug */,
+				B100000A0000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B10000090000000000000001 /* Project object */;
+}
