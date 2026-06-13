@@ -6,6 +6,7 @@ import subprocess
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 from typing import Optional
@@ -111,7 +112,8 @@ def register_device(token: str) -> None:
 
 
 def ensure_bundle_id(token: str, bundle_id: str) -> None:
-    path = f"/bundleIds?filter[bundleId]={bundle_id}&limit=1"
+    query = urllib.parse.urlencode({"filter[identifier]": bundle_id, "limit": 1})
+    path = f"/bundleIds?{query}"
     payload = api_request("GET", path, token)
     if not payload.get("data"):
         print(
