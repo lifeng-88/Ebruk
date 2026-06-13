@@ -23,7 +23,7 @@ on:
         required: false
         type: string
       build_number:
-        description: "Build Number（留空则用工程默认值）"
+        description: "Build Number（留空则自动取 Connect 最新值 +1）"
         required: false
         type: string
       upload:
@@ -87,26 +87,27 @@ jobs:
 
       - name: Resolve version overrides
         id: version
+        working-directory: ${{ env.PROJECT_DIR }}
         env:
           INPUT_MARKETING: ${{ github.event.inputs.marketing_version }}
           INPUT_BUILD: ${{ github.event.inputs.build_number }}
+          BUNDLE_ID: ${{ env.BUNDLE_ID }}
+          APP_STORE_CONNECT_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+          APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+          APP_STORE_CONNECT_KEY_PATH: ${{ env.APP_STORE_CONNECT_KEY_PATH }}
         run: |
           MARKETING="$INPUT_MARKETING"
-          BUILD="$INPUT_BUILD"
 
           if [ -z "$MARKETING" ] && [[ "${GITHUB_REF}" == refs/tags/v* ]]; then
             MARKETING="${GITHUB_REF_NAME#v}"
           fi
 
           echo "marketing_version=${MARKETING}" >> "$GITHUB_OUTPUT"
-          echo "build_number=${BUILD}" >> "$GITHUB_OUTPUT"
-
           if [ -n "$MARKETING" ]; then
             echo "MARKETING_VERSION=$MARKETING" >> "$GITHUB_ENV"
           fi
-          if [ -n "$BUILD" ]; then
-            echo "CURRENT_PROJECT_VERSION=$BUILD" >> "$GITHUB_ENV"
-          fi
+
+          python3 ci/resolve_build_number.py
 
       - name: Resolve upload mode
         id: mode
