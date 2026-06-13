@@ -113,6 +113,10 @@ jobs:
             echo "upload=${{ github.event.inputs.upload }}" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Prepare CI signing
+        working-directory: ${{ env.PROJECT_DIR }}
+        run: python3 ci/prepare_ci_signing.py
+
       - name: Verify bundle identifier
         id: bundle
         working-directory: ${{ env.PROJECT_DIR }}
