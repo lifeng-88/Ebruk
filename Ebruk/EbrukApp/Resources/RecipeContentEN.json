@@ -383,7 +383,7 @@
     "name": "Antirust oil for garden tools",
     "materials": [
       "Waste oil",
-      "柴油\nDiesel fuel"
+      "diesel fuel"
     ],
     "ratio": "100 ml used oil, 30 ml diesel",
     "steps": "Waste oil is evenly mixed with diesel, and coated with a brush on the metal edges and joints of tools such as shovels and shears. It can be stored after drying to slow down corrosion.",
@@ -1953,61 +1953,61 @@
     ],
     "ratio": "200g soy wax, 10g coffee powder, 1 candle wick",
     "steps": "After melting the soy wax and leaving the fire, add the coffee powder and stir gently. After fixing the candle wick, pour it into the mold, and cool it to release the mold to give off the aroma of coffee.",
-    "safetyNote": "咖啡粉颗粒可能影响燃烧稳定性，首次点燃请在旁看管。"
+    "safetyNote": "Coffee powder particles may affect combustion stability. Please supervise the first ignition."
   },
   {
     "id": 166,
-    "name": "香氛融蜡块",
+    "name": "Fragrance melt wax block",
     "materials": [
       "Soy wax",
       "beeswax",
       "essence"
     ],
-    "ratio": "大豆蜡 100 克，蜂蜡 20 克，精油 5 毫升",
-    "steps": "大豆蜡与蜂蜡混合加热融化，加入精油倒入硅胶格中冷却。使用时取一块置于融蜡灯上加热释放香气，无需烛芯。",
-    "safetyNote": "融蜡灯使用时勿加水，远离易燃物，防止烫伤。"
+    "ratio": "100g soy wax, 20g beeswax, 5ml essential oil",
+    "steps": "Mix soy wax and beeswax and heat to melt, add essential oil and pour into the silicone grid to cool. When using, place a piece on a melted wax lamp to heat and release the aroma, no candle wick is required.",
+    "safetyNote": "Do not add water when using the melted wax lamp, and keep away from flammable materials to prevent burns."
   },
   {
     "id": 167,
-    "name": "生日数字蜡烛",
+    "name": "birthday number candles",
     "materials": [
       "Paraffin wax",
       "Candle Dye",
-      "棉芯"
+      "cotton wick"
     ],
-    "ratio": "石蜡 60 克，蜡烛染料 适量，棉芯 1 根",
-    "steps": "石蜡融化后加入染料，倒入数字模具中，插入棉芯。完全冷却后脱模，可插于蛋糕上短时点燃。",
-    "safetyNote": "点燃前请从蛋糕上取下再点燃，避免蜡油滴落食物。"
+    "ratio": "60 grams of paraffin wax, appropriate amount of candle dye, 1 cotton wick",
+    "steps": "After the paraffin is melted, the dye is added, poured into the digital mold, and a cotton wick is inserted. Unmold after complete cooling and can be placed on the cake for a short time to light.",
+    "safetyNote": "Please remove the cake from the cake before lighting it to avoid wax dripping onto the food."
   },
   {
     "id": 168,
-    "name": "羊奶温和皂",
+    "name": "Goat Milk Mild Soap",
     "materials": [
       "olive oil",
       "coconut oil ",
       "Sodium Hydroxide",
-      "羊奶"
+      "goat milk"
     ],
-    "ratio": "橄榄油 350 克，椰子油 150 克，氢氧化钠 71 克，羊奶 160 毫升",
-    "steps": "氢氧化钠缓慢溶于冰镇羊奶中降温，倒入混合油脂中搅拌至浓稠。入模保温 24 小时，脱模后晾皂 4 周。",
+    "ratio": "350 g olive oil, 150 g coconut oil, 71 g sodium hydroxide, 160 ml goat milk",
+    "steps": "Slowly dissolve the sodium hydroxide in the chilled goat's milk to cool down, pour into the mixed fat and stir until thick. Place in the mold and keep warm for 24 hours, then dry for 4 weeks after unmoulding.",
     "safetyNote": "Sodium hydroxide is highly corrosive and must be operated in a ventilated area with gloves and goggles."
   },
   {
     "id": 169,
-    "name": "海盐洁肤皂",
+    "name": "Sea Salt Cleansing Soap",
     "materials": [
       "coconut oil ",
       "Sodium Hydroxide",
       "sea salt ",
       "water"
     ],
-    "ratio": "椰子油 400 克，氢氧化钠 56 克，海盐 25 克，水 140 毫升",
-    "steps": "碱液冷却后倒入油脂搅拌至 trace，加入海盐轻拌保留颗粒感。倒入模具，晾皂 4 周后可清洁身体。",
-    "safetyNote": "氢氧化钠具有强腐蚀性，海盐颗粒避免入眼，操作时请佩戴防护装备。"
+    "ratio": "400g coconut oil, 56g sodium hydroxide, 25g sea salt, 140ml water",
+    "steps": "After the lye solution has cooled, pour in the fat and stir until trace. Add sea salt and stir lightly to retain the graininess. Pour into molds and allow soap to dry for 4 weeks before body cleansing.",
+    "safetyNote": "Sodium hydroxide is highly corrosive. Avoid sea salt particles entering your eyes. Please wear protective equipment when operating."
   },
   {
     "id": 170,
-    "name": "茶树控油皂",
+    "name": "Tea tree oil control soap",
     "materials": [
       "coconut oil ",
       "olive oil",
@@ -2015,89 +2015,89 @@
       "Tea Tree Essential Oil",
       "water"
     ],
-    "ratio": "椰子油 250 克，橄榄油 250 克，氢氧化钠 71 克，茶树精油 10 毫升，水 160 毫升",
-    "steps": "碱液与油脂搅拌至浓稠，加入茶树精油拌匀。入模保温后脱模，晾皂 4 周成熟后可用于油性肌肤清洁。",
-    "safetyNote": "氢氧化钠具有强腐蚀性，精油需在最后加入，避免在密闭空间长时间吸入。"
+    "ratio": "250g coconut oil, 250g olive oil, 71g sodium hydroxide, 10ml tea tree essential oil, 160ml water",
+    "steps": "Stir the lye and oil until thick, add tea tree essential oil and mix well. After being put into the mold and kept warm, it is removed from the mold and allowed to mature for 4 weeks before the soap can be used for oily skin cleansing.",
+    "safetyNote": "Sodium hydroxide is highly corrosive, and essential oils must be added at the end to avoid prolonged inhalation in a confined space."
   },
   {
     "id": 171,
-    "name": "红粘土矿物皂",
+    "name": "red clay mineral soap",
     "materials": [
       "olive oil",
       "Sodium Hydroxide",
-      "红粘土粉",
+      "red clay powder",
       "water"
     ],
-    "ratio": "橄榄油 500 克，氢氧化钠 64 克，红粘土粉 20 克，水 160 毫升",
-    "steps": "碱液冷却后倒入橄榄油搅拌，加入红粘土粉拌匀至浓稠。倒入模具，晾皂 4 周后可深层清洁肌肤。",
-    "safetyNote": "氢氧化钠具有强腐蚀性，矿物粉避免吸入，请佩戴口罩。"
+    "ratio": "500 g olive oil, 64 g sodium hydroxide, 20 g red clay powder, 160 ml water",
+    "steps": "After the lye solution has cooled, pour in the olive oil and stir, add the red clay powder and stir until thick. Pour into molds and allow soap to dry for 4 weeks to deeply cleanse skin.",
+    "safetyNote": "Sodium hydroxide is highly corrosive. Avoid inhaling mineral powder. Please wear a mask."
   },
   {
     "id": 172,
-    "name": "紫草修复皂",
+    "name": "Lithospermum Restorative Soap",
     "materials": [
       "olive oil",
       "coconut oil ",
       "Sodium Hydroxide",
-      "紫草浸泡油",
+      "Lithospermum infused oil",
       "water"
     ],
-    "ratio": "橄榄油 300 克，椰子油 200 克，氢氧化钠 71 克，紫草浸泡油 50 克，水 160 毫升",
-    "steps": "碱液与油脂及紫草浸泡油搅拌至 trace，入模保温。脱模后晾皂 4 周，适合干燥或轻微受损肌肤。",
+    "ratio": "300g olive oil, 200g coconut oil, 71g sodium hydroxide, 50g comfrey infused oil, 160ml water",
+    "steps": "Stir the lye, fat and comfrey-soaked oil until trace, place into molds and keep warm. Allow the soap to dry for 4 weeks after removal, suitable for dry or slightly damaged skin.",
     "safetyNote": "Sodium hydroxide is highly corrosive and must be handled with protective equipment in a ventilated area."
   },
   {
     "id": 173,
-    "name": "迷迭香洗发皂",
+    "name": "Rosemary Shampoo Soap",
     "materials": [
       "coconut oil ",
-      "蓖麻油",
+      "castor oil",
       "Sodium Hydroxide",
-      "迷迭香精油",
+      "rosemary essential oil",
       "water"
     ],
-    "ratio": "椰子油 300 克，蓖麻油 100 克，氢氧化钠 56 克，迷迭香精油 8 毫升，水 140 毫升",
-    "steps": "碱液与油脂搅拌至浓稠，加入迷迭香精油轻拌。入模后晾皂 4 周，可用于短发清洁，洗后需配合苹果醋冲洗。",
-    "safetyNote": "氢氧化钠具有强腐蚀性，洗发皂避免泡沫入眼，操作时请佩戴手套。"
+    "ratio": "300g coconut oil, 100g castor oil, 56g sodium hydroxide, 8ml rosemary essential oil, 140ml water",
+    "steps": "Stir the lye and fat until thick, add rosemary essential oil and stir lightly. Allow the soap to dry for 4 weeks after being put into the mold. It can be used to clean short hair. It needs to be rinsed with apple cider vinegar after washing.",
+    "safetyNote": "Sodium hydroxide is highly corrosive. Avoid shampoo soap foam entering your eyes. Please wear gloves when operating."
   },
   {
     "id": 174,
-    "name": "啤酒起泡皂",
+    "name": "beer foaming soap",
     "materials": [
       "olive oil",
       "coconut oil ",
       "Sodium Hydroxide",
-      "啤酒",
+      "beer",
       "water"
     ],
-    "ratio": "橄榄油 350 克，椰子油 150 克，氢氧化钠 71 克，啤酒 160 毫升",
-    "steps": "啤酒提前一晚开盖去气，冰镇后溶碱降温。碱液倒入油脂搅拌至 trace，入模保温后晾皂 4 周。",
-    "safetyNote": "氢氧化钠与啤酒反应会产生大量热量和气泡，必须在通风处缓慢操作并佩戴防护装备。"
+    "ratio": "350g olive oil, 150g coconut oil, 71g sodium hydroxide, 160ml beer",
+    "steps": "Open the lid of the beer one night in advance to degas it, then cool it down by dissolving the alkali in it. Pour the lye solution into the fat and stir until trace, put it into the mold and keep it warm and let the soap dry for 4 weeks.",
+    "safetyNote": "The reaction between sodium hydroxide and beer will produce a lot of heat and bubbles, so it must be done slowly in a ventilated area and wearing protective equipment."
   },
   {
     "id": 175,
-    "name": "姜黄暖身皂",
+    "name": "Turmeric Warming Soap",
     "materials": [
       "coconut oil ",
       "Sodium Hydroxide",
-      "姜黄粉",
+      "turmeric powder",
       "water"
     ],
-    "ratio": "椰子油 400 克，氢氧化钠 56 克，姜黄粉 8 克，水 140 毫升",
-    "steps": "碱液冷却后倒入油脂搅拌，加入姜黄粉拌匀。倒入模具，晾皂 4 周后可作冬季沐浴使用。",
-    "safetyNote": "氢氧化钠具有强腐蚀性，姜黄易染色，操作时请佩戴手套并保护衣物。"
+    "ratio": "400 g coconut oil, 56 g sodium hydroxide, 8 g turmeric powder, 140 ml water",
+    "steps": "After the lye solution has cooled, pour in the oil and stir, add turmeric powder and mix well. Pour into molds and allow the soap to dry for 4 weeks before use in winter baths.",
+    "safetyNote": "Sodium hydroxide is highly corrosive and turmeric is easy to stain. Please wear gloves and protect your clothing when operating."
   },
   {
     "id": 176,
-    "name": "花椒驱蚁粉",
+    "name": "Zanthoxylum bungeanum ant repellent powder",
     "materials": [
       "prickly ash",
       "baking soda",
       "Corn Starch"
     ],
-    "ratio": "花椒 30 克，小苏打 20 克，玉米淀粉 50 克",
-    "steps": "花椒烘干碾碎，与小苏打、玉米淀粉混合均匀。撒于蚂蚁常出没的缝隙和角落，可干扰其活动路线。",
-    "safetyNote": "粉末避免吸入，远离食物和儿童可触及区域。"
+    "ratio": "30g Sichuan peppercorns, 20g baking soda, 50g cornstarch",
+    "steps": "Dry and crush the Sichuan peppercorns and mix evenly with baking soda and cornstarch. Sprinkle it in the cracks and corners where ants often hang out to interfere with their movement routes.",
+    "safetyNote": "Avoid inhalation of powder and keep away from food and reach of children."
   },
   {
     "id": 177,
@@ -2107,535 +2107,535 @@
       "Alcohol",
       "water"
     ],
-    "ratio": "香茅精油 8 毫升，酒精 80 毫升，水 20 毫升",
-    "steps": "精油溶于酒精后加水摇匀，装入喷雾瓶。户外活动前喷洒于裸露皮肤或衣物，可短时驱蚊。",
-    "safetyNote": "酒精易燃，远离火源。婴幼儿及敏感肌请先做皮试。"
+    "ratio": "Lemongrass essential oil 8 ml, alcohol 80 ml, water 20 ml",
+    "steps": "Dissolve the essential oil in alcohol, add water, shake well, and put into a spray bottle. Spray on exposed skin or clothing before outdoor activities to repel mosquitoes for a short time.",
+    "safetyNote": "Alcohol is flammable, keep away from fire sources. Infants and children with sensitive skin please do a skin test first."
   },
   {
     "id": 178,
-    "name": "大蒜防虫浸泡液",
+    "name": "Garlic insect repellent soak",
     "materials": [
-      "大蒜",
+      "garlic",
       "water",
       "liquid soap "
     ],
-    "ratio": "大蒜 50 克，水 1000 毫升，肥皂液 10 毫升",
-    "steps": "大蒜捣碎浸泡于水中 24 小时，过滤后加肥皂液摇匀。喷洒于植物叶片可辅助防治蚜虫等软体害虫。",
-    "safetyNote": "喷洒前先在少量叶片试喷，避免浓度过高灼伤植物。"
+    "ratio": "50 grams of garlic, 1000 ml of water, 10 ml of soap solution",
+    "steps": "Mash garlic and soak in water for 24 hours, filter and add soap solution and shake well. Spraying on plant leaves can help control soft-bodied pests such as aphids.",
+    "safetyNote": "Before spraying, test spray on a small number of leaves to avoid burning the plants if the concentration is too high."
   },
   {
     "id": 179,
-    "name": "烟草水杀虫液",
+    "name": "Tobacco water insecticide liquid",
     "materials": [
-      "烟草",
+      "tobacco",
       "water",
       "liquid soap "
     ],
-    "ratio": "烟草 30 克，水 1000 毫升，肥皂液 5 毫升",
-    "steps": "烟草浸泡于水中 48 小时后过滤，加入肥皂液混合。稀释后喷洒于受害植物，可防治部分咀嚼式害虫。",
-    "safetyNote": "烟草浸出液有毒，请佩戴手套，避免污染可食部位，儿童勿接触。"
+    "ratio": "30 grams of tobacco, 1000 ml of water, 5 ml of soap solution",
+    "steps": "The tobacco is soaked in water for 48 hours, filtered, and mixed with soap. Spray on damaged plants after dilution to control some chewing pests.",
+    "safetyNote": "Tobacco leachate is toxic, please wear gloves to avoid contaminating edible parts, and keep out of reach of children."
   },
   {
     "id": 180,
-    "name": "柚子皮驱虫包",
+    "name": "Grapefruit peel insect repellent bag",
     "materials": [
-      "柚子皮",
+      "Grapefruit peel",
       "Eugenia Caryophyllata",
       "Cotton bag"
     ],
-    "ratio": "柚子皮 100 克，丁香 15 克，棉布袋 1 个",
-    "steps": "柚子皮切条晾干，与丁香混合装入棉布袋扎紧。放置于米缸、衣柜或厨房角落，可辅助驱虫防蛀。",
-    "safetyNote": "需定期更换，避免潮湿发霉。"
+    "ratio": "100 grams of grapefruit peel, 15 grams of cloves, 1 cotton bag",
+    "steps": "Cut the grapefruit peel into strips and dry them, mix them with cloves and put them into a cotton bag and tie them tightly. Place it in a rice jar, wardrobe or kitchen corner to help repel insects and prevent moths.",
+    "safetyNote": "It needs to be replaced regularly to avoid moisture and mold."
   },
   {
     "id": 181,
-    "name": "苏合香衣柜防虫片",
+    "name": "Styrax wardrobe insect repellent tablets",
     "materials": [
-      "苏合香",
-      "樟木屑",
-      "无纺布袋"
+      "Styrax",
+      "camphor wood chips",
+      "non woven bag"
     ],
-    "ratio": "苏合香 10 克，樟木屑 40 克，无纺布袋 1 个",
-    "steps": "苏合香与樟木屑混合均匀，分装入无纺布袋中扎紧。悬挂于衣柜内，可防虫并散发木质清香。",
-    "safetyNote": "香料勿放置于婴幼儿可触及处，避免误食。"
+    "ratio": "10 grams of styrax, 40 grams of camphor wood chips, 1 non-woven bag",
+    "steps": "Styrax and camphor wood chips are mixed evenly, put into non-woven bags and tied tightly. Hanging in the wardrobe, it repels insects and emits a woody fragrance.",
+    "safetyNote": "Keep spices out of the reach of infants and young children to avoid accidental ingestion."
   },
   {
     "id": 182,
-    "name": "猫薄荷驱蟑螂粉",
+    "name": "Catnip Cockroach Repellent Powder",
     "materials": [
-      "猫薄荷",
+      "catnip",
       "Boric Acid",
       "Flour"
     ],
-    "ratio": "猫薄荷 20 克，硼酸 10 克，面粉 30 克",
-    "steps": "猫薄荷碾碎后与硼酸、面粉混合，撒于橱柜缝隙和蟑螂出没处。可辅助驱避并干扰其活动。",
-    "safetyNote": "硼酸有毒，必须远离儿童和宠物，不可撒于食物附近。"
+    "ratio": "20g catnip, 10g boric acid, 30g flour",
+    "steps": "Crush catnip, mix it with boric acid and flour, and sprinkle it on cabinet gaps and cockroach-infested areas. It can assist in repelling and interfering with its activities.",
+    "safetyNote": "Boric acid is toxic and should be kept away from children and pets. Do not spread it near food."
   },
   {
     "id": 183,
-    "name": "桉叶油防霉喷雾",
+    "name": "Eucalyptus oil anti-mildew spray",
     "materials": [
-      "桉叶油",
+      "Eucalyptus oil",
       "Alcohol",
       "water"
     ],
-    "ratio": "桉叶油 5 毫升，酒精 50 毫升，水 50 毫升",
-    "steps": "桉叶油溶于酒精后加水摇匀，装入喷雾瓶。喷洒于潮湿角落和衣柜内侧，可辅助防霉驱虫。",
-    "safetyNote": "酒精易燃，桉叶油气味较浓，使用时保持通风，避免接触眼部。"
+    "ratio": "5 ml of eucalyptus oil, 50 ml of alcohol, 50 ml of water",
+    "steps": "Dissolve eucalyptus oil in alcohol, add water, shake well, and put into a spray bottle. Spray on wet corners and inside wardrobes to help prevent mildew and insects.",
+    "safetyNote": "Alcohol is flammable and eucalyptus oil has a strong smell. Keep it ventilated when using it and avoid contact with eyes."
   },
   {
     "id": 184,
-    "name": "蜂蜡木器保养油",
+    "name": "Beeswax Wood Care Oil",
     "materials": [
       "beeswax",
-      "亚麻籽油",
+      "linseed oil",
       "turpentine"
     ],
-    "ratio": "蜂蜡 40 克，亚麻籽油 100 毫升，松节油 20 毫升",
-    "steps": "蜂蜡隔水加热融化，加入亚麻籽油和松节油搅拌均匀。冷却后涂布于木器表面，可防潮防裂并增亮。",
+    "ratio": "40 g beeswax, 100 ml linseed oil, 20 ml turpentine",
+    "steps": "Heat beeswax over water and melt, add linseed oil and turpentine and mix well. After cooling, apply it to the wood surface to prevent moisture and cracking and brighten it.",
     "safetyNote": "Turpentine is flammable and irritating, please operate in a ventilated place away from sources of ignition."
   },
   {
     "id": 185,
-    "name": "桐油防霉涂刷液",
+    "name": "Tung oil anti-mildew coating fluid",
     "materials": [
-      "生桐油",
+      "Raw tung oil",
       "turpentine"
     ],
-    "ratio": "生桐油 200 毫升，松节油 50 毫升",
-    "steps": "生桐油与松节油混合均匀，用毛刷薄涂于木制品或竹器表面。干燥后形成保护膜，可防霉防潮。",
-    "safetyNote": "桐油和松节油均易燃，操作时远离火源并保持通风，废刷具妥善处置。"
+    "ratio": "200 ml raw tung oil, 50 ml turpentine",
+    "steps": "Mix raw tung oil and turpentine evenly and apply it thinly on the surface of wood or bamboo products with a brush. After drying, a protective film is formed to prevent mildew and moisture.",
+    "safetyNote": "Tung oil and turpentine are both flammable. Keep away from fire sources and maintain ventilation when operating. Used brushes should be disposed of properly."
   },
   {
     "id": 186,
-    "name": "硅胶粒防潮包",
+    "name": "Silicone grain moisture-proof bag",
     "materials": [
-      "硅胶干燥粒",
-      "透气布袋"
+      "Silica gel dry granules",
+      "breathable cloth bag"
     ],
-    "ratio": "硅胶干燥粒 100 克，透气布袋 2 个",
-    "steps": "硅胶干燥粒分装入透气布袋中扎紧。放置于相机盒、书柜或鞋盒内吸湿防潮，饱和后可在阳光下再生。",
-    "safetyNote": "硅胶粒不可食用，请远离婴幼儿。"
+    "ratio": "100 grams of dry silica gel, 2 breathable bags",
+    "steps": "Put the dry silica gel granules into breathable cloth bags and tie them tightly. Place it in a camera box, bookcase or shoe box to absorb moisture and prevent moisture. It can be regenerated in the sun after being saturated.",
+    "safetyNote": "Silica gel particles are not edible, please keep away from infants and young children."
   },
   {
     "id": 187,
-    "name": "熏香防蛀块",
+    "name": "Incense moth-proofing block",
     "materials": [
       "Sandalwood powder",
       "Nanmu Powder",
       "water"
     ],
-    "ratio": "檀香粉 60 克，楠木粉 40 克，水 25 毫升",
-    "steps": "檀香粉与楠木粉混合，加水揉成团压块，阴干至完全硬固。置于书柜或衣柜中，可防蛀并散发香气。",
-    "safetyNote": "仅供防蛀使用，不可当作食品或玩具给儿童。"
+    "ratio": "60 grams of sandalwood powder, 40 grams of nanmu powder, 25 ml of water",
+    "steps": "Mix sandalwood powder and nanmu powder, add water and knead into a ball, then dry in the shade until completely hard. Place in a bookcase or wardrobe to protect against moths and provide fragrance.",
+    "safetyNote": "For moth-proofing purposes only, not for use as food or toys for children."
   },
   {
     "id": 188,
-    "name": "石灰干燥防潮剂",
+    "name": "Lime drying and moisture-proof agent",
     "materials": [
       "Quicklime",
       "Calcium Chloride",
-      "透气罐"
+      "breathable tank"
     ],
-    "ratio": "生石灰 80 克，氯化钙 40 克，透气罐 1 个",
-    "steps": "生石灰与氯化钙混合装入透气罐，加盖留缝。置于地下室或潮湿储物间，可吸收环境水分。",
-    "safetyNote": "生石灰遇水放热，勿让儿童接触，容器避免进水。"
+    "ratio": "80 grams of quicklime, 40 grams of calcium chloride, 1 breathable jar",
+    "steps": "Quicklime and calcium chloride are mixed and put into a breathable tank, and the lid is sealed to leave a gap. Placed in a basement or humid storage room, it can absorb ambient moisture.",
+    "safetyNote": "Quicklime releases heat when it comes in contact with water. Keep out of reach of children and avoid water getting into the container."
   },
   {
     "id": 189,
-    "name": "蜂蜡食品封存蜡",
+    "name": "Beeswax food sealing wax",
     "materials": [
       "beeswax",
       "coconut oil ",
-      "树脂"
+      "Resin"
     ],
-    "ratio": "蜂蜡 100 克，椰子油 30 克，树脂 20 克",
-    "steps": "蜂蜡、椰子油和树脂隔水加热融化，搅拌均匀。趁热刷于奶酪或半硬质食物表面，冷却后形成可撕除的保鲜蜡层。",
-    "safetyNote": "仅适用于直接食用的食物表面，使用前确保所有原料为食品级。"
+    "ratio": "100g beeswax, 30g coconut oil, 20g resin",
+    "steps": "Melt the beeswax, coconut oil and resin over water and mix well. Brush it on the surface of cheese or semi-hard food while it's hot, and it will form a removable layer of preservation wax after it cools.",
+    "safetyNote": "Only suitable for direct consumption of food surfaces, make sure all ingredients are food grade before use."
   },
   {
     "id": 190,
-    "name": "松木防虫条",
+    "name": "Pine wood insect-proof strips",
     "materials": [
-      "松木块",
-      "樟脑油"
+      "pine wood blocks",
+      "camphor oil"
     ],
-    "ratio": "松木块 200 克，樟脑油 10 毫升",
-    "steps": "松木块锯成条状并砂光，滴涂或浸泡樟脑油后阴干。置于衣柜、抽屉或储物箱中，可防虫并吸味。",
-    "safetyNote": "樟脑油有毒性，请远离儿童和食物，保持容器密封。"
+    "ratio": "200 grams of pine wood, 10 ml of camphor oil",
+    "steps": "The pine wood blocks are sawn into strips and sanded, dripped or soaked in camphor oil and dried in the shade. Place in a closet, drawer or storage box to repel insects and absorb odors.",
+    "safetyNote": "Camphor oil is toxic, please keep it away from children and food, and keep the container sealed."
   },
   {
     "id": 191,
-    "name": "自制浆糊",
+    "name": "homemade paste",
     "materials": [
       "Flour",
       "Alum",
       "water"
     ],
-    "ratio": "面粉 50 克，明矾 2 克，水 300 毫升",
-    "steps": "面粉用少量冷水调成糊，明矾溶于剩余水中加热至微沸，缓缓倒入面浆搅拌至透明粘稠。冷却后可粘贴纸张和标签。",
-    "safetyNote": "加热时小心防烫，浆糊现制现用，不宜久放以免变质。"
+    "ratio": "50g flour, 2g alum, 300ml water",
+    "steps": "Mix the flour with a small amount of cold water to make a paste. Dissolve alum in the remaining water and heat it to a slight boil. Slowly pour in the batter and stir until it becomes transparent and sticky. After cooling the paper and labels can be attached.",
+    "safetyNote": "Be careful to prevent scalding when heating. The paste is ready for use. Do not store it for a long time to avoid deterioration."
   },
   {
     "id": 192,
-    "name": "紫甘蓝酸碱指示剂",
+    "name": "Purple cabbage acid-base indicator",
     "materials": [
-      "紫甘蓝",
+      "purple cabbage",
       "distilled water "
     ],
-    "ratio": "紫甘蓝 100 克，蒸馏水 300 毫升",
-    "steps": "紫甘蓝切碎浸泡或轻煮于蒸馏水中，过滤取紫色滤液。遇酸性变红，遇碱性变绿，可用于简易化学实验。",
-    "safetyNote": "仅供实验观察，不可饮用，染色后衣物难以清洗。"
+    "ratio": "100 g purple cabbage, 300 ml distilled water",
+    "steps": "Chop purple cabbage and soak or lightly boil it in distilled water, then filter to get the purple filtrate. It turns red when exposed to acid and green when exposed to alkaline, and can be used for simple chemical experiments.",
+    "safetyNote": "For experimental observation only, not for drinking. It is difficult to clean clothes after dyeing."
   },
   {
     "id": 193,
-    "name": "天然去污粉",
+    "name": "natural stain remover powder",
     "materials": [
       "baking soda",
       "Salt",
-      "柠檬皮粉"
+      "Lemon peel powder"
     ],
-    "ratio": "小苏打 100 克，盐 50 克，柠檬皮粉 20 克",
-    "steps": "小苏打、盐与柠檬皮粉充分混合，装入撒粉瓶。沾湿后撒于水槽、灶台，用湿布擦洗可去除轻度油垢。",
-    "safetyNote": "不可用于大理石、铝制品等易被碱腐蚀的表面。"
+    "ratio": "100g baking soda, 50g salt, 20g lemon peel powder",
+    "steps": "Mix the baking soda, salt and lemon zest powder thoroughly and place in a dusting bottle. After getting wet, sprinkle it on the sink and stove, and scrub with a damp cloth to remove light grease.",
+    "safetyNote": "It cannot be used on surfaces easily corroded by alkali such as marble and aluminum products."
   },
   {
     "id": 194,
-    "name": "简易混凝土修补泥",
+    "name": "Simple concrete repair mud",
     "materials": [
       "Cement",
-      "河沙",
+      "river sand",
       "water"
     ],
-    "ratio": "水泥 100 克，河沙 200 克，水 60 毫升",
-    "steps": "水泥与河沙干混均匀，逐渐加水搅拌至可塑状态。填入墙面小孔或地面裂缝，抹平后养护 24 小时。",
-    "safetyNote": "水泥具有碱性，操作时请佩戴手套和口罩，避免吸入粉尘。"
+    "ratio": "100 grams of cement, 200 grams of river sand, 60 ml of water",
+    "steps": "Dry mix the cement and river sand evenly, then gradually add water and stir until it becomes plastic. Fill small holes in the wall or cracks in the floor, smooth them out and then cure them for 24 hours.",
+    "safetyNote": "Cement is alkaline, so please wear gloves and a mask when operating to avoid inhaling dust."
   },
   {
     "id": 195,
-    "name": "应急保温泥",
+    "name": "emergency insulation mud",
     "materials": [
       "Clay",
-      "稻草",
+      "straw",
       "water"
     ],
-    "ratio": "粘土 300 克，稻草 50 克，水 100 毫升",
-    "steps": "粘土与切碎稻草混合，加水揉至可塑。包裹于户外水管或临时设施表面，可短时减缓冻结。",
-    "safetyNote": "仅限临时应急，干燥后易碎，需定期检查和更换。"
+    "ratio": "300 grams of clay, 50 grams of straw, 100 ml of water",
+    "steps": "Mix the clay with chopped straw, add water and knead until it becomes plastic. Wrapping it on the surface of outdoor water pipes or temporary facilities can slow down freezing for a short time.",
+    "safetyNote": "For temporary emergencies only, it is fragile after drying and needs to be inspected and replaced regularly."
   },
   {
     "id": 196,
-    "name": "天然橡皮泥",
+    "name": "natural plasticine",
     "materials": [
       "Flour",
-      "塔塔粉",
+      "cream of tartar",
       "Cooking oil",
       "Food coloring"
     ],
-    "ratio": "面粉 200 克，塔塔粉 10 克，食用油 20 毫升，食用色素 适量",
-    "steps": "面粉与塔塔粉混合，加入油和色素，逐渐加热水揉至不粘手。冷却后供儿童塑形，密封冷藏保存。",
-    "safetyNote": "虽为食品级原料，仍不可食用，需在成人监护下使用。"
+    "ratio": "200g flour, 10g cream of tartar, 20ml cooking oil, appropriate amount of food coloring",
+    "steps": "Mix flour and cream of tartar, add oil and coloring, gradually heat water and knead until no longer sticky. After cooling, it can be shaped by children, sealed and refrigerated.",
+    "safetyNote": "Although it is a food-grade raw material, it is still not edible and needs to be used under adult supervision."
   },
   {
     "id": 197,
-    "name": "简易磨刀膏",
+    "name": "Simple knife sharpening paste",
     "materials": [
-      "绿色氧化铬粉",
+      "Green chromium oxide powder",
       "Glycerol",
       "water"
     ],
-    "ratio": "绿色氧化铬粉 20 克，甘油 30 毫升，水 10 毫升",
-    "steps": "氧化铬粉与甘油、水调成膏状，涂于皮革或木板条上。刀刃以合适角度在膏面上推拉，可精细抛光刀刃。",
-    "safetyNote": "研磨粉避免吸入，操作时请佩戴口罩，小心刀刃划伤。"
+    "ratio": "20 grams of green chromium oxide powder, 30 ml of glycerin, 10 ml of water",
+    "steps": "Chromium oxide powder is mixed with glycerin and water into a paste and applied to leather or wooden slats. The blade is pushed and pulled on the paste surface at a suitable angle to finely polish the blade.",
+    "safetyNote": "Avoid inhaling the grinding powder. Please wear a mask when operating and be careful of scratches by the blade."
   },
   {
     "id": 198,
-    "name": "管道疏通辅助粉",
+    "name": "Pipe unblocking auxiliary powder",
     "materials": [
       "baking soda",
       "citric acid",
       "Salt"
     ],
-    "ratio": "小苏打 100 克，柠檬酸 50 克，盐 30 克",
-    "steps": "三种粉末混合均匀，装入密封罐。疏通时取 50 克倒入堵塞管道，再加热水 500 毫升，静置 30 分钟后冲水。",
-    "safetyNote": "反应时会产生大量气泡，不可与漂白水等化学品混用，避免溅入眼部。"
+    "ratio": "100g baking soda, 50g citric acid, 30g salt",
+    "steps": "Mix the three powders evenly and put them into sealed jars. When unblocking, pour 50 grams into the blocked pipe, add 500 ml of water, let it sit for 30 minutes and then flush.",
+    "safetyNote": "A large number of bubbles will be produced during the reaction. Do not mix it with chemicals such as bleach to avoid splashing into the eyes."
   },
   {
     "id": 199,
-    "name": "桂花浸香油",
+    "name": "Osmanthus infused sesame oil",
     "materials": [
-      "鲜桂花",
+      "Fresh osmanthus",
       "olive oil",
       "Alcohol"
     ],
-    "ratio": "鲜桂花 50 克，橄榄油 200 毫升，酒精 20 毫升",
-    "steps": "桂花与橄榄油密封浸泡 7 天，每日摇匀。过滤后加少量酒精防腐，可用于手腕或发尾增香。",
-    "safetyNote": "现制浸油易氧化，建议冷藏并在两周内用完，敏感肌请先做皮试。"
+    "ratio": "50g fresh osmanthus, 200ml olive oil, 20ml alcohol",
+    "steps": "The osmanthus and olive oil are sealed and soaked for 7 days, and shaken daily. After filtering, add a small amount of alcohol to preserve it and can be used to add fragrance to your wrists or hair.",
+    "safetyNote": "Freshly made infused oils are prone to oxidation, so it is recommended to be refrigerated and used within two weeks. For sensitive skin, please do a skin test first."
   },
   {
     "id": 200,
-    "name": "沉香线香",
+    "name": "agarwood incense stick",
     "materials": [
       "Aromatic powder",
       "Nanmu Powder",
       "water"
     ],
-    "ratio": "沉香粉 40 克，楠木粉 60 克，水 35 毫升",
-    "steps": "沉香粉与楠木粉混合，逐渐加水揉至可塑，用线香模具挤出成型。阴干 5 天后可于通风处点燃品香。",
-    "safetyNote": "燃烧时请使用防火香插，保持室内通风，人离火源。"
+    "ratio": "40 grams of agarwood powder, 60 grams of nanmu powder, 35 ml of water",
+    "steps": "Mix agarwood powder and nanmu powder, gradually add water and knead until it becomes plastic, and then extrude it with an incense mold. After drying in the shade for 5 days, you can light the incense in a ventilated place.",
+    "safetyNote": "When burning, please use fire-proof incense sticks, keep the room ventilated, and keep people away from the fire source."
   },
   {
     "id": 201,
-    "name": "茉莉香氛蜡片",
+    "name": "Jasmine fragrance wax tablets",
     "materials": [
       "beeswax",
-      "茉莉精油",
-      "无纺布"
+      "Jasmine essential oil",
+      "non-woven fabric"
     ],
-    "ratio": "蜂蜡 30 克，茉莉精油 3 毫升，无纺布 2 片",
-    "steps": "蜂蜡融化后离火，加入茉莉精油。将无纺布浸入蜡液取出冷却，制成香氛蜡片挂于衣柜中缓慢释香。",
-    "safetyNote": "蜡片不可点燃，仅供悬挂释香，避免高温环境。"
+    "ratio": "30g beeswax, 3ml jasmine essential oil, 2 pieces of non-woven fabric",
+    "steps": "When the beeswax melts, remove from the heat and add jasmine essential oil. Dip the non-woven fabric into the wax liquid, take it out and cool it, then make fragrant wax pieces and hang them in the wardrobe to slowly release the fragrance.",
+    "safetyNote": "The wax chips cannot be ignited and are only for hanging to release fragrance and avoid high temperature environments."
   },
   {
     "id": 202,
-    "name": "柑橘皮空气清新剂",
+    "name": "Citrus peel air freshener",
     "materials": [
-      "橙皮",
-      "肉桂",
+      "orange peel",
+      "Cinnamon",
       "Eugenia Caryophyllata",
       "water"
     ],
-    "ratio": "橙皮 100 克，肉桂 5 克，丁香 5 克，水 500 毫升",
-    "steps": "橙皮与香料加入水中小火 simmer 30 分钟，滤液冷却后装入喷雾瓶。喷洒于室内可带来清新柑橘香气。",
-    "safetyNote": "现制液体易变质，建议冷藏并在三日内用完。"
+    "ratio": "100 g orange peel, 5 g cinnamon, 5 g cloves, 500 ml water",
+    "steps": "Add orange peel and spices to water and simmer over low heat for 30 minutes. After the filtrate cools, put it into a spray bottle. Spray indoors for a refreshing citrus scent.",
+    "safetyNote": "Freshly prepared liquids are prone to spoilage, so it is recommended to be refrigerated and used within three days."
   },
   {
     "id": 203,
-    "name": "睡眠薰衣草枕包",
+    "name": "Sleep Lavender Pillow Bag",
     "materials": [
       "Dried lavender",
-      "干洋甘菊",
+      "dried chamomile",
       "Cotton bag"
     ],
-    "ratio": "干薰衣草 40 克，干洋甘菊 20 克，棉布袋 1 个",
-    "steps": "薰衣草与洋甘菊混合均匀，装入棉布袋扎紧。置于枕边，夜间可散发助眠草本香气。",
-    "safetyNote": "对花粉或菊科植物过敏者请勿使用。"
+    "ratio": "40g dried lavender, 20g dried chamomile, 1 cotton bag",
+    "steps": "Mix lavender and chamomile evenly, put into cotton bag and tie tightly. Place it next to your pillow to release the herbal aroma that helps you sleep at night.",
+    "safetyNote": "Do not use if you are allergic to pollen or Asteraceae plants."
   },
   {
     "id": 204,
-    "name": "电水壶除垢片",
+    "name": "electric kettle descaling tablets",
     "materials": [
       "citric acid",
       "baking soda"
     ],
-    "ratio": "柠檬酸 40 克，小苏打 20 克",
-    "steps": "柠檬酸与小苏打混合压片或保持粉末状。每次取 15 克加入水壶，加水煮沸后浸泡 30 分钟，冲洗即可除垢。",
-    "safetyNote": "反应时会产生气泡，壶盖勿完全密闭，不可用于铝制容器。"
+    "ratio": "40g citric acid, 20g baking soda",
+    "steps": "Mix citric acid with baking soda and press into tablets or keep in powder form. Add 15 grams at a time to the kettle, add water to boil, soak for 30 minutes, rinse to remove scale.",
+    "safetyNote": "Bubbles will be generated during the reaction, so the lid must not be completely sealed and cannot be used in aluminum containers."
   },
   {
     "id": 205,
-    "name": "皮革护理清洁剂",
+    "name": "leather care cleaner",
     "materials": [
       "olive oil",
       "white vinegar",
       "essence"
     ],
-    "ratio": "橄榄油 50 毫升，白醋 20 毫升，精油 2 毫升",
-    "steps": "橄榄油、白醋与精油混合摇匀，蘸少量于软布上。轻擦皮革表面去污并保养，再用干布抛亮。",
-    "safetyNote": "使用前在隐蔽处试擦，避免褪色或留油渍。"
+    "ratio": "50 ml olive oil, 20 ml white vinegar, 2 ml essential oil",
+    "steps": "Mix olive oil, white vinegar and essential oil, shake well, and apply a small amount to a soft cloth. Gently wipe the leather surface to remove dirt and maintain it, then polish with a dry cloth.",
+    "safetyNote": "Before use, test it in a hidden area to avoid fading or leaving oil stains."
   },
   {
     "id": 206,
-    "name": "键盘清洁凝胶",
+    "name": "keyboard cleaning gel",
     "materials": [
       "Glue",
       "Borax",
       "water"
     ],
-    "ratio": "胶水 100 毫升，硼砂 5 克，水 50 毫升",
-    "steps": "硼砂溶于水，与胶水混合搅拌至形成可拉伸凝胶。按压于键盘缝隙吸附灰尘，用后可丢弃。",
-    "safetyNote": "硼砂有毒，操作时请佩戴手套，不可让儿童误食或玩耍。"
+    "ratio": "100 ml glue, 5 g borax, 50 ml water",
+    "steps": "Borax is dissolved in water, mixed with glue and stirred until a stretchable gel forms. Press it into the gaps between the keyboard to absorb dust and can be discarded after use.",
+    "safetyNote": "Borax is toxic, so please wear gloves when handling it and do not let children eat or play with it."
   },
   {
     "id": 207,
-    "name": "羊毛专用洗涤剂",
+    "name": "Detergent for wool",
     "materials": [
-      "橄榄油皂",
+      "olive oil soap",
       "water",
       "essence"
     ],
-    "ratio": "橄榄油皂 50 克，温水 500 毫升，精油 2 毫升",
-    "steps": "皂块刨丝溶于温水中，加入精油搅拌至完全溶解。用于手洗羊毛制品，轻柔按压后清水漂洗，平铺晾干。",
-    "safetyNote": "不可搓揉或机洗，避免热水导致羊毛缩水。"
+    "ratio": "50 g olive oil soap, 500 ml warm water, 2 ml essential oil",
+    "steps": "Dissolve the soap cubes in warm water, add essential oils and stir until completely dissolved. For hand washing wool products, press gently, rinse with water, and lay flat to dry.",
+    "safetyNote": "Do not rub or machine wash to avoid hot water causing the wool to shrink."
   },
   {
     "id": 208,
-    "name": "婴儿衣物温和洗衣液",
+    "name": "Gentle laundry detergent for baby clothes",
     "materials": [
       "Coconut oil soap",
       "baking soda",
       "water"
     ],
-    "ratio": "椰子油皂 40 克，小苏打 20 克，水 800 毫升",
-    "steps": "皂块刨丝与小苏打溶于热水中，搅拌至透明液体。冷却后用于婴儿衣物手洗，需充分漂洗。",
-    "safetyNote": "首次使用前在衣物隐蔽处试洗，确保无残留刺激。"
+    "ratio": "40g coconut oil soap, 20g baking soda, 800ml water",
+    "steps": "Dissolve grated soap bar and baking soda in hot water and stir until clear liquid. After cooling, it can be used for hand washing of baby clothes and needs to be fully rinsed.",
+    "safetyNote": "Before first use, test wash in a hidden area of ​​clothing to ensure there is no residual irritation."
   },
   {
     "id": 209,
-    "name": "运动服去汗味洗涤剂",
+    "name": "Sportswear anti-sweat detergent",
     "materials": [
       "baking soda",
       "white vinegar",
       "water"
     ],
-    "ratio": "小苏打 30 克，白醋 50 毫升，水 1000 毫升",
-    "steps": "小苏打溶于水中，加入白醋摇匀。浸泡运动衣物 30 分钟后常规洗涤，可减轻汗味和轻度异味。",
-    "safetyNote": "不可与漂白水同时使用，浸泡时避免彩色衣物褪色。"
+    "ratio": "30g baking soda, 50ml white vinegar, 1000ml water",
+    "steps": "Dissolve baking soda in water, add white vinegar and shake well. Soak your sports clothing for 30 minutes before washing regularly to reduce sweat odors and mild odors.",
+    "safetyNote": "Do not use it with bleach to prevent colored clothes from fading during soaking."
   },
   {
     "id": 210,
-    "name": "肉桂苹果香薰蜡烛",
+    "name": "Cinnamon Apple Scented Candle",
     "materials": [
       "Soy wax",
-      "肉桂精油",
-      "苹果香精",
+      "cinnamon essential oil",
+      "apple flavor",
       "Candle wick"
     ],
-    "ratio": "大豆蜡 200 克，肉桂精油 3 毫升，苹果香精 2 毫升，烛芯 1 根",
-    "steps": "大豆蜡隔水加热融化，离火后加入肉桂精油和苹果香精搅拌。固定烛芯后倒入容器，冷却凝固即可。",
-    "safetyNote": "点燃时远离易燃物，保持室内通风，人离火源。"
+    "ratio": "200g soy wax, 3ml cinnamon essential oil, 2ml apple essence, 1 candle wick",
+    "steps": "Heat the soy wax over water to melt, remove from the heat, add cinnamon essential oil and apple essence and stir. After fixing the candle wick, pour it into the container and let it cool and solidify.",
+    "safetyNote": "When igniting, stay away from flammable materials, keep the room ventilated, and keep people away from the fire source."
   },
   {
     "id": 211,
-    "name": "冰裂纹装饰蜡烛",
+    "name": "Ice crackle decorative candle",
     "materials": [
       "Paraffin wax",
-      "冰蜡",
+      "ice wax",
       "Candle wick"
     ],
-    "ratio": "石蜡 150 克，冰蜡 50 克，烛芯 1 根",
-    "steps": "外层石蜡融化后倒入模具形成壳体，内层冰蜡融化后注入并插入烛芯。冷却后冰蜡收缩形成裂纹装饰效果。",
-    "safetyNote": "融蜡时注意防烫，首次点燃请在旁看管。"
+    "ratio": "150g paraffin wax, 50g ice wax, 1 candle wick",
+    "steps": "The outer layer of paraffin is melted and poured into the mold to form the shell, and the inner layer of ice wax is melted and poured into the candle wick. After cooling, the ice wax shrinks to form a cracked decorative effect.",
+    "safetyNote": "Be careful to prevent scalding when melting wax, and please keep an eye on it when lighting it for the first time."
   },
   {
     "id": 212,
-    "name": "容器再利用蜡烛",
+    "name": "Container reuse candles",
     "materials": [
-      "剩余蜡块",
+      "remaining wax block",
       "Candle wick",
       "essence"
     ],
-    "ratio": "剩余蜡块 150 克，烛芯 1 根，精油 2 毫升",
-    "steps": "收集烧尽蜡烛的剩余蜡块隔水加热融化，过滤杂质后加入精油。倒入旧玻璃杯或陶瓷杯中，插入新烛芯冷却。",
-    "safetyNote": "回收容器需耐热，点燃时确保容器稳定不倾倒。"
+    "ratio": "150g remaining wax block, 1 candle wick, 2ml essential oil",
+    "steps": "Collect the remaining wax blocks from the burned candles and heat them over water to melt them. Filter the impurities and add essential oils. Pour into an old glass or ceramic mug and insert a new wick to cool.",
+    "safetyNote": "The recycling container needs to be heat-resistant and ensure that the container is stable and does not tip over when ignited."
   },
   {
     "id": 213,
-    "name": "户外防风蜡烛",
+    "name": "Outdoor windproof candle",
     "materials": [
       "Paraffin wax",
       "Stearic acid",
       "Candle wick"
     ],
-    "ratio": "石蜡 170 克，硬脂酸 30 克，烛芯 1 根",
-    "steps": "石蜡与硬脂酸混合加热至完全融化，倒入宽口金属或厚玻璃容器中，插入较粗烛芯。硬脂酸可提高熔点，适合户外短时使用。",
-    "safetyNote": "户外使用时仍需置于防火底座，远离干草等易燃物。"
+    "ratio": "170g paraffin, 30g stearic acid, 1 candle wick",
+    "steps": "Mix paraffin and stearic acid and heat until completely melted, pour into a wide-mouthed metal or thick glass container, and insert a thicker candle wick. Stearic acid can increase the melting point and is suitable for short-term outdoor use.",
+    "safetyNote": "When used outdoors, it still needs to be placed on a fireproof base and kept away from flammable materials such as dry grass."
   },
   {
     "id": 214,
-    "name": "雪花纹理蜡烛",
+    "name": "Snowflake texture candle",
     "materials": [
       "Soy wax",
       "White oil",
       "Candle wick"
     ],
-    "ratio": "大豆蜡 180 克，白油 20 克，烛芯 1 根",
-    "steps": "大豆蜡与白油混合加热融化，倒入模具后待表面半凝固时用叉子划出纹理。完全冷却后形成雪花状表面效果。",
-    "safetyNote": "纹理仅作装饰，燃烧时请在防火烛台上使用。"
+    "ratio": "180g soy wax, 20g white oil, 1 candle wick",
+    "steps": "Mix soy wax and white oil and heat to melt. Pour into the mold and use a fork to mark the texture when the surface is semi-solidified. A snowflake-like finish develops when completely cooled.",
+    "safetyNote": "The texture is for decoration only, please use it in a fireproof candle holder when burning."
   },
   {
     "id": 215,
-    "name": "双芯大杯蜡烛",
+    "name": "Double wick tall candle",
     "materials": [
       "Soy wax",
       "beeswax",
       "Candle wick"
     ],
-    "ratio": "大豆蜡 300 克，蜂蜡 50 克，烛芯 2 根",
-    "steps": "大豆蜡与蜂蜡混合加热融化，在大口径容器中对称固定两根烛芯，倒入蜡液。可延长燃烧时间并减少隧道效应。",
-    "safetyNote": "双芯燃烧火焰较大，请置于稳定烛台，远离窗帘等易燃物。"
+    "ratio": "300g soy wax, 50g beeswax, 2 candle wicks",
+    "steps": "Mix soy wax and beeswax, heat and melt, fix two candle wicks symmetrically in a large-diameter container, and pour the wax liquid. Can extend burning time and reduce tunneling effect.",
+    "safetyNote": "The double-core burning flame is larger, so please place it on a stable candlestick and keep it away from flammable objects such as curtains."
   },
   {
     "id": 216,
-    "name": "亚麻油木器封闭剂",
+    "name": "Linseed oil wood sealer",
     "materials": [
       "linseed oil",
       "turpentine",
       "beeswax"
     ],
-    "ratio": "亚麻油 150 毫升，松节油 30 毫升，蜂蜡 20 克",
-    "steps": "蜂蜡隔水加热融化，加入亚麻油和松节油搅拌均匀。薄涂于未上漆木器表面，可封闭木孔防潮防污。",
-    "safetyNote": "松节油易燃，操作时远离火源并保持通风。"
+    "ratio": "150 ml flax oil, 30 ml turpentine, 20 g beeswax",
+    "steps": "Heat beeswax over water and melt, add linseed oil and turpentine and stir evenly. Apply thinly to unpainted wood surfaces to seal wood pores and protect against moisture and stains.",
+    "safetyNote": "Turpentine is flammable, keep away from fire sources and keep ventilated when handling."
   },
   {
     "id": 217,
-    "name": "羊皮纸食物包裹膜",
+    "name": "Parchment paper food wrap",
     "materials": [
-      "羊皮纸",
+      "parchment",
       "beeswax",
       "coconut oil "
     ],
-    "ratio": "羊皮纸 2 张，蜂蜡 30 克，椰子油 10 克",
-    "steps": "蜂蜡与椰子油加热融化，用刷子均匀涂布于羊皮纸一面。冷却后可用于包裹奶酪、面包等食物短期保鲜。",
-    "safetyNote": "仅适用于冷食或室温食物，不可用于烤箱高温加热。"
+    "ratio": "2 sheets of parchment paper, 30 g beeswax, 10 g coconut oil",
+    "steps": "Melt the beeswax and coconut oil and spread evenly on one side of the parchment paper with a brush. After cooling, it can be used to wrap cheese, bread and other foods to keep them fresh for a short period of time.",
+    "safetyNote": "Only suitable for cold or room temperature food, not for high temperature heating in the oven."
   },
   {
     "id": 218,
-    "name": "竹器防霉油",
+    "name": "Bamboo anti-mold oil",
     "materials": [
-      "生桐油",
+      "Raw tung oil",
       "beeswax",
       "essence"
     ],
-    "ratio": "生桐油 100 毫升，蜂蜡 15 克，精油 2 毫升",
-    "steps": "蜂蜡加热融化后与桐油、精油混合。用软布蘸取薄涂竹制砧板、竹篮等表面，干燥后可防霉防裂。",
-    "safetyNote": "桐油未干透前易燃，需在通风处阴干，远离火源。"
+    "ratio": "100 ml raw tung oil, 15 g beeswax, 2 ml essential oil",
+    "steps": "Beeswax is heated and melted and then mixed with tung oil and essential oils. Dip a soft cloth into a thin coating of bamboo cutting boards, bamboo baskets and other surfaces. After drying, it can prevent mildew and cracking.",
+    "safetyNote": "Tung oil is flammable before it is completely dry, so it needs to be dried in a ventilated place away from fire sources."
   },
   {
     "id": 219,
-    "name": "书籍防酸纸包",
+    "name": "Acid proof paper bag for books",
     "materials": [
-      "无酸纸",
-      "干燥剂",
-      "棉绳"
+      "Acid-free paper",
+      "Desiccant",
+      "cotton rope"
     ],
-    "ratio": "无酸纸 4 张，干燥剂 20 克，棉绳 1 根",
-    "steps": "珍贵书籍每本用无酸纸包裹，与干燥剂一同放入档案盒中扎紧。可减缓纸张酸化变黄，适合长期收藏。",
-    "safetyNote": "干燥剂不可食用，档案盒应置于阴凉干燥处，避免阳光直射。"
+    "ratio": "4 sheets of acid-free paper, 20 grams of desiccant, 1 cotton rope",
+    "steps": "Each rare book is wrapped in acid-free paper and placed in an archival box with desiccant and tied tightly. It can slow down the acidification and yellowing of paper and is suitable for long-term storage.",
+    "safetyNote": "The desiccant is not edible, and the file box should be placed in a cool, dry place away from direct sunlight."
   },
   {
     "id": 220,
-    "name": "金属工具防锈油",
+    "name": "Anti-rust oil for metal tools",
     "materials": [
-      "矿物油",
+      "mineral oil",
       "beeswax",
       "lubricant"
     ],
-    "ratio": "矿物油 80 毫升，蜂蜡 10 克，凡士林 20 克",
-    "steps": "蜂蜡隔水加热融化，加入矿物油和凡士林搅拌均匀。薄涂于钳子、扳手等工具金属面，可隔绝湿气防锈。",
-    "safetyNote": "涂油后工具表面较滑，使用时注意握持稳定。"
+    "ratio": "80 ml mineral oil, 10 g beeswax, 20 g petroleum jelly",
+    "steps": "Melt the beeswax over water, add mineral oil and petroleum jelly and mix well. Apply thinly to the metal surfaces of tools such as pliers and wrenches to isolate moisture and prevent rust.",
+    "safetyNote": "The surface of the tool will be slippery after oiling, so be sure to hold it stably when using it."
   },
   {
     "id": 221,
-    "name": "相机镜头防潮箱剂",
+    "name": "Camera lens moisture-proof box agent",
     "materials": [
-      "硅胶干燥粒",
+      "Silica gel dry granules",
       "Quicklime",
-      "密封盒"
+      "sealed box"
     ],
-    "ratio": "硅胶干燥粒 150 克，生石灰 30 克，密封盒 1 个",
-    "steps": "硅胶干燥粒与生石灰分装于透气小袋，一同放入密封盒底部。相机与镜头放入后盖紧，可保持低湿度环境。",
-    "safetyNote": "生石灰遇水放热，勿让儿童接触，定期检查干燥剂状态。"
+    "ratio": "150g dry silica gel, 30g quicklime, 1 sealed box",
+    "steps": "The dry silica gel granules and quicklime are packed into breathable bags and placed together at the bottom of the sealed box. The camera and lens are tightly closed after being put in to maintain a low-humidity environment.",
+    "safetyNote": "Quicklime releases heat when exposed to water. Keep out of reach of children. Check the status of the desiccant regularly."
   },
   {
     "id": 222,
@@ -2644,374 +2644,374 @@
       "White oil",
       "lubricant"
     ],
-    "ratio": "白油 80 毫升，凡士林 10 克",
-    "steps": "凡士林与白油混合加热至完全融合，冷却后装入油壶。滴于缝纫机旋梭和导轨处，可减摩降噪。",
-    "safetyNote": "加油前请断开电源，用量宜少，避免油液污染布料。"
+    "ratio": "80 ml white oil, 10 g petroleum jelly",
+    "steps": "Mix petroleum jelly and white oil and heat until completely combined, then cool and put into the oil pot. Drop it on the hook and guide rail of the sewing machine to reduce friction and noise.",
+    "safetyNote": "Please disconnect the power supply before refueling, and use a small amount to avoid oil contamination of the fabric."
   },
   {
     "id": 223,
-    "name": "自行车链条保养油",
+    "name": "Bicycle chain maintenance oil",
     "materials": [
-      "矿物油",
+      "mineral oil",
       "Graphite powder",
       "Kerosene"
     ],
-    "ratio": "矿物油 60 毫升，石墨粉 5 克，煤油 20 毫升",
-    "steps": "煤油清洗链条并晾干，将石墨粉与矿物油混合后滴涂于链条各节。静置片刻擦去多余油液，可防锈润滑。",
-    "safetyNote": "煤油易燃，请在通风处操作，远离火源。"
+    "ratio": "Mineral oil 60 ml, graphite powder 5 g, kerosene 20 ml",
+    "steps": "Clean the chain with kerosene and dry it. Mix graphite powder and mineral oil and apply it dropwise on each link of the chain. Let it sit for a while and wipe off excess oil to prevent rust and lubricate.",
+    "safetyNote": "Kerosene is flammable, please operate in a well-ventilated area and away from fire sources."
   },
   {
     "id": 224,
-    "name": "抽屉轨道润滑脂",
+    "name": "Drawer track grease",
     "materials": [
       "lubricant",
       "Paraffin wax",
       "engine oil "
     ],
-    "ratio": "凡士林 40 克，石蜡 10 克，机油 10 毫升",
-    "steps": "石蜡隔水加热融化，加入凡士林和机油搅拌至均匀膏状。涂抹于木质或金属抽屉轨道，可消除异响。",
-    "safetyNote": "用量不宜过多，避免滴落污染家具表面。"
+    "ratio": "40 grams of petroleum jelly, 10 grams of paraffin, 10 ml of engine oil",
+    "steps": "Melt the paraffin over water, add Vaseline and engine oil and stir until a smooth paste forms. Apply to wooden or metal drawer tracks to eliminate squeaking.",
+    "safetyNote": "Do not use too much to avoid dripping and contaminating the furniture surface."
   },
   {
     "id": 225,
-    "name": "窗框铰链润滑液",
+    "name": "Window frame hinge lubricant",
     "materials": [
       "&#10;Silicone oil",
       "Kerosene"
     ],
-    "ratio": "硅油 30 毫升，煤油 20 毫升",
-    "steps": "硅油与煤油混合均匀，装入滴管瓶。滴于窗户合页和铰链转轴处，反复开合使油液渗入，可消除吱吱声。",
-    "safetyNote": "煤油易燃，操作时远离火源，避免滴落至地面造成滑倒。"
+    "ratio": "Silicone oil 30 ml, kerosene 20 ml",
+    "steps": "Mix silicone oil and kerosene evenly and put into a dropper bottle. Drop it on the window hinges and hinge shafts, and repeatedly open and close them to allow the oil to seep in, which can eliminate squeaks.",
+    "safetyNote": "Kerosene is flammable. Keep away from fire sources when operating to avoid dripping to the ground and causing slipping."
   },
   {
     "id": 226,
-    "name": "电动工具齿轮脂",
+    "name": "Power tool gear grease",
     "materials": [
-      "锂基脂",
+      "Lithium grease",
       "Graphite powder"
     ],
-    "ratio": "锂基脂 50 克，石墨粉 3 克",
-    "steps": "石墨粉与锂基脂充分混合至均匀。打开电动工具齿轮箱盖，薄涂于齿轮啮合面，装回后试运行。",
-    "safetyNote": "维护前务必断开电源，按说明书操作，过量润滑可能导致过热。"
+    "ratio": "50 grams of lithium grease, 3 grams of graphite powder",
+    "steps": "Mix graphite powder and lithium grease thoroughly until uniform. Open the power tool gearbox cover, apply a thin layer of it on the gear meshing surface, reinstall it and run it for a test run.",
+    "safetyNote": "Be sure to disconnect the power supply before maintenance and operate according to the instructions. Excessive lubrication may cause overheating."
   },
   {
     "id": 227,
-    "name": "天然赭石颜料",
+    "name": "natural ocher pigment",
     "materials": [
-      "赭石粉",
+      "ocher powder",
       "Gelatin",
       "water"
     ],
-    "ratio": "赭石粉 30 克，明胶 5 克，水 50 毫升",
-    "steps": "明胶溶于温水中，逐渐加入赭石粉研磨至细腻浆状。可用于壁画修复或手工绘画，干后呈稳定土红色。",
+    "ratio": "30g ocher powder, 5g gelatin, 50ml water",
+    "steps": "Dissolve gelatin in warm water, gradually add ocher powder and grind until a fine slurry forms. It can be used for mural repair or hand painting, and it will turn a stable earthy red color after drying.",
     "safetyNote": "Avoid inhaling dust when grinding and wear a mask."
   },
   {
     "id": 228,
     "name": "Tempera paints",
     "materials": [
-      "色粉",
+      "toner",
       "Egg Yolk",
       "water"
     ],
-    "ratio": "色粉 20 克，蛋黄 1 个，水 10 毫升",
-    "steps": "蛋黄与水打散，分次加入色粉研磨至无颗粒。现调现用，薄涂于木板或纸张，干后可形成柔和色彩层。",
-    "safetyNote": "现制颜料易变质，需当日用完，生蛋黄注意卫生。"
+    "ratio": "20 grams of color powder, 1 egg yolk, 10 ml of water",
+    "steps": "Beat the egg yolk and water, add toner in batches and grind until there are no particles. Ready to mix and use, apply thinly to wood or paper and form a soft color layer after drying.",
+    "safetyNote": "Freshly made pigments are easy to deteriorate and need to be used up on the same day. Pay attention to hygiene when using raw egg yolks."
   },
   {
     "id": 229,
-    "name": "石灰壁画底色",
+    "name": "Lime mural background color",
     "materials": [
-      "熟石灰",
-      "大理石粉",
+      "slaked lime",
+      "Marble powder",
       "water"
     ],
-    "ratio": "熟石灰 100 克，大理石粉 50 克，水 80 毫升",
-    "steps": "熟石灰与大理石粉混合，逐渐加水调至可批刮的稠度。薄涂于墙面作为壁画底色，干燥后打磨平整。",
-    "safetyNote": "石灰具有碱性，操作时请佩戴手套和口罩，避免入眼。"
+    "ratio": "100 grams of slaked lime, 50 grams of marble powder, 80 ml of water",
+    "steps": "Mix hydrated lime and marble powder and gradually add water to a scrapable consistency. Apply thinly to the wall as the base color of the mural, then polish it smooth after drying.",
+    "safetyNote": "Lime is alkaline, so please wear gloves and a mask when handling it to avoid getting it into your eyes."
   },
   {
     "id": 230,
-    "name": "天然靛蓝染液",
+    "name": "natural indigo dye",
     "materials": [
-      "靛蓝粉",
-      "碱液",
-      "保险粉"
+      "Indigo powder",
+      "Lye",
+      "insurance powder"
     ],
-    "ratio": "靛蓝粉 10 克，碱液 5 克，保险粉 8 克，水 1000 毫升",
-    "steps": "按序将碱液、保险粉和靛蓝粉溶于水中，搅拌至还原状态呈黄绿色。浸染织物后氧化变蓝，需反复浸染加深。",
-    "safetyNote": "碱液和保险粉具有腐蚀性，必须在通风处佩戴手套操作。"
+    "ratio": "10 grams of indigo powder, 5 grams of lye, 8 grams of insurance powder, 1000 ml of water",
+    "steps": "Dissolve the lye, insurance powder and indigo powder in the water in order, and stir until the reduced state turns yellow-green. After dip-dying, the fabric oxidizes and turns blue, and needs to be dip-dyed repeatedly to deepen.",
+    "safetyNote": "Alkali solution and insurance powder are corrosive and must be handled in a ventilated area wearing gloves."
   },
   {
     "id": 231,
-    "name": "石膏底料",
+    "name": "Gypsum base material",
     "materials": [
-      "熟石膏",
+      "plaster of paris",
       "White latex",
       "water"
     ],
-    "ratio": "熟石膏 200 克，白乳胶 30 毫升，水 100 毫升",
-    "steps": "熟石膏与水调成糊状，加入白乳胶搅拌均匀。批刮于画布或墙面上作底料，干燥后打磨即可上色。",
-    "safetyNote": "石膏粉避免吸入，混合时请在通风处操作。"
+    "ratio": "200 grams of plaster of paris, 30 ml of white latex, 100 ml of water",
+    "steps": "Make a paste of plaster of paris and water, add white latex and stir evenly. Scrape it onto canvas or wall as a base material, then polish it after drying before coloring.",
+    "safetyNote": "Avoid inhalation of gypsum powder, please operate in a ventilated place when mixing."
   },
   {
     "id": 232,
-    "name": "米糊纸质胶水",
+    "name": "Rice paste paper glue",
     "materials": [
-      "大米",
+      "Rice",
       "water"
     ],
-    "ratio": "大米 50 克，水 300 毫升",
-    "steps": "大米加水煮至软烂，搅拌成细腻米糊，过滤取稠液。可用于粘贴纸艺、标签，干后较易清除。",
-    "safetyNote": "现制胶水易发霉，建议当日用完，冷藏不超过两天。"
+    "ratio": "50g rice, 300ml water",
+    "steps": "Add water to the rice and cook until soft, stir into a fine rice paste, and filter the thick liquid. It can be used to paste paper crafts and labels, and is easier to remove after drying.",
+    "safetyNote": "Freshly made glue is prone to mold, so it is recommended to use it on the same day and refrigerate it for no more than two days."
   },
   {
     "id": 233,
-    "name": "骨胶木工胶",
+    "name": "bone glue woodworking glue",
     "materials": [
       "Bone colloids",
       "water"
     ],
     "ratio": "30g bone gelatin, 150ml water",
-    "steps": "骨胶粒浸泡于水中 4 小时后隔水加热至完全融化。趁热用于木材拼接，夹紧至冷却，粘接强度较高。",
-    "safetyNote": "加热时小心防烫，胶水较烫手，需快速操作。"
+    "steps": "Soak the bone glue particles in water for 4 hours and then heat over water until completely melted. Use it for splicing wood while it's hot, clamp it until it cools down, and the bonding strength will be higher.",
+    "safetyNote": "Be careful to prevent scalding when heating. The glue is very hot and requires quick operation."
   },
   {
     "id": 234,
-    "name": "环氧树脂简易胶",
+    "name": "Epoxy resin simple glue",
     "materials": [
       "Epoxy",
       "hardener"
     ],
-    "ratio": "环氧树脂 20 克，固化剂 5 克",
-    "steps": "环氧树脂与固化剂按说明比例混合，充分搅拌至均匀。在可操作时间内涂布于待粘合物体表面，加压固定至固化。",
-    "safetyNote": "混合后放热，避免皮肤接触，操作时请佩戴手套并保持通风。"
+    "ratio": "20 grams of epoxy resin, 5 grams of curing agent",
+    "steps": "Mix epoxy resin and curing agent according to the proportion indicated and stir thoroughly until uniform. Apply to the surface of the object to be bonded within the operable time, and fix under pressure until cured.",
+    "safetyNote": "Release heat after mixing, avoid skin contact, wear gloves and maintain ventilation during operation."
   },
   {
     "id": 235,
-    "name": "明胶照片胶",
+    "name": "gelatin photo glue",
     "materials": [
       "Gelatin",
       "Glycerol",
       "water"
     ],
-    "ratio": "明胶 15 克，甘油 5 毫升，水 80 毫升",
-    "steps": "明胶溶于温水中，加入甘油搅拌均匀。薄涂于相册页面或手工卡片，可粘贴照片且日后较易揭除。",
-    "safetyNote": "胶水未干前勿移动粘贴物，避免纸张皱褶。"
+    "ratio": "15 g gelatin, 5 ml glycerin, 80 ml water",
+    "steps": "Dissolve gelatin in warm water, add glycerin and mix well. Apply thinly to photo album pages or handmade cards to attach photos and make them easier to remove later.",
+    "safetyNote": "Do not move the paste before the glue is dry to avoid paper wrinkles."
   },
   {
     "id": 236,
-    "name": "松香助焊胶",
+    "name": "Rosin flux glue",
     "materials": [
       "Colophonium",
       "Alcohol"
     ],
-    "ratio": "松香 30 克，酒精 100 毫升",
-    "steps": "松香碎块溶于酒精中，搅拌至完全溶解。焊接前涂于金属焊点，可去除氧化层辅助锡焊，提高焊接质量。",
-    "safetyNote": "酒精易燃，焊接时远离明火，在通风处操作并佩戴护目镜。"
+    "ratio": "30 g rosin, 100 ml alcohol",
+    "steps": "Dissolve the crushed rosin in the alcohol and stir until completely dissolved. Apply to metal solder joints before welding to remove the oxide layer to assist soldering and improve welding quality.",
+    "safetyNote": "Alcohol is flammable, so stay away from open flames when welding, operate in a well-ventilated area and wear protective goggles."
   },
   {
     "id": 237,
-    "name": "虾壳氨基酸肥",
+    "name": "Shrimp shell amino acid fertilizer",
     "materials": [
-      "虾壳",
+      "shrimp shell",
       "BROWN SUGAR",
       "water"
     ],
-    "ratio": "虾壳 200 克，红糖 50 克，水 1000 毫升",
-    "steps": "虾壳晒干碾碎，与红糖、水密封发酵 30 天，期间每周开盖放气。取上层清液稀释 20 倍浇灌，可补充氨基酸。",
-    "safetyNote": "发酵液有腥臭味，请在室外或通风处操作。"
+    "ratio": "200g shrimp shells, 50g brown sugar, 1000ml water",
+    "steps": "The shrimp shells are sun-dried and crushed, then sealed with brown sugar and water for fermentation for 30 days, during which time the lid is opened and deflated every week. Dilute the supernatant 20 times and water it to supplement amino acids.",
+    "safetyNote": "The fermentation liquid has a fishy smell, please operate outdoors or in a ventilated place."
   },
   {
     "id": 238,
-    "name": "蚯蚓粪有机肥",
+    "name": "Vermicompost organic fertilizer",
     "materials": [
-      "蚯蚓粪",
+      "vermicompost",
       "water"
     ],
-    "ratio": "蚯蚓粪 100 克，水 500 毫升",
-    "steps": "蚯蚓粪加入水中浸泡 24 小时，搅拌后过滤取肥液。稀释 5 倍浇灌各类盆栽，温和不伤根。",
-    "safetyNote": "蚯蚓粪需来自清洁来源，避免含病原体的未知来源粪肥。"
+    "ratio": "100 g of vermicompost, 500 ml of water",
+    "steps": "Add vermicompost to water and soak for 24 hours, stir and then filter to obtain the fertilizer solution. Dilute it 5 times to water all kinds of potted plants, it is gentle and will not damage the roots.",
+    "safetyNote": "Vermicompost should come from clean sources and avoid manure from unknown sources that may contain pathogens."
   },
   {
     "id": 239,
-    "name": "过磷酸钙浸出肥",
+    "name": "superphosphate leaching fertilizer",
     "materials": [
-      "过磷酸钙",
+      "superphosphate",
       "water"
     ],
-    "ratio": "过磷酸钙 20 克，水 1000 毫升",
-    "steps": "过磷酸钙溶于水中搅拌，静置 24 小时后取上层清液。稀释 3 倍浇灌开花植物，可促进花芽分化。",
-    "safetyNote": "肥料溶液具有酸性，避免接触皮肤和眼睛，不可与碱性物质混用。"
+    "ratio": "20 g superphosphate, 1000 ml water",
+    "steps": "Dissolve superphosphate in water, stir, let stand for 24 hours and then take the supernatant. Dilute 3 times to water flowering plants to promote flower bud differentiation.",
+    "safetyNote": "Fertilizer solution is acidic, avoid contact with skin and eyes, and do not mix with alkaline substances."
   },
   {
     "id": 240,
-    "name": "菜籽饼液肥",
+    "name": "Rapeseed cake liquid fertilizer",
     "materials": [
-      "菜籽饼",
+      "Rapeseed cake",
       "water",
       "BROWN SUGAR"
     ],
-    "ratio": "菜籽饼 80 克，水 1000 毫升，红糖 30 克",
-    "steps": "菜籽饼粉碎后与红糖、水混合密封发酵 15 天。取发酵液稀释 15 倍浇灌，可提供氮磷钾综合养分。",
-    "safetyNote": "浓肥必须充分稀释，否则易烧根，发酵期间定期放气。"
+    "ratio": "80g rapeseed cake, 1000ml water, 30g brown sugar",
+    "steps": "The rapeseed cake is crushed, mixed with brown sugar and water, and fermented in a sealed container for 15 days. Dilute the fermentation liquid 15 times and water it to provide comprehensive nutrients of nitrogen, phosphorus and potassium.",
+    "safetyNote": "Concentrated fertilizer must be fully diluted, otherwise it will easily burn the roots and deflate regularly during fermentation."
   },
   {
     "id": 241,
-    "name": "海带碘肥",
+    "name": "Kelp iodine fertilizer",
     "materials": [
-      "干海带",
+      "dried kelp",
       "water"
     ],
-    "ratio": "干海带 50 克，水 800 毫升",
-    "steps": "干海带切碎浸泡于水中 48 小时，加热微沸 10 分钟后过滤。滤液稀释 10 倍浇灌，可补充微量元素碘。",
-    "safetyNote": "用量不宜过多，每月使用一至两次即可。"
+    "ratio": "50 g dried kelp, 800 ml water",
+    "steps": "Chop dried kelp and soak in water for 48 hours, heat to a gentle boil for 10 minutes and then filter. The filtrate is diluted 10 times and irrigated to supplement the trace element iodine.",
+    "safetyNote": "Do not use too much, just use it once or twice a month."
   },
   {
     "id": 242,
-    "name": "金盏花舒缓面霜",
+    "name": "Calendula Soothing Cream",
     "materials": [
-      "金盏花浸泡油",
+      "Calendula Infused Oil",
       "beeswax",
       "shea"
     ],
-    "ratio": "金盏花浸泡油 40 克，蜂蜡 8 克，乳木果油 20 克",
-    "steps": "蜂蜡隔水加热融化，加入乳木果油和金盏花浸泡油搅拌。降温后搅打至乳霜状，可用于干燥或敏感皮肤。",
-    "safetyNote": "对菊科植物过敏者请勿使用，首次使用前做皮试。"
+    "ratio": "Calendula infused oil 40g, beeswax 8g, shea butter 20g",
+    "steps": "Heat beeswax over water and melt, add shea butter and calendula infused oil and stir. Cool and then whip until creamy. Can be used on dry or sensitive skin.",
+    "safetyNote": "Please do not use if you are allergic to Asteraceae plants. Do a skin test before first use."
   },
   {
     "id": 243,
-    "name": "玫瑰花瓣浴盐",
+    "name": "rose petal bath salts",
     "materials": [
       "sea salt ",
       "Rose petals",
       "essence"
     ],
-    "ratio": "海盐 200 克，玫瑰花瓣 20 克，精油 3 毫升",
-    "steps": "海盐与干燥玫瑰花瓣混合，滴入精油拌匀，装入密封罐。沐浴时取 30 克溶于浴缸，可放松身心。",
-    "safetyNote": "浴后彻底冲洗，避免花瓣堵塞排水口。"
+    "ratio": "200 g sea salt, 20 g rose petals, 3 ml essential oil",
+    "steps": "Mix sea salt and dried rose petals, drop in essential oil, mix well, and put into an airtight jar. Dissolve 30 grams in the bathtub during bathing to relax your body and mind.",
+    "safetyNote": "Rinse thoroughly after bathing to avoid petals clogging the drain."
   },
   {
     "id": 244,
-    "name": "绿茶收敛水",
+    "name": "Green tea astringent water",
     "materials": [
-      "绿茶叶",
-      "金缕梅",
+      "green tea leaves",
+      "Witch hazel",
       "Glycerol"
     ],
-    "ratio": "绿茶叶 15 克，金缕梅 100 毫升，甘油 5 毫升",
-    "steps": "绿茶叶用热水浸泡 20 分钟后过滤，滤液冷却加入金缕梅和甘油混合。装入瓶中使用，可作油性肌肤收敛水。",
-    "safetyNote": "现制产品保质期短，建议冷藏七日内用完。"
+    "ratio": "15g green tea leaves, 100ml witch hazel, 5ml glycerin",
+    "steps": "Green tea leaves are soaked in hot water for 20 minutes and then filtered. The filtrate is cooled and mixed with witch hazel and glycerin. Put it in a bottle and use it as an astringent for oily skin.",
+    "safetyNote": "Freshly made products have a short shelf life and are recommended to be refrigerated and used within seven days."
   },
   {
     "id": 245,
-    "name": "乳木果润足霜",
+    "name": "Shea Butter Foot Cream",
     "materials": [
       "shea",
       "beeswax",
       "Mint Brain"
     ],
-    "ratio": "乳木果油 40 克，蜂蜡 10 克，薄荷脑 1 克",
-    "steps": "蜂蜡与乳木果油隔水加热融化，离火后加入薄荷脑搅拌。冷却装入罐中，睡前涂抹于足部可滋润防裂。",
-    "safetyNote": "皮肤有伤口时请勿使用，避免薄荷脑接触眼部。"
+    "ratio": "40g shea butter, 10g beeswax, 1g menthol",
+    "steps": "Melt beeswax and shea butter over water, remove from heat, add menthol and stir. Cool and put into jar. Apply to feet before going to bed to moisturize and prevent cracks.",
+    "safetyNote": "Do not use if there is a wound on the skin, and avoid contact of menthol with eyes."
   },
   {
     "id": 246,
-    "name": "燕麦温和皂",
+    "name": "Oatmeal mild soap",
     "materials": [
       "olive oil",
       "OAT FLOUR",
       "Sodium Hydroxide",
       "water"
     ],
-    "ratio": "橄榄油 500 克，燕麦粉 30 克，氢氧化钠 64 克，水 160 毫升",
-    "steps": "碱液冷却后倒入橄榄油搅拌至 trace，加入燕麦粉轻拌。入模保温后脱模，晾皂 4 周，适合敏感肌沐浴。",
-    "safetyNote": "氢氧化钠具有强腐蚀性，必须佩戴手套和护目镜操作。"
+    "ratio": "500g olive oil, 30g oat flour, 64g sodium hydroxide, 160ml water",
+    "steps": "After the lye solution has cooled, pour in the olive oil and stir until trace. Add the oat flour and stir lightly. After placing in the mold and keeping it warm, remove it from the mold and let it dry for 4 weeks. It is suitable for bathing with sensitive skin.",
+    "safetyNote": "Sodium hydroxide is highly corrosive and must be handled with gloves and goggles."
   },
   {
     "id": 247,
-    "name": "竹炭深层清洁皂",
+    "name": "Bamboo Charcoal Deep Cleansing Soap",
     "materials": [
       "coconut oil ",
       "Bamboo charcoal powder",
       "Sodium Hydroxide",
       "water"
     ],
-    "ratio": "椰子油 400 克，竹炭粉 15 克，氢氧化钠 56 克，水 140 毫升",
-    "steps": "碱液与椰子油搅拌至浓稠，加入竹炭粉拌匀。倒入模具，晾皂 4 周后可清洁油性肌肤。",
-    "safetyNote": "氢氧化钠具有强腐蚀性，竹炭粉避免吸入，请佩戴口罩。"
+    "ratio": "400g coconut oil, 15g bamboo charcoal powder, 56g sodium hydroxide, 140ml water",
+    "steps": "Stir lye and coconut oil until thick, add bamboo charcoal powder and mix well. Pour into molds and allow soap to cleanse oily skin after 4 weeks.",
+    "safetyNote": "Sodium hydroxide is highly corrosive. Avoid inhaling bamboo charcoal powder. Please wear a mask."
   },
   {
     "id": 248,
-    "name": "乳木果超脂皂",
+    "name": "Shea Butter Super Fat Soap",
     "materials": [
       "coconut oil ",
       "shea",
       "Sodium Hydroxide",
       "water"
     ],
-    "ratio": "椰子油 300 克，乳木果油 200 克，氢氧化钠 71 克，水 160 毫升",
-    "steps": "碱液与混合油脂搅拌至 trace，入模保温 24 小时。脱模后晾皂 4 周，泡沫丰富且洗后滋润。",
+    "ratio": "300 g coconut oil, 200 g shea butter, 71 g sodium hydroxide, 160 ml water",
+    "steps": "Stir the lye and mixed fat until trace, place into molds and keep warm for 24 hours. Allow the soap to dry for 4 weeks after unmoulding. It will produce rich foam and moisturizing after washing.",
     "safetyNote": "Sodium hydroxide is highly corrosive and must be handled with protective equipment in a ventilated area."
   },
   {
     "id": 249,
-    "name": "玫瑰花瓣装饰皂",
+    "name": "rose petal decorative soap",
     "materials": [
       "olive oil",
       "Rose petals",
       "Sodium Hydroxide",
       "water"
     ],
-    "ratio": "橄榄油 500 克，玫瑰花瓣 20 克，氢氧化钠 64 克，水 160 毫升",
-    "steps": "碱液冷却后倒入橄榄油搅拌，加入干燥玫瑰花瓣轻拌保留花形。入模后晾皂 4 周，可作浴室装饰皂。",
-    "safetyNote": "氢氧化钠具有强腐蚀性，花瓣需完全干燥，操作时请佩戴手套。"
+    "ratio": "500 g olive oil, 20 g rose petals, 64 g sodium hydroxide, 160 ml water",
+    "steps": "After the lye solution has cooled, pour in the olive oil and stir. Add the dried rose petals and stir gently to retain the flower shape. Allow the soap to dry for 4 weeks after being molded, and it can be used as bathroom decorative soap.",
+    "safetyNote": "Sodium hydroxide is highly corrosive, the petals need to be completely dry, and please wear gloves when operating."
   },
   {
     "id": 250,
-    "name": "尤加利驱蚊喷雾",
+    "name": "Eucalyptus mosquito repellent spray",
     "materials": [
       "Eucalyptus Radiata Essential Oil",
       "Alcohol",
       "water"
     ],
-    "ratio": "尤加利精油 6 毫升，酒精 70 毫升，水 30 毫升",
-    "steps": "尤加利精油溶于酒精后加水摇匀，装入喷雾瓶。户外活动前喷洒于衣物或周围空间，可短时驱蚊。",
-    "safetyNote": "酒精易燃，远离火源，三岁以下婴幼儿慎用。"
+    "ratio": "Eucalyptus essential oil 6 ml, alcohol 70 ml, water 30 ml",
+    "steps": "Dissolve eucalyptus essential oil in alcohol, add water, shake well, and put into a spray bottle. Spray on clothes or surrounding spaces before outdoor activities to repel mosquitoes for a short period of time.",
+    "safetyNote": "Alcohol is flammable. Keep away from fire sources. Use with caution on infants and young children under three years old."
   },
   {
     "id": 251,
-    "name": "迷迭香防蛀喷雾",
+    "name": "Rosemary anti-moth spray",
     "materials": [
-      "迷迭香",
+      "rosemary",
       "Alcohol",
       "water"
     ],
-    "ratio": "干迷迭香 30 克，酒精 100 毫升，水 50 毫升",
-    "steps": "迷迭香浸泡于酒精中 7 天后过滤，滤液加水稀释。喷洒于衣柜内侧和储物箱，可辅助防蛀。",
-    "safetyNote": "酒精易燃，喷洒时远离火源，避免接触明火。"
+    "ratio": "30g dried rosemary, 100ml alcohol, 50ml water",
+    "steps": "Rosemary is soaked in alcohol for 7 days and then filtered, and the filtrate is diluted with water. Spray on the inside of wardrobes and storage boxes to help prevent moths.",
+    "safetyNote": "Alcohol is flammable, so stay away from fire sources when spraying and avoid contact with open flames."
   },
   {
     "id": 252,
-    "name": "辣椒防虫水",
+    "name": "Chili insect repellent water",
     "materials": [
       "Chili",
-      "大蒜",
+      "garlic",
       "water"
     ],
-    "ratio": "干辣椒 20 克，大蒜 30 克，水 1000 毫升",
-    "steps": "干辣椒与大蒜捣碎浸泡于水中 24 小时，过滤后取浸出液。稀释 5 倍喷洒于植物，可驱避部分啃食害虫。",
-    "safetyNote": "操作时请佩戴手套，避免接触眼口，喷洒后勿立即食用作物。"
+    "ratio": "20g dried chili, 30g garlic, 1000ml water",
+    "steps": "Mash the dried chilies and garlic and soak them in water for 24 hours. Filter and take the leachate. Dilute 5 times and spray on plants to repel some gnawing pests.",
+    "safetyNote": "Please wear gloves when operating, avoid contact with eyes and mouth, and do not eat crops immediately after spraying."
   },
   {
     "id": 253,
-    "name": "雪松木防虫块",
+    "name": "Cedar Wood Insect Block",
     "materials": [
-      "雪松木屑",
+      "cedar chips",
       "essence",
-      "无纺布袋"
+      "non woven bag"
     ],
-    "ratio": "雪松木屑 80 克，精油 5 毫升，无纺布袋 2 个",
+    "ratio": "80g cedar sawdust, 5ml essential oil, 2 non-woven bags",
     "steps": "Drip the cedar sawdust into the essential oil and mix well, then put it into a non-woven bag and tie it tightly. Placed in wardrobes, drawers for insect repellency and woody aromas.",
     "safetyNote": "Replace regularly to avoid mold in humid environments."
   },
@@ -3031,7 +3031,7 @@
     "id": 255,
     "name": "Natural chalk",
     "materials": [
-      "熟石膏",
+      "plaster of paris",
       "water",
       "Food coloring"
     ],

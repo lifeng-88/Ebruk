@@ -20,7 +20,7 @@ enum APIBaseURL {
                 return trimmed.hasSuffix("/") ? String(trimmed.dropLast()) : trimmed
             }
         }
-        return "https://api.silkflow.xin"
+        return "https://api.lushmove.xin"
     }
 
     /// 根据 HTTP(S) 基地址生成 WebSocket URL

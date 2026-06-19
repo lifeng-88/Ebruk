@@ -30,7 +30,7 @@ enum LegalDocument: String, Identifiable, CaseIterable {
     private static let privacyPolicyText = """
     生效日期：2026年6月8日
 
-    「手工配方手册」（以下简称「本应用」）尊重并保护用户隐私。本政策说明我们如何收集、使用与保护你的信息。
+    「Ebruk」（以下简称「本应用」）尊重并保护用户隐私。本政策说明我们如何收集、使用与保护你的信息。
 
     一、数据存储
     金币余额、解锁记录、收藏、自创配方及购买记录均保存在你的设备上，我们不会将上述数据上传至自有服务器。
@@ -57,7 +57,7 @@ enum LegalDocument: String, Identifiable, CaseIterable {
     private static let termsOfServiceText = """
     最后更新：2026年6月8日
 
-    欢迎使用「手工配方手册」（以下简称「本应用」）。使用本应用前，请仔细阅读以下服务条款。开始使用即视为你已阅读、理解并同意受本条款约束。
+    欢迎使用「Ebruk」（以下简称「本应用」）。使用本应用前，请仔细阅读以下服务条款。开始使用即视为你已阅读、理解并同意受本条款约束。
 
     一、服务内容
     本应用向你提供手工配方浏览、搜索、收藏、自创、导出与打印等功能，帮助你记录和学习各类手工配方。应用内含多条分类配方，并支持创建与管理个人配方。
@@ -105,7 +105,7 @@ enum LegalDocument: String, Identifiable, CaseIterable {
     private static let privacyPolicyEN = """
     Effective: June 8, 2026
 
-    DIY Formula Handbook ("the App") respects and protects your privacy. This policy explains how we collect, use, and protect your information.
+    Ebruk ("the App") respects and protects your privacy. This policy explains how we collect, use, and protect your information.
 
     1. Data Storage
     Coin balance, unlock records, favorites, custom recipes, and purchase history are stored on your device. We do not upload this data to our servers.
@@ -132,7 +132,7 @@ enum LegalDocument: String, Identifiable, CaseIterable {
     private static let termsOfServiceEN = """
     Last updated: June 8, 2026
 
-    Welcome to DIY Formula Handbook ("the App"). Please read these Terms before use. By using the App, you agree to these Terms.
+    Welcome to Ebruk ("the App"). Please read these Terms before use. By using the App, you agree to these Terms.
 
     1. Service
     The App provides recipe browsing, search, favorites, custom recipes, export, and print features.

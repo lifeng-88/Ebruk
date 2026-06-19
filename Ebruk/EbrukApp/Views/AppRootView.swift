@@ -26,17 +26,16 @@ struct AppRootView: View {
 private struct AppLaunchLoadingView: View {
     var body: some View {
         ZStack {
-            Color("LaunchBackground", bundle: .main)
+            Image("LaunchSplash")
+                .resizable()
+                .scaledToFill()
                 .ignoresSafeArea()
 
-            VStack(spacing: 20) {
-                Image("LaunchLogo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 96, height: 96)
-
+            VStack {
+                Spacer()
                 ProgressView()
                     .tint(.white)
+                    .padding(.bottom, 56)
             }
         }
     }

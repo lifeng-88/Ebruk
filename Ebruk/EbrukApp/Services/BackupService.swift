@@ -25,7 +25,7 @@ enum BackupService {
 
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyyMMdd_HHmmss"
-        let filename = "手工配方手册_备份_\(formatter.string(from: backup.exportedAt)).json"
+        let filename = "Ebruk_Backup_\(formatter.string(from: backup.exportedAt)).json"
 
         let url = FileManager.default.temporaryDirectory.appendingPathComponent(filename)
         try data.write(to: url, options: .atomic)

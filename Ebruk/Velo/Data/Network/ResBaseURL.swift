@@ -20,16 +20,16 @@ enum ResBaseURL {
                 return trimmed.hasSuffix("/") ? String(trimmed.dropLast()) : trimmed
             }
         }
-        return "https://res.silkflow.xin";
+        return "https://res.lushmove.xin";
     }
 
     /// Privacy Policy 页面 URL（H5，固定链接）
     static var privacyPolicyURL: URL {
-        URL(string: "https://res.silkflow.xin/rahmi/rahmi-privacy.html")!
+        URL(string: "https://res.lushmove.xin/ebruk/ebruk-privacy.html")!
     }
 
     /// 用户协议页面 URL（H5，固定链接）
     static var termsAndConditionsURL: URL {
-        URL(string: "https://res.silkflow.xin/rahmi/rahmi-user-agreement.html")!
+        URL(string: "https://res.lushmove.xin/ebruk/ebruk-user-agreement.html")!
     }
 }

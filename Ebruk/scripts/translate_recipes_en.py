@@ -15,6 +15,10 @@ OUT_PATH = ROOT / "EbrukApp/Resources/RecipeContentEN.json"
 translator = GoogleTranslator(source="zh-CN", target="en")
 
 
+def has_cjk(text: str) -> bool:
+    return any("\u4e00" <= ch <= "\u9fff" for ch in text)
+
+
 def load_cache() -> dict[str, str]:
     if CACHE_PATH.exists():
         return json.loads(CACHE_PATH.read_text(encoding="utf-8"))
@@ -25,10 +29,17 @@ def save_cache(cache: dict[str, str]) -> None:
     CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
 
 
+def should_retranslate(source: str, cached: str) -> bool:
+    """翻译失败时会把中文原文写入缓存，需重试。"""
+    if not has_cjk(source):
+        return False
+    return cached == source or has_cjk(cached)
+
+
 def translate_one(text: str, cache: dict[str, str]) -> str:
     if not text:
         return text
-    if text in cache:
+    if text in cache and not should_retranslate(text, cache[text]):
         return cache[text]
     for attempt in range(5):
         try:
@@ -56,11 +67,12 @@ def main() -> None:
             texts.append(recipe["safetyNote"])
 
     unique = list(dict.fromkeys(t for t in texts if t))
-    done = sum(1 for t in unique if t in cache)
-    print(f"unique {len(unique)}, cached {done}", flush=True)
+    done = sum(1 for t in unique if t in cache and not should_retranslate(t, cache[t]))
+    retry = sum(1 for t in unique if t in cache and should_retranslate(t, cache[t]))
+    print(f"unique {len(unique)}, cached {done}, retry {retry}", flush=True)
 
     for i, text in enumerate(unique):
-        if text in cache:
+        if text in cache and not should_retranslate(text, cache[text]):
             continue
         translate_one(text, cache)
         if (i + 1) % 5 == 0:

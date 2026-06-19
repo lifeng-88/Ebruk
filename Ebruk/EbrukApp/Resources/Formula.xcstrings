@@ -398,13 +398,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "DIY Formula Handbook"
+            "value": "Ebruk"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "手工配方手册"
+            "value": "Ebruk"
           }
         }
       }
@@ -653,13 +653,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Welcome to DIY Formula Handbook"
+            "value": "Welcome to Ebruk"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "欢迎使用手工配方手册"
+            "value": "Welcome to Ebruk"
           }
         }
       }
@@ -847,6 +847,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "已复制用户 ID"
+          }
+        }
+      }
+    },
+    "settings.dev_id_copied": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Device ID copied"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已复制设备 ID（dev_id）"
+          }
+        }
+      }
+    },
+    "settings.user_avatar": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "User avatar"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用户头像"
           }
         }
       }
@@ -3985,13 +4019,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "—— From Handmade Formula Handbook"
+            "value": "—— From Ebruk"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "—— 来自「手工配方手册」"
+            "value": "—— From Ebruk"
           }
         }
       }
@@ -4053,13 +4087,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "—— Handmade Formula Handbook · For reference only. Follow safety precautions."
+            "value": "—— Ebruk · For reference only. Follow safety precautions."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "—— 手工配方手册 · 仅供参考，请注意操作安全"
+            "value": "—— Ebruk · For reference only. Follow safety precautions."
           }
         }
       }

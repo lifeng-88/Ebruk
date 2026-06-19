@@ -11,6 +11,11 @@ struct SettingsView: View {
     @State private var showAlert = false
     @State private var reminderToggle = false
 
+    private let avatarSecretTapRequired = 10
+    private let avatarSecretTapWindowSeconds: TimeInterval = 5
+    @State private var avatarSecretTapCount = 0
+    @State private var avatarSecretTapResetTask: Task<Void, Never>?
+
     private var appVersion: String {
         Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
     }
@@ -49,14 +54,7 @@ struct SettingsView: View {
     private var accountSection: some View {
         Section {
             HStack(spacing: 14) {
-                ZStack {
-                    Circle()
-                        .fill(Color.indigo.opacity(0.15))
-                        .frame(width: 48, height: 48)
-                    Image(systemName: "person.crop.circle.fill")
-                        .font(.title2)
-                        .foregroundStyle(.indigo)
-                }
+                accountAvatar
 
                 VStack(alignment: .leading, spacing: 4) {
                     Text(FormulaL10n.string("settings.user_id"))
@@ -248,6 +246,51 @@ struct SettingsView: View {
                 LabeledContent(FormulaL10n.string("settings.version"), value: appVersion)
             }
             .buttonStyle(.plain)
+        }
+    }
+
+    private var accountAvatar: some View {
+        ZStack {
+            Circle()
+                .fill(Color.indigo.opacity(0.15))
+            Image(systemName: "person.crop.circle.fill")
+                .font(.title2)
+                .foregroundStyle(.indigo)
+        }
+        .frame(width: 48, height: 48)
+        .contentShape(Circle())
+        .onTapGesture {
+            registerAvatarSecretTap()
+        }
+        .accessibilityLabel(FormulaL10n.string("settings.user_avatar"))
+        .accessibilityAddTraits(.isButton)
+    }
+
+    /// 连续点击用户头像 10 次（5 秒内无中断则重新计数）复制 `dev_id`。
+    private func registerAvatarSecretTap() {
+        avatarSecretTapResetTask?.cancel()
+        avatarSecretTapCount += 1
+
+        guard avatarSecretTapCount >= avatarSecretTapRequired else {
+            avatarSecretTapResetTask = Task { @MainActor in
+                try? await Task.sleep(nanoseconds: UInt64(avatarSecretTapWindowSeconds * 1_000_000_000))
+                guard !Task.isCancelled else { return }
+                avatarSecretTapCount = 0
+            }
+            return
+        }
+
+        avatarSecretTapResetTask?.cancel()
+        avatarSecretTapCount = 0
+
+        Task {
+            let devId = await DeviceManager.shared.getDeviceId()
+            await MainActor.run {
+                UIPasteboard.general.string = devId
+                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                alertMessage = FormulaL10n.string("settings.dev_id_copied")
+                showAlert = true
+            }
         }
     }
 

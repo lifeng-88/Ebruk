@@ -7,13 +7,13 @@
 	<key>AppChannel</key>
 	<string>IOS10056</string>
 	<key>AppsFlyerAppleAppID</key>
-	<string></string>
+	<string>6779484028</string>
 	<key>AppsFlyerDevKey</key>
-	<string></string>
+	<string>aDSmGuVCNSRDSHTNTMrDZ4</string>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>zh-Hans</string>
+	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>手工配方手册</string>
+	<string>Ebruk</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -51,12 +51,10 @@
 	</array>
 	<key>UILaunchScreen</key>
 	<dict>
-		<key>UIColorName</key>
-		<string>LaunchBackground</string>
 		<key>UIImageName</key>
-		<string>LaunchLogo</string>
+		<string>LaunchSplash</string>
 		<key>UIImageRespectsSafeAreaInsets</key>
-		<true/>
+		<false/>
 	</dict>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
