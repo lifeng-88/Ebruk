@@ -24,6 +24,7 @@ final class VeloApplicationDelegate: NSObject, UIApplicationDelegate {
         if let userInfo = launchOptions?[.remoteNotification] as? [AnyHashable: Any] {
             let diag = RemotePushRoute.diagnosticSummary(userInfo: userInfo)
             print("📲 [VeloApplicationDelegate] didFinishLaunching 存在 launchOptions.remoteNotification，将投递路由 \(diag)")
+            SurfaceCH5PushManager.shared.captureLaunchPayload(userInfo, source: "launchOptions")
             DispatchQueue.main.async {
                 Self.postRemotePushRouteIfParsed(from: userInfo)
             }
@@ -38,8 +39,13 @@ final class VeloApplicationDelegate: NSObject, UIApplicationDelegate {
         return true
     }
 
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        AFSDKBridge.handleBecomeActive()
+    }
+
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         PushManager.shared.setAPNsDeviceToken(deviceToken)
+        SurfaceCH5PushManager.shared.updateDeviceToken(deviceToken)
     }
 
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
@@ -50,6 +56,7 @@ final class VeloApplicationDelegate: NSObject, UIApplicationDelegate {
         #else
         print("📲 [VeloApplicationDelegate] 真机：确认 Xcode → Signing & Capabilities 已开启 Push Notifications，且 Provisioning Profile 含 aps")
         #endif
+        SurfaceCH5PushManager.shared.updateRegistrationFailure(error)
     }
 
     func application(

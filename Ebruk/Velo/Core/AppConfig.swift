@@ -11,7 +11,7 @@ final class AppConfig: @unchecked Sendable {
     private static let channelKey = "ChannelId"
     private static let isTestKey = "isTest"
 
-    /// Info.plist `ChannelId` 未配置或无效时的渠道 ID。**DEBUG：IOS10052（价目/配置调试）；Release：IOS10055。**
+    /// Info.plist `ChannelId` 未配置或无效时的渠道 ID。**DEBUG：IOS10052（价目/配置调试）；Release：IOS10056。**
     static var buildDefaultChannelId: String {
         "IOS10056"
     }

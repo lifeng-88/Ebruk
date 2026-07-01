@@ -221,19 +221,27 @@ struct PayChannel: Identifiable, Codable {
     /// 接口未返回 Apple 渠道时，「直接 Recharge」仍走内购（与 `PayChannel.fallbackApplePayForIAP` / IAP 默认渠道对齐）
     static let fallbackApplePayForIAP = PayChannel(id: 1, name: "Apple Pay", icon: nil, type: "apple_pay", bonusPercentage: nil)
     
-    /// 是否为 Apple Pay（根据 type 字段，如 apple_pay）
+    /// 是否为 Apple Pay / StoreKit 内购（`type == apple_pay`，或 name 为 Apple Pay 但 type 误标为 redirect）
     var isApplePay: Bool {
-        return (type ?? "").lowercased() == "apple_pay"
+        let normalizedType = (type ?? "").lowercased()
+        if normalizedType == "apple_pay" { return true }
+        return Self.isApplePayDisplayName(name)
     }
-    
+
     /// 是否为信用卡支付（根据 type 字段，如 credit_card）
     var isCreditCard: Bool {
         return (type ?? "").lowercased() == "credit_card"
     }
 
-    /// 是否为重定向支付（根据 type 字段，如 redirect）
+    /// 是否为重定向支付（根据 type 字段，如 redirect；Apple 内购渠道除外）
     var isRedirectPayment: Bool {
-        return (type ?? "").lowercased() == "redirect"
+        guard (type ?? "").lowercased() == "redirect" else { return false }
+        return !isApplePay
+    }
+
+    private static func isApplePayDisplayName(_ rawName: String) -> Bool {
+        let n = rawName.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        return n == "apple pay" || n.hasPrefix("apple pay ")
     }
 
     // MARK: - Select Payment UI（与接口字段对齐）
@@ -247,6 +255,7 @@ struct PayChannel: Identifiable, Codable {
 
     /// 副标题：由 `type` 生成简短说明（`name` 已作主标题）
     var paymentTypeSubtitle: String? {
+        if isApplePay { return nil }
         guard let raw = type?.trimmingCharacters(in: .whitespacesAndNewlines), !raw.isEmpty else { return nil }
         switch raw.lowercased() {
         case "apple_pay":

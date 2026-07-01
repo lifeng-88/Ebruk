@@ -68,9 +68,14 @@ struct HomeDebugToolsSection: View {
                 HStack {
                     Spacer(minLength: 16)
                     VStack(spacing: 0) {
-                        debugRow(title: "直链 IAP / 支付 Sheet（type）", trailing: versionConfig.rechargePresentationType == 1 ? "1 · 直链" : "2 · Sheet") {
-                            let next = versionConfig.rechargePresentationType == 1 ? 2 : 1
+                        debugRow(
+                            title: "A / B / C 面（app_config type）",
+                            trailing: debugSurfaceTypeLabel(versionConfig.rechargePresentationType)
+                        ) {
+                            let current = versionConfig.rechargePresentationType
+                            let next = current == 1 ? 2 : (current == 2 ? 3 : 1)
                             versionConfig.debugSetPresentationType(next)
+                            AppSurfaceController.shared.applyPresentationType(next)
                         }
 
                         Divider().opacity(0.35)
@@ -240,6 +245,15 @@ struct HomeDebugToolsSection: View {
             )
         }
         .buttonStyle(.plain)
+    }
+
+    private func debugSurfaceTypeLabel(_ type: Int) -> String {
+        switch type {
+        case 1: return "1 · A"
+        case 2: return "2 · C"
+        case 3: return "3 · B"
+        default: return "\(type)"
+        }
     }
 
     private func debugRow(title: String, trailing: String, action: @escaping () -> Void) -> some View {

@@ -467,6 +467,9 @@
         }
       }
     },
+    "C 面 H5 地址未配置" : {
+
+    },
     "cards.add" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -18401,6 +18404,12 @@
           }
         }
       }
+    },
+    "返回 A 面" : {
+
+    },
+    "重试" : {
+
     }
   },
   "version" : "1.0"

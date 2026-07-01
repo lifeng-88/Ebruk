@@ -24,51 +24,36 @@ struct MyProfileView: View {
 
     var body: some View {
         let _ = appLanguage.preference
-        NavigationView {
-            ZStack {
-                VStack(spacing: 0) {
-                    headerBar
+        NavigationStack {
+            GeometryReader { geo in
+                ScrollView {
+                    VStack(spacing: 24) {
+                        profileIdSection
 
-                    GeometryReader { geo in
-                        ScrollView {
-                            VStack(spacing: 24) {
-                                profileIdSection
+                        shortcutCardsRow
 
-                                shortcutCardsRow
+                        personalAssetsSection
 
-                                personalAssetsSection
+                        supportAssetsSection
 
-                                supportAssetsSection
-
-                                VeloTrackedText.text(versionFooterText, size: 10, weight: .semibold, tracking: 2.4, color: AppTheme.outlineVariant)
-                                    .textCase(.uppercase)
-                                    .frame(maxWidth: .infinity)
-                                    .padding(.top, 12)
-                            }
-                            .padding(.horizontal, horizontalPadding)
-                            .padding(.top, 8 + geo.safeAreaInsets.top)
-                            /// 与 `HomeView` 一致：`GeometryReader` 在部分机型（如 iPhone SE）上 `safeAreaInsets.bottom` 为 0，
-                            /// 未包含 `MainTabView.safeAreaInset` 自定义 TabBar 高度，需与 `MainTabBarMetrics` 取较大值，避免底部被挡。
-                            .padding(.bottom, profileScrollBottomPadding(safeBottom: geo.safeAreaInsets.bottom))
-                        }
+                        VeloTrackedText.text(versionFooterText, size: 10, weight: .semibold, tracking: 2.4, color: AppTheme.outlineVariant)
+                            .textCase(.uppercase)
+                            .frame(maxWidth: .infinity)
+                            .padding(.top, 12)
                     }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .padding(.horizontal, horizontalPadding)
+                    .padding(.top, 8)
+                    /// 与 `HomeView` 一致：`GeometryReader` 在部分机型（如 iPhone SE）上 `safeAreaInsets.bottom` 为 0，
+                    /// 未包含 `MainTabView.safeAreaInset` 自定义 TabBar 高度，需与 `MainTabBarMetrics` 取较大值，避免底部被挡。
+                    .padding(.bottom, profileScrollBottomPadding(safeBottom: geo.safeAreaInsets.bottom))
                 }
-                .background(AppTheme.background.ignoresSafeArea())
-                .veloToolbarHiddenNavigationBar()
-
-                NavigationLink(
-                    destination: profilePushDestination,
-                    isActive: Binding(
-                        get: { selectedRoute != nil },
-                        set: { if !$0 { selectedRoute = nil } }
-                    )
-                ) {
-                    EmptyView()
-                }
-                .frame(width: 0, height: 0)
-                .opacity(0)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
+            .background(AppTheme.background.ignoresSafeArea())
+            .safeAreaInset(edge: .top, spacing: 0) {
+                headerBar
+            }
+            .veloToolbarHiddenNavigationBar()
             .overlay(alignment: .top) {
                 VStack(spacing: 8) {
                     if showCopiedToast {
@@ -95,6 +80,10 @@ struct MyProfileView: View {
                     }
                 }
                 .padding(.top, 8)
+                .allowsHitTesting(false)
+            }
+            .navigationDestination(item: $selectedRoute) { route in
+                profileDestination(for: route)
             }
             .animation(.spring(response: 0.35, dampingFraction: 0.82), value: showCopiedToast)
             .animation(.spring(response: 0.35, dampingFraction: 0.82), value: refreshTokenDebugToast)
@@ -127,27 +116,22 @@ struct MyProfileView: View {
                 syncProfileNavDepth()
             }
         }
-        .navigationViewStyle(StackNavigationViewStyle())
         .tint(AppTheme.primary)
         .veloRefreshOnAppLanguage()
     }
 
     @ViewBuilder
-    private var profilePushDestination: some View {
-        if let route = selectedRoute {
-            // `FeedbackHistoryView` / `ProfileSettingsView` 内部已自带 `veloLocalizedNavigationBackButton`，
-            // 此处再 wrap 会让 `ToolbarItem(.navigationBarLeading)` 出现两个 `VeloNavigationBackButton`，
-            // 表现为标题栏左侧出现两个返回箭头。
-            if profileRouteHasOwnBackButton(route) {
-                ProfileRouteDestination(route: route)
-                    .veloNavigationBarBackground(AppTheme.background)
-            } else {
-                ProfileRouteDestination(route: route)
-                    .veloNavigationBarBackground(AppTheme.background)
-                    .veloLocalizedNavigationBackButton()
-            }
+    private func profileDestination(for route: ProfileRoute) -> some View {
+        // `FeedbackHistoryView` / `ProfileSettingsView` 内部已自带 `veloLocalizedNavigationBackButton`，
+        // 此处再 wrap 会让 `ToolbarItem(.navigationBarLeading)` 出现两个 `VeloNavigationBackButton`，
+        // 表现为标题栏左侧出现两个返回箭头。
+        if profileRouteHasOwnBackButton(route) {
+            ProfileRouteDestination(route: route)
+                .veloNavigationBarBackground(AppTheme.background)
         } else {
-            EmptyView()
+            ProfileRouteDestination(route: route)
+                .veloNavigationBarBackground(AppTheme.background)
+                .veloLocalizedNavigationBackButton()
         }
     }
 
@@ -210,52 +194,62 @@ struct MyProfileView: View {
                 Text(auth.isAuthenticated ? AppLanguageStore.localized("my.profile.subtitle_signed_in") : AppLanguageStore.localized("my.profile.subtitle_guest"))
                     .font(.system(size: 12, weight: .medium))
                     .foregroundStyle(AppTheme.onSurfaceVariant.opacity(0.9))
+                    .lineLimit(2)
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .layoutPriority(0)
 
-            Spacer(minLength: 0)
-
-            if !auth.isAuthenticated {
-                Button {
-                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                    showLoginSheet = true
-                } label: {
-                    Text(AppLanguageStore.localized("my.profile.sign_in"))
-                        .font(.system(size: 14, weight: .semibold))
-                        .foregroundStyle(AppTheme.primary)
-                        .padding(.horizontal, 16)
-                        .padding(.vertical, 9)
-                        .background(
-                            Capsule()
-                                .fill(AppTheme.primary.opacity(0.14))
-                                .overlay(
-                                    Capsule()
-                                        .stroke(AppTheme.primary.opacity(0.35), lineWidth: 1)
-                                )
-                        )
+            HStack(spacing: 8) {
+                if !auth.isAuthenticated {
+                    Button {
+                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                        showLoginSheet = true
+                    } label: {
+                        Text(AppLanguageStore.localized("my.profile.sign_in"))
+                            .font(.system(size: 14, weight: .semibold))
+                            .foregroundStyle(AppTheme.primary)
+                            .padding(.horizontal, 16)
+                            .padding(.vertical, 9)
+                            .background(
+                                Capsule()
+                                    .fill(AppTheme.primary.opacity(0.14))
+                                    .overlay(
+                                        Capsule()
+                                            .stroke(AppTheme.primary.opacity(0.35), lineWidth: 1)
+                                    )
+                            )
+                            .contentShape(Capsule())
+                    }
+                    .buttonStyle(.borderless)
+                    .accessibilityLabel(AppLanguageStore.localized("my.profile.sign_in_a11y"))
                 }
-                .buttonStyle(.plain)
-                .accessibilityLabel(AppLanguageStore.localized("my.profile.sign_in_a11y"))
-            }
 
-            Button {
-                UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                selectedRoute = .settings
-            } label: {
-                Image(systemName: "gearshape.fill")
-                    .font(.system(size: 20, weight: .semibold))
-                    .foregroundStyle(AppTheme.onSurfaceVariant)
-                    .frame(width: 44, height: 44)
-                    .background(AppTheme.surfaceContainerHigh.opacity(0.9))
-                    .clipShape(Circle())
-                    .overlay(Circle().stroke(AppTheme.outlineVariant.opacity(0.2), lineWidth: 1))
+                profileSettingsButton
             }
-            .buttonStyle(.plain)
-            .accessibilityLabel(AppLanguageStore.localized("my.profile.settings_a11y"))
+            .layoutPriority(2)
         }
         .padding(.horizontal, horizontalPadding)
         .padding(.top, 10)
         .padding(.bottom, 18)
         .background(AppTheme.background)
+    }
+
+    private var profileSettingsButton: some View {
+        Button {
+            UIImpactFeedbackGenerator(style: .light).impactOccurred()
+            selectedRoute = .settings
+        } label: {
+            Image(systemName: "gearshape.fill")
+                .font(.system(size: 20, weight: .semibold))
+                .foregroundStyle(AppTheme.onSurfaceVariant)
+                .frame(width: 48, height: 48)
+                .background(AppTheme.surfaceContainerHigh.opacity(0.9))
+                .clipShape(Circle())
+                .overlay(Circle().stroke(AppTheme.outlineVariant.opacity(0.2), lineWidth: 1))
+                .contentShape(Rectangle())
+        }
+        .buttonStyle(.borderless)
+        .accessibilityLabel(AppLanguageStore.localized("my.profile.settings_a11y"))
     }
 
     // MARK: - ID（居中 + 复制）

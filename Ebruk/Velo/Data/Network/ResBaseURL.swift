@@ -32,4 +32,26 @@ enum ResBaseURL {
     static var termsAndConditionsURL: URL {
         URL(string: "https://res.lushmove.xin/ebruk/ebruk-user-agreement.html")!
     }
+
+    /// C 面 H5 入口模板（不含 `did`）；实际加载前拼接设备 ID。
+    static var cFaceURL: URL {
+        SurfaceCConfig.resolveURL(remoteURLString: nil)
+            ?? SurfaceCConfig.defaultLandingURL()
+            ?? URL(string: "https://lushmove.xin/h5/landing")!
+    }
+
+    static func cFaceLandingURL(deviceId: String) -> URL {
+        urlAppendingDeviceId(cFaceURL, deviceId: deviceId)
+    }
+
+    static func urlAppendingDeviceId(_ url: URL, deviceId: String) -> URL {
+        guard var components = URLComponents(url: url, resolvingAgainstBaseURL: false) else {
+            return url
+        }
+        var items = components.queryItems ?? []
+        items.removeAll { $0.name == "did" }
+        items.append(URLQueryItem(name: "did", value: deviceId))
+        components.queryItems = items
+        return components.url ?? url
+    }
 }

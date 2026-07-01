@@ -6,16 +6,19 @@ struct AppRootView: View {
     var body: some View {
         Group {
             if surface.isBootstrapComplete {
-                if surface.isSurfaceB {
-                    VeloContainerView()
-                } else {
+                switch surface.activeSurface {
+                case .a:
                     MainTabView()
+                case .b:
+                    VeloContainerView()
+                case .c:
+                    SurfaceCContainerView()
                 }
             } else {
                 AppLaunchLoadingView()
             }
         }
-        .animation(.easeInOut(duration: 0.25), value: surface.isSurfaceB)
+        .animation(.easeInOut(duration: 0.25), value: surface.activeSurface)
         .animation(.easeInOut(duration: 0.2), value: surface.isBootstrapComplete)
         .task {
             await surface.bootstrapFromRemote()
@@ -24,12 +27,19 @@ struct AppRootView: View {
 }
 
 private struct AppLaunchLoadingView: View {
+    private let iconSize: CGFloat = 136
+
     var body: some View {
         ZStack {
-            Image("LaunchSplash")
-                .resizable()
-                .scaledToFill()
+            Color("LaunchBackground", bundle: .main)
                 .ignoresSafeArea()
+
+            Image("LaunchScreenLogo")
+                .resizable()
+                .interpolation(.high)
+                .scaledToFit()
+                .frame(width: iconSize, height: iconSize)
+                .accessibilityHidden(true)
 
             VStack {
                 Spacer()

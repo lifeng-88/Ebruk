@@ -13,6 +13,16 @@ struct ContentView: View {
     @State private var recipeToView: Recipe?
     @State private var showCreateRecipe = false
 
+    #if DEBUG
+    private var debugSurfaceSwitchLabel: String {
+        switch surface.activeSurface {
+        case .a: return "C面"
+        case .c: return "B面"
+        case .b: return "A面"
+        }
+    }
+    #endif
+
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -29,9 +39,9 @@ struct ContentView: View {
                 #if DEBUG
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
-                        surface.toggleSurface()
+                        surface.cycleSurfaceForDebug()
                     } label: {
-                        Text(surface.isSurfaceB ? AppSurfaceCopy.returnALabel : AppSurfaceCopy.enterBLabel)
+                        Text(debugSurfaceSwitchLabel)
                             .font(.caption.weight(.semibold))
                             .foregroundStyle(.orange)
                             .padding(.horizontal, 8)

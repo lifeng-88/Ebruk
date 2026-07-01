@@ -20,16 +20,74 @@ struct CreateTaskRequest: Codable {
     }
 }
 
-/// 创建任务时 `userParams` 的 JSON 体：用户上传后的输入图 URL 列表
+/// 创建任务时 `userParams` 的 JSON 体（ComfyUI 工作流参数）
 struct CreateTaskUserParams: Encodable {
-    let inputImages: [String]
+    let paramLoadImage1: String
+    let paramUserScenario: Bool?
+    let paramResolution480: Bool?
 
     enum CodingKeys: String, CodingKey {
-        case inputImages = "input_images"
+        case paramLoadImage1 = "Param_LoadImage1"
+        case paramUserScenario = "Param_UserScenario"
+        case paramResolution480 = "Param_Resolution480"
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(paramLoadImage1, forKey: .paramLoadImage1)
+        try container.encodeIfPresent(paramUserScenario, forKey: .paramUserScenario)
+        try container.encodeIfPresent(paramResolution480, forKey: .paramResolution480)
     }
 }
 
 extension CreateTaskUserParams {
+    /// 按 `taskType` 组装服务端期望的 `userParams` JSON 字符串
+    static func make(taskType: Int32, uploadedPath: String) throws -> String {
+        let relative = normalizeUploadPath(uploadedPath)
+        let params: CreateTaskUserParams
+        switch taskType {
+        case 1:
+            params = CreateTaskUserParams(
+                paramLoadImage1: relative,
+                paramUserScenario: nil,
+                paramResolution480: nil
+            )
+        case 2, 3:
+            params = CreateTaskUserParams(
+                paramLoadImage1: relative,
+                paramUserScenario: false,
+                paramResolution480: taskType == 3 ? true : nil
+            )
+        default:
+            params = CreateTaskUserParams(
+                paramLoadImage1: relative,
+                paramUserScenario: nil,
+                paramResolution480: nil
+            )
+        }
+        return try params.jsonString()
+    }
+
+    /// 上传接口可能返回完整 URL，任务参数需使用相对路径（如 `input/{userid}/...`）
+    static func normalizeUploadPath(_ urlOrPath: String) -> String {
+        let trimmed = urlOrPath.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return trimmed }
+
+        if trimmed.hasPrefix("http://") || trimmed.hasPrefix("https://") {
+            if let url = URL(string: trimmed) {
+                let path = url.path.trimmingCharacters(in: CharacterSet(charactersIn: "/"))
+                if !path.isEmpty { return path }
+            }
+            let base = ResBaseURL.effective
+            if trimmed.hasPrefix(base) {
+                var rest = String(trimmed.dropFirst(base.count))
+                if rest.hasPrefix("/") { rest = String(rest.dropFirst()) }
+                return rest
+            }
+        }
+        return trimmed
+    }
+
     func jsonString() throws -> String {
         let data = try JSONEncoder().encode(self)
         guard let s = String(data: data, encoding: .utf8) else {

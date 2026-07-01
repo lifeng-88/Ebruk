@@ -66,8 +66,8 @@ struct HomeTemplateGenerationSheet: View {
 
     /// 生成层叠在首页 `NavigationView.overlay` 上；若此处再包一层 `NavigationView`，内层导航栏/`.toolbar` 在部分系统上整页不显示，关闭按钮消失。顶栏改为 `safeAreaInset` 自建。
     private var generationSheetTopBar: some View {
-        let barBackground: Color = showQueuingExperience ? HomeGenerationQueuingView.pageBackground : AppTheme.background
-        let balanceColor: Color = showQueuingExperience ? HomeGenerationQueuingView.accentLavender : AppTheme.onSurface
+        let barBackground: Color = AppTheme.background
+        let balanceColor: Color = showQueuingExperience ? AppTheme.primary : AppTheme.onSurface
         return HStack(alignment: .center, spacing: 0) {
             HStack {
                 Button {
@@ -94,7 +94,7 @@ struct HomeTemplateGenerationSheet: View {
                 if showQueuingExperience {
                     Text(AppLanguageStore.localized("home.generating.queuing.nav_title"))
                         .font(.system(size: 12, weight: .heavy))
-                        .foregroundStyle(HomeGenerationQueuingView.accentLavender)
+                        .foregroundStyle(AppTheme.primary)
                 } else {
                     Text(item.actionTitle)
                         .font(.headline)
@@ -256,9 +256,7 @@ struct HomeTemplateGenerationSheet: View {
                     .zIndex(-1)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(
-                showQueuingExperience ? HomeGenerationQueuingView.pageBackground : AppTheme.background
-            )
+            .background(AppTheme.background)
             .safeAreaInset(edge: .top, spacing: 0) {
                 generationSheetTopBar
             }
@@ -389,7 +387,10 @@ struct HomeTemplateGenerationSheet: View {
             case .success(let urlString):
                 let userParams: String
                 do {
-                    userParams = try CreateTaskUserParams(inputImages: [urlString]).jsonString()
+                    userParams = try CreateTaskUserParams.make(
+                        taskType: item.templateKind.apiTaskType,
+                        uploadedPath: urlString
+                    )
                 } catch {
                     await MainActor.run {
                         isWorking = false
@@ -451,14 +452,205 @@ struct HomeTemplateGenerationSheet: View {
     }
 }
 
+// MARK: - 排队 / 生成中 · 左右 9:16 双卡预览（SOURCE + TEMPLATE）
+
+/// 模板侧预览数据：T1 扫荡 before/after；T2·T3 循环成片视频。
+struct HomeGenerationDualPreviewTemplate: Equatable {
+    let itemId: String
+    let kind: TemplateResourceKind
+    let slideshowURLs: [URL]
+    let slideshowInterval: TimeInterval
+    let loopVideoURL: URL?
+    let fallbackImageURL: URL?
+    let hasTemplateVoice: Bool
+
+    init(item: HomeFeedItem) {
+        itemId = item.id
+        kind = item.templateKind
+        slideshowURLs = item.slideshowURLs
+        slideshowInterval = item.slideshowInterval
+        loopVideoURL = item.immersivePrimaryLoopVideoURL ?? item.playbackVideoURL
+        fallbackImageURL = item.immersiveImageURLs.first ?? item.imageURL
+        hasTemplateVoice = item.hasTemplateVoice
+    }
+}
+
+/// 左：用户图；右：示例模板（T1 双图扫荡 / T2·T3 静音循环视频）。两卡均为 9:16。
+struct HomeGenerationDualPreviewRow: View {
+    enum Source {
+        case image(UIImage)
+        case url(URL)
+    }
+
+    let source: Source?
+    let template: HomeGenerationDualPreviewTemplate?
+
+    private static let cardAspect: CGFloat = 9.0 / 16.0
+    private static let swapPillWidth: CGFloat = 44
+    private static let cardCorner: CGFloat = 14
+
+    var body: some View {
+        HStack(alignment: .center, spacing: 0) {
+            sourceCard
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .aspectRatio(Self.cardAspect, contentMode: .fit)
+            swapPill
+            templateCard
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .aspectRatio(Self.cardAspect, contentMode: .fit)
+        }
+    }
+
+    private var sourceCard: some View {
+        queuingCardShell(
+            tag: AppLanguageStore.localized("home.generating.queuing.source_tag"),
+            tagAlignment: .bottomLeading,
+            tagForeground: AppTheme.primary
+        ) {
+            Group {
+                if let source {
+                    switch source {
+                    case .image(let img):
+                        Image(uiImage: img)
+                            .resizable()
+                            .scaledToFill()
+                    case .url(let url):
+                        HomeCachedImage(url: url, priority: .userInitiated, aspectFit: false)
+                    }
+                } else {
+                    AppTheme.surfaceContainerHighest
+                        .overlay(
+                            Image(systemName: "person.crop.rectangle")
+                                .font(.system(size: 36))
+                                .foregroundStyle(AppTheme.onSurfaceVariant.opacity(0.35))
+                        )
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .clipped()
+        }
+    }
+
+    @ViewBuilder
+    private var templateCard: some View {
+        queuingCardShell(
+            tag: AppLanguageStore.localized("home.generating.queuing.template_tag"),
+            tagAlignment: .bottomTrailing,
+            tagForeground: AppTheme.secondary
+        ) {
+            if let template {
+                templatePreviewContent(template)
+            } else {
+                AppTheme.surfaceContainer
+                    .overlay(ProgressView().tint(AppTheme.primary))
+            }
+        }
+    }
+
+    @ViewBuilder
+    private func templatePreviewContent(_ template: HomeGenerationDualPreviewTemplate) -> some View {
+        GeometryReader { geo in
+            let w = geo.size.width
+            let h = geo.size.height
+            Group {
+                switch template.kind {
+                case .t1:
+                    if template.slideshowURLs.count >= 2 {
+                        ImmersiveFeedScanCompareBackdrop(
+                            itemId: "queuing-\(template.itemId)",
+                            beforeURL: template.slideshowURLs.first!,
+                            afterURL: template.slideshowURLs.last!,
+                            width: w,
+                            height: h,
+                            aspectFit: false
+                        )
+                    } else if let u = template.fallbackImageURL {
+                        HomeCachedImage(url: u, priority: .userInitiated, aspectFit: false)
+                            .frame(width: w, height: h)
+                            .clipped()
+                    } else {
+                        AppTheme.surfaceContainer
+                    }
+                case .t2, .t3:
+                    if let videoURL = template.loopVideoURL {
+                        ZStack {
+                            if let poster = template.fallbackImageURL {
+                                HomeCachedImage(url: poster, priority: .utility, aspectFit: false, showsLoadingIndicator: false)
+                                    .frame(width: w, height: h)
+                                    .clipped()
+                            }
+                            HomeGridSequentialVideoPreview(
+                                remoteURL: videoURL,
+                                isPlaying: true,
+                                loops: true,
+                                isMuted: true,
+                                onFinished: {}
+                            )
+                        }
+                        .frame(width: w, height: h)
+                        .clipped()
+                    } else if let u = template.fallbackImageURL {
+                        HomeCachedImage(url: u, priority: .userInitiated, aspectFit: false)
+                            .frame(width: w, height: h)
+                            .clipped()
+                    } else {
+                        AppTheme.surfaceContainer
+                    }
+                }
+            }
+            .frame(width: w, height: h)
+        }
+    }
+
+    private func queuingCardShell<Content: View>(
+        tag: String,
+        tagAlignment: Alignment,
+        tagForeground: Color,
+        @ViewBuilder content: () -> Content
+    ) -> some View {
+        ZStack(alignment: tagAlignment) {
+            AppTheme.surfaceContainer
+            content()
+            tagChip(tag, foreground: tagForeground)
+                .padding(8)
+        }
+        .clipShape(RoundedRectangle(cornerRadius: Self.cardCorner, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: Self.cardCorner, style: .continuous)
+                .stroke(AppTheme.outlineVariant.opacity(0.45), lineWidth: 1)
+        )
+    }
+
+    private var swapPill: some View {
+        ZStack {
+            Circle()
+                .fill(AppTheme.surfaceContainerHigh)
+                .frame(width: 40, height: 40)
+                .overlay(
+                    Circle()
+                        .stroke(AppTheme.primary.opacity(0.55), lineWidth: 1)
+                )
+            Image(systemName: "arrow.left.arrow.right")
+                .font(.system(size: 15, weight: .bold))
+                .foregroundStyle(AppTheme.onSurface)
+        }
+        .frame(width: Self.swapPillWidth)
+    }
+
+    private func tagChip(_ text: String, foreground: Color) -> some View {
+        Text(text)
+            .font(.system(size: 10, weight: .heavy))
+            .tracking(0.4)
+            .foregroundStyle(foreground)
+            .padding(.horizontal, 8)
+            .padding(.vertical, 4)
+            .background(AppTheme.background.opacity(0.72))
+            .clipShape(RoundedRectangle(cornerRadius: 4, style: .continuous))
+    }
+}
+
 /// 创建任务后全屏排队 UI（与预览页预填图进入同一套）；沿用 `VlAsyncWorkPollCoordinator` 状态。
 struct HomeGenerationQueuingView: View {
-    /// 设计稿主背景约 `#0B0B0F`
-    static let pageBackground = Color(red: 11 / 255, green: 11 / 255, blue: 15 / 255)
-    /// 主按钮与强调色约 `#C09FF8`
-    static let accentLavender = Color(red: 192 / 255, green: 159 / 255, blue: 248 / 255)
-    static let onAccentDeep = Color(red: 45 / 255, green: 28 / 255, blue: 72 / 255)
-
     let item: HomeFeedItem
     let sourceImage: UIImage
     /// 上传 / 创建任务尚未完成
@@ -470,8 +662,8 @@ struct HomeGenerationQueuingView: View {
     @ObservedObject private var taskService = VlAsyncWorkPollCoordinator.shared
     @State private var didPresentSuccessScreen = false
 
-    private var templateDisplayURL: URL? {
-        item.immersiveImageURLs.first ?? item.imageURL
+    private var templatePreview: HomeGenerationDualPreviewTemplate {
+        HomeGenerationDualPreviewTemplate(item: item)
     }
 
     /// 大图标题：排队 / 生成中
@@ -517,9 +709,12 @@ struct HomeGenerationQueuingView: View {
             GeometryReader { geo in
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(spacing: 0) {
-                        dualCardRow
-                            .padding(.horizontal, 16)
-                            .padding(.top, 8)
+                        HomeGenerationDualPreviewRow(
+                            source: .image(sourceImage),
+                            template: templatePreview
+                        )
+                        .padding(.horizontal, 16)
+                        .padding(.top, 8)
 
                         Color.clear.frame(height: 12)
 
@@ -527,7 +722,7 @@ struct HomeGenerationQueuingView: View {
                             if showsCircularProgress {
                                 QueuingCircularProgressView(
                                     progress: min(1, max(0, taskService.progress)),
-                                    accent: Self.accentLavender
+                                    accent: AppTheme.primary
                                 )
                             } else {
                                 queuingSymbolBlock
@@ -563,8 +758,8 @@ struct HomeGenerationQueuingView: View {
                                 }
                                 .frame(maxWidth: .infinity)
                                 .padding(.vertical, 16)
-                                .foregroundStyle(Self.onAccentDeep)
-                                .background(Self.accentLavender)
+                                .foregroundStyle(.white)
+                                .background(AppTheme.premiumButtonGradient)
                                 .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
                             }
                             .buttonStyle(.plain)
@@ -598,107 +793,25 @@ struct HomeGenerationQueuingView: View {
     }
 
     private var backgroundLayer: some View {
-        Self.pageBackground
+        AppTheme.background
     }
 
     private var queuingSymbolBlock: some View {
-        let outer = Self.accentLavender.opacity(0.35)
-        let mid = Self.accentLavender.opacity(0.55)
-        let innerFill = Color(red: 24 / 255, green: 22 / 255, blue: 38 / 255)
-        let iconColor = Self.accentLavender
-        return ZStack {
+        ZStack {
             Circle()
-                .strokeBorder(outer, lineWidth: 1)
+                .strokeBorder(AppTheme.primary.opacity(0.35), lineWidth: 1)
                 .frame(width: 100, height: 100)
             Circle()
-                .strokeBorder(mid, lineWidth: 1)
+                .strokeBorder(AppTheme.primary.opacity(0.55), lineWidth: 1)
                 .frame(width: 86, height: 86)
             Circle()
-                .fill(innerFill)
+                .fill(AppTheme.surfaceContainerHigh)
                 .frame(width: 78, height: 78)
             Image(systemName: "hourglass")
                 .font(.system(size: 30, weight: .semibold))
-                .foregroundStyle(iconColor)
+                .foregroundStyle(AppTheme.primary)
         }
         .padding(.vertical, 8)
-    }
-
-    private var dualCardRow: some View {
-        HStack(alignment: .center, spacing: 0) {
-            sourceCard
-                .frame(minWidth: 0, maxWidth: .infinity)
-                .layoutPriority(1)
-            swapPill
-            templateCard
-                .frame(minWidth: 0, maxWidth: .infinity)
-                .layoutPriority(1)
-        }
-    }
-
-    private var sourceCard: some View {
-        ZStack(alignment: .bottomLeading) {
-            Image(uiImage: sourceImage)
-                .resizable()
-                .scaledToFill()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .clipped()
-            tagChip(AppLanguageStore.localized("home.generating.queuing.source_tag"), fill: Color.black.opacity(0.45), foreground: Self.accentLavender)
-                .padding(8)
-        }
-        .frame(maxWidth: .infinity)
-        .frame(height: 200)
-        .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
-        .overlay(
-            RoundedRectangle(cornerRadius: 14, style: .continuous)
-                .stroke(Color.white.opacity(0.08), lineWidth: 1)
-        )
-    }
-
-    private var templateCard: some View {
-        ZStack(alignment: .bottomTrailing) {
-            HomeCachedImage(url: templateDisplayURL, aspectFit: false)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .clipped()
-            tagChip(AppLanguageStore.localized("home.generating.queuing.template_tag"), fill: Color.black.opacity(0.45), foreground: AppTheme.secondary)
-                .padding(8)
-        }
-        .frame(maxWidth: .infinity)
-        .frame(height: 200)
-        .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
-        .overlay(
-            RoundedRectangle(cornerRadius: 14, style: .continuous)
-                .stroke(Color.white.opacity(0.08), lineWidth: 1)
-        )
-    }
-
-    private var swapPill: some View {
-        ZStack {
-            Circle()
-                .fill(Color(red: 40 / 255, green: 28 / 255, blue: 62 / 255))
-                .frame(width: 40, height: 40)
-                .overlay(
-                    Circle()
-                        .stroke(
-                            LinearGradient(colors: [Self.accentLavender.opacity(0.55), Self.accentLavender.opacity(0.55)], startPoint: .top, endPoint: .bottom),
-                            lineWidth: 1
-                        )
-                )
-            Image(systemName: "arrow.left.arrow.right")
-                .font(.system(size: 15, weight: .bold))
-                .foregroundStyle(.white)
-        }
-        .frame(width: 44)
-    }
-
-    private func tagChip(_ text: String, fill: Color, foreground: Color) -> some View {
-        Text(text)
-            .font(.system(size: 10, weight: .heavy))
-            .tracking(0.4)
-            .foregroundStyle(foreground)
-            .padding(.horizontal, 8)
-            .padding(.vertical, 4)
-            .background(fill)
-            .clipShape(RoundedRectangle(cornerRadius: 4, style: .continuous))
     }
 }
 

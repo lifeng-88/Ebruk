@@ -30,12 +30,19 @@ struct AppConfigRequest {
 }
 
 struct AppConfigResponse: Decodable {
-    /// 与 ReelMix 一致：**1** A 面 / 直链 IAP；**2** B 面 / 支付 Sheet。
+    /// **1** A 面 · **2** C 面（WebView） · **3** B 面（Velo 原生）。
     let type: Int?
+    /// C 面 H5 地址（可选字段：`h5_url` / `web_url` / `url`）。
+    let h5Url: String?
+    let webUrl: String?
+    let url: String?
 
     enum CodingKeys: String, CodingKey {
         case type
         case rechargePresentationType = "recharge_presentation_type"
+        case h5Url = "h5_url"
+        case webUrl = "web_url"
+        case url
     }
 
     init(from decoder: Decoder) throws {
@@ -43,6 +50,18 @@ struct AppConfigResponse: Decodable {
         let fromTypeKey = Self.decodeFlexibleInt(from: c, forKey: .type)
         let fromSnake = Self.decodeFlexibleInt(from: c, forKey: .rechargePresentationType)
         type = fromTypeKey ?? fromSnake
+        h5Url = try? c.decode(String.self, forKey: .h5Url)
+        webUrl = try? c.decode(String.self, forKey: .webUrl)
+        url = try? c.decode(String.self, forKey: .url)
+    }
+
+    /// 服务端下发的 C 面 WebView 地址（按常见字段优先级）。
+    var preferredWebURLString: String? {
+        for candidate in [h5Url, webUrl, url] {
+            let trimmed = candidate?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+            if !trimmed.isEmpty { return trimmed }
+        }
+        return nil
     }
 
     private static func decodeFlexibleInt(from c: KeyedDecodingContainer<CodingKeys>, forKey key: CodingKeys) -> Int? {
@@ -53,9 +72,10 @@ struct AppConfigResponse: Decodable {
     }
 }
 
-/// `/v1/app_config` 本地持久化（A/B 面 + B 面充值分支共用，对齐 ReelMix）。
+/// `/v1/app_config` 本地持久化（A/B/C 面 + B 面充值分支共用）。
 enum AppConfigPersistence {
     static let presentationTypeKey = "ebruk.v1.app_config.presentation_type"
+    static let surfaceWebURLKey = "ebruk.v1.app_config.surface_web_url"
     static let fetchSucceededKey = "ebruk.v1.app_config.fetch_succeeded"
     static let lastRemoteRefreshKey = "ebruk.v1.app_config.last_remote_refresh"
 
@@ -73,7 +93,7 @@ enum AppConfigPersistence {
 
         if defaults.bool(forKey: legacyVeloFetchSucceededKey),
            let n = defaults.object(forKey: legacyVeloPresentationTypeKey) as? Int,
-           n == 1 || n == 2 {
+           n == 1 || n == 2 || n == 3 {
             defaults.set(n, forKey: presentationTypeKey)
             defaults.set(true, forKey: fetchSucceededKey)
             if defaults.object(forKey: legacyVeloLastRefreshKey) != nil {
@@ -84,7 +104,7 @@ enum AppConfigPersistence {
 
         if defaults.bool(forKey: legacyAppVersionFetchKey),
            let n = defaults.object(forKey: legacyAppVersionPresentationKey) as? Int,
-           n == 1 || n == 2 {
+           n == 1 || n == 2 || n == 3 {
             defaults.set(n, forKey: presentationTypeKey)
             defaults.set(true, forKey: fetchSucceededKey)
             if defaults.object(forKey: legacyAppVersionRefreshKey) != nil {
@@ -93,7 +113,7 @@ enum AppConfigPersistence {
             return
         }
 
-        if let n = defaults.object(forKey: legacyVersionConfigKey) as? Int, n == 1 || n == 2 {
+        if let n = defaults.object(forKey: legacyVersionConfigKey) as? Int, n == 1 || n == 2 || n == 3 {
             defaults.set(n, forKey: presentationTypeKey)
             defaults.set(true, forKey: fetchSucceededKey)
         }
@@ -106,14 +126,26 @@ enum AppConfigPersistence {
     static func readPersistedPresentationType(defaultValue: Int = 1) -> Int {
         guard let raw = UserDefaults.standard.object(forKey: presentationTypeKey) else { return defaultValue }
         guard let n = raw as? Int else { return defaultValue }
-        return (n == 1 || n == 2) ? n : defaultValue
+        return (n == 1 || n == 2 || n == 3) ? n : defaultValue
     }
 
-    static func persistSuccessfulPresentationType(_ value: Int) {
-        guard value == 1 || value == 2 else { return }
+    static func readPersistedSurfaceWebURL() -> String? {
+        let raw = UserDefaults.standard.string(forKey: surfaceWebURLKey)?
+            .trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        return raw.isEmpty ? nil : raw
+    }
+
+    static func persistSuccessfulPresentationType(_ value: Int, webURL: String? = nil) {
+        guard value == 1 || value == 2 || value == 3 else { return }
         let defaults = UserDefaults.standard
         defaults.set(value, forKey: presentationTypeKey)
         defaults.set(true, forKey: fetchSucceededKey)
+        if let webURL {
+            let trimmed = webURL.trimmingCharacters(in: .whitespacesAndNewlines)
+            if !trimmed.isEmpty {
+                defaults.set(trimmed, forKey: surfaceWebURLKey)
+            }
+        }
     }
 }
 

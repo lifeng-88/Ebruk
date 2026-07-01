@@ -536,15 +536,7 @@ struct HomeGenerationRechargeUpsellView: View {
     private var rechargeNowButton: some View {
         Button {
             guard let pkg = selectedPackage else { return }
-            Task {
-                await versionConfig.refresh()
-                let mode = await MainActor.run { versionConfig.rechargePresentationType }
-                if mode == 1 {
-                    await completePurchaseDirectIAP(package: pkg)
-                } else {
-                    await presentPaymentSelectionOrDirectAppleIfOnly(package: pkg)
-                }
-            }
+            Task { await beginRechargeCheckout(package: pkg) }
         } label: {
             HStack(spacing: 10) {
                 if isPurchasing {
@@ -625,23 +617,19 @@ struct HomeGenerationRechargeUpsellView: View {
         }
     }
 
-    // MARK: - 支付逻辑（与 `RechargeView` 一致）
+    // MARK: - 支付（A 面直链 IAP；B 面多渠道 Sheet）
 
-    /// 支付方式弹窗模式：若接口仅配置 Apple 内购一条，则不弹 Sheet，直接拉起 StoreKit
-    private func presentPaymentSelectionOrDirectAppleIfOnly(package: RechargePackageModel) async {
-        let mode = await MainActor.run { versionConfig.rechargePresentationType }
-        if mode == 1 {
+    private func beginRechargeCheckout(package: RechargePackageModel) async {
+        if RechargeCheckoutRouter.prefersPaymentChannelSheet {
+            await presentPaymentChannelSheet(package: package)
+        } else {
             await completePurchaseDirectIAP(package: package)
-            return
         }
+    }
+
+    private func presentPaymentChannelSheet(package: RechargePackageModel) async {
         await MainActor.run { isPurchasing = true }
         await VlCheckoutChannelRegistry.shared.loadPayChannelsOnce()
-        let channels = await MainActor.run { VlCheckoutChannelRegistry.shared.payChannels }
-        if channels.count == 1, let only = channels.first, only.isApplePay {
-            await MainActor.run { isPurchasing = false }
-            await completePurchase(package: package, payChannel: only)
-            return
-        }
         await MainActor.run {
             isPurchasing = false
             checkoutPackage = package

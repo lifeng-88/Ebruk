@@ -2,10 +2,8 @@
 //  VersionConfigStore.swift
 //  Velo
 //
-//  充值呈现由 `GET /v1/app_config` 控制（GetAppConfigReq：dev_id/source/channel/version/af_attribution_json）。
-//  - 已成功拉取并持久化过：后续冷启动直接读本地，不再请求。
-//  - 首次 / 从未成功：先 AF 归因，再请求 app_config；失败则默认 type=1 且不写入本地。
-//  `type == 1` → 直链 StoreKit；`type == 2` → 支付选择 Sheet。
+//  `app_config.type`：**1** A 面；**2** C 面 WebView；**3** B 面（见 `AppSurfaceController`）。
+//  充值：A 面直链 StoreKit；B 面弹出支付渠道 Sheet（见 `RechargeCheckoutRouter`）。
 //
 
 import Foundation
@@ -13,7 +11,7 @@ import SwiftUI
 
 @MainActor
 final class VersionConfigStore: ObservableObject {
-    /// 与 `/v1/app_config` 的 `type` 一致；**1** 直链 IAP；**2** 支付 Sheet。
+    /// 与 `/v1/app_config` 的 `type` 一致；**1** A · **2** C · **3** B。
     @Published private(set) var rechargePresentationType: Int
 
     private static let lastRemoteRefreshKey = AppConfigPersistence.lastRemoteRefreshKey
@@ -48,7 +46,7 @@ final class VersionConfigStore: ObservableObject {
     }
 
     var usesDirectIAPRecharge: Bool {
-        rechargePresentationType == 1
+        !AppSurfaceController.shared.isSurfaceB
     }
 
     func bootstrapOnColdStart() async {
@@ -141,7 +139,7 @@ final class VersionConfigStore: ObservableObject {
     private func applyAppConfigResponse(_ result: Result<AppConfigResponse, AppError>) async {
         switch result {
         case .success(let resp):
-            if let t = resp.type, t == 1 || t == 2 {
+            if let t = resp.type, t == 1 || t == 2 || t == 3 {
                 #if DEBUG
                 if debugTypeOverrideActive {
                     print("ℹ️ [VersionConfigStore] app_config type=\(t) ignored (DEBUG override active, keep \(rechargePresentationType))")
@@ -169,9 +167,9 @@ final class VersionConfigStore: ObservableObject {
     }
 
     #if DEBUG
-    /// 覆盖远端 `type`（1 / 2）并写入与成功拉取时相同的持久化键，供 DEBUG 面板切换充值分支。
+    /// 覆盖远端 `type`（1 / 2 / 3）并写入与成功拉取时相同的持久化键，供 DEBUG 面板切换面。
     func debugSetPresentationType(_ raw: Int) {
-        let v = (raw == 1 || raw == 2) ? raw : 1
+        let v = (raw == 1 || raw == 2 || raw == 3) ? raw : 1
         debugTypeOverrideActive = true
         rechargePresentationType = v
         persistSuccessfulPresentationType(v)

@@ -117,7 +117,7 @@ struct HomeTemplateDetailView: View {
                     height: h,
                     isSwitchingActive: true,
                     stoppedPosterVideoURL: nil,
-                    aspectFit: true,
+                    aspectFit: false,
                     transAnimationCarouselURLs: []
                 )
             } else if feed.templateKind == .t2 || feed.templateKind == .t3 {
@@ -128,7 +128,7 @@ struct HomeTemplateDetailView: View {
                     fallbackImageURL: feed.imageURL ?? gridItem.imageURL,
                     width: w,
                     height: h,
-                    aspectFit: true,
+                    aspectFit: false,
                     hasTemplateVoice: feed.hasTemplateVoice
                 )
             } else {
@@ -812,7 +812,7 @@ private struct HomeTemplateDetailT2T3PreviewHero: View {
     let fallbackImageURL: URL?
     let width: CGFloat
     let height: CGFloat
-    var aspectFit: Bool = true
+    var aspectFit: Bool = false
     var hasTemplateVoice: Bool = false
 
     @State private var showLoopingPlayback = false

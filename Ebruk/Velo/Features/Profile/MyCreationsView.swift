@@ -724,18 +724,7 @@ private struct CreationGridCard: View {
     }
 
     private var inputPreviewURL: URL? {
-        guard let raw = item.userParams?.trimmingCharacters(in: .whitespacesAndNewlines),
-              let data = raw.data(using: .utf8),
-              let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else {
-            return nil
-        }
-        let paths: [String]? =
-            (obj["input_images"] as? [String])
-            ?? (obj["inputImages"] as? [String])
-        guard let first = paths?.first?.trimmingCharacters(in: .whitespacesAndNewlines), !first.isEmpty else {
-            return nil
-        }
-        return TaskResultMediaURL.resolve(first)
+        TaskInputImageURL.fromUserParams(item.userParams)
     }
 }
 
@@ -844,10 +833,7 @@ private struct CreationsDetailQueuingRing: View {
 
 private struct CreationsInProgressHeroView: View {
     let item: TaskListItem
-    let templateURL: URL?
-
-    private static let pageBackground = Color(red: 11 / 255, green: 11 / 255, blue: 15 / 255)
-    private static let accentLavender = Color(red: 192 / 255, green: 159 / 255, blue: 248 / 255)
+    let templatePreview: HomeGenerationDualPreviewTemplate?
 
     private var inputURL: URL? { item.creationInputImageURL }
 
@@ -884,15 +870,18 @@ private struct CreationsInProgressHeroView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            dualCardRow
-                .padding(.horizontal, 16)
-                .padding(.top, 4)
+            HomeGenerationDualPreviewRow(
+                source: inputURL.map { .url($0) },
+                template: templatePreview
+            )
+            .padding(.horizontal, 16)
+            .padding(.top, 4)
 
             Spacer(minLength: 10)
 
             Group {
                 if showsRing {
-                    CreationsDetailQueuingRing(progress: ringProgress, accent: Self.accentLavender)
+                    CreationsDetailQueuingRing(progress: ringProgress, accent: AppTheme.primary)
                 } else {
                     queuingSymbolBlock
                 }
@@ -917,121 +906,26 @@ private struct CreationsInProgressHeroView: View {
         }
         .padding(.bottom, 12)
         .frame(maxWidth: .infinity)
-        .background(Self.pageBackground)
+        .background(AppTheme.surfaceContainerLow)
         .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
     }
 
     private var queuingSymbolBlock: some View {
         ZStack {
             Circle()
-                .strokeBorder(Self.accentLavender.opacity(0.35), lineWidth: 1)
+                .strokeBorder(AppTheme.primary.opacity(0.35), lineWidth: 1)
                 .frame(width: 100, height: 100)
             Circle()
-                .strokeBorder(Self.accentLavender.opacity(0.55), lineWidth: 1)
+                .strokeBorder(AppTheme.primary.opacity(0.55), lineWidth: 1)
                 .frame(width: 86, height: 86)
             Circle()
-                .fill(Color(red: 24 / 255, green: 22 / 255, blue: 38 / 255))
+                .fill(AppTheme.surfaceContainerHigh)
                 .frame(width: 78, height: 78)
             Image(systemName: "hourglass")
                 .font(.system(size: 30, weight: .semibold))
-                .foregroundStyle(Self.accentLavender)
+                .foregroundStyle(AppTheme.primary)
         }
         .padding(.vertical, 8)
-    }
-
-    /// 与中间交换按钮宽度共同参与均分；`minWidth: 0` 避免大图固有宽度挤占另一列（部分机型左右不等宽）
-    private var dualCardRow: some View {
-        HStack(alignment: .center, spacing: 0) {
-            sourceCard
-                .frame(minWidth: 0, maxWidth: .infinity)
-                .layoutPriority(1)
-            swapPill
-            templateCard
-                .frame(minWidth: 0, maxWidth: .infinity)
-                .layoutPriority(1)
-        }
-    }
-
-    private var sourceCard: some View {
-        ZStack(alignment: .bottomLeading) {
-            Group {
-                if let inputURL {
-                    HomeCachedImage(url: inputURL, priority: .userInitiated, aspectFit: false)
-                } else {
-                    AppTheme.surfaceContainerHighest
-                        .overlay(
-                            Image(systemName: "person.crop.rectangle")
-                                .font(.system(size: 36))
-                                .foregroundStyle(AppTheme.onSurfaceVariant.opacity(0.35))
-                        )
-                }
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .clipped()
-            tagChip(AppLanguageStore.localized("home.generating.queuing.source_tag"), fill: Color.black.opacity(0.45), foreground: Self.accentLavender)
-                .padding(8)
-        }
-        .frame(maxWidth: .infinity)
-        .frame(height: 200)
-        .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
-        .overlay(
-            RoundedRectangle(cornerRadius: 14, style: .continuous)
-                .stroke(Color.white.opacity(0.08), lineWidth: 1)
-        )
-    }
-
-    private var templateCard: some View {
-        ZStack(alignment: .bottomTrailing) {
-            Group {
-                if let templateURL {
-                    HomeCachedImage(url: templateURL, priority: .userInitiated, aspectFit: false)
-                } else {
-                    AppTheme.surfaceContainer
-                        .overlay(
-                            ProgressView()
-                                .tint(Self.accentLavender)
-                        )
-                }
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .clipped()
-            tagChip(AppLanguageStore.localized("home.generating.queuing.template_tag"), fill: Color.black.opacity(0.45), foreground: AppTheme.secondary)
-                .padding(8)
-        }
-        .frame(maxWidth: .infinity)
-        .frame(height: 200)
-        .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
-        .overlay(
-            RoundedRectangle(cornerRadius: 14, style: .continuous)
-                .stroke(Color.white.opacity(0.08), lineWidth: 1)
-        )
-    }
-
-    private var swapPill: some View {
-        ZStack {
-            Circle()
-                .fill(Color(red: 40 / 255, green: 28 / 255, blue: 62 / 255))
-                .frame(width: 40, height: 40)
-                .overlay(
-                    Circle()
-                        .stroke(Self.accentLavender.opacity(0.55), lineWidth: 1)
-                )
-            Image(systemName: "arrow.left.arrow.right")
-                .font(.system(size: 15, weight: .bold))
-                .foregroundStyle(.white)
-        }
-        .frame(width: 44)
-    }
-
-    private func tagChip(_ text: String, fill: Color, foreground: Color) -> some View {
-        Text(text)
-            .font(.system(size: 10, weight: .heavy))
-            .tracking(0.4)
-            .foregroundStyle(foreground)
-            .padding(.horizontal, 8)
-            .padding(.vertical, 4)
-            .background(fill)
-            .clipShape(RoundedRectangle(cornerRadius: 4, style: .continuous))
     }
 }
 
@@ -1057,7 +951,7 @@ struct CreationDetailView: View {
     @State private var item: TaskListItem?
     private let initialTaskId: String
 
-    @State private var templatePreviewURL: URL?
+    @State private var templatePreview: HomeGenerationDualPreviewTemplate?
     @State private var loadingItem: Bool = false
     @State private var loadErrorMessage: String?
     @State private var showFeedback = false
@@ -1103,7 +997,7 @@ struct CreationDetailView: View {
                 if item.taskStatus == .pending || item.taskStatus == .running {
                     CreationsInProgressHeroView(
                         item: item,
-                        templateURL: templatePreviewURL
+                        templatePreview: templatePreview
                     )
                 }
 
@@ -1237,7 +1131,7 @@ struct CreationDetailView: View {
         }
     }
 
-    /// 拉取模板封面供 SOURCE/TEMPLATE 卡片右侧展示
+    /// 拉取模板详情供 TEMPLATE 卡片：T1 扫荡 / T2·T3 循环视频
     private func loadTemplatePreviewForDetail() async {
         guard let item = item else { return }
         let tid = item.tid.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -1247,22 +1141,19 @@ struct CreationDetailView: View {
             let r = await VlCatalogWorkRepository.shared.getImageTemplateDetail(tid: tid)
             if case .success(let t) = r {
                 let feed = HomeFeedItem(imageTemplate: t)
-                let u = feed.immersiveImageURLs.first ?? feed.imageURL
-                await MainActor.run { templatePreviewURL = u }
+                await MainActor.run { templatePreview = HomeGenerationDualPreviewTemplate(item: feed) }
             }
         case 2:
             let r = await VlCatalogWorkRepository.shared.getDancingTemplateDetail(tid: tid)
             if case .success(let t) = r {
                 let feed = HomeFeedItem(dancingTemplate: t)
-                let u = feed.immersiveImageURLs.first ?? feed.imageURL
-                await MainActor.run { templatePreviewURL = u }
+                await MainActor.run { templatePreview = HomeGenerationDualPreviewTemplate(item: feed) }
             }
         case 3:
             let r = await VlCatalogWorkRepository.shared.getVideoTemplateDetail(tid: tid)
             if case .success(let t) = r {
                 let feed = HomeFeedItem(videoTemplate: t)
-                let u = feed.immersiveImageURLs.first ?? feed.imageURL
-                await MainActor.run { templatePreviewURL = u }
+                await MainActor.run { templatePreview = HomeGenerationDualPreviewTemplate(item: feed) }
             }
         default:
             break
@@ -1301,6 +1192,27 @@ struct CreationDetailView: View {
 
 // MARK: - TaskListItem + display
 
+private enum TaskInputImageURL {
+    static func fromUserParams(_ userParams: String?) -> URL? {
+        guard let raw = userParams?.trimmingCharacters(in: .whitespacesAndNewlines),
+              let data = raw.data(using: .utf8),
+              let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else {
+            return nil
+        }
+        if let path = obj["Param_LoadImage1"] as? String {
+            let trimmed = path.trimmingCharacters(in: .whitespacesAndNewlines)
+            if !trimmed.isEmpty { return TaskResultMediaURL.resolve(trimmed) }
+        }
+        let paths: [String]? =
+            (obj["input_images"] as? [String])
+            ?? (obj["inputImages"] as? [String])
+        guard let first = paths?.first?.trimmingCharacters(in: .whitespacesAndNewlines), !first.isEmpty else {
+            return nil
+        }
+        return TaskResultMediaURL.resolve(first)
+    }
+}
+
 private enum TaskResultMediaURL {
     static func resolve(_ path: String) -> URL? {
         let trimmed = path.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -1320,18 +1232,7 @@ private enum TaskResultMediaURL {
 private extension TaskListItem {
     /// 与网格卡片一致：从 `userParams` 解析用户上传图 URL
     var creationInputImageURL: URL? {
-        guard let raw = userParams?.trimmingCharacters(in: .whitespacesAndNewlines),
-              let data = raw.data(using: .utf8),
-              let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else {
-            return nil
-        }
-        let paths: [String]? =
-            (obj["input_images"] as? [String])
-            ?? (obj["inputImages"] as? [String])
-        guard let first = paths?.first?.trimmingCharacters(in: .whitespacesAndNewlines), !first.isEmpty else {
-            return nil
-        }
-        return TaskResultMediaURL.resolve(first)
+        TaskInputImageURL.fromUserParams(userParams)
     }
 
     /// 生成中环形进度（与列表卡片 `totalStage` / `currentStage` 一致）

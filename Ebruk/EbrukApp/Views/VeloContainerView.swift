@@ -20,8 +20,12 @@ struct VeloContainerView: View {
         } catch {}
     }
 
+    private var surfaceSwitchBottomPadding: CGFloat {
+        tabRouter.shouldHideTabBar ? 16 : MainTabBarMetrics.estimatedContentHeight + 12
+    }
+
     var body: some View {
-        ZStack(alignment: .topTrailing) {
+        ZStack(alignment: .bottomLeading) {
             VeloRootView()
                 .environmentObject(wallet)
                 .environmentObject(tabRouter)
@@ -42,16 +46,15 @@ struct VeloContainerView: View {
                     .background(Color.orange.opacity(0.12))
                     .clipShape(Capsule())
             }
-            .padding(.trailing, 12)
-            .padding(.top, 8)
-            .safeAreaPadding(.top)
+            .padding(.leading, 12)
+            .padding(.bottom, surfaceSwitchBottomPadding)
             #else
             Color.clear
                 .frame(width: 56, height: 56)
                 .contentShape(Rectangle())
                 .onTapGesture { registerExitTap() }
-                .safeAreaPadding(.top, 4)
-                .padding(.trailing, 4)
+                .padding(.leading, 8)
+                .padding(.bottom, surfaceSwitchBottomPadding)
             #endif
         }
         .preferredColorScheme(.dark)

@@ -252,15 +252,7 @@ struct RechargeView: View {
             tabRouter.consumePushOfferPaymentChannelRequest()
             applyPendingRechargeAppleProductSelection()
             guard let pkg = selectedPackage else { return }
-            Task {
-                await versionConfig.refresh()
-                let mode = await MainActor.run { versionConfig.rechargePresentationType }
-                if mode == 1 {
-                    await completePurchaseDirectIAP(package: pkg)
-                } else {
-                    await presentPaymentSelectionOrDirectAppleIfOnly(package: pkg)
-                }
-            }
+            Task { await beginRechargeCheckout(package: pkg) }
         }
         .sheet(item: $checkoutPackage) { pkg in
             RechargePaymentSelectionView(
@@ -408,15 +400,7 @@ struct RechargeView: View {
             VStack(spacing: 16) {
                 Button {
                     guard let pkg = selectedPackage else { return }
-                    Task {
-                        await versionConfig.refresh()
-                        let mode = await MainActor.run { versionConfig.rechargePresentationType }
-                        if mode == 1 {
-                            await completePurchaseDirectIAP(package: pkg)
-                        } else {
-                            await presentPaymentSelectionOrDirectAppleIfOnly(package: pkg)
-                        }
-                    }
+                    Task { await beginRechargeCheckout(package: pkg) }
                 } label: {
                     HStack(spacing: 10) {
                         if isPurchasing {
@@ -740,28 +724,26 @@ struct RechargeView: View {
         }
     }
 
-    /// 支付方式弹窗模式：若接口仅配置 Apple 内购一条，则不弹 Sheet，直接拉起 StoreKit（与选 Apple 后点支付一致）
-    private func presentPaymentSelectionOrDirectAppleIfOnly(package: RechargePackageModel) async {
-        let mode = await MainActor.run { versionConfig.rechargePresentationType }
-        if mode == 1 {
+    /// A 面直链 IAP；B 面弹出支付渠道 Sheet。
+    private func beginRechargeCheckout(package: RechargePackageModel) async {
+        if RechargeCheckoutRouter.prefersPaymentChannelSheet {
+            await presentPaymentChannelSheet(package: package)
+        } else {
             await completePurchaseDirectIAP(package: package)
-            return
         }
+    }
+
+    /// B 面：拉取 `/v3/pay_channels` 并弹出 `RechargePaymentSelectionView`。
+    private func presentPaymentChannelSheet(package: RechargePackageModel) async {
         await MainActor.run { isPurchasing = true }
         await VlCheckoutChannelRegistry.shared.loadPayChannelsOnce()
-        let channels = await MainActor.run { VlCheckoutChannelRegistry.shared.payChannels }
-        if channels.count == 1, let only = channels.first, only.isApplePay {
-            await MainActor.run { isPurchasing = false }
-            await completePurchase(package: package, payChannel: only)
-            return
-        }
         await MainActor.run {
             isPurchasing = false
             checkoutPackage = package
         }
     }
 
-    /// 配置为「直接内购」时：先拉取 `/v3/pay_channels`，取 Apple 渠道；若无则使用 `PayChannel.fallbackApplePayForIAP`（与 `VlStoreKitPurchaseOrchestrator` pay_channel_id=1 一致）
+    /// A 面：先拉取 `/v3/pay_channels`，取 Apple 渠道；若无则使用 `PayChannel.fallbackApplePayForIAP`。
     private func completePurchaseDirectIAP(package: RechargePackageModel) async {
         await VlCheckoutChannelRegistry.shared.loadPayChannelsOnce()
         let channels = await MainActor.run { VlCheckoutChannelRegistry.shared.payChannels }

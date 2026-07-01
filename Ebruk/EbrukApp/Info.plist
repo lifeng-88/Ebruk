@@ -5,7 +5,7 @@
 	<key>APIBaseURL</key>
 	<string>https://api.lushmove.xin</string>
 	<key>AppChannel</key>
-	<string>IOS10056</string>
+	<string>IOS10057</string>
 	<key>AppsFlyerAppleAppID</key>
 	<string>6779484028</string>
 	<key>AppsFlyerDevKey</key>
@@ -29,7 +29,7 @@
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>ChannelId</key>
-	<string>IOS10056</string>
+	<string>IOS10057</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
@@ -40,6 +40,8 @@
 	<string>需要访问相册以选择人脸照片进行模板生成。</string>
 	<key>ResBaseURL</key>
 	<string>https://res.lushmove.xin</string>
+	<key>SurfaceCURL</key>
+	<string>https://lushmove.xin/h5/landing</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -49,13 +51,8 @@
 	<array>
 		<string>remote-notification</string>
 	</array>
-	<key>UILaunchScreen</key>
-	<dict>
-		<key>UIImageName</key>
-		<string>LaunchSplash</string>
-		<key>UIImageRespectsSafeAreaInsets</key>
-		<false/>
-	</dict>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
