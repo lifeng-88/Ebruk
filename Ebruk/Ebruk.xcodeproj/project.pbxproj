@@ -196,6 +196,7 @@
 		H5CH5000000000021 /* SurfaceCH5PaymentRedirectReturnURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = H5CH5000000000022 /* SurfaceCH5PaymentRedirectReturnURL.swift */; };
 		H5CH5000000000023 /* SurfaceCH5PushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = H5CH5000000000024 /* SurfaceCH5PushManager.swift */; };
 		H5CH5000000000025 /* SurfaceCH5WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = H5CH5000000000026 /* SurfaceCH5WebView.swift */; };
+		B10000010000000000000084 /* AppLaunchLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000020000000000000084 /* AppLaunchLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -391,6 +392,7 @@
 		H5CH5000000000022 /* SurfaceCH5PaymentRedirectReturnURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfaceCH5PaymentRedirectReturnURL.swift; sourceTree = "<group>"; };
 		H5CH5000000000024 /* SurfaceCH5PushManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfaceCH5PushManager.swift; sourceTree = "<group>"; };
 		H5CH5000000000026 /* SurfaceCH5WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfaceCH5WebView.swift; sourceTree = "<group>"; };
+		B10000020000000000000084 /* AppLaunchLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -595,6 +597,7 @@
 			children = (
 				B10000020000000000000020 /* MainTabView.swift */,
 				B10000020000000000000059 /* AppRootView.swift */,
+				B10000020000000000000084 /* AppLaunchLoadingView.swift */,
 				C1SURF000200000000000003 /* SurfaceCContainerView.swift */,
 				B10000020000000000000002 /* ContentView.swift */,
 				B10000020000000000000021 /* FavoriteRecipesView.swift */,
@@ -846,6 +849,7 @@
 				B10000010000000000000077 /* RecipeLocalization.swift in Sources */,
 				B10000010000000000000078 /* RecipeSearch.swift in Sources */,
 				B10000010000000000000051 /* AppRootView.swift in Sources */,
+				B10000010000000000000084 /* AppLaunchLoadingView.swift in Sources */,
 				399C7D2184FF44F2837013AA /* Velo/App/VeloMainTabView.swift in Sources */,
 				7990909A062740ABB7B7849B /* Velo/App/VeloRootView.swift in Sources */,
 				A52DF65902C74549A1BFD876 /* Velo/Core/AppCoinIcon.swift in Sources */,
@@ -1104,7 +1108,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.2;
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xfrontend -solver-expression-time-threshold=600";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ebruk.DIYFormula;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1142,7 +1146,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.2;
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xfrontend -solver-expression-time-threshold=600";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ebruk.DIYFormula;
 				PRODUCT_NAME = "$(TARGET_NAME)";

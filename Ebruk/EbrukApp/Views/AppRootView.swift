@@ -25,28 +25,3 @@ struct AppRootView: View {
         }
     }
 }
-
-private struct AppLaunchLoadingView: View {
-    private let iconSize: CGFloat = 136
-
-    var body: some View {
-        ZStack {
-            Color("LaunchBackground", bundle: .main)
-                .ignoresSafeArea()
-
-            Image("LaunchScreenLogo")
-                .resizable()
-                .interpolation(.high)
-                .scaledToFit()
-                .frame(width: iconSize, height: iconSize)
-                .accessibilityHidden(true)
-
-            VStack {
-                Spacer()
-                ProgressView()
-                    .tint(.white)
-                    .padding(.bottom, 56)
-            }
-        }
-    }
-}

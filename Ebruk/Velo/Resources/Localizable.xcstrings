@@ -1424,6 +1424,9 @@
         }
       }
     },
+    "Ebruk" : {
+
+    },
     "feedback.active_submissions" : {
       "extractionState" : "manual",
       "localizations" : {
