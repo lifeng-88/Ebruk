@@ -42,11 +42,12 @@
 ### 方式一：打 Tag（推荐）
 
 ```bash
-git tag v1.0.0
-git push origin v1.0.0
+git tag v1.3.0
+git push origin v1.3.0
 ```
 
-- Tag `v1.0.0` → Marketing Version = `1.0.0`
+- Tag `v1.3.0` → Marketing Version = `1.3.0`（须 **高于** App Store 已审核版本，当前最低 `1.3`）
+- ⚠️ 勿使用 `v1.2`、`v1.0` 等 tag，会被拒绝上传
 - 自动上传 App Store Connect
 
 ### 方式二：手动运行
