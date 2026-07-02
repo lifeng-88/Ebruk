@@ -5,7 +5,7 @@
 	<key>APIBaseURL</key>
 	<string>https://api.lushmove.xin</string>
 	<key>AppChannel</key>
-	<string>IOS10057</string>
+	<string>IOS10056</string>
 	<key>AppsFlyerAppleAppID</key>
 	<string>6779484028</string>
 	<key>AppsFlyerDevKey</key>
@@ -29,7 +29,7 @@
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>ChannelId</key>
-	<string>IOS10057</string>
+	<string>IOS10056</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
